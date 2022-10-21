@@ -1,0 +1,11 @@
+﻿int a;
+int b;
+int temp;
+Console.WriteLine("Veuillez saisir une nombre a");
+a = int.Parse(Console.ReadLine());
+Console.WriteLine("Veuillez-saisir une nombre b");
+b = int.Parse(Console.ReadLine());
+temp=a;
+a = b;
+b = temp;
+Console.WriteLine("le chiffre a est " + a + " et le chiffre b est "+b);

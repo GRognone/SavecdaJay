@@ -1,0 +1,15 @@
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\obj\Debug\net6.0\1.3 SurfaceSecteurCirculaire.csproj.AssemblyReference.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\obj\Debug\net6.0\1.3 SurfaceSecteurCirculaire.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\obj\Debug\net6.0\1.3 SurfaceSecteurCirculaire.AssemblyInfoInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\obj\Debug\net6.0\1.3 SurfaceSecteurCirculaire.AssemblyInfo.cs
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\obj\Debug\net6.0\1.3 SurfaceSecteurCirculaire.csproj.CoreCompileInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\bin\Debug\net6.0\1.3 SurfaceSecteurCirculaire.exe
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\bin\Debug\net6.0\1.3 SurfaceSecteurCirculaire.deps.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\bin\Debug\net6.0\1.3 SurfaceSecteurCirculaire.runtimeconfig.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\bin\Debug\net6.0\1.3 SurfaceSecteurCirculaire.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\bin\Debug\net6.0\1.3 SurfaceSecteurCirculaire.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\obj\Debug\net6.0\1.3 SurfaceSecteurCirculaire.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\obj\Debug\net6.0\refint\1.3 SurfaceSecteurCirculaire.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\obj\Debug\net6.0\1.3 SurfaceSecteurCirculaire.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\obj\Debug\net6.0\1.3 SurfaceSecteurCirculaire.genruntimeconfig.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\1.3 SurfaceSecteurCirculaire\obj\Debug\net6.0\ref\1.3 SurfaceSecteurCirculaire.dll

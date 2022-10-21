@@ -1,0 +1,15 @@
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\bin\Debug\net6.0\CalculVolumeSphere.exe
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\bin\Debug\net6.0\CalculVolumeSphere.deps.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\bin\Debug\net6.0\CalculVolumeSphere.runtimeconfig.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\bin\Debug\net6.0\CalculVolumeSphere.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\bin\Debug\net6.0\CalculVolumeSphere.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\obj\Debug\net6.0\CalculVolumeSphere.csproj.AssemblyReference.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\obj\Debug\net6.0\CalculVolumeSphere.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\obj\Debug\net6.0\CalculVolumeSphere.AssemblyInfoInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\obj\Debug\net6.0\CalculVolumeSphere.AssemblyInfo.cs
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\obj\Debug\net6.0\CalculVolumeSphere.csproj.CoreCompileInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\obj\Debug\net6.0\CalculVolumeSphere.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\obj\Debug\net6.0\refint\CalculVolumeSphere.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\obj\Debug\net6.0\CalculVolumeSphere.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\obj\Debug\net6.0\CalculVolumeSphere.genruntimeconfig.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\CalculVolumeSphere\obj\Debug\net6.0\ref\CalculVolumeSphere.dll

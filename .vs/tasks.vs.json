@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Moyenne des 2 nombres",
+      "appliesTo": "Moyenne des 2 nombres",
+      "type": "launch"
+    }
+  ]
+}
