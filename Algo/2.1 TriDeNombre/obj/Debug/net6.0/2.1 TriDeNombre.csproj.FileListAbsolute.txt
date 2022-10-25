@@ -1,0 +1,15 @@
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\obj\Debug\net6.0\2.1 TriDeNombre.csproj.AssemblyReference.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\obj\Debug\net6.0\2.1 TriDeNombre.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\obj\Debug\net6.0\2.1 TriDeNombre.AssemblyInfoInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\obj\Debug\net6.0\2.1 TriDeNombre.AssemblyInfo.cs
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\obj\Debug\net6.0\2.1 TriDeNombre.csproj.CoreCompileInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\bin\Debug\net6.0\2.1 TriDeNombre.exe
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\bin\Debug\net6.0\2.1 TriDeNombre.deps.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\bin\Debug\net6.0\2.1 TriDeNombre.runtimeconfig.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\bin\Debug\net6.0\2.1 TriDeNombre.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\bin\Debug\net6.0\2.1 TriDeNombre.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\obj\Debug\net6.0\2.1 TriDeNombre.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\obj\Debug\net6.0\refint\2.1 TriDeNombre.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\obj\Debug\net6.0\2.1 TriDeNombre.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\obj\Debug\net6.0\2.1 TriDeNombre.genruntimeconfig.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.1 TriDeNombre\obj\Debug\net6.0\ref\2.1 TriDeNombre.dll
