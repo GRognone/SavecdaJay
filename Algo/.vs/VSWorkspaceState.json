@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\2.1 TriDeNombre"
   ],
-  "SelectedNode": "\\1.5 InversionDeChiffres",
+  "SelectedNode": "\\2.1 TriDeNombre\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
