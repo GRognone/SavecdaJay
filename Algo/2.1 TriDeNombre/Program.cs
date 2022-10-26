@@ -19,18 +19,10 @@ if (a < b)
 
 else if (b < c)
 {
-    int temp = b;
-    b = c;
-    c = temp; 
-}
-else if (a < c)
-{
-    int temp = c;
-    c = a;
-    a = temp;
-}
+    if (a < c) {
+        int temp = a;
+        a = c;
+        c = temp;
+    }
+
 Console.WriteLine(a + " " + b + " " + c);
-
-
-
-
