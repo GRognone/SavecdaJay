@@ -1,0 +1,15 @@
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\bin\Debug\net6.0\Exercice_2.4_Annee_Bissextike.exe
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\bin\Debug\net6.0\Exercice_2.4_Annee_Bissextike.deps.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\bin\Debug\net6.0\Exercice_2.4_Annee_Bissextike.runtimeconfig.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\bin\Debug\net6.0\Exercice_2.4_Annee_Bissextike.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\bin\Debug\net6.0\Exercice_2.4_Annee_Bissextike.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\obj\Debug\net6.0\Exercice_2.4_Annee_Bissextike.csproj.AssemblyReference.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\obj\Debug\net6.0\Exercice_2.4_Annee_Bissextike.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\obj\Debug\net6.0\Exercice_2.4_Annee_Bissextike.AssemblyInfoInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\obj\Debug\net6.0\Exercice_2.4_Annee_Bissextike.AssemblyInfo.cs
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\obj\Debug\net6.0\Exercice_2.4_Annee_Bissextike.csproj.CoreCompileInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\obj\Debug\net6.0\Exercice_2.4_Annee_Bissextike.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\obj\Debug\net6.0\refint\Exercice_2.4_Annee_Bissextike.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\obj\Debug\net6.0\Exercice_2.4_Annee_Bissextike.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\obj\Debug\net6.0\Exercice_2.4_Annee_Bissextike.genruntimeconfig.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\Exercice_2.4\Exercice_2.4_Annee_Bissextike\obj\Debug\net6.0\ref\Exercice_2.4_Annee_Bissextike.dll
