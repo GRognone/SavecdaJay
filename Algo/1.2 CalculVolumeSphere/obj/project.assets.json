@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\CalculVolumeSphere\\CalculVolumeSphere.csproj",
+      "projectUniqueName": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\1.2 CalculVolumeSphere\\CalculVolumeSphere.csproj",
       "projectName": "CalculVolumeSphere",
-      "projectPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\CalculVolumeSphere\\CalculVolumeSphere.csproj",
+      "projectPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\1.2 CalculVolumeSphere\\CalculVolumeSphere.csproj",
       "packagesPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\CalculVolumeSphere\\obj\\",
+      "outputPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\1.2 CalculVolumeSphere\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
