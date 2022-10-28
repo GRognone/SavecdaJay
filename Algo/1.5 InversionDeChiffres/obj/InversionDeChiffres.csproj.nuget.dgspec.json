@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\1.5 InversionDeChiffres\\InversionDeChiffres.csproj": {}
+    "\\\\Mac\\Home\\Desktop\\SavecdaJay\\Algo\\1.5 InversionDeChiffres\\InversionDeChiffres.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\1.5 InversionDeChiffres\\InversionDeChiffres.csproj": {
+    "\\\\Mac\\Home\\Desktop\\SavecdaJay\\Algo\\1.5 InversionDeChiffres\\InversionDeChiffres.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\1.5 InversionDeChiffres\\InversionDeChiffres.csproj",
+        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\SavecdaJay\\Algo\\1.5 InversionDeChiffres\\InversionDeChiffres.csproj",
         "projectName": "InversionDeChiffres",
-        "projectPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\1.5 InversionDeChiffres\\InversionDeChiffres.csproj",
-        "packagesPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\1.5 InversionDeChiffres\\obj\\",
+        "projectPath": "\\\\Mac\\Home\\Desktop\\SavecdaJay\\Algo\\1.5 InversionDeChiffres\\InversionDeChiffres.csproj",
+        "packagesPath": "C:\\Users\\gerardrognone\\.nuget\\packages\\",
+        "outputPath": "\\\\Mac\\Home\\Desktop\\SavecdaJay\\Algo\\1.5 InversionDeChiffres\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Stagiaire.CRM-UC-3927\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gerardrognone\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
         }
       }
     }
