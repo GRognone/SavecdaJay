@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32901.215
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.5 RechercheDesDiviseursD'UnNombre", "2.5 RechercheDesDiviseursD'UnNombre.csproj", "{3B0E0770-85EA-4D50-9422-850862E15A00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.5 RechercheDesDiviseursD'UnNombre", "2.5 RechercheDesDiviseursD'UnNombre\2.5 RechercheDesDiviseursD'UnNombre.csproj", "{F8914B14-97F4-48A8-A40B-F6D1AC519C89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3B0E0770-85EA-4D50-9422-850862E15A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B0E0770-85EA-4D50-9422-850862E15A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B0E0770-85EA-4D50-9422-850862E15A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B0E0770-85EA-4D50-9422-850862E15A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8914B14-97F4-48A8-A40B-F6D1AC519C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8914B14-97F4-48A8-A40B-F6D1AC519C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8914B14-97F4-48A8-A40B-F6D1AC519C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8914B14-97F4-48A8-A40B-F6D1AC519C89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EC151AA0-E033-443A-9506-EA44CC69B343}
+		SolutionGuid = {89F7148D-117B-42B5-B4C2-6C3ADD514BCA}
 	EndGlobalSection
 EndGlobal
