@@ -1,0 +1,15 @@
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\bin\Debug\net6.0\2.4 Bissextile.exe
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\bin\Debug\net6.0\2.4 Bissextile.deps.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\bin\Debug\net6.0\2.4 Bissextile.runtimeconfig.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\bin\Debug\net6.0\2.4 Bissextile.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\bin\Debug\net6.0\2.4 Bissextile.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\obj\Debug\net6.0\2.4 Bissextile.csproj.AssemblyReference.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\obj\Debug\net6.0\2.4 Bissextile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\obj\Debug\net6.0\2.4 Bissextile.AssemblyInfoInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\obj\Debug\net6.0\2.4 Bissextile.AssemblyInfo.cs
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\obj\Debug\net6.0\2.4 Bissextile.csproj.CoreCompileInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\obj\Debug\net6.0\2.4 Bissextile.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\obj\Debug\net6.0\refint\2.4 Bissextile.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\obj\Debug\net6.0\2.4 Bissextile.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\obj\Debug\net6.0\2.4 Bissextile.genruntimeconfig.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\2.4 Bissextile\obj\Debug\net6.0\ref\2.4 Bissextile.dll
