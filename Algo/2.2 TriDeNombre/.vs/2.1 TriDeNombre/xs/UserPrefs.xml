@@ -1,4 +1,5 @@
-﻿<Properties StartupConfiguration="{3DC8F9DF-CD53-4BB7-A1FC-2C934A22B0A8}|Default">
+﻿<Properties StartupConfiguration="{2ED906F3-3C1F-4FA0-A139-7BA7D2D9AFCE}|Default">
+  <MonoDevelop.Ide.ItemProperties.2.1_220TriDeNombre PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
       <File FileName="Program.cs" Line="1" Column="1" />
@@ -6,18 +7,16 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="2.1 ComparaisonDeNombre" expanded="True">
-            <Node name="2.1 ComparaisonDeNombre" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+          <Node name="2.1 TriDeNombre" expanded="True">
+            <Node name="2.1 TriDeNombre" expanded="True" />
+            <Node name="test 2" selected="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.2.1_220ComparaisonDeNombre PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
