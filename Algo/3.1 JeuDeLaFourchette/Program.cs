@@ -7,10 +7,44 @@ Le choix du nombre mystère sera simulé par génération d'un nombre aléatoire
 Lorsque l'utilisateur a trouvé le nombre mystère, le programme affiche "Bravo vous avez trouvé en X essais"
  */
 
-Console.WriteLine("Hello, World!");
-
-int userInput;
-int N;
-int numberOfTrials = 0;
-
 Random rnd = new Random();
+int userInput = 0;
+int computerRandom = rnd.Next(101);
+int forkMin = 0;
+int forkMax = 100;
+int numberOfTrials = 1;
+bool found = false;
+
+Console.WriteLine("Bonjour, jouons à trouver un numero choisi par l'ordinateur entre 1 et 100, chaque essais sera comptabilisé et la fourchette sera indiqué entre chaques essais bonne chance !!!");
+Console.WriteLine(computerRandom);
+do
+{
+    Console.WriteLine("Essayez de trouver le nombre de l'ordinateur entre " + forkMin + " et " + forkMax, " bonne chance!");
+    userInput = int.Parse(Console.ReadLine());
+    
+    
+
+        if (userInput < computerRandom)
+        {
+            forkMin = userInput;
+        numberOfTrials++;
+        }
+        else if (userInput > computerRandom)
+        {
+            forkMax = userInput;
+        numberOfTrials++;   
+        }
+    
+
+        else
+        {
+            Console.WriteLine("Bravo vous avez trouvé le bon numero c'etait " + userInput +" en "+ numberOfTrials+ " essais");
+            found = true;
+        }
+    
+}
+while
+
+(!found);
+Console.WriteLine("Partie terminé");
+Console.ReadLine();
