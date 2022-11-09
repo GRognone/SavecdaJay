@@ -1,0 +1,15 @@
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\bin\Debug\net6.0\3.2 BarnabeFaitSesCourses.exe
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\bin\Debug\net6.0\3.2 BarnabeFaitSesCourses.deps.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\bin\Debug\net6.0\3.2 BarnabeFaitSesCourses.runtimeconfig.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\bin\Debug\net6.0\3.2 BarnabeFaitSesCourses.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\bin\Debug\net6.0\3.2 BarnabeFaitSesCourses.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\obj\Debug\net6.0\3.2 BarnabeFaitSesCourses.csproj.AssemblyReference.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\obj\Debug\net6.0\3.2 BarnabeFaitSesCourses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\obj\Debug\net6.0\3.2 BarnabeFaitSesCourses.AssemblyInfoInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\obj\Debug\net6.0\3.2 BarnabeFaitSesCourses.AssemblyInfo.cs
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\obj\Debug\net6.0\3.2 BarnabeFaitSesCourses.csproj.CoreCompileInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\obj\Debug\net6.0\3.2 BarnabeFaitSesCourses.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\obj\Debug\net6.0\refint\3.2 BarnabeFaitSesCourses.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\obj\Debug\net6.0\3.2 BarnabeFaitSesCourses.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\obj\Debug\net6.0\3.2 BarnabeFaitSesCourses.genruntimeconfig.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.2 BarnabeFaitSesCourses\obj\Debug\net6.0\ref\3.2 BarnabeFaitSesCourses.dll
