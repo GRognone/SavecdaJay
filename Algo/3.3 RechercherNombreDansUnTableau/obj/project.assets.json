@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\3.1 JeuDeLaFourchette\\3.1 JeuDeLaFourchette.csproj",
-      "projectName": "3.1 JeuDeLaFourchette",
-      "projectPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\3.1 JeuDeLaFourchette\\3.1 JeuDeLaFourchette.csproj",
+      "projectUniqueName": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\3.3 RechercherNombreDansUnTableau\\3.3 RechercherNombreDansUnTableau.csproj",
+      "projectName": "3.3 RechercherNombreDansUnTableau",
+      "projectPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\3.3 RechercherNombreDansUnTableau\\3.3 RechercherNombreDansUnTableau.csproj",
       "packagesPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\3.1 JeuDeLaFourchette\\obj\\",
+      "outputPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\3.3 RechercherNombreDansUnTableau\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
