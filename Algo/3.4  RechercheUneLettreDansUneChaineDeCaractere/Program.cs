@@ -11,5 +11,10 @@ Proposez un jeu d'essai prévoyant les 3 cas suivants :
 ▪ La lettre est présente une ou plusieurs fois
 */
 
+string phrasing;
+char userInput;
+int counter = 0;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Entrez un texte de la longueur de votre choix svpterminez par un point");
+phrasing = Console.ReadLine();
+Console.WriteLine("Saisissez la lettre dont vous souhaitez connaitre la recurence dans le texte svp");
