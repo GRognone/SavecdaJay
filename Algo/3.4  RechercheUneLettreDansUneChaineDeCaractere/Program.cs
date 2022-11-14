@@ -11,15 +11,7 @@ Proposez un jeu d'essai prévoyant les 3 cas suivants :
 ▪ La lettre est présente une ou plusieurs fois
 */
 
-<<<<<<< Updated upstream
-string phrasing;
-char userInput;
-int counter = 0;
 
-Console.WriteLine("Entrez un texte de la longueur de votre choix svpterminez par un point");
-phrasing = Console.ReadLine();
-Console.WriteLine("Saisissez la lettre dont vous souhaitez connaitre la recurence dans le texte svp");
-=======
 string userInput;
 char userFound;
 int count = 0;
@@ -27,7 +19,7 @@ int count = 0;
 Console.WriteLine("Bonjour entrez une chaîne de caractères et terminez par un point svp.");
 userInput = Console.ReadLine().ToLower();
 
-if ((userInput.Equals(".")) || (userInput.Equals(" ")))
+if ((userInput.Equals(".")) || (userInput.Equals("")))
 {
     Console.WriteLine("LA CHAINE EST VIDE");
 }
@@ -47,4 +39,4 @@ if (count == 0)
 }
 else
     Console.WriteLine(" La lettre recherchée est presente " + count + " fois dans la phrase.");
->>>>>>> Stashed changes
+Console.ReadLine();
