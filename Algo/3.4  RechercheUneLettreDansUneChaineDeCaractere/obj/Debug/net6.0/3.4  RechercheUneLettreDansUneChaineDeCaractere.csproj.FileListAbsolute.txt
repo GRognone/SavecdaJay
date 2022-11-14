@@ -1,0 +1,15 @@
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\bin\Debug\net6.0\3.4  RechercheUneLettreDansUneChaineDeCaractere.exe
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\bin\Debug\net6.0\3.4  RechercheUneLettreDansUneChaineDeCaractere.deps.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\bin\Debug\net6.0\3.4  RechercheUneLettreDansUneChaineDeCaractere.runtimeconfig.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\bin\Debug\net6.0\3.4  RechercheUneLettreDansUneChaineDeCaractere.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\bin\Debug\net6.0\3.4  RechercheUneLettreDansUneChaineDeCaractere.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\obj\Debug\net6.0\3.4  RechercheUneLettreDansUneChaineDeCaractere.csproj.AssemblyReference.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\obj\Debug\net6.0\3.4  RechercheUneLettreDansUneChaineDeCaractere.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\obj\Debug\net6.0\3.4  RechercheUneLettreDansUneChaineDeCaractere.AssemblyInfoInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\obj\Debug\net6.0\3.4  RechercheUneLettreDansUneChaineDeCaractere.AssemblyInfo.cs
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\obj\Debug\net6.0\3.4  RechercheUneLettreDansUneChaineDeCaractere.csproj.CoreCompileInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\obj\Debug\net6.0\3.4  RechercheUneLettreDansUneChaineDeCaractere.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\obj\Debug\net6.0\refint\3.4  RechercheUneLettreDansUneChaineDeCaractere.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\obj\Debug\net6.0\3.4  RechercheUneLettreDansUneChaineDeCaractere.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\obj\Debug\net6.0\3.4  RechercheUneLettreDansUneChaineDeCaractere.genruntimeconfig.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\3.4  RechercheUneLettreDansUneChaineDeCaractere\obj\Debug\net6.0\ref\3.4  RechercheUneLettreDansUneChaineDeCaractere.dll

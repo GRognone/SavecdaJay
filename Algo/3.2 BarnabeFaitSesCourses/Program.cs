@@ -23,7 +23,7 @@ do
 {
     Rest = (Rest / 2) - 1;
     VisitingShop++;
-    Console.WriteLine("Le montant restant est de " + Rest + " suite achat magasin " + VisitingShop);
+    //Console.WriteLine("Le montant restant est de " + Rest + " suite achat magasin " + VisitingShop);
 }
 while (Rest > 2);
 Console.WriteLine(" Barnabé a pu depenser l'integralite de ses " + S + " euros dans " + VisitingShop + " magasins .");

@@ -9,11 +9,13 @@ Lorsque l'utilisateur a trouvé le nombre mystère, le programme affiche "Bravo 
 
 Random rnd = new Random();
 int userInput;
-int computerRandom = rnd.Next(101);
 int forkMin = 0;
 int forkMax = 100;
+int computerRandom = rnd.Next(forkMin, forkMax+1);
 int numberOfTrials = 1;
 bool found = false;
+
+//Console.WriteLine(computerRandom); ligne pour voir directement le numéro aléatoire.
 
 Console.WriteLine("Bonjour, jouons à trouver un numero choisi par l'ordinateur entre 1 et 100, chaque essais sera comptabilisé et la fourchette sera indiqué entre chaques essais bonne chance !!!");
 
@@ -38,17 +40,14 @@ do
         forkMax = userInput;
         numberOfTrials++;
     }
-
-
     else
     {
-        Console.WriteLine("Bravo vous avez trouve le bon numero c'etait " + userInput + " en " + numberOfTrials + " essais");
+        string sOrNot = (numberOfTrials > 1) ? "s" : "";// sert à rajouter un s a essai si le nombre d'essai es > 1.
+        Console.WriteLine("Bravo vous avez trouve le bon numero c'etait " + userInput + " en " + numberOfTrials + " essai"+sOrNot);
         found = true;
     }
 
 }
-while
-
-(!found);
+while (!found);
 Console.WriteLine("Partie terminé");
 Console.ReadLine();

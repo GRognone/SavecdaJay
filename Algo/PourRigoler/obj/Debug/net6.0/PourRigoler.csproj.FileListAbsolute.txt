@@ -1,0 +1,15 @@
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\obj\Debug\net6.0\PourRigoler.csproj.AssemblyReference.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\obj\Debug\net6.0\PourRigoler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\obj\Debug\net6.0\PourRigoler.AssemblyInfoInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\obj\Debug\net6.0\PourRigoler.AssemblyInfo.cs
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\obj\Debug\net6.0\PourRigoler.csproj.CoreCompileInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\bin\Debug\net6.0\PourRigoler.exe
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\bin\Debug\net6.0\PourRigoler.deps.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\bin\Debug\net6.0\PourRigoler.runtimeconfig.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\bin\Debug\net6.0\PourRigoler.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\bin\Debug\net6.0\PourRigoler.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\obj\Debug\net6.0\PourRigoler.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\obj\Debug\net6.0\refint\PourRigoler.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\obj\Debug\net6.0\PourRigoler.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\obj\Debug\net6.0\PourRigoler.genruntimeconfig.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\PourRigoler\obj\Debug\net6.0\ref\PourRigoler.dll

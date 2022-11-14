@@ -1,26 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gerardrognone/Desktop/Depots/SavecdaJay/Algo/2.1 ComparaisonDeNombre/2.1 ComparaisonDeNombre.csproj": {}
+    "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\2.1 ComparaisonDeNombre\\2.1 ComparaisonDeNombre.csproj": {}
   },
   "projects": {
-    "/Users/gerardrognone/Desktop/Depots/SavecdaJay/Algo/2.1 ComparaisonDeNombre/2.1 ComparaisonDeNombre.csproj": {
+    "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\2.1 ComparaisonDeNombre\\2.1 ComparaisonDeNombre.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gerardrognone/Desktop/Depots/SavecdaJay/Algo/2.1 ComparaisonDeNombre/2.1 ComparaisonDeNombre.csproj",
+        "projectUniqueName": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\2.1 ComparaisonDeNombre\\2.1 ComparaisonDeNombre.csproj",
         "projectName": "2.1 ComparaisonDeNombre",
-        "projectPath": "/Users/gerardrognone/Desktop/Depots/SavecdaJay/Algo/2.1 ComparaisonDeNombre/2.1 ComparaisonDeNombre.csproj",
-        "packagesPath": "/Users/gerardrognone/.nuget/packages/",
-        "outputPath": "/Users/gerardrognone/Desktop/Depots/SavecdaJay/Algo/2.1 ComparaisonDeNombre/obj/",
+        "projectPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\2.1 ComparaisonDeNombre\\2.1 ComparaisonDeNombre.csproj",
+        "packagesPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\2.1 ComparaisonDeNombre\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/gerardrognone/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Stagiaire.CRM-UC-3927\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100-rc.2.22477.23/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

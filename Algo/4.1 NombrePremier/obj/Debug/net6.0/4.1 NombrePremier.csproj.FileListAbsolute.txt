@@ -1,0 +1,15 @@
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\bin\Debug\net6.0\4.1 NombrePremier.exe
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\bin\Debug\net6.0\4.1 NombrePremier.deps.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\bin\Debug\net6.0\4.1 NombrePremier.runtimeconfig.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\bin\Debug\net6.0\4.1 NombrePremier.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\bin\Debug\net6.0\4.1 NombrePremier.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\obj\Debug\net6.0\4.1 NombrePremier.csproj.AssemblyReference.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\obj\Debug\net6.0\4.1 NombrePremier.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\obj\Debug\net6.0\4.1 NombrePremier.AssemblyInfoInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\obj\Debug\net6.0\4.1 NombrePremier.AssemblyInfo.cs
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\obj\Debug\net6.0\4.1 NombrePremier.csproj.CoreCompileInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\obj\Debug\net6.0\4.1 NombrePremier.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\obj\Debug\net6.0\refint\4.1 NombrePremier.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\obj\Debug\net6.0\4.1 NombrePremier.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\obj\Debug\net6.0\4.1 NombrePremier.genruntimeconfig.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.1 NombrePremier\obj\Debug\net6.0\ref\4.1 NombrePremier.dll
