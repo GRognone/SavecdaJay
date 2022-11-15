@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.3.1 ConversionMilesKilometre", "4.3.1 ConversionMilesKilometre\4.3.1 ConversionMilesKilometre.csproj", "{77B88162-A127-43EA-A94D-73812FAF43DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77B88162-A127-43EA-A94D-73812FAF43DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B88162-A127-43EA-A94D-73812FAF43DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B88162-A127-43EA-A94D-73812FAF43DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B88162-A127-43EA-A94D-73812FAF43DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C0C28C5-A8FB-4ADC-A114-F5A32ED00849}
+	EndGlobalSection
+EndGlobal
