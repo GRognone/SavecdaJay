@@ -14,9 +14,51 @@ Pour information, le zéro absolu correspond à -459.67 Degrés Fahrenheit ou -2
 En physique, rien ne peut être plus froid que le zéro absolu !
 La température de la plus basse jamais enregistrée sur Terre est -95 degrés Celsius.
 */
-string[] userInput = new string[2];
+using System.Formats.Asn1;
+
+string userInput;
+string[] tableConvert;
+double value;
+string unit;
 double convertResult;
+string getOut = "q";
 
 
 Console.WriteLine("Veuillez entrer une valeur à convertir separé d'un espace suivi du symbole F pour convertir de fahrenheit en degrès ou C pour convertir du degres en fahrenheit");
-userInput[0] = Console.ReadLine();
+userInput = Console.ReadLine();
+
+if (!userInput.Equals(getOut))
+{
+    tableConvert = userInput.Split(" ");
+    value = double.Parse(tableConvert[0]);
+
+    if (tableConvert.Length > 1)
+        {
+        unit = tableConvert[1];
+    }
+    else
+    {
+        unit = "C";
+    }
+    if (unit.Equals("F"))
+        {
+        convertResult = FtoC(value);
+        Console.WriteLine("La valeur " + userInput + "° degres fahrenheit en degre celsius est de " + convertResult + " C°.");
+    }
+    else 
+    {
+        convertResult = CtoF(value);
+        Console.WriteLine("La valeur " + userInput + "° degres Celsius en degres fahrenheit est de " + convertResult + " F°.");
+    }
+}
+Console.ReadLine();
+static double CtoF(double _toConvert)
+{
+    double F = ((_toConvert*9)/5)+32;
+    return F;
+}
+static double FtoC(double _toConvert) 
+{
+    double C = ((_toConvert + 32) * (5/9));
+    return C;
+}
