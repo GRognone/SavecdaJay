@@ -21,44 +21,43 @@ string[] tableConvert;
 double value;
 string unit;
 double convertResult;
-string getOut = "q";
 
-
-Console.WriteLine("Veuillez entrer une valeur à convertir separé d'un espace suivi du symbole F pour convertir de fahrenheit en degrès ou C pour convertir du degres en fahrenheit");
+Console.WriteLine("Veuillez entrer une valeur numérique comprise entre -459.67 et 5 000 000 à convertir separé d'un espace suivi du symbole F pour convertir de fahrenheit en degrès ou C pour convertir du degres en fahrenheit");
 userInput = Console.ReadLine();
+tableConvert = userInput.Split(" ");
 
-if (!userInput.Equals(getOut))
+value = double.Parse(tableConvert[0]);
+
+unit = tableConvert[1];
+
+if ((value < -459.67) || (value > 5000000))
 {
-    tableConvert = userInput.Split(" ");
-    value = double.Parse(tableConvert[0]);
+    Console.WriteLine("Veuillez entrer une valeur numérique comprise entre -459.67 et 5 000 000 à convertir separé d'un espace suivi du symbole F pour convertir de fahrenheit en degrès ou C pour convertir du degres en fahrenheit");
+    userInput = Console.ReadLine();
 
-    if (tableConvert.Length > 1)
-        {
-        unit = tableConvert[1];
-    }
-    else
-    {
-        unit = "C";
-    }
-    if (unit.Equals("F"))
-        {
-        convertResult = FtoC(value);
-        Console.WriteLine("La valeur " + userInput + "° degres fahrenheit en degre celsius est de " + convertResult + " C°.");
-    }
-    else 
-    {
-        convertResult = CtoF(value);
-        Console.WriteLine("La valeur " + userInput + "° degres Celsius en degres fahrenheit est de " + convertResult + " F°.");
-    }
 }
+
+if (unit.Equals("F"))
+{
+    convertResult = FtoC(value);
+    Console.WriteLine("La valeur " + userInput + "° degres fahrenheit en degre celsius est de " + convertResult + " C°.");
+}
+else
+{
+    unit.Equals("C");
+    convertResult = CtoF(value);
+    Console.WriteLine("La valeur " + userInput + "° degres Celsius en degres fahrenheit est de " + convertResult + " F°.");
+}
+
 Console.ReadLine();
+
 static double CtoF(double _toConvert)
 {
-    double F = ((_toConvert*9)/5)+32;
+    double F = ((_toConvert * 9) / 5) + 32;
     return F;
 }
-static double FtoC(double _toConvert) 
+static double FtoC(double _toConvert)
 {
-    double C = ((_toConvert + 32) * (5/9));
+    double C = (_toConvert - 32) * (5D / 9);
     return C;
 }

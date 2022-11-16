@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "\\\\Mac\\Home\\Desktop\\Depots\\SavecdaJay\\Algo\\4.4 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit.csproj": {}
+    "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\4.4 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit.csproj": {}
   },
   "projects": {
-    "\\\\Mac\\Home\\Desktop\\Depots\\SavecdaJay\\Algo\\4.4 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit.csproj": {
+    "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\4.4 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\Depots\\SavecdaJay\\Algo\\4.4 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit.csproj",
+        "projectUniqueName": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\4.4 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit.csproj",
         "projectName": "4.4.1 ConversionDegresFahrenheit",
-        "projectPath": "\\\\Mac\\Home\\Desktop\\Depots\\SavecdaJay\\Algo\\4.4 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit.csproj",
-        "packagesPath": "C:\\Users\\gerardrognone\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Desktop\\Depots\\SavecdaJay\\Algo\\4.4 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\obj\\",
+        "projectPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\4.4 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit.csproj",
+        "packagesPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\4.4 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\4.4.1 ConversionDegresFahrenheit\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\gerardrognone\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Stagiaire.CRM-UC-3927\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

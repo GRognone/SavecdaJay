@@ -1,0 +1,2 @@
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.3 ConversionMilesKilometres\4.3.2 ConversionMilesKilometreV2\4.3.2 ConversionMilesKilometreEtInverse\obj\Debug\net6.0\4.3.2 ConversionMilesKilometreEtInverse.csproj.AssemblyReference.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\4.3 ConversionMilesKilometres\4.3.2 ConversionMilesKilometreV2\4.3.2 ConversionMilesKilometreEtInverse\obj\Debug\net6.0\4.3.2 ConversionMilesKilometreEtInverse.GeneratedMSBuildEditorConfig.editorconfig
