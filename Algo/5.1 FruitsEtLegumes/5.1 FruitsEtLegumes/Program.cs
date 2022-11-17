@@ -15,10 +15,11 @@ do
 
     userInput = Console.ReadLine();
     priceCompare.Add(userInput);
-    foreach(string s in priceCompare)
-    {
-        Console.WriteLine(s);
-    }
+
+    //foreach(string s in priceCompare)
+    //{
+    //    Console.WriteLine(s);
+    //}
 
 
 
