@@ -13,8 +13,6 @@ ControlUserInput();
 userInput=ReplaceCharacterAccentRemoval(userInput);
 CountAllOccurrence();
 
-
-
 void CreateAlphabetTable()
 {
     int compteur = 0;
@@ -23,7 +21,7 @@ void CreateAlphabetTable()
         alphabet[compteur] = (char)i;
         compteur++;
     }
-} // sert à créer automatiquement un d'ableau alphabethique en minuscule.
+} // sert à créer automatiquement un tableau alphabethique en minuscule.
 void ControlUserInput() 
 {
     do
