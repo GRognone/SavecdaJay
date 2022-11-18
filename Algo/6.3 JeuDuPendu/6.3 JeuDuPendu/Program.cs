@@ -11,13 +11,16 @@ réaffiche le mot. Le second joueur a droit à un maximum de 6 erreurs pour retr
 string player1Input;
 char[] converPlayer1ToChar;
 char[] tableWordToFind;
-wordToFind();
-AffichageDuTableau(tableWordToFind);
+int test = 6;
+
 
 char player2Input;
 
 Console.WriteLine("Jouons au jus du pendu, le premier joueur entre un mot de 5 lettres minimum  que le deuxième joueur doit trouver en 6 essais");
+wordToFind();
+AffichageDuTableau(tableWordToFind);
 
+Console.Clear();
 Console.WriteLine("Joueur 2 à vous de jouer tentez votre chance.");
 
 
@@ -30,7 +33,7 @@ void wordToFind()
     tableWordToFind = converPlayer1ToChar; //recuperation du mot avant cahe des lettres à trouver
     for(int i = 1; i < tableWordToFind.Length - 1; i++) // transformation des lettres à trouver par des tirets 
     {
-        tableWordToFind[i] = '-';
+        tableWordToFind[i] = '_';
     }
 }//Sert à entrer un mot et le scinder en caracteres et cacher les lettres à trouver
 
