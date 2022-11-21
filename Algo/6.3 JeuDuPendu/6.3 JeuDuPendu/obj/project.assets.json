@@ -8,19 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\gerardrognone\\.nuget\\packages\\": {}
+    "C:\\Users\\Stagiaire.CRM-UC-3927\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\Mac\\Home\\Desktop\\Depots\\SavecdaJay\\Algo\\6.3 JeuDuPendu\\6.3 JeuDuPendu\\6.3 JeuDuPendu.csproj",
+      "projectUniqueName": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\6.3 JeuDuPendu\\6.3 JeuDuPendu\\6.3 JeuDuPendu.csproj",
       "projectName": "6.3 JeuDuPendu",
-      "projectPath": "\\\\Mac\\Home\\Desktop\\Depots\\SavecdaJay\\Algo\\6.3 JeuDuPendu\\6.3 JeuDuPendu\\6.3 JeuDuPendu.csproj",
-      "packagesPath": "C:\\Users\\gerardrognone\\.nuget\\packages\\",
-      "outputPath": "\\\\Mac\\Home\\Desktop\\Depots\\SavecdaJay\\Algo\\6.3 JeuDuPendu\\6.3 JeuDuPendu\\obj\\",
+      "projectPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\6.3 JeuDuPendu\\6.3 JeuDuPendu\\6.3 JeuDuPendu.csproj",
+      "packagesPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\6.3 JeuDuPendu\\6.3 JeuDuPendu\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\gerardrognone\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Stagiaire.CRM-UC-3927\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

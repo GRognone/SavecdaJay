@@ -9,39 +9,93 @@ réaffiche le mot. Le second joueur a droit à un maximum de 6 erreurs pour retr
 
 
 string player1Input;
-char[] converPlayer1ToChar;
+char[] convertPlayer1ToChar;
 char[] tableWordToFind;
-int test = 6;
-
-
 char player2Input;
+int test = 6;
+bool victory = false;
 
 Console.WriteLine("Jouons au jus du pendu, le premier joueur entre un mot de 5 lettres minimum  que le deuxième joueur doit trouver en 6 essais");
 wordToFind();
 AffichageDuTableau(tableWordToFind);
 
-Console.Clear();
-Console.WriteLine("Joueur 2 à vous de jouer tentez votre chance.");
 
+Console.WriteLine("Veuillez appuyer sur une touche et appelez joueur 2 svp");
+Console.ReadKey();
+Console.Clear();
+
+Console.WriteLine("Joueur 2 à vous de jouer tentez votre chance.");
+letterToTry();
 
 
 void wordToFind()
 {
-    Console.WriteLine("Joueur 1 veuillez-saisir un mot de 5 lettres minimum svp.");
-    player1Input = Console.ReadLine();
-    converPlayer1ToChar = player1Input.ToCharArray(); // convertie l'entrée du 1er joueur string en char
-    tableWordToFind = converPlayer1ToChar; //recuperation du mot avant cahe des lettres à trouver
-    for(int i = 1; i < tableWordToFind.Length - 1; i++) // transformation des lettres à trouver par des tirets 
+    do
+    {
+        Console.WriteLine("Joueur 1 veuillez-saisir un mot de 5 lettres minimum svp.");
+        player1Input = Console.ReadLine();
+    }
+    while (player1Input.Length < 5);
+    {
+        convertPlayer1ToChar = player1Input.ToCharArray(); // converti l'entrée du 1er joueur string en tableau de char
+        tableWordToFind = player1Input.ToCharArray(); ; //nouveau tableau pour afficher le mot caché!( ne pas comaprer avec svp!!!)
+    }
+    for (int i = 1; i < tableWordToFind.Length - 1; i++) // transformation des lettres à trouver par des tirets 
     {
         tableWordToFind[i] = '_';
     }
 }//Sert à entrer un mot et le scinder en caracteres et cacher les lettres à trouver
 
-static void AffichageDuTableau(char[]_tableWordToFind)
+void letterToTry()
 {
-    foreach (int i in _tableWordToFind)
+    Console.WriteLine("Joueur 2 vous avez droit à 6 erreurs");
+    bool correctLetter;
+    int cpt =0;
+    while (victory == false)
     {
-        Console.Write((char)i);
+        Console.WriteLine("Veuillez saisir une lettre svp.");
+        player2Input = Console.ReadLine()[0];
+        correctLetter = false;
+        for (int i = 1; i < tableWordToFind.Length - 1; i++)
+        {
+            if (player2Input == convertPlayer1ToChar[i])
+            {
+                tableWordToFind[i] = convertPlayer1ToChar[i];
+                cpt++;
+                correctLetter = true;
+
+             
+                    AffichageDuTableau(convertPlayer1ToChar);
+
+                if (cpt==(tableWordToFind.Length-2))
+                { 
+                    
+                    victory = true;
+                    Console.WriteLine("\nVous avez gagné !!!");
+                }
+            }
+        }
+        Console.WriteLine(tableWordToFind);
+        if (correctLetter == false)
+        {
+            test--;
+            Console.WriteLine($" Il vous reste {test} tentatives.");
+        }
+        if (test < 1)
+        {
+            victory = false;
+            Console.WriteLine("\nPendu vous avez perdu!!!!");
+        }
+        
+
+
     }
-    Console.WriteLine();
-} // faire un saut de ligne
+} // traitement du jeu à partir du player 2
+    static void AffichageDuTableau(char[] _tableWordToFind)
+    {
+        foreach (int i in _tableWordToFind)
+        {
+            Console.Write((char)i);
+        }
+        Console.WriteLine();
+    } // faire un saut de ligne
