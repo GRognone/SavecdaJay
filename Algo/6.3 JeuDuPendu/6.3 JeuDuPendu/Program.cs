@@ -64,12 +64,8 @@ void letterToTry()
                 cpt++;
                 correctLetter = true;
 
-             
-                    AffichageDuTableau(convertPlayer1ToChar);
-
-                if (cpt==(tableWordToFind.Length-2))
-                { 
-                    
+                if (areEquals(tableWordToFind,convertPlayer1ToChar))
+                {
                     victory = true;
                     Console.WriteLine("\nVous avez gagné !!!");
                 }
@@ -99,3 +95,19 @@ void letterToTry()
         }
         Console.WriteLine();
     } // faire un saut de ligne
+
+static bool areEquals(char[] arg1, char[] arg2)
+{
+    if (arg1.Length != arg2.Length)
+        return false;
+    //
+    int i=1;
+    bool rt = true;
+    while (i < arg1.Length-1 && rt )
+    {
+        if (arg1[i] != arg2[i])
+            rt = false;
+        i++;
+    }
+    return rt;
+}// compare un tableau de char entre  l'indice 1 et length -2 (avant dernier) du tableau
