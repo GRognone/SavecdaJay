@@ -63,7 +63,7 @@ void letterToTry()
                 tableWordToFind[i] = convertPlayer1ToChar[i];
                 cpt++;
                 correctLetter = true;
-
+           
                 if (areEquals(tableWordToFind,convertPlayer1ToChar))
                 {
                     victory = true;
@@ -98,7 +98,7 @@ void letterToTry()
 
 static bool areEquals(char[] arg1, char[] arg2)
 {
-    if (arg1.Length != arg2.Length)
+    if (arg1.Length != arg2.Length) // compare tableWordToFind(arg1) et  convertPlayer1ToChar(arg2)
         return false;
     //
     int i=1;

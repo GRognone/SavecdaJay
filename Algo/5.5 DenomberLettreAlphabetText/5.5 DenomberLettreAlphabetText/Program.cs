@@ -2,8 +2,6 @@
  * Lire un texte d'au moins 120 caractères (à contrôler). 
 Compter et afficher le nombre d'occurrences (d'apparitions) de chacune des lettres de l'alphabet.
 */
-using System.Text.RegularExpressions; // pour version Gatien.
-
 string userInput;    
 char[] alphabet = new char[26];
 CreateAlphabetTable();
@@ -41,11 +39,10 @@ string ReplaceCharacterAccentRemoval(string Texte_a_corriger)
         //Conversion du caractere en int
         mchar = (int)ligne_char[i];
         //MAJUSCULES
-
         // remplacement des accents par A
         if (mchar >= 192 && mchar <= 198)
         {
-            ligne_char[i] = 'A';//(char)65;
+            ligne_char[i] = 'A';//(char)65; 
         }
         else
         // remplacement des accents par E
