@@ -1,0 +1,15 @@
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\bin\Debug\net6.0\TrouverDiviseurs.exe
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\bin\Debug\net6.0\TrouverDiviseurs.deps.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\bin\Debug\net6.0\TrouverDiviseurs.runtimeconfig.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\bin\Debug\net6.0\TrouverDiviseurs.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\bin\Debug\net6.0\TrouverDiviseurs.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\obj\Debug\net6.0\TrouverDiviseurs.csproj.AssemblyReference.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\obj\Debug\net6.0\TrouverDiviseurs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\obj\Debug\net6.0\TrouverDiviseurs.AssemblyInfoInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\obj\Debug\net6.0\TrouverDiviseurs.AssemblyInfo.cs
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\obj\Debug\net6.0\TrouverDiviseurs.csproj.CoreCompileInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\obj\Debug\net6.0\TrouverDiviseurs.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\obj\Debug\net6.0\refint\TrouverDiviseurs.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\obj\Debug\net6.0\TrouverDiviseurs.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\obj\Debug\net6.0\TrouverDiviseurs.genruntimeconfig.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Algo\TrouverDiviseursEtNombresParfait\TrouverDiviseurs\obj\Debug\net6.0\ref\TrouverDiviseurs.dll
