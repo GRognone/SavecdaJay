@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\6.4 RevhercheParDichotomie\\6.4 RevhercheParDichotomie\\6.4 RevhercheParDichotomie.csproj": {}
+    "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\6.4 RechercheParDichotomie\\6.4 RechercheParDichotomie\\6.4 RechercheParDichotomie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\6.4 RevhercheParDichotomie\\6.4 RevhercheParDichotomie\\6.4 RevhercheParDichotomie.csproj": {
+    "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\6.4 RechercheParDichotomie\\6.4 RechercheParDichotomie\\6.4 RechercheParDichotomie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\6.4 RevhercheParDichotomie\\6.4 RevhercheParDichotomie\\6.4 RevhercheParDichotomie.csproj",
-        "projectName": "6.4 RevhercheParDichotomie",
-        "projectPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\6.4 RevhercheParDichotomie\\6.4 RevhercheParDichotomie\\6.4 RevhercheParDichotomie.csproj",
+        "projectUniqueName": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\6.4 RechercheParDichotomie\\6.4 RechercheParDichotomie\\6.4 RechercheParDichotomie.csproj",
+        "projectName": "6.4 RechercheParDichotomie",
+        "projectPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\6.4 RechercheParDichotomie\\6.4 RechercheParDichotomie\\6.4 RechercheParDichotomie.csproj",
         "packagesPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\6.4 RevhercheParDichotomie\\6.4 RevhercheParDichotomie\\obj\\",
+        "outputPath": "C:\\Users\\Stagiaire.CRM-UC-3927\\Documents\\Depots\\SavecdaJay\\Algo\\6.4 RechercheParDichotomie\\6.4 RechercheParDichotomie\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
