@@ -46,7 +46,7 @@ namespace _6._4_RechercheParDichotomie
              *  find <-- name[median] egal searchName
              *  
              *  ecrire " Bonjour, vous êtes sur un programme de recherche de prénom par dichitomie"
-             *  TANT QUE (nom[min+delta} est different de nomAChercher et delta different de 0)
+             *  TANT QUE (nom[min+delta] est different de nomAChercher et delta different de 0)
              *  
              *  SI searchName est alphabethiquement avant name [median]
              *  max <-- median
@@ -79,30 +79,55 @@ namespace _6._4_RechercheParDichotomie
              * 
              * FONCTION
             */
-
+            string[] name = new[] { "aaa","agathe", "berthe", "chloé", "cunegonde", "olga", "raymonde", "sidonie" };
             string userInput;
-            userInput = Console.ReadLine();
-            string[] name = new[] { "agathe, berthe, chloé, cunegonde, olga, raymonde, sidonie" };
             string searchName;
-            int min;
-            int max;
-            int delta;
-            int median;
-            bool find;
+            int min = 0;
+            int max = name.Length - 1;
+            int delta = (max - min) / 2;
+            int median = min + delta;
+            
 
 
+            Console.WriteLine("Bonjour, vous êtes sur un programme de recherche de prénom par dichitomie");
+            Console.WriteLine("Veuillez saisir un prenom à rechercher svp.");
+            userInput = Console.ReadLine();
+            searchName = userInput;
+            bool find = name[median] == searchName;
 
 
+            while (!find && delta != 0)
+            {
+                if (searchName.CompareTo(name[median]) < 0)
+                {
+                    max = median;
+                }
+                else
+                {
+                    min = median;
+                }
 
+                delta = (max - min) / 2;
+                median = min + delta;
+                find = name[median] == searchName;
 
-
-
-
-
-
-
-
-            Console.WriteLine("Hello, World!");
+                if (!find && delta == 0)
+                {
+                    if (name[max] == searchName)
+                    {
+                        median = max;
+                        find = true;
+                    }
+                }
+            }
+            if (find) 
+            {
+                Console.WriteLine($"le nom a été trouvé à l'indice {median}");
+            }
+            else
+            {
+                Console.WriteLine("Le nom n'est pas présent dans le tableau");
+            }
         }
     }
 }
