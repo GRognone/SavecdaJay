@@ -26,22 +26,43 @@ namespace _6._2_Palindrome
             */
 
 
-            char userInput;
+            string userInput;
+            bool isAPalindrome = true;
+            bool findWord = true;
 
-            Console.WriteLine("Verifions si une chaine de caractère entré par un utilisateur est vide.");
-            do
+
+            Console.WriteLine("Verifions si une chaine de caractère entrée par un utilisateur est un palindrome. Un palindrome est une chaîne de caractères que l'on peut lire identiquement de droite à gauche, et gauche à droite.");
+            Console.WriteLine("Veuillez - saisir une chaine de caractere svp.");
+            userInput = Console.ReadLine();
+            string result = userInput.Replace(" ", "");// suppression des espaces.
+            char[] resultArray = result.ToCharArray();// transforme string en tableau de char.
+            if (result.Equals(""))
             {
-                Console.WriteLine("Veuillez - saisir une chaine de craractere svp.");
+                findWord = false;
+                isAPalindrome = false;
+                Console.WriteLine("La Phrase est vide.");
             }
-            while
+
+            if (IsPalindrome = true)
             {
-
+                Console.WriteLine("la chaîne de caractères est un palindrome");
             }
-            Console.WriteLine("Veuillez - saisir une chaine de craractere svp.");
+            else
+            {
+                Console.WriteLine("la chaîne de caractères n'est pas un palindrome");
+            }
 
-            Console.WriteLine("La Phrase est vide.");
-            Console.WriteLine("la chaîne de caractères n'est pas un palindrome");
-            Console.WriteLine("la chaîne de caractères est un palindrome");
+        }
+
+        static bool IsPalindrome(char[] _resultArray)
+        {
+            int i = 0;
+            while (i )
+            {
+                i++;
+            }
+
+            return true;
         }
     }
 }
