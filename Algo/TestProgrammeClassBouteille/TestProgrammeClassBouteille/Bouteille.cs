@@ -13,27 +13,44 @@ namespace TestProgrammeClassBouteille
         private float contenanceEnCl;
         private float niveauActuelEnCl;
         private bool bouteilleEstOuverte;
-        private bool remplirBouteille;
-        public Bouteille() // constructeur par defaut.
+        private float quantiteARemplir;
+        private float quantiteAVider;
+
+        /// <summary>
+        /// constructeur par defaut.
+        /// </summary>
+        public Bouteille()
         {
             contenanceEnCl = 100;
             niveauActuelEnCl = 100;
             bouteilleEstOuverte = false;
-            remplirBouteille = false;
+
         }
-        public Bouteille(float contenanceEnCl, float niveauActuelEnCl, bool bouteilleEstOuverte) // constructeur classic
+
+        /// <summary>
+        /// // constructeur classic
+        /// </summary>
+        /// <param name="contenanceEnCl"></param>
+        /// <param name="niveauActuelEnCl"></param>
+        /// <param name="bouteilleEstOuverte"></param>
+        public Bouteille(float contenanceEnCl, float niveauActuelEnCl, bool bouteilleEstOuverte)
         {
             this.contenanceEnCl = contenanceEnCl;
             this.niveauActuelEnCl = niveauActuelEnCl;
             this.bouteilleEstOuverte = bouteilleEstOuverte;
         }
 
-        public Bouteille(Bouteille _bouteilleACopier) // constructeur par clonage
+        /// <summary>
+        /// constructeur par clonage
+        /// </summary>
+        /// <param name="_bouteilleACopier"></param>
+        public Bouteille(Bouteille _bouteilleACopier)
         {
             contenanceEnCl = _bouteilleACopier.contenanceEnCl;
             niveauActuelEnCl = _bouteilleACopier.niveauActuelEnCl;
             bouteilleEstOuverte = _bouteilleACopier.bouteilleEstOuverte;
         }
+
         public bool Ouvrir()
         {
             if (bouteilleEstOuverte == true)
@@ -50,7 +67,7 @@ namespace TestProgrammeClassBouteille
         {
             if (bouteilleEstOuverte == false)
             {
-                return true;
+                return false;
             }
             else
             {
@@ -58,62 +75,60 @@ namespace TestProgrammeClassBouteille
                 return true;
             }
         }
-        public bool Remplir()
+
+        /// <summary>
+        /// sert à voir la quantite qu'il reste pour la vider ! dans cet exemple la quantité à vider est connue !!!
+        /// </summary>
+        /// <param name="quantiteAVider"></param>
+        /// <returns></returns>
+        public bool Vider(float quantiteAVider)
         {
-            if (contenanceEnCl - niveauActuelEnCl < 100 && contenanceEnCl - niveauActuelEnCl >= 0)
+            if (bouteilleEstOuverte && contenanceEnCl >= quantiteAVider && quantiteAVider > 0)
             {
-                remplirBouteille = true;
+                niveauActuelEnCl = niveauActuelEnCl - quantiteAVider; // niveauActuelEnCl -= quantiteAVider ( 2 eme facon d'ecrire cette ligne)
                 return true;
             }
             else
             {
-                remplirBouteille = false;
-                Console.WriteLine("La bouteille est pleine.");
                 return false;
             }
-            
-           
         }
-        /*
-            public bool Vider(float quantiteAVider)
+
+        /// <summary>
+        /// vider tout, vide completement le niveau actuel
+        /// </summary>
+        /// <returns></returns>
+        public bool Vider()
+        {
             {
-                Console.WriteLine("Quelle quantité reste-il dans la bouteille svp.");
-                contenanceEnCl = float.Parse(Console.ReadLine());
-                if (contenanceEnCl > 0 && contenanceEnCl <= 100)
-                {
-                    quantiteAVider = contenanceEnCl - niveauActuelEnCl;
-                    Console.WriteLine($"La quantité à vider est de {quantiteAVider} cl.");
-                }
-                return true;
+                return Vider(niveauActuelEnCl);
             }
 
-            public bool RemplirTout()
+        }
+
+        /// <summary>
+        /// rempli la bouteille de la quantité souhaité 
+        /// </summary>
+        /// <returns></returns>
+        public bool Remplir(float quantiteARemplir)
+        {
+            if (bouteilleEstOuverte && quantiteARemplir > 0 && quantiteARemplir <= contenanceEnCl - niveauActuelEnCl)
             {
-                Console.WriteLine("Quelle quantite reste-il dans la bouteille?");
-                niveauActuelEnCl = float.Parse(Console.ReadLine());
-                if (niveauActuelEnCl >= 0 && niveauActuelEnCl < 100)
-                {
-                    Console.WriteLine("Remplir toute la bouteille svp.");
-                }
-                else
-                {
-                    Console.WriteLine("La bouteille est déja pleine");
-                }
+                niveauActuelEnCl = niveauActuelEnCl + quantiteARemplir;
                 return true;
             }
-            public bool ViderTout()
+            return false;
+        }
+
+        /// <summary>
+        ///  complete le niveau actuelle jusqu'au niveau max
+        /// </summary>
+        /// <returns></returns>
+        public bool Remplir()
+        {
             {
-                Console.WriteLine("Quelle quantite reste-il dans la bouteille?");
-                niveauActuelEnCl = float.Parse(Console.ReadLine());
-                if (niveauActuelEnCl <= 100 && niveauActuelEnCl > 0)
-                {
-                    Console.WriteLine("Vider toute la bouteille svp.");
-                }
-                else
-                {
-                    Console.WriteLine("La bouteille est déja vide");
-                }
-                return true;
-            }*/
+                return Remplir(this.contenanceEnCl - niveauActuelEnCl);
+            }
+        }
     }
 }
