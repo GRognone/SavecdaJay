@@ -8,6 +8,9 @@ namespace Lepidoptere
 {
     internal class Papillon : StadeEvolution
     {
+        public Papillon()
+        {
+        }
         public override string SeDeplacer()
         {
             return "Le papillon vole!";
@@ -15,12 +18,7 @@ namespace Lepidoptere
 
         public override StadeEvolution SeMetamorphoser()
         {
-            return this;
-        }
-
-        public Papillon()
-        {
-
+            return this; // retourne lui même (l'objet papillon) à la dernière evolution.
         }
     }
 }

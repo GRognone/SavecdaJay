@@ -8,18 +8,17 @@ namespace Lepidoptere
 {
     internal class Oeuf : StadeEvolution
     {
+        public Oeuf()
+        {
+        }
         public override string SeDeplacer()
         {
-            return "L'oeuf ne se déplace pas";
+                return "L'oeuf ne se déplace pas"; 
         }
 
         public override StadeEvolution SeMetamorphoser()
         {
-            return new Chenille();
-        }
-        public Oeuf()
-        {
-
+                return new Chenille();
         }
     }
 }

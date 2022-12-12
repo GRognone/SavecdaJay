@@ -8,6 +8,9 @@ namespace Lepidoptere
 {
     internal class Chrysalide : StadeEvolution
     {
+        public Chrysalide()
+        {
+        }
         public override string SeDeplacer()
         {
             return "La Chrysalide ne se déplace pas;";
@@ -16,10 +19,6 @@ namespace Lepidoptere
         public override StadeEvolution SeMetamorphoser()
         {
             return new Papillon();
-        }
-        public Chrysalide()
-        {
-
         }
     }
 }

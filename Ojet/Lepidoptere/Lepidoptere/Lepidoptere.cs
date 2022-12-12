@@ -14,10 +14,13 @@ namespace Lepidoptere
         {
             stadeCourant = new Oeuf();
         }
-
+        public string SeDeplacer()
+        {
+            return stadeCourant.SeDeplacer();
+        }
         public void SeMetamorphoser()
         {
-            stadeCourant.SeMetamorphoser();
+            this.stadeCourant = stadeCourant.SeMetamorphoser();
         }
     }
 }

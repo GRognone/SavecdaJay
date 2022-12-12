@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Lepidoptere
 {
-    public abstract class StadeEvolution
+   abstract class StadeEvolution
     {
-        public abstract string SeDeplacer();
-        public abstract StadeEvolution SeMetamorphoser();
         public StadeEvolution()
         {
 
         }
+        public abstract string SeDeplacer();
+        
+        public abstract StadeEvolution SeMetamorphoser();
     }
 }
 

@@ -8,18 +8,17 @@ namespace Lepidoptere
 {
     internal class Chenille : StadeEvolution
     {
+        public Chenille()
+        {
+        }
         public override string SeDeplacer()
         {
             return "La chenille rampe";
         }
-
+     
         public override StadeEvolution SeMetamorphoser()
         {
             return new Chrysalide();
-        }
-        public Chenille()
-        {
-
         }
     }
 }
