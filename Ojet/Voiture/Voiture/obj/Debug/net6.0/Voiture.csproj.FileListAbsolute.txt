@@ -1,0 +1,15 @@
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\bin\Debug\net6.0\Voiture.exe
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\bin\Debug\net6.0\Voiture.deps.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\bin\Debug\net6.0\Voiture.runtimeconfig.json
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\bin\Debug\net6.0\Voiture.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\bin\Debug\net6.0\Voiture.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\obj\Debug\net6.0\Voiture.csproj.AssemblyReference.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\obj\Debug\net6.0\Voiture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\obj\Debug\net6.0\Voiture.AssemblyInfoInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\obj\Debug\net6.0\Voiture.AssemblyInfo.cs
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\obj\Debug\net6.0\Voiture.csproj.CoreCompileInputs.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\obj\Debug\net6.0\Voiture.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\obj\Debug\net6.0\refint\Voiture.dll
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\obj\Debug\net6.0\Voiture.pdb
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\obj\Debug\net6.0\Voiture.genruntimeconfig.cache
+C:\Users\Stagiaire.CRM-UC-3927\Documents\Depots\SavecdaJay\Ojet\Voiture\Voiture\obj\Debug\net6.0\ref\Voiture.dll
