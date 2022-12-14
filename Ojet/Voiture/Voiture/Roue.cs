@@ -11,8 +11,11 @@ namespace Voiture
         private string dimensionPneu;
         private bool tourne;
 
+        public bool Tourne { get => tourne;/* set => tourne = value;*/ }
+
+
         /// <summary>
-        /// Constructeur générique d'une roue
+        /// Constructeur classic d'une roue
         /// </summary>
         /// <param name="_dimensionPneu"></param>
         /// <param name="_tourne"></param>
@@ -42,7 +45,7 @@ namespace Voiture
         }
         public bool Tourner()
         {
-            if (this.tourne)
+            if (this.tourne == true)
             {
                 return false;
             }
@@ -52,5 +55,19 @@ namespace Voiture
                 return true;
             }
         }
+        /// <summary>
+        /// Methode pour stopper une roue
+        /// </summary>
+        /// <returns>Retourne si on passe de tourne = true à tourne = false
+        public bool Stopper()
+        {
+            if (this.tourne)
+            {
+                this.tourne = false;
+                return true;
+            }
+            return false;
+        }
+        
     }
 }
