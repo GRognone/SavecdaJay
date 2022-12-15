@@ -16,9 +16,9 @@ namespace Voiture
         private string marque;
         private Moteur sonMoteur;
         private Roue[] ses4Roues;
-
+   
         /// <summary>
-        /// Constructeur classic d'une voiture. version 1
+        /// Constructeur classic d'une voiture. version 1 utiliser seulement 1 des 3 solutions
         /// </summary>
         /// <param name="_marque"></param>
         /// <param name="_sonMoteur"></param>
@@ -55,13 +55,14 @@ namespace Voiture
         /// <param name="_enMarche"></param>
         /// <param name="_tourne"></param>
         /// <param name="_dimensionPneu"></param>
-        public Voiture(string _marque, bool _enMarche, string _dimensionPneu, bool _tourne, )
+        public Voiture(string _marque, Moteur _moteur, string _dimensionPneu, bool _tourne)
         {
             this.marque = _marque;
-            this.sonMoteur = new Moteur(_enMarche);
-            this.ses4Roues = new Roue[4] {new Roue(_tourne,_dimensionPneu),
-                new Roue(_tourne, _dimensionPneu) , new Roue(_tourne,_dimensionPneu),
-                new Roue(_tourne,_dimensionPneu)};
+
+            this.sonMoteur = new Moteur(_moteur);
+            this.ses4Roues = new Roue[4] {new Roue(_dimensionPneu,_tourne),
+                new Roue(_dimensionPneu, _tourne) , new Roue(_dimensionPneu,_tourne),
+                new Roue(_dimensionPneu, _tourne)};
         }
 
         /// <summary>
@@ -81,8 +82,20 @@ namespace Voiture
         {
             this.marque = _voitureACopier.marque;
             this.sonMoteur = new Moteur(_voitureACopier.sonMoteur);
-            this.ses4Roues = new Roue[4] { new Roue(_voitureACopier.ses4Roues[0]), new Roue(_voitureACopier.ses4Roues[1]), new Roue(_voitureACopier.ses4Roues[2]), new Roue(_voitureACopier.ses4Roues[3]) };
+            this.ses4Roues = new Roue[] { new Roue(_voitureACopier.ses4Roues[0]), new Roue(_voitureACopier.ses4Roues[1]), new Roue(_voitureACopier.ses4Roues[2]), new Roue(_voitureACopier.ses4Roues[3]) };
         }
+
+       /* /// <summary>
+        /// Autre constructeur par recopie avec référence avec un constructeur classique. 
+        /// </summary>
+        /// <param name="_voitureACopier"></param>
+        public Voiture(Voiture _voitureACopier) : this(_voitureACopier.marque,
+            new Moteur(_voitureACopier.sonMoteur),
+            new Roue[] { new Roue(_voitureACopier.ses4Roues[0]),
+            new Roue(_voitureACopier.ses4Roues[1]),
+             new Roue(_voitureACopier.ses4Roues[2]),
+            new Roue(_voitureACopier.ses4Roues[3])})*/
+
         /// <summary>
         /// Appel la methode demarer du moteur
         /// </summary>
@@ -124,8 +137,8 @@ namespace Voiture
     }
 }
 
-/*
-public class Voiture
+
+/*public class Voiture
 {
     private string marque;
     private Moteur sonMoteur;
@@ -152,35 +165,5 @@ public class Voiture
         ses4Roues2.Add("rag", new Roue());
         ses4Roues2.Add("rard", new Roue());
         ses4Roues2.Add("rarg", new Roue());
-}
-
-
-
-/// <summary>
-/// Constructeur par copie de Voiture. 
-/// </summary>
-/// <param name="_voitureACopier"></param>
-/*public Voiture(Voiture _voitureACopier)
-{
-   this.marque = _voitureACopier.marque;
-   this.sonMoteur = new Moteur(_voitureACopier.sonMoteur);
-   //this.sonMoteur = _voitureACopier.sonMoteur; //ne pas faire ça 
-   this.ses4roues = new Roue[] {new Roue(_voitureACopier.ses4roues[0]),
-   new Roue(_voitureACopier.ses4roues[1]),
-   new Roue(_voitureACopier.ses4roues[2]),
-   new Roue(_voitureACopier.ses4roues[3])};
+    }
 }*/
-/// <summary>
-/// Autre constructeur par recopie avec référence avec un constructeur classique. 
-/// </summary>
-/// <param name="_voitureACopier"></param>
-/* public Voiture(Voiture _voitureACopier) : this(_voitureACopier.marque,
-     new Moteur(_voitureACopier.sonMoteur),
-     new Roue[] { new Roue(_voitureACopier.ses4roues[0]),
-         new Roue(_voitureACopier.ses4roues[1]),
-         new Roue(_voitureACopier.ses4roues[2]),
-         new Roue(_voitureACopier.ses4roues[3])})
- { }
-
-
-
