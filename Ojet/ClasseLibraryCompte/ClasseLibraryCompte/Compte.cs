@@ -12,7 +12,7 @@ namespace ClasseLibraryCompte
         public int montantDecouvertAutorise;
         public float soldeDuCompte;
 
-        public Compte() : this(0,"Monsieur X", 0f, 0)
+        public Compte() : this(0,"", 0f, 0)
         {
             
         }
