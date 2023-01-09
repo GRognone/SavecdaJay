@@ -1,24 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ClasseLibraryCompte;
 
-Console.WriteLine("Hello, World!");
 Compte c = new Compte();
-
-    Compte c1 =new Compte(16985, Console.ReadLine(), 1250324.04F, -500);
-c1.ChangerDecouver(-5000);
-Console.WriteLine("");
-/*c.CrediterCompte(100);
-Console.WriteLine(c);
-bool ok = c.DebiterCompte(100000);
-Console.WriteLine(c.ToString());
-
+Compte c1 = new Compte(16985, "Luc", 100.00F, -500);
+c1.CrediterCompte(50);
+Console.WriteLine(c1);
+bool ok = c1.DebiterCompte(-601);
+Console.WriteLine(c1.ToString());
 if (ok)
 {
-    Console.WriteLine("debit reussi");
+    Console.WriteLine("Debit réusi !");
 }
-
-
 else
 {
-    Console.WriteLine("debit pas reussi");
-}*/
+    Console.WriteLine("Debit pas réussi");
+}
+

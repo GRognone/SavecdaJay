@@ -27,6 +27,7 @@ namespace ClasseLibraryCompte
 
         public void CrediterCompte(float _montant)
         {
+            soldeDuCompte = soldeDuCompte +_montant;
             
         }
 
@@ -36,7 +37,7 @@ namespace ClasseLibraryCompte
             {
                 return false;
             }
-            return false;
+            return true;
         }
 
         public bool TransfererMontantVersAutreCompte(float _montantATransferer, Compte _compteDestinataire)
@@ -46,7 +47,7 @@ namespace ClasseLibraryCompte
 
         public string ToString()
         {
-            return "";
+            return "numero: "+numeroUnique+ " nom: "+ nomProprietaireCompte+ " solde: "+soldeDuCompte+ " decouvert Autorise: "+montantDecouvertAutorise;
         }
 
         public bool Superieur(Compte _autreCompte)
