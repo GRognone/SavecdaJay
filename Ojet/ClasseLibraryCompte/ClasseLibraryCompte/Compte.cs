@@ -10,14 +10,14 @@ namespace ClasseLibraryCompte
         public string nomProprietaireCompte;
         public int numeroUnique;
         public int montantDecouvertAutorise;
-        public float soldeDuCompte;
+        public int soldeDuCompte;
 
-        public Compte() : this(0,"", 0f, 0)
+        public Compte() : this(0,"", 0, 0)
         {
             
         }
 
-        public Compte(int _numero, string _nom, float _solde, int _decouvertAutorise)
+        public Compte(int _numero, string _nom, int _solde, int _decouvertAutorise)
         {
             nomProprietaireCompte = _nom;
             numeroUnique = _numero;
@@ -25,27 +25,42 @@ namespace ClasseLibraryCompte
             soldeDuCompte = _solde;
         }
 
-        public void CrediterCompte(float _montant)
+        public void CrediterCompte(int _montant)
         {
             soldeDuCompte = soldeDuCompte +_montant;
             
         }
 
-        public bool DebiterCompte(float _motant)
+        public bool DebiterCompte(int _montant)
         {
-            if(soldeDuCompte <= montantDecouvertAutorise)
+            if(_montant <= soldeDuCompte - montantDecouvertAutorise)
+            {
+                soldeDuCompte = soldeDuCompte - _montant;
+                return true;
+            }
+            else
             {
                 return false;
             }
-            return true;
         }
 
-        public bool TransfererMontantVersAutreCompte(float _montantATransferer, Compte _compteDestinataire)
+        public bool TransfererMontantVersAutreCompte(int _montantATransferer, Compte _compteDestinataire)
         {
-            return false;
+            if (this.DebiterCompte(_montantATransferer))
+            {
+                _compteDestinataire.CrediterCompte(_montantATransferer);    
+                return true;
+                
+            }
+            else
+            {
+                return false;
+            }
         }
+            
+        
 
-        public string ToString()
+        public override string ToString()
         {
             return "numero: "+numeroUnique+ " nom: "+ nomProprietaireCompte+ " solde: "+soldeDuCompte+ " decouvert Autorise: "+montantDecouvertAutorise;
         }
