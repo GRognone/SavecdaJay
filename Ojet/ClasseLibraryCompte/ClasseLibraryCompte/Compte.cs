@@ -7,10 +7,10 @@ namespace ClasseLibraryCompte
 {
     public class Compte
     {
-        public string nomProprietaireCompte;
-        public int numeroUnique;
-        public int montantDecouvertAutorise;
-        public int soldeDuCompte;
+        private string nomProprietaireCompte;
+        private int numeroUnique;
+        private int montantDecouvertAutorise;
+        private int soldeDuCompte;
 
         public Compte() : this(0,"", 0, 0)
         {
@@ -67,13 +67,14 @@ namespace ClasseLibraryCompte
 
         public bool Superieur(Compte _autreCompte)
         {
-            return false;
-        }
-
-        public void ChangerDecouver(int nouveauDecouvert)
-        {
-            montantDecouvertAutorise = nouveauDecouvert;
+            if (soldeDuCompte.CompareTo(_autreCompte.soldeDuCompte)==1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            } 
         }
     }
 }
-
