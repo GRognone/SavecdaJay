@@ -1,0 +1,10 @@
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClassLibraryPoint\obj\Debug\net6.0\ClassLibraryPoint.csproj.AssemblyReference.cache
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClassLibraryPoint\obj\Debug\net6.0\ClassLibraryPoint.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClassLibraryPoint\obj\Debug\net6.0\ClassLibraryPoint.csproj.CoreCompileInputs.cache
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClassLibraryPoint\bin\Debug\net6.0\ClassLibraryPoint.deps.json
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClassLibraryPoint\bin\Debug\net6.0\ClassLibraryPoint.dll
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClassLibraryPoint\bin\Debug\net6.0\ClassLibraryPoint.pdb
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClassLibraryPoint\obj\Debug\net6.0\ClassLibraryPoint.dll
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClassLibraryPoint\obj\Debug\net6.0\refint\ClassLibraryPoint.dll
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClassLibraryPoint\obj\Debug\net6.0\ClassLibraryPoint.pdb
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClassLibraryPoint\obj\Debug\net6.0\ref\ClassLibraryPoint.dll
