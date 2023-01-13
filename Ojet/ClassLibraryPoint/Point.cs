@@ -2,15 +2,15 @@
 {
     public class Point
     {
-        private float xAbcisse;
+        private float xAbscisse;
         private float yOrdonnee;
 
         /// <summary>
         /// Constructeur classic
         /// </summary>
-        public Point(float _xAbcisse, float _yOrdonnee)
+        public Point(float _xAbscisse, float _yOrdonnee)
         {
-            this.xAbcisse = _xAbcisse;
+            this.xAbscisse = _xAbscisse;
             this.yOrdonnee = _yOrdonnee;
         }
         /// <summary>
@@ -24,14 +24,14 @@
         /// Constructeur de clonage
         /// </summary>
         /// <param name="_point"></param>
-        public Point(Point _point) : this(_point.xAbcisse, _point.yOrdonnee)
+        public Point(Point _point) : this(_point.xAbscisse, _point.yOrdonnee)
         {
 
         }
 
         public void SeDeplacer(float _nouvelleCoordonneeX, float _nouvelleCoordonneeY) // cree une copie de x et y , et modifie x et y
         {
-            xAbcisse = _nouvelleCoordonneeX;
+            xAbscisse = _nouvelleCoordonneeX;
             yOrdonnee = _nouvelleCoordonneeY;
         }
         /// <summary>
@@ -40,28 +40,31 @@
         /// <returns></returns>
         public override string ToString()
         {
-            return " Les coordonnes du point sont : x = " + xAbcisse + " et y = " + yOrdonnee;
+            return " Les coordonnes du point sont : x = " + xAbscisse + " et y = " + yOrdonnee;
         }
 
         public Point SymetrieOrdonee() // inverse la valeur de y
         {
 
-            return new Point (xAbcisse, - yOrdonnee);
+            return new Point(-xAbscisse, yOrdonnee);
         }
 
         public Point SymetrieAbcisse() // inverse la valeur de x
         {
-           return new Point (-xAbcisse, yOrdonnee);
+            return new Point(xAbscisse, -yOrdonnee);
         }
 
         public Point SymetrieOrigine() // recupère les valeurs symetriques de x et x et les inverses
         {
-           return this.SymetrieOrdonee().SymetrieAbcisse();
+            return this.SymetrieOrdonee().SymetrieAbcisse();
         }
 
-        public Point Permuter() // permute les valeurs de x et y
-        {
-           return new Point(yOrdonnee, xAbcisse);
+        public void Permuter() // cree une copie de x et y puis permute les valeurs de x et y
+        { 
+            float temp = xAbscisse;
+            xAbscisse = yOrdonnee;
+            yOrdonnee = temp;
+
         }
     }
 }

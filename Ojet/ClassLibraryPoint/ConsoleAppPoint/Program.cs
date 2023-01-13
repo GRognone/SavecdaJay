@@ -18,8 +18,8 @@ namespace ConsoleAppPoint
             Point point4 = point.SymetrieOrigine();
             Console.WriteLine(point4.ToString());
 
-            Point point5 = point.Permuter();
-            Console.WriteLine(point5.ToString());
+            point.Permuter();
+            Console.WriteLine(point.ToString());
         }
     }
 }
