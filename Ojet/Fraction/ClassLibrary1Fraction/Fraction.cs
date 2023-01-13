@@ -2,7 +2,7 @@
 {
     public class Fraction
     {
-        private int numerateur;
+        private  int numerateur;
         private int denominateur;
 
         /// <summary>
@@ -56,15 +56,16 @@
 
         }
 
-        public int Oppose (_numerateur)
+        public void Oppose ()
         {
-            _numerateur = - numerateur;
+            numerateur =  - numerateur;
         }
         public void Inverse()
         {
             int temp = numerateur;
             numerateur = denominateur;
-            numerateur = temp;
+            denominateur = temp;
         }
+
     }
 }

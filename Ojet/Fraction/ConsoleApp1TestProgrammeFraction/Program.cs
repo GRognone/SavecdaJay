@@ -18,11 +18,11 @@ namespace ConsoleApp1TestProgrammeFraction
             Console.WriteLine(f3.ToString());
 
             Fraction f4 = new Fraction(4,7);
-            f.Oppose();
+            f4.Oppose();
             Console.WriteLine(f4.ToString());
 
             Fraction f5 = new Fraction(4,7);
-            f.Inverse();
+            f5.Inverse();
             Console.WriteLine(f5.ToString());
         }
     }
