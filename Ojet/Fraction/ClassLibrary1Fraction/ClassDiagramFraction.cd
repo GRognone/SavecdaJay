@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="ClassLibrary1Fraction.Fraction">
-    <Position X="5.5" Y="1.5" Width="3.25" />
+    <Position X="3.25" Y="1.5" Width="3.5" />
     <TypeIdentifier>
-      <HashCode>AAAAQAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <HashCode>IABAQAAAAAAAAAAEAAIAAAAAgAAIAAAAABAAAAAAIAA=</HashCode>
       <FileName>Fraction.cs</FileName>
     </TypeIdentifier>
   </Class>

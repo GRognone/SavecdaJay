@@ -2,7 +2,7 @@
 {
     public class Fraction
     {
-        private  int numerateur;
+        private int numerateur;
         private int denominateur;
 
         /// <summary>
@@ -56,9 +56,9 @@
 
         }
 
-        public void Oppose ()
+        public void Oppose()
         {
-            numerateur =  - numerateur;
+            numerateur = -numerateur;
         }
         public void Inverse()
         {
@@ -66,6 +66,100 @@
             numerateur = denominateur;
             denominateur = temp;
         }
+        private float Evalue() // transforme et calcul int en float
+        {
+            return ((float)this.numerateur) / this.denominateur; // le int est casté en float
 
+        }
+
+        public bool SuperieurA(Fraction f)
+        {
+
+            if (this.Evalue() > f.Evalue())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool EgalA(Fraction f)
+        {
+            if (this.Evalue() > f.Evalue())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        private int GetPgcd()
+        {
+            int a = this.numerateur;
+            int b = this.denominateur;
+            int pgcd = 1;
+            if (a != 0 && b != 0)
+            {
+                if (a < 0) a = -a;
+                if (b < 0) b = -b;
+                while (a != b)
+                {
+                    if (a < b)
+                    {
+                        b = b - a;
+                    }
+                    else
+                    {
+                        a = a - b;
+                    }
+                }
+                pgcd = a;
+            }
+            return pgcd;
+        }
+        
+
+        private void Reduire()
+        {
+            int temp = GetPgcd();
+            numerateur = this.numerateur / temp;
+             denominateur = this.denominateur / temp;
+        }
+        public void ChangerSigneFraction()
+        {
+            if (denominateur < 0)
+            {
+                numerateur = numerateur * -1;
+                denominateur = denominateur *-1;
+            }
+               
+        }
+        public string ToDisplay()
+        {
+            Reduire();
+            ChangerSigneFraction();
+            return ToString();
+        }
+        public Fraction Plus (Fraction _autreFraction)
+        {
+
+        }
+        public Fraction Moins(Fraction _autreFraction)
+        {
+
+        }
+        public Fraction Multiplie(Fraction _autreFraction)
+        {
+
+        }
+        public Fraction Divise(Fraction _autreFraction)
+        {
+
+        }
     }
+
+
+
 }
