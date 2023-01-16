@@ -36,9 +36,33 @@ namespace ConsoleApp1TestProgrammeFraction
              Fraction f9 = new Fraction(22,14);
              Console.WriteLine(f9.ToString());
              bool estEgal = f8.EgalA(f9);
-             */
+            
             Fraction f10 = new Fraction(120, -150);
-            Console.WriteLine(f10.ToDisplay());
+            Console.WriteLine(f10.ToDisplay()); */
+
+            Fraction f11 = new Fraction(5, 2);
+            Fraction f12 = new Fraction(3, 4);
+
+            //Fraction addition = f11.Plus (f12); //addition
+            Fraction addition = f11 + f12; //addition surcharge operateur
+            Console.WriteLine(addition.ToDisplay());
+
+
+            //Fraction soustraction = f11.Moins(f12); // soustraction
+            Fraction soustraction = f11 - f12; // soustraction surcharge operateur
+            Console.WriteLine(soustraction.ToDisplay());
+
+            //Fraction multiplication = f11.Multiplie(f12); // multipmlication
+            Fraction multiplication = f11 * f12;// multiplication surcharge operateur
+            Console.WriteLine(multiplication.ToDisplay());
+
+            //Fraction division = f11.Divise(f12); // division
+            Fraction division = f11 / f12; // division surcharge operateur
+            Console.WriteLine(division.ToDisplay());
+
+            Fraction frac = new(0,5);
+            frac.Inverse();
+            frac.Evalue();
         }
     }
 }

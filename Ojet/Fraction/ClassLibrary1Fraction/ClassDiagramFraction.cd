@@ -3,7 +3,7 @@
   <Class Name="ClassLibrary1Fraction.Fraction">
     <Position X="3.25" Y="1.5" Width="3.5" />
     <TypeIdentifier>
-      <HashCode>IABAQAAAAAAAAAAEAAIAAAAAgAAIAAAAABAAAAAAIAA=</HashCode>
+      <HashCode>IABQQAAAAAAAAAAEYAcAAAAAgAAIAAAiADBEAAEAIAA=</HashCode>
       <FileName>Fraction.cs</FileName>
     </TypeIdentifier>
   </Class>

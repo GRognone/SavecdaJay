@@ -12,6 +12,10 @@
         /// <param name="_denominateur"></param>
         public Fraction(int _numerateur, int _denominateur)
         {
+            if (_denominateur == 0)
+            {
+                throw new DivideByZeroException("Division par zero impossible");
+            }
             this.numerateur = _numerateur;
             this.denominateur = _denominateur;
         }
@@ -58,24 +62,28 @@
 
         public void Oppose()
         {
-            numerateur = -numerateur;
+            numerateur = numerateur * -1;
         }
         public void Inverse()
         {
+            if (numerateur == 0)
+            {
+                throw new DivideByZeroException("Division par zero impossible");
+            }
             int temp = numerateur;
             numerateur = denominateur;
             denominateur = temp;
         }
-        private float Evalue() // transforme et calcul int en float
+        public float Evalue() // transforme et calcul int en float
         {
             return ((float)this.numerateur) / this.denominateur; // le int est casté en float
 
         }
 
-        public bool SuperieurA(Fraction f)
+        public bool SuperieurA(Fraction _autreFraction)
         {
 
-            if (this.Evalue() > f.Evalue())
+            if (this.Evalue() > _autreFraction.Evalue())
             {
                 return true;
             }
@@ -84,9 +92,9 @@
                 return false;
             }
         }
-        public bool EgalA(Fraction f)
+        public bool EgalA(Fraction _autreFraction)
         {
-            if (this.Evalue() > f.Evalue())
+            if (this.Evalue() > _autreFraction.Evalue())
             {
                 return true;
             }
@@ -119,22 +127,22 @@
             }
             return pgcd;
         }
-        
+
 
         private void Reduire()
         {
             int temp = GetPgcd();
             numerateur = this.numerateur / temp;
-             denominateur = this.denominateur / temp;
+            denominateur = this.denominateur / temp;
         }
         public void ChangerSigneFraction()
         {
             if (denominateur < 0)
             {
                 numerateur = numerateur * -1;
-                denominateur = denominateur *-1;
+                denominateur = denominateur * -1;
             }
-               
+
         }
         public string ToDisplay()
         {
@@ -142,24 +150,56 @@
             ChangerSigneFraction();
             return ToString();
         }
-        public Fraction Plus (Fraction _autreFraction)
-        {
 
+        public Fraction Plus(Fraction _autreFraction)
+        {
+            int numerateurTmp = this.numerateur * _autreFraction.denominateur + _autreFraction.numerateur * this.denominateur; // addition des numerateurs
+            int denominateurTmp = this.denominateur * _autreFraction.denominateur; // addition des denominateurs
+            Fraction addition = new Fraction(numerateurTmp, denominateurTmp);
+            addition.Reduire();
+            return addition;
         }
         public Fraction Moins(Fraction _autreFraction)
         {
-
+            Fraction temp = new Fraction(_autreFraction); // rappel le construteur par clonage
+            temp.Oppose();
+            return Plus(temp);
         }
         public Fraction Multiplie(Fraction _autreFraction)
         {
-
+            int numerateurTmp = this.numerateur * _autreFraction.numerateur;
+            int denominateurTmp = this.denominateur * _autreFraction.denominateur;
+            Fraction multiplication = new Fraction(numerateurTmp, denominateurTmp);
+            multiplication.Reduire();
+            return multiplication;
         }
         public Fraction Divise(Fraction _autreFraction)
         {
+            Fraction temp = new Fraction(_autreFraction); // rappel le construteur par clonage
+            temp.Inverse();
+            return Multiplie(temp);
+        }
 
+
+        public static Fraction operator + (Fraction left, Fraction right)
+        {
+            return left.Plus(right);
+        }
+
+        public static Fraction operator - (Fraction left, Fraction right)
+        {
+            return left.Moins(right);
+        }
+
+        public static Fraction operator *(Fraction left, Fraction right)
+        {
+            return left.Multiplie(right);
+        }
+
+        public static Fraction operator /(Fraction left, Fraction right)
+        {
+            return left.Divise(right);
         }
     }
-
-
-
 }
+
