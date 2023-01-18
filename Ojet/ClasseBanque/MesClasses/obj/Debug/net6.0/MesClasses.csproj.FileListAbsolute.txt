@@ -1,0 +1,12 @@
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClasseBanque\MesClasses\bin\Debug\net6.0\MesClasses.deps.json
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClasseBanque\MesClasses\bin\Debug\net6.0\MesClasses.dll
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClasseBanque\MesClasses\bin\Debug\net6.0\MesClasses.pdb
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClasseBanque\MesClasses\obj\Debug\net6.0\MesClasses.csproj.AssemblyReference.cache
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClasseBanque\MesClasses\obj\Debug\net6.0\MesClasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClasseBanque\MesClasses\obj\Debug\net6.0\MesClasses.AssemblyInfoInputs.cache
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClasseBanque\MesClasses\obj\Debug\net6.0\MesClasses.AssemblyInfo.cs
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClasseBanque\MesClasses\obj\Debug\net6.0\MesClasses.csproj.CoreCompileInputs.cache
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClasseBanque\MesClasses\obj\Debug\net6.0\MesClasses.dll
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClasseBanque\MesClasses\obj\Debug\net6.0\refint\MesClasses.dll
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClasseBanque\MesClasses\obj\Debug\net6.0\MesClasses.pdb
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\ClasseBanque\MesClasses\obj\Debug\net6.0\ref\MesClasses.dll
