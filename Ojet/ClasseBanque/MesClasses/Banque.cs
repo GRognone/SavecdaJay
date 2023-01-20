@@ -15,10 +15,10 @@ namespace ClasseBanque
         /// <param name="mesComptes"></param>
         /// <param name="_nom"></param>
         /// <param name="_ville"></param>
-        public Banque(string _nom, string _ville) : this (_nom, _ville, new())
+        public Banque(string _nom, string _ville) : this(_nom, _ville, new())
         {
         }
-        
+
         public Banque(string _nom, string _ville, List<Compte> _comptes)
         {
             this.nom = _nom;
@@ -30,7 +30,8 @@ namespace ClasseBanque
                 {
                     mesComptes.Add(new Compte(c));
                 }
-            } else
+            }
+            else
             {
                 mesComptes = _comptes;
             }
@@ -54,7 +55,7 @@ namespace ClasseBanque
         public override string ToString()
         {
             return String.Format("Info relative à ma banque, nom : {0}, ville : {1}, nbClients: {3}",
-                nom,ville,mesComptes.Count());
+                nom, ville, mesComptes.Count());
         }
         private void AjouteCompte(Compte unCompte)
         {
@@ -72,7 +73,7 @@ namespace ClasseBanque
             {
                 for (int i = 1; i < mesComptes.Count(); i++)
                 {
-                    if (mesComptes[i].Superieur(mesComptes[idCompteLePlusRiche]))
+                    if (mesComptes[i].Superieur(mesComptes[idCompteLePlusRiche])) // rappel de la fonction supérieur de la classe compte.
                     {
                         idCompteLePlusRiche = i;
                     }
@@ -82,19 +83,24 @@ namespace ClasseBanque
         }
         public Compte? RendCompte(int _numCompte) // ? signifie est nullable
         {
-            Compte? rt = null;
+            Compte? rt = null; // s'il n'y a pas de compte la valeur de compte est nul( donc il n'existe pas )
             int i = 0;
-            while(i < mesComptes.Count() && rt == null)
+            while (i < mesComptes.Count() && rt == null)// tant que i est < ma liste de compte et qu'il n'existe pas de compte
             {
-                if (mesComptes[i].NumeroUnique == _numCompte)
+                if (mesComptes[i].NumeroUnique == _numCompte) // si (ma liste de compte à l'indice i retrouve un numero unique de compte )
                 {
-                    rt = mesComptes[i];
+                    rt = mesComptes[i];// retourne le compte.
                 }
-                i++;
+                i++; 
             }
             return rt;
         }
-        public bool Transferer(int numExpediteur, int numDestinataire, float montant)
+        public bool Transferer(int numExpediteur, int numDestinataire, float montant)// utilisant la methode de transfert de la classe compte
+        {
+            Compte compteExp = RendCompte(numExpediteur);// creation d'un compte expediteur provenant de la recherche de compte d'un compte existant
+            Compte compteDest = RendCompte(numDestinataire);// creation d'un compte destinataire provenant de la recherche de compte d'un compte existant
+            return compteExp.TransfererMontantVersAutreCompte(montant, compteDest);// recuperation de la methode de ransfert de la classe compte et utilisation de celle-ci pour les nouveaux comptes.
 
+        }
     }
 }

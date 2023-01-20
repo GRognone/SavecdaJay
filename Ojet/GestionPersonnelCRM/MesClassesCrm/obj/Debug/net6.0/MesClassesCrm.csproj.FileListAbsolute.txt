@@ -1,0 +1,5 @@
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\GestionPersonnelCRM\MesClassesCrm\obj\Debug\net6.0\MesClassesCrm.csproj.AssemblyReference.cache
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\GestionPersonnelCRM\MesClassesCrm\obj\Debug\net6.0\MesClassesCrm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\GestionPersonnelCRM\MesClassesCrm\obj\Debug\net6.0\MesClassesCrm.AssemblyInfoInputs.cache
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\GestionPersonnelCRM\MesClassesCrm\obj\Debug\net6.0\MesClassesCrm.AssemblyInfo.cs
+C:\Users\grognone\Desktop\DepotCda\SavecdaJay\Ojet\GestionPersonnelCRM\MesClassesCrm\obj\Debug\net6.0\MesClassesCrm.csproj.CoreCompileInputs.cache

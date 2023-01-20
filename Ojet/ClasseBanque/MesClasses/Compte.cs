@@ -5,9 +5,12 @@
         private string nomProprietaireCompte;
         private int numeroUnique;
         private int montantDecouvertAutorise;
-        private int soldeDuCompte;
+        private float soldeDuCompte;
 
-        public int NumeroUnique { get => numeroUnique; }
+        public string NomProprietaireCompte { get => nomProprietaireCompte;  }
+        public int NumeroUnique { get => numeroUnique;  }
+        public int MontantDecouvertAutorise { get => montantDecouvertAutorise;  }
+        public float SoldeDuCompte { get => soldeDuCompte;  }
 
         public Compte() : this(0, "", 0, 0)
         {
@@ -20,7 +23,7 @@
         /// <param name="_nom"></param>
         /// <param name="_solde"></param>
         /// <param name="_decouvertAutorise"></param>
-        public Compte(int _numero, string _nom, int _solde, int _decouvertAutorise)
+        public Compte(int _numero, string _nom, float _solde, int _decouvertAutorise)
         {
             nomProprietaireCompte = _nom;
             numeroUnique = _numero;
@@ -31,18 +34,18 @@
         /// constructeur par clonage
         /// </summary>
         /// <param name="aCopier"></param>
-        public Compte(Compte aCopier) : this (aCopier.numeroUnique, aCopier.nomProprietaireCompte, aCopier.soldeDuCompte, aCopier.montantDecouvertAutorise)
+        public Compte(Compte aCopier) : this(aCopier.numeroUnique, aCopier.nomProprietaireCompte, aCopier.soldeDuCompte, aCopier.montantDecouvertAutorise)
         {
 
         }
 
-        public void CrediterCompte(int _montant)
+        public void CrediterCompte(float _montant)
         {
             soldeDuCompte = soldeDuCompte + _montant;
 
         }
 
-        public bool DebiterCompte(int _montant)
+        public bool DebiterCompte(float _montant)
         {
             if (_montant <= soldeDuCompte - montantDecouvertAutorise)
             {
@@ -55,7 +58,7 @@
             }
         }
 
-        public bool TransfererMontantVersAutreCompte(int _montantATransferer, Compte _compteDestinataire)
+        public bool TransfererMontantVersAutreCompte(float _montantATransferer, Compte _compteDestinataire)
         {
             if (this.DebiterCompte(_montantATransferer))
             {
