@@ -25,6 +25,9 @@ DROP TABLE IF EXISTS livres;
 DROP TABLE IF EXISTS etats_livres;
 DROP TABLE IF EXISTS auteurs;
 DROP TABLE IF EXISTS editeurs; /* pour supprimer table éditeurs*/ 
+DROP TABLE IF EXISTS emprunts;
+DROP TABLE IF EXISTS clients;
+DROP TABLE IF EXISTS adresses;
 
 CREATE TABLE editeurs 
 (
@@ -70,6 +73,44 @@ PRIMARY KEY (auteur_id) --2eme facon de déclarer une clé primaire SYNTAXE RECOMM
  PRIMARY KEY (auteur_id, livre_id)-- cle primaire composee
  );
 
+
+  CREATE TABLE adresses
+ (
+ adresse_id INT IDENTITY(1,1),
+ adresse_numero SMALLINT,
+ adresse_extention VARCHAR(10),
+ adresse_voie VARCHAR (50),
+ adresse_complement VARCHAR (50),
+ adresse_ville VARCHAR (50),
+ adresse_code_postal CHAR(5),
+ PRIMARY KEY (adresse_id),
+   );
+
+
+ CREATE TABLE clients
+ (
+ client_id INT IDENTITY (1,1),
+ client_nom VARCHAR (100) NOT NULL,
+ client_prenom VARCHAR (100) NOT NULL,
+ client_caution DECIMAL (5,2),
+ adresse_id INT NOT NULL,
+ PRIMARY KEY (client_id),
+ FOREIGN KEY (adresse_id) REFERENCES adresses(adresse_id),
+ );
+
+ 
+  CREATE TABLE emprunts
+ (
+ emprunt_id INT IDENTITY (1,1),
+ emprunt_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ client_id INT NOT NULL,
+ livre_id INT NOT NULL,
+ PRIMARY KEY (emprunt_id),
+ FOREIGN KEY (client_id) REFERENCES clients(client_id),
+ CONSTRAINT FK_emprunts_livres FOREIGN KEY (livre_id) REFERENCES  livres(livre_id),
+ );
+
+
  ALTER TABLE livres_auteur
 	ADD FOREIGN KEY (auteur_id) REFERENCES auteurs(auteur_id),
 	CONSTRAINT FK_TOTO FOREIGN KEY (livre_id) REFERENCES livres(livre_id);
@@ -77,3 +118,4 @@ PRIMARY KEY (auteur_id) --2eme facon de déclarer une clé primaire SYNTAXE RECOMM
 
  /*ALTER TABLE auteurs/*modifier les elements d'une table*/
  ADD PRIMARY KEY (auteur_id); --3 eme solution pour déclarer une clé primaire de la table*/
+
