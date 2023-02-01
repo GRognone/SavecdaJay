@@ -20,14 +20,15 @@ editeur_id INT PRIMARY KEY AUTOINCREMENT -- sqlite
 
 );
 */
+DROP TABLE IF EXISTS emprunts;
+DROP TABLE IF EXISTS clients;
+DROP TABLE IF EXISTS adresses;
 DROP TABLE IF EXISTS livres_auteur;
 DROP TABLE IF EXISTS livres;
 DROP TABLE IF EXISTS etats_livres;
 DROP TABLE IF EXISTS auteurs;
 DROP TABLE IF EXISTS editeurs; /* pour supprimer table éditeurs*/ 
-DROP TABLE IF EXISTS emprunts;
-DROP TABLE IF EXISTS clients;
-DROP TABLE IF EXISTS adresses;
+
 
 CREATE TABLE editeurs 
 (
@@ -55,7 +56,7 @@ PRIMARY KEY (auteur_id) --2eme facon de déclarer une clé primaire SYNTAXE RECOMM
  CREATE TABLE livres
  (
  livre_id INT IDENTITY(1,1),
- livre_isbn CHAR(17) NOT NULL,
+ livre_isbn CHAR(17) NOT NULL UNIQUE,
  livre_titre VARCHAR(255) NOT NULL,
  livre_date_achat DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,-- DEFAULT CURRENT_TIMESTAMP si aucune date d'achat n'est entrée un prendra la date à l'instant t de l'entree utilisateur
  livre_etat_commentaire VARCHAR(1000) NULL,
@@ -92,7 +93,7 @@ PRIMARY KEY (auteur_id) --2eme facon de déclarer une clé primaire SYNTAXE RECOMM
  client_id INT IDENTITY (1,1),
  client_nom VARCHAR (100) NOT NULL,
  client_prenom VARCHAR (100) NOT NULL,
- client_caution DECIMAL (5,2),
+ client_caution DECIMAL (5,2) CHECK (client_caution > 0 AND client_caution< 100), --  CHECK () veut dire regarde si la caution du client est bien comprise entre 0 et 100
  adresse_id INT NOT NULL,
  PRIMARY KEY (client_id),
  FOREIGN KEY (adresse_id) REFERENCES adresses(adresse_id),
@@ -102,7 +103,7 @@ PRIMARY KEY (auteur_id) --2eme facon de déclarer une clé primaire SYNTAXE RECOMM
   CREATE TABLE emprunts
  (
  emprunt_id INT IDENTITY (1,1),
- emprunt_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ emprunt_date DATETIME2 NOT NULL DEFAULT CURRENT_TIMESTAMP,
  client_id INT NOT NULL,
  livre_id INT NOT NULL,
  PRIMARY KEY (emprunt_id),
