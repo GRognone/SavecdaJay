@@ -20,9 +20,9 @@
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="00 - create-database.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CRM-UC-3928\SQLEXPRESS:False:Hebergement</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CRM-UC-3928\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName>Hebergement</AssociatedConnUserName>
           <FullPath>00 - create-database.sql</FullPath>
         </FileNode>
         <FileNode Name="01 - Hebergement DDL( create-alter-drop).sql">
