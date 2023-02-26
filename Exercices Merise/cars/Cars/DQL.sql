@@ -64,8 +64,22 @@ COUNT(car_owner_id) AS 'Number of Cars by Owner'
 FROM Cars
 JOIN Brands ON Brands.brand_id = Cars.brand_id
 JOIN Owners ON Owners.owner_id = Cars.car_owner_id
-GROUP BY owner_firstname,owner_lastname;
-HAVING (cars_owner_id) >1
+GROUP BY owner_firstname,owner_lastname
+HAVING COUNT (car_owner_id)>1
+ORDER BY ('Number of Cars by Owner')DESC;
 
 --8. Sélectionner les noms et prénoms des propriétaires possédant plus d’une voiture de même marque. Pour chaque marque 
 --de voiture trouvée, afficher le nom de la marque et le nombre de voiture possédées pour cette marque.
+
+SELECT
+owner_lastname,
+owner_firstname,
+brand_name,
+brand_slogan,
+COUNT(car_owner_id) AS 'Number of brand Cars by Owner'
+FROM Cars
+JOIN Brands ON Brands.brand_id = Cars.brand_id
+JOIN Owners ON Owners.owner_id = Cars.car_owner_id
+GROUP BY brand_name, owner_firstname, owner_lastname,brand_slogan
+HAVING COUNT (car_owner_id)>1
+ORDER BY ('Number of brand Cars by Owner')DESC;

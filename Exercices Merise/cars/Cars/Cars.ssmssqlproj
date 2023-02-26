@@ -1,13 +1,25 @@
 <?xml version="1.0"?>
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Cars">
   <Items>
-    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+    <LogicalFolder Name="Connexions" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="CRM-UC-3928\SQLEXPRESS:cars">
-          <Created>2023-02-17T08:13:12.8004637+01:00</Created>
+        <ConnectionNode Name="BRONPC\SQLEXPRESS:BRONPC\gerar">
+          <Created>2023-02-21T14:07:25.1792497+01:00</Created>
           <Type>SQL</Type>
-          <Server>CRM-UC-3928\SQLEXPRESS</Server>
-          <UserName>cars</UserName>
+          <Server>BRONPC\SQLEXPRESS</Server>
+          <UserName />
+          <Authentication>Authentification Windows</Authentication>
+          <InitialDB>master</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Requête</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="BRONPC\SQLEXPRESS:sa">
+          <Created>2023-02-17T23:51:05.055408+01:00</Created>
+          <Type>SQL</Type>
+          <Server>BRONPC\SQLEXPRESS</Server>
+          <UserName>sa</UserName>
           <Authentication>SQL</Authentication>
           <InitialDB />
           <LoginTimeout>30</LoginTimeout>
@@ -17,29 +29,29 @@
         </ConnectionNode>
       </Items>
     </LogicalFolder>
-    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+    <LogicalFolder Name="Requêtes" Type="0" Sorted="true">
       <Items>
         <FileNode Name="DLL.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CRM-UC-3928\SQLEXPRESS:False:cars</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>CRM-UC-3928\SQLEXPRESS</AssociatedConnSrvName>
-          <AssociatedConnUserName>cars</AssociatedConnUserName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
           <FullPath>DLL.sql</FullPath>
         </FileNode>
         <FileNode Name="DML.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CRM-UC-3928\SQLEXPRESS:False:cars</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>CRM-UC-3928\SQLEXPRESS</AssociatedConnSrvName>
-          <AssociatedConnUserName>cars</AssociatedConnUserName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BRONPC\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BRONPC\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
           <FullPath>DML.sql</FullPath>
         </FileNode>
         <FileNode Name="DQL.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CRM-UC-3928\SQLEXPRESS:False:cars</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>CRM-UC-3928\SQLEXPRESS</AssociatedConnSrvName>
-          <AssociatedConnUserName>cars</AssociatedConnUserName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
           <FullPath>DQL.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
-    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+    <LogicalFolder Name="Divers" Type="3" Sorted="true">
       <Items />
     </LogicalFolder>
   </Items>
