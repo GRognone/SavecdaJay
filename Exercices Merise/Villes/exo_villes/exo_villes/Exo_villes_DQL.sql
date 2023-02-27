@@ -52,7 +52,7 @@ ORDER BY 'number cities by department' DESC
 
 SELECT TOP 10
 departement_nom,
-sum (ville_surface) AS 'area department'
+SUM (ville_surface) AS 'area department'
 FROM departement AS Dept
 JOIN villes_france_free AS Villes_dept ON Dept.departement_code = Villes_dept.ville_departement
 GROUP BY departement_nom
@@ -61,7 +61,7 @@ ORDER BY 'area department' desc
 -- 7. Compter le nombre de villes dont le nom commence par “Saint”
 
 SELECT
-count (ville_nom) AS 'Cities name begin by Saint'
+COUNT (ville_nom) AS 'Cities name begin by Saint'
 FROM villes_france_free
 WHERE ville_nom like 'Saint%'
 ORDER BY 'Cities name begin by Saint' ASC;
@@ -71,7 +71,7 @@ ORDER BY 'Cities name begin by Saint' ASC;
 
 SELECT
 ville_nom,
-count (ville_nom) AS 'Cities with the same name'
+COUNT (ville_nom) AS 'Cities with the same name'
 FROM villes_france_free
 GROUP BY ville_nom
 ORDER BY 'Cities with the same name' DESC
@@ -83,13 +83,28 @@ V2.ville_nom,
 V2.ville_surface,
 AVG (V1.ville_surface) AS 'Medium area'
 FROM villes_france_free AS V1
-JOIN villes_france_free AS V2 ON V2.ville_surface >0 --??? pourquoi
+JOIN villes_france_free AS V2 ON V2.ville_surface >0	-- >0  sert pour initialiser car on ne peut pas laisser le champ vide
 GROUP BY V2.ville_nom, V2.ville_surface
 HAVING V2.ville_surface > AVG (V1.ville_surface)
 ORDER BY V2.ville_surface
 
 -- 10. Obtenir la liste des départements qui possèdent plus de 2 millions d’habitants
 
+SELECT
+departement_nom,
+SUM (ville_dept.ville_population_2012) AS 'departement with more than 2 000 000 citizens'
+FROM departement AS dept
+JOIN villes_france_free AS ville_dept ON dept.departement_code = ville_dept.ville_departement
+GROUP BY departement_nom
+HAVING SUM (ville_dept.ville_population_2012) > 2000000
+ORDER BY 'departement with more than 2 000 000 citizens' DESC
 
 -- 11. Remplacez les tirets par un espace vide, pour toutes les villes commençant par “SAINT-” (dans la colonne qui contient
 -- les noms en majuscule).
+
+SELECT
+ville_slug,
+REPLACE (ville_nom, '-',' ') AS 'cities name'
+FROM villes_france_free
+WHERE ville_nom like 'SAINT-%'
+ORDER BY ville_nom ASC;
