@@ -14,10 +14,6 @@ CREATE TABLE departement
   PRIMARY KEY (departement_id),
 ) ;
 
-ALTER TABLE departement
-	ADD CONSTRAINT PK_departement PRIMARY KEY (departement_id),
-		CONSTRAINT FR_departement FOREIGN KEY (ville_id) REFERENCES departement(departement_id);
-
 CREATE TABLE villes_france_free
 (
   ville_id int NOT NULL,

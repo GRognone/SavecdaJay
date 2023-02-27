@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="exo_villes">
   <Items>
-    <LogicalFolder Name="Connexions" Type="2" Sorted="true">
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="BRONPC\SQLEXPRESS:exo_villes_user">
-          <Created>2023-02-25T09:37:59.7321136+01:00</Created>
+        <ConnectionNode Name="CRM-UC-3928\SQLEXPRESS:exo_villes_user">
+          <Created>2023-02-27T08:51:19.6097451+01:00</Created>
           <Type>SQL</Type>
-          <Server>BRONPC\SQLEXPRESS</Server>
+          <Server>CRM-UC-3928\SQLEXPRESS</Server>
           <UserName>exo_villes_user</UserName>
           <Authentication>SQL</Authentication>
           <InitialDB />
@@ -17,29 +17,29 @@
         </ConnectionNode>
       </Items>
     </LogicalFolder>
-    <LogicalFolder Name="Requêtes" Type="0" Sorted="true">
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="Exo_villes_DLL.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BRONPC\SQLEXPRESS:False:exo_villes_user</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>BRONPC\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CRM-UC-3928\SQLEXPRESS:False:exo_villes_user</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CRM-UC-3928\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName>exo_villes_user</AssociatedConnUserName>
           <FullPath>Exo_villes_DLL.sql</FullPath>
         </FileNode>
         <FileNode Name="Exo_villes_DML.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BRONPC\SQLEXPRESS:False:exo_villes_user</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>BRONPC\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CRM-UC-3928\SQLEXPRESS:False:exo_villes_user</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CRM-UC-3928\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName>exo_villes_user</AssociatedConnUserName>
           <FullPath>Exo_villes_DML.sql</FullPath>
         </FileNode>
         <FileNode Name="Exo_villes_DQL.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BRONPC\SQLEXPRESS:False:exo_villes_user</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>BRONPC\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CRM-UC-3928\SQLEXPRESS:False:exo_villes_user</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CRM-UC-3928\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName>exo_villes_user</AssociatedConnUserName>
           <FullPath>Exo_villes_DQL.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
-    <LogicalFolder Name="Divers" Type="3" Sorted="true">
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
       <Items />
     </LogicalFolder>
   </Items>
