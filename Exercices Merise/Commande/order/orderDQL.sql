@@ -5,10 +5,11 @@
 --2. Obtenir la liste de tous les produits qui sont présent sur plusieurs commandes.
 
 SELECT 
-nom
+nom,
+commande_id
 --commande_id
 FROM commande_ligne
-order by nom
+order by nom, commande_id
 
 --3. Obtenir la liste de tous les produits qui sont présent sur plusieurs commandes et y ajouter une colonne qui liste les 
 --identifiants des commandes associées.

@@ -44,8 +44,7 @@ departement_code,
 COUNT (Villes_dept.ville_departement) AS 'number cities by department'
 FROM departement AS Dept
 JOIN villes_france_free AS Villes_dept ON Dept.departement_code = Villes_dept.ville_departement
-GROUP BY departement_nom,
-departement_code
+GROUP BY departement_nom, departement_code
 ORDER BY 'number cities by department' DESC
 
 -- 6. Obtenir la liste des 10 plus grands départements, en termes de superficie
@@ -64,7 +63,6 @@ SELECT
 COUNT (ville_nom) AS 'Cities name begin by Saint'
 FROM villes_france_free
 WHERE ville_nom like 'Saint%'
-ORDER BY 'Cities name begin by Saint' ASC;
 
 -- 8. Obtenir la liste des villes qui ont un nom existants plusieurs fois, et trier afin d’obtenir en premier celles dont le nom est
 -- le plus souvent utilisé par plusieurs communes
@@ -74,6 +72,7 @@ ville_nom,
 COUNT (ville_nom) AS 'Cities with the same name'
 FROM villes_france_free
 GROUP BY ville_nom
+having count (ville_nom) >1 
 ORDER BY 'Cities with the same name' DESC
 
 -- 9. Obtenir en une seule requête SQL la liste des villes dont la superficie est supérieur à la superficie moyenne
@@ -81,7 +80,7 @@ ORDER BY 'Cities with the same name' DESC
 SELECT
 V2.ville_nom,
 V2.ville_surface,
-AVG (V1.ville_surface) AS 'Medium area'
+AVG (V1.ville_surface) AS Medium_area
 FROM villes_france_free AS V1
 JOIN villes_france_free AS V2 ON V2.ville_surface >0	-- >0  sert pour initialiser car on ne peut pas laisser le champ vide
 GROUP BY V2.ville_nom, V2.ville_surface

@@ -25,12 +25,6 @@
           <AssociatedConnUserName>exo_villes_user</AssociatedConnUserName>
           <FullPath>Exo_villes_DDL.sql</FullPath>
         </FileNode>
-        <FileNode Name="Exo_villes_DLL.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>Exo_villes_DLL.sql</FullPath>
-        </FileNode>
         <FileNode Name="Exo_villes_DML.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CRM-UC-3928\SQLEXPRESS:False:exo_villes_user</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>CRM-UC-3928\SQLEXPRESS</AssociatedConnSrvName>
