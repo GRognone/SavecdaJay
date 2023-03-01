@@ -31,3 +31,4 @@ CREATE TABLE commande_ligne (
   prix_total float NOT NULL,
   PRIMARY KEY (id)
 ) ;
+	
