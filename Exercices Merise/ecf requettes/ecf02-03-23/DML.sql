@@ -11,7 +11,7 @@ VALUES
 (6,'Ryzen 7 5800...',579),
 (7,'Ryzen 9 5950X',759);
 
-INSERT INTO product_line
+INSERT INTO product_lines
 (line_id, line_label,product_id)
 VALUES
 ('R3A','Ryzen LEGACY',1),

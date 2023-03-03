@@ -2,9 +2,9 @@
 
 DROP TABLE IF EXISTS product_done;
 DROP TABLE IF EXISTS products;
-DROP TABLE IF EXISTS product_line;
+DROP TABLE IF EXISTS product_lines;
 
-CREATE TABLE product_line
+CREATE TABLE product_lines
 (
 line_id CHAR (3) NOT NULL,
 line_label VARCHAR(50) NOT NULL,
@@ -30,10 +30,10 @@ product_value INT NOT NULL,
 PRIMARY KEY (product_id)
 );
 
-ALTER TABLE product_line
+ALTER TABLE product_lines
 	ADD FOREIGN KEY(product_id) REFERENCES products(product_id);
 
 ALTER TABLE product_done
-	ADD FOREIGN KEY(line_id) REFERENCES product_line(line_id),
+	ADD FOREIGN KEY(line_id) REFERENCES product_lines(line_id),
 	FOREIGN KEY (product_id) REFERENCES products(product_id);
 
