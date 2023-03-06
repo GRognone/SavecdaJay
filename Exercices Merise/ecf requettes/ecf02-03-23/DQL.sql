@@ -22,7 +22,7 @@ WHERE product_name LIKE '%X'
 SELECT
 line_id,
 line_label
-FROM product_line
+FROM product_lines
 WHERE line_label LIKE '%PR%'
 ;
 
@@ -34,7 +34,7 @@ product_name,
 product_value,
 line_label
 FROM products
-INNER JOIN product_line ON product_line.product_id = products.product_id
+INNER JOIN product_lines ON product_lines.product_id = products.product_id
 ;
 
 --5- Sélectionner les productions terminées dont le nombre de CPU produits dépasse 20.
@@ -47,7 +47,7 @@ line_label,
 forge_quantity
 FROM products AS P01
 INNER JOIN product_done ON P01.product_id = product_done.product_id
-INNER JOIN product_line ON P01.product_id = product_line.product_id
+INNER JOIN product_lines ON P01.product_id = product_lines.product_id
 GROUP BY P01.product_name,product_value,line_label,forge_quantity
 having (forge_quantity) >20
 ;
@@ -60,7 +60,7 @@ PL1.line_id,
 line_label,
 PRD1.forge_quantity ,
 P01.product_id
-FROM product_line AS PL1
+FROM product_lines AS PL1
 INNER JOIN products AS P01 ON  PL1.product_id = P01.product_id
 LEFT JOIN product_done AS PRD1 ON PL1.product_id = PRD1.product_id
 GROUP BY PL1.line_id,line_label,forge_quantity,P01.product_id
@@ -75,7 +75,7 @@ forge_quantity,
 P01.product_id
 FROM products AS P01
 INNER JOIN product_done ON P01.product_id = product_done.product_id
-INNER JOIN product_line AS PL1 ON P01.product_id = PL1.product_id
+INNER JOIN product_lines AS PL1 ON P01.product_id = PL1.product_id
 GROUP BY PL1.line_id,line_label,forge_quantity,P01.product_id
 ;
 
@@ -86,7 +86,7 @@ SELECT TOP 1
 sum (product_value * forge_quantity) AS PRODS_TOTAL_VALUE
 FROM products
 INNER JOIN product_done ON products.product_id = product_done.product_id) 
-as toto,
+AS PRODS_TOTAL_VALUE,
 product_name
 FROM products
 INNER JOIN product_done ON products.product_id = product_done.product_id
