@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "iBNqe97FhJ1Lh5o/TnRF7U3JFpHs+47wJX/bT6cahpcJwbJbtF0hguA7HOn1lkmAJj0EERflQqQSTcP7h/OwDA==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Winform\\WinFormAddition_3\\WinFormsAddition3\\WinFormsAddition3.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Le projet WinFormAddition_3 n'est pas compatible avec net6.0 (.NETCoreApp,Version=v6.0). Le projet WinFormAddition_3 prend en charge : net6.0-windows7.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "WinFormAddition_3",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

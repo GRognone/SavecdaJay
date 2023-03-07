@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsAppAddition2", "WinFormsAppAddition2.csproj", "{4F163DD2-9845-4B70-80D6-80ACEFF79B80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "biblioAppAddition2", "..\biblioAppAddition2\biblioAppAddition2.csproj", "{B404EB9F-97E6-4F82-B5F6-ABDD09688B73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppAddition2", "AppAddition2", "{F28C52E3-4CC6-4C6E-85E3-6720374AE975}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F163DD2-9845-4B70-80D6-80ACEFF79B80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F163DD2-9845-4B70-80D6-80ACEFF79B80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F163DD2-9845-4B70-80D6-80ACEFF79B80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F163DD2-9845-4B70-80D6-80ACEFF79B80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B404EB9F-97E6-4F82-B5F6-ABDD09688B73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B404EB9F-97E6-4F82-B5F6-ABDD09688B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B404EB9F-97E6-4F82-B5F6-ABDD09688B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B404EB9F-97E6-4F82-B5F6-ABDD09688B73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4F163DD2-9845-4B70-80D6-80ACEFF79B80} = {F28C52E3-4CC6-4C6E-85E3-6720374AE975}
+		{B404EB9F-97E6-4F82-B5F6-ABDD09688B73} = {F28C52E3-4CC6-4C6E-85E3-6720374AE975}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5213611-7A5A-48DD-BAB6-CFA95ABD1E6A}
+	EndGlobalSection
+EndGlobal
