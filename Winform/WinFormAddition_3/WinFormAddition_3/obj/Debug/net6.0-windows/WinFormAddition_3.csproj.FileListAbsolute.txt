@@ -15,3 +15,6 @@ C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormAddition_3\WinFor
 C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormAddition_3\WinFormAddition_3\obj\Debug\net6.0-windows\WinFormAddition_3.pdb
 C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormAddition_3\WinFormAddition_3\obj\Debug\net6.0-windows\WinFormAddition_3.genruntimeconfig.cache
 C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormAddition_3\WinFormAddition_3\obj\Debug\net6.0-windows\ref\WinFormAddition_3.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormAddition_3\WinFormAddition_3\bin\Debug\net6.0-windows\ClassLibraryAdditionneur.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormAddition_3\WinFormAddition_3\bin\Debug\net6.0-windows\ClassLibraryAdditionneur.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormAddition_3\WinFormAddition_3\obj\Debug\net6.0-windows\WinFormAddition_3.csproj.CopyComplete

@@ -34,11 +34,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\grognone\\Desktop\\DepotCda\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ConsoleAppPoint\\ConsoleAppPoint.csproj",
+      "projectUniqueName": "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ConsoleAppPoint\\ConsoleAppPoint.csproj",
       "projectName": "ConsoleAppPoint",
-      "projectPath": "C:\\Users\\grognone\\Desktop\\DepotCda\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ConsoleAppPoint\\ConsoleAppPoint.csproj",
+      "projectPath": "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ConsoleAppPoint\\ConsoleAppPoint.csproj",
       "packagesPath": "C:\\Users\\grognone\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\grognone\\Desktop\\DepotCda\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ConsoleAppPoint\\obj\\",
+      "outputPath": "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ConsoleAppPoint\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -60,8 +60,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\grognone\\Desktop\\DepotCda\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ClassLibraryPoint.csproj": {
-              "projectPath": "C:\\Users\\grognone\\Desktop\\DepotCda\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ClassLibraryPoint.csproj"
+            "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ClassLibraryPoint.csproj": {
+              "projectPath": "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ClassLibraryPoint.csproj"
             }
           }
         }

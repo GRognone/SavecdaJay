@@ -1,3 +1,5 @@
+using ClassLibraryAdditionneur;
+
 namespace WinFormAddition_3
 {
     internal static class Program
@@ -12,6 +14,8 @@ namespace WinFormAddition_3
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+
+       
         }
     }
 }

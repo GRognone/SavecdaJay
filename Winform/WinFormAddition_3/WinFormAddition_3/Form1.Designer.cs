@@ -45,6 +45,9 @@
             // 
             // button_0
             // 
+            this.button_0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_0.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_0.Location = new System.Drawing.Point(12, 149);
             this.button_0.Name = "button_0";
@@ -57,6 +60,9 @@
             // 
             // button_1
             // 
+            this.button_1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_1.Location = new System.Drawing.Point(68, 149);
             this.button_1.Name = "button_1";
@@ -69,6 +75,9 @@
             // 
             // button_2
             // 
+            this.button_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_2.Location = new System.Drawing.Point(124, 149);
             this.button_2.Name = "button_2";
@@ -81,6 +90,9 @@
             // 
             // button_3
             // 
+            this.button_3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_3.Location = new System.Drawing.Point(180, 149);
             this.button_3.Name = "button_3";
@@ -93,6 +105,9 @@
             // 
             // button_4
             // 
+            this.button_4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_4.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_4.Location = new System.Drawing.Point(236, 149);
             this.button_4.Name = "button_4";
@@ -105,6 +120,9 @@
             // 
             // button_5
             // 
+            this.button_5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_5.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_5.Location = new System.Drawing.Point(12, 205);
             this.button_5.Name = "button_5";
@@ -117,6 +135,9 @@
             // 
             // button_6
             // 
+            this.button_6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_6.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_6.Location = new System.Drawing.Point(68, 205);
             this.button_6.Name = "button_6";
@@ -129,6 +150,9 @@
             // 
             // button_7
             // 
+            this.button_7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_7.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_7.Location = new System.Drawing.Point(124, 205);
             this.button_7.Name = "button_7";
@@ -141,6 +165,9 @@
             // 
             // button_8
             // 
+            this.button_8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_8.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_8.Location = new System.Drawing.Point(180, 205);
             this.button_8.Name = "button_8";
@@ -153,6 +180,9 @@
             // 
             // button_9
             // 
+            this.button_9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_9.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_9.Location = new System.Drawing.Point(236, 205);
             this.button_9.Name = "button_9";
@@ -165,38 +195,49 @@
             // 
             // textbox1_Affichage
             // 
+            this.textbox1_Affichage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textbox1_Affichage.Location = new System.Drawing.Point(12, 12);
             this.textbox1_Affichage.Multiline = true;
             this.textbox1_Affichage.Name = "textbox1_Affichage";
             this.textbox1_Affichage.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textbox1_Affichage.Size = new System.Drawing.Size(274, 120);
+            this.textbox1_Affichage.Size = new System.Drawing.Size(270, 127);
             this.textbox1_Affichage.TabIndex = 10;
             this.textbox1_Affichage.TextChanged += new System.EventHandler(this.textBox1_Affichage);
             // 
             // button_Vider
             // 
+            this.button_Vider.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Vider.Location = new System.Drawing.Point(12, 261);
             this.button_Vider.Name = "button_Vider";
             this.button_Vider.Size = new System.Drawing.Size(106, 23);
             this.button_Vider.TabIndex = 11;
             this.button_Vider.Text = "Vider";
             this.button_Vider.UseVisualStyleBackColor = true;
+            this.button_Vider.Click += new System.EventHandler(this.button_Vider_Click);
             // 
             // button_Calculer
             // 
+            this.button_Calculer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Calculer.Location = new System.Drawing.Point(180, 261);
             this.button_Calculer.Name = "button_Calculer";
             this.button_Calculer.Size = new System.Drawing.Size(106, 23);
             this.button_Calculer.TabIndex = 12;
             this.button_Calculer.Text = "Calculer";
             this.button_Calculer.UseVisualStyleBackColor = true;
+            this.button_Calculer.Click += new System.EventHandler(this.button_Calculer_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(302, 298);
+            this.ClientSize = new System.Drawing.Size(298, 294);
             this.Controls.Add(this.button_Calculer);
             this.Controls.Add(this.button_Vider);
             this.Controls.Add(this.textbox1_Affichage);
@@ -210,6 +251,8 @@
             this.Controls.Add(this.button_2);
             this.Controls.Add(this.button_1);
             this.Controls.Add(this.button_0);
+            this.MaximumSize = new System.Drawing.Size(495, 438);
+            this.MinimumSize = new System.Drawing.Size(314, 333);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

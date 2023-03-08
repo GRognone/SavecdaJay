@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\grognone\\Desktop\\DepotCda\\SavecdaJay\\Algo\\5.3 MaBicyclette\\5.3 MaBicyclette\\5.3 MaBicyclette.csproj",
+      "projectUniqueName": "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Algo\\5.3 MaBicyclette\\5.3 MaBicyclette\\5.3 MaBicyclette.csproj",
       "projectName": "5.3 MaBicyclette",
-      "projectPath": "C:\\Users\\grognone\\Desktop\\DepotCda\\SavecdaJay\\Algo\\5.3 MaBicyclette\\5.3 MaBicyclette\\5.3 MaBicyclette.csproj",
+      "projectPath": "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Algo\\5.3 MaBicyclette\\5.3 MaBicyclette\\5.3 MaBicyclette.csproj",
       "packagesPath": "C:\\Users\\grognone\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\grognone\\Desktop\\DepotCda\\SavecdaJay\\Algo\\5.3 MaBicyclette\\5.3 MaBicyclette\\obj\\",
+      "outputPath": "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Algo\\5.3 MaBicyclette\\5.3 MaBicyclette\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "WinFormAddition_3/1.0.0": {
+        "dependencies": {
+          "ClassLibraryAdditionneur": "1.0.0"
+        },
         "runtime": {
           "WinFormAddition_3.dll": {}
+        }
+      },
+      "ClassLibraryAdditionneur/1.0.0": {
+        "runtime": {
+          "ClassLibraryAdditionneur.dll": {}
         }
       }
     }
   },
   "libraries": {
     "WinFormAddition_3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClassLibraryAdditionneur/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

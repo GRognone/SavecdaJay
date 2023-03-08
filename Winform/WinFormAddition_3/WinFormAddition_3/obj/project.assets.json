@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "ClassLibraryAdditionneur/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ClassLibraryAdditionneur.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClassLibraryAdditionneur.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ClassLibraryAdditionneur/1.0.0": {
+      "type": "project",
+      "path": "../ClassLibraryAdditionneur/ClassLibraryAdditionneur.csproj",
+      "msbuildProject": "../ClassLibraryAdditionneur/ClassLibraryAdditionneur.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "ClassLibraryAdditionneur >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\grognone\\.nuget\\packages\\": {},
@@ -40,7 +59,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Winform\\WinFormAddition_3\\ClassLibraryAdditionneur\\ClassLibraryAdditionneur.csproj": {
+              "projectPath": "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Winform\\WinFormAddition_3\\ClassLibraryAdditionneur\\ClassLibraryAdditionneur.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,0 +1,18 @@
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\obj\Debug\net6.0\test validite.csproj.AssemblyReference.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\obj\Debug\net6.0\test validite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\obj\Debug\net6.0\test validite.AssemblyInfoInputs.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\obj\Debug\net6.0\test validite.AssemblyInfo.cs
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\obj\Debug\net6.0\test validite.csproj.CoreCompileInputs.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\bin\Debug\net6.0\test validite.exe
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\bin\Debug\net6.0\test validite.deps.json
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\bin\Debug\net6.0\test validite.runtimeconfig.json
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\bin\Debug\net6.0\test validite.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\bin\Debug\net6.0\test validite.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\bin\Debug\net6.0\ClassLibrary_Controles.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\bin\Debug\net6.0\ClassLibrary_Controles.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\obj\Debug\net6.0\test validite.csproj.CopyComplete
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\obj\Debug\net6.0\test validite.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\obj\Debug\net6.0\refint\test validite.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\obj\Debug\net6.0\test validite.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\obj\Debug\net6.0\test validite.genruntimeconfig.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\test validite\obj\Debug\net6.0\ref\test validite.dll

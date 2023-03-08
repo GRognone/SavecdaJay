@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\grognone\\Desktop\\DepotCda\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ClassLibraryPoint.csproj": {}
+    "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ClassLibraryPoint.csproj": {}
   },
   "projects": {
-    "C:\\Users\\grognone\\Desktop\\DepotCda\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ClassLibraryPoint.csproj": {
+    "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ClassLibraryPoint.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\grognone\\Desktop\\DepotCda\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ClassLibraryPoint.csproj",
+        "projectUniqueName": "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ClassLibraryPoint.csproj",
         "projectName": "ClassLibraryPoint",
-        "projectPath": "C:\\Users\\grognone\\Desktop\\DepotCda\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ClassLibraryPoint.csproj",
+        "projectPath": "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Ojet\\ClassLibraryPoint\\ClassLibraryPoint.csproj",
         "packagesPath": "C:\\Users\\grognone\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\grognone\\Desktop\\DepotCda\\SavecdaJay\\Ojet\\ClassLibraryPoint\\obj\\",
+        "outputPath": "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Ojet\\ClassLibraryPoint\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
