@@ -15,8 +15,9 @@ else
 }
 */
 
-/*
-bool ok2 = Controles.Controle_saisie_date("21/10/1977")
+
+bool ok2 = Controles.Controle_saisie_date("29/02/2023");
+    if (ok2)
 {
     Console.WriteLine("c'est ok");
 }
@@ -24,9 +25,9 @@ else
 {
     Console.WriteLine("saisie incorrecte recommencez");
 }
-*/
 
 
+/*
 bool ok3 = Controles.Controle_Saisie_Montant("125");
 
     if (ok3)
@@ -37,7 +38,7 @@ else
 {
     Console.WriteLine("saisie incorrecte recommencez");
 }
-
+*/
 
 /*
 bool ok4 = Controles.Controle_Saisie_Code_Postal("15000");

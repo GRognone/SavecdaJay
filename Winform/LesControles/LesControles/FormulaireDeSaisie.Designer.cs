@@ -163,6 +163,7 @@
             this.MinimumSize = new System.Drawing.Size(392, 336);
             this.Name = "FormulaireDeSaisie";
             this.Text = "FormulaireDeSaisie";
+       
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1_nom)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

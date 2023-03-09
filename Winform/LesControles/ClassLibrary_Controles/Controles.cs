@@ -13,40 +13,31 @@ namespace ClassLibrary_Controles
 
         public static bool Controle_saisie_nom(string nom_text)
         {
-            System.Text.RegularExpressions.Regex valide_nom = new Regex(@"^[a-zA-Z]{0,30}$");
-            return valide_nom.IsMatch(nom_text);
+            return Regex.Match(nom_text, @"^[a-zA-Z]{0,30}$").Success;
         }
 
         public static bool Controle_saisie_date(string date_text)
         {
-            return Regex.Match("22/09/1999", @"^([0-9]{0,2})$").Success;
-            /*System.Text.RegularExpressions.Regex valide_date = new Regex(@"^([0-9]{0,2})$");
-            return valide_date.IsMatch(date_text);*/
+            DateTime resultat;
+            if (DateTime.TryParse(date_text, out resultat))
+            {
+                return true;
+            }
+            return false;
         }
-
 
         public static bool Controle_Saisie_Montant(string montant_text)
         {
             return Regex.Match(montant_text, @"^([0-9]{0,12})([\.|\,]{0,1})+([0-9]{0,2}$)").Success;
-            /*System.Text.RegularExpressions.Regex valide_Saisie_Montant = new Regex(@"^([0-9]{0,12})([\,]{1})+([0-9]{0,2}$)");
-            return valide_Saisie_Montant.IsMatch(montant_text);*/
         }
 
         public static bool Controle_Saisie_Code_Postal(string code_postal_text)
         {
             if (code_postal_text.Length == 5)
             {
-                System.Text.RegularExpressions.Regex valid_code_postal = new Regex(@"^[0-9]{5}$");
-                return valid_code_postal.IsMatch(code_postal_text);
+                return Regex.Match(code_postal_text, (@"^[0-9]{5}$")).Success;
             }
             return false;
-        }
-        /*
-        public static bool Controler_Decimal(string str) => Controle(str, "^[0-9]*(?:(?:[.]|,)[0-9]{1,2}){?$");
-
-        private static bool Controle(string chaine, string reg)
-        {
-            return Regex.Match(chaine, reg).Success;*/
         }
     }
 }

@@ -28,13 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button1_ok = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button1_ok
+            // 
+            this.button1_ok.Location = new System.Drawing.Point(62, 120);
+            this.button1_ok.Name = "button1_ok";
+            this.button1_ok.Size = new System.Drawing.Size(75, 23);
+            this.button1_ok.TabIndex = 0;
+            this.button1_ok.Text = "OK";
+            this.button1_ok.UseVisualStyleBackColor = true;
             // 
             // ValidationEffectuee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(200, 155);
+            this.Controls.Add(this.button1_ok);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(216, 194);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(216, 194);
             this.Name = "ValidationEffectuee";
             this.Text = "Validation Effectuée";
             this.ResumeLayout(false);
@@ -42,5 +57,7 @@
         }
 
         #endregion
+
+        private Button button1_ok;
     }
 }
