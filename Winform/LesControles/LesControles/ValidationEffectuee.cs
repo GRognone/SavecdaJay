@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LesControles
 {
-    public partial class Form2_validation : Form
+    public partial class ValidationEffectuee : Form
     {
-        public Form2_validation()
+        public ValidationEffectuee()
         {
             InitializeComponent();
-        }
-
-        private void button1_ok_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
