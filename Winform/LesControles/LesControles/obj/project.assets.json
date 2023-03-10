@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "BiblioFormulaireSaisie/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BiblioFormulaireSaisie.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BiblioFormulaireSaisie.dll": {}
+        }
+      },
       "ClassLibrary_Controles/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -15,6 +25,11 @@
     }
   },
   "libraries": {
+    "BiblioFormulaireSaisie/1.0.0": {
+      "type": "project",
+      "path": "../BiblioFormulaireSaisie/BiblioFormulaireSaisie.csproj",
+      "msbuildProject": "../BiblioFormulaireSaisie/BiblioFormulaireSaisie.csproj"
+    },
     "ClassLibrary_Controles/1.0.0": {
       "type": "project",
       "path": "../ClassLibrary_Controles/ClassLibrary_Controles.csproj",
@@ -23,6 +38,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "BiblioFormulaireSaisie >= 1.0.0",
       "ClassLibrary_Controles >= 1.0.0"
     ]
   },
@@ -60,6 +76,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
+            "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Winform\\LesControles\\BiblioFormulaireSaisie\\BiblioFormulaireSaisie.csproj": {
+              "projectPath": "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Winform\\LesControles\\BiblioFormulaireSaisie\\BiblioFormulaireSaisie.csproj"
+            },
             "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Winform\\LesControles\\ClassLibrary_Controles\\ClassLibrary_Controles.csproj": {
               "projectPath": "C:\\Users\\grognone\\Desktop\\SaveCdaJay\\SavecdaJay\\Winform\\LesControles\\ClassLibrary_Controles\\ClassLibrary_Controles.csproj"
             }

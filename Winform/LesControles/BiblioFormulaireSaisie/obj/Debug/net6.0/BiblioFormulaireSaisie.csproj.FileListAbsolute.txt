@@ -1,0 +1,12 @@
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BiblioFormulaireSaisie\bin\Debug\net6.0\BiblioFormulaireSaisie.deps.json
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BiblioFormulaireSaisie\bin\Debug\net6.0\BiblioFormulaireSaisie.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BiblioFormulaireSaisie\bin\Debug\net6.0\BiblioFormulaireSaisie.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BiblioFormulaireSaisie\obj\Debug\net6.0\BiblioFormulaireSaisie.csproj.AssemblyReference.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BiblioFormulaireSaisie\obj\Debug\net6.0\BiblioFormulaireSaisie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BiblioFormulaireSaisie\obj\Debug\net6.0\BiblioFormulaireSaisie.AssemblyInfoInputs.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BiblioFormulaireSaisie\obj\Debug\net6.0\BiblioFormulaireSaisie.AssemblyInfo.cs
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BiblioFormulaireSaisie\obj\Debug\net6.0\BiblioFormulaireSaisie.csproj.CoreCompileInputs.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BiblioFormulaireSaisie\obj\Debug\net6.0\BiblioFormulaireSaisie.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BiblioFormulaireSaisie\obj\Debug\net6.0\refint\BiblioFormulaireSaisie.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BiblioFormulaireSaisie\obj\Debug\net6.0\BiblioFormulaireSaisie.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BiblioFormulaireSaisie\obj\Debug\net6.0\ref\BiblioFormulaireSaisie.dll

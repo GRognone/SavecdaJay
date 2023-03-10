@@ -41,7 +41,13 @@
             this.label4_code_postal = new System.Windows.Forms.Label();
             this.label5_date_txt = new System.Windows.Forms.Label();
             this.errorProvider1_nom = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider_date = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider_montant = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider_code_postal = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1_nom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_montant)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_code_postal)).BeginInit();
             this.SuspendLayout();
             // 
             // button1_valider
@@ -71,7 +77,6 @@
             this.textBox1_nom.Size = new System.Drawing.Size(152, 23);
             this.textBox1_nom.TabIndex = 2;
             this.textBox1_nom.TextChanged += new System.EventHandler(this.textBox1_nom_TextChanged);
-            this.textBox1_nom.Leave += new System.EventHandler(this.textBox1_nom_Leave);
             // 
             // textBox2_date
             // 
@@ -79,6 +84,7 @@
             this.textBox2_date.Name = "textBox2_date";
             this.textBox2_date.Size = new System.Drawing.Size(100, 23);
             this.textBox2_date.TabIndex = 3;
+            this.textBox2_date.TextChanged += new System.EventHandler(this.textBox2_date_TextChanged);
             // 
             // textBox3_montant
             // 
@@ -86,6 +92,7 @@
             this.textBox3_montant.Name = "textBox3_montant";
             this.textBox3_montant.Size = new System.Drawing.Size(100, 23);
             this.textBox3_montant.TabIndex = 4;
+            this.textBox3_montant.TextChanged += new System.EventHandler(this.textBox3_montant_TextChanged);
             // 
             // textBox4_code_postal
             // 
@@ -93,6 +100,7 @@
             this.textBox4_code_postal.Name = "textBox4_code_postal";
             this.textBox4_code_postal.Size = new System.Drawing.Size(100, 23);
             this.textBox4_code_postal.TabIndex = 5;
+            this.textBox4_code_postal.TextChanged += new System.EventHandler(this.textBox4_code_postal_TextChanged);
             // 
             // label1_nom
             // 
@@ -143,6 +151,18 @@
             // 
             this.errorProvider1_nom.ContainerControl = this;
             // 
+            // errorProvider_date
+            // 
+            this.errorProvider_date.ContainerControl = this;
+            // 
+            // errorProvider_montant
+            // 
+            this.errorProvider_montant.ContainerControl = this;
+            // 
+            // errorProvider_code_postal
+            // 
+            this.errorProvider_code_postal.ContainerControl = this;
+            // 
             // FormulaireDeSaisie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -163,8 +183,10 @@
             this.MinimumSize = new System.Drawing.Size(392, 336);
             this.Name = "FormulaireDeSaisie";
             this.Text = "FormulaireDeSaisie";
-       
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1_nom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_montant)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_code_postal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,5 +206,8 @@
         private Label label4_code_postal;
         private Label label5_date_txt;
         private ErrorProvider errorProvider1_nom;
+        private ErrorProvider errorProvider_date;
+        private ErrorProvider errorProvider_montant;
+        private ErrorProvider errorProvider_code_postal;
     }
 }

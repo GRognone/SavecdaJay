@@ -3,7 +3,7 @@
 
 using ClassLibrary_Controles;
 using System.Text.RegularExpressions;
-/*
+
 bool ok1 = Controles.Controle_saisie_nom("AaZeRtGyUikojhuiguyguyk");
 if (ok1)
 {
@@ -13,7 +13,7 @@ else
 {
     Console.WriteLine("saisie incorrecte recommencez");
 }
-*/
+
 
 
 bool ok2 = Controles.Controle_saisie_date("29/02/2023");
@@ -27,7 +27,7 @@ else
 }
 
 
-/*
+
 bool ok3 = Controles.Controle_Saisie_Montant("125");
 
     if (ok3)
@@ -38,9 +38,9 @@ else
 {
     Console.WriteLine("saisie incorrecte recommencez");
 }
-*/
 
-/*
+
+
 bool ok4 = Controles.Controle_Saisie_Code_Postal("15000");
 if (ok4)
 {
@@ -50,7 +50,7 @@ else
 {
     Console.WriteLine("saisie incorrecte recommencez");
 }
-*/
+
 
 
 

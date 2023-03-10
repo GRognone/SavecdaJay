@@ -19,16 +19,17 @@ namespace ClassLibrary_Controles
         public static bool Controle_saisie_date(string date_text)
         {
             DateTime resultat;
-            if (DateTime.TryParse(date_text, out resultat))
+            if (DateTime.TryParse(date_text, out resultat) && resultat > DateTime.Today)
             {
                 return true;
             }
             return false;
+
         }
 
         public static bool Controle_Saisie_Montant(string montant_text)
         {
-            return Regex.Match(montant_text, @"^([0-9]{0,12})([\.|\,]{0,1})+([0-9]{0,2}$)").Success;
+            return Regex.Match(montant_text, @"^([0-9]{0,12})([\.|\,]{0,1})([0-9]{0,2}$)").Success;
         }
 
         public static bool Controle_Saisie_Code_Postal(string code_postal_text)

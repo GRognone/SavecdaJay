@@ -9,6 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ValidationEffectuee.cs" />
+    <Compile Remove="ValidationEffectuee.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="ValidationEffectuee.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BiblioFormulaireSaisie\BiblioFormulaireSaisie.csproj" />
     <ProjectReference Include="..\ClassLibrary_Controles\ClassLibrary_Controles.csproj" />
   </ItemGroup>
 

@@ -41,4 +41,5 @@ C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\LesControles\LesControles\o
 C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\LesControles\LesControles\obj\Debug\net6.0-windows\LesControles.genruntimeconfig.cache
 C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\LesControles\LesControles\obj\Debug\net6.0-windows\ref\LesControles.dll
 C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\LesControles\obj\Debug\net6.0-windows\LesControles.FormulaireDeSaisie.resources
-C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\LesControles\obj\Debug\net6.0-windows\LesControles.ValidationEffectuee.resources
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\LesControles\bin\Debug\net6.0-windows\BiblioFormulaireSaisie.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\LesControles\bin\Debug\net6.0-windows\BiblioFormulaireSaisie.pdb
