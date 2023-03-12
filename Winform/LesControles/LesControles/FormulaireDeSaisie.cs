@@ -1,5 +1,4 @@
-﻿using BiblioFormulaireSaisie;
-using ClassLibrary_Controles;
+﻿using ClassLibrary_Controles;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,29 +14,20 @@ namespace LesControles
     public partial class FormulaireDeSaisie : Form
     {
 
-        private TransactionBoursiere monform;
-
         public FormulaireDeSaisie()
         {
             InitializeComponent();
-            monform = new("","");
 
         }
-
         private void button1_valider_Click(object sender, EventArgs e)
         {
             textBox1_nom.Text = textBox1_nom.Text + "";
             textBox2_date.Text = textBox2_date.Text + "";
             textBox3_montant.Text = textBox3_montant.Text + "";
             textBox4_code_postal.Text = textBox4_code_postal.Text + "";
-            
-            
-                MessageBox.Show(textBox1_nom.Text+"\r\n"+textBox2_date.Text+"\r\n"+textBox3_montant.Text+"\r\n"+textBox4_code_postal.Text,"Validation effectuée",
-                    MessageBoxButtons.OK);
-            
-                
 
-
+            MessageBox.Show(textBox1_nom.Text + "\r\n" + textBox2_date.Text + "\r\n" + textBox3_montant.Text + "\r\n" + textBox4_code_postal.Text, "Validation effectuée",
+                MessageBoxButtons.OK);
         }
 
         private void button2_effacer_Click(object sender, EventArgs e)
@@ -57,7 +47,8 @@ namespace LesControles
             if (!Controles.Controle_saisie_nom(textBox1_nom.Text)) // si la saisie est incorrecte 
             {
                 errorProvider1_nom.SetError(textBox1_nom, "Saisir uniquement des lettres maximum 30 lettres");
-            } else
+            }
+            else
             {
                 errorProvider1_nom.SetError(textBox1_nom, "");
             }
@@ -97,6 +88,17 @@ namespace LesControles
             {
                 errorProvider_date.SetError(textBox4_code_postal, "");
             }
+        }
+                
+        private void FormulaireDeSaisie_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            DialogResult dr = MessageBox.Show
+            ("Fin de l’application ?", "FIN",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question,
+            MessageBoxDefaultButton.Button1);
+            if (dr == DialogResult.Yes)
+                Application.Exit();
         }
     }
 }

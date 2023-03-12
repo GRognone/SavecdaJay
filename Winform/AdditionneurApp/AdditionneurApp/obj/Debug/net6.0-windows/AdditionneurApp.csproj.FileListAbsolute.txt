@@ -1,0 +1,7 @@
+C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\AdditionneurApp\AdditionneurApp\obj\Debug\net6.0-windows\AdditionneurApp.csproj.AssemblyReference.cache
+C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\AdditionneurApp\AdditionneurApp\obj\Debug\net6.0-windows\AdditionneurApp.Additionneur.resources
+C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\AdditionneurApp\AdditionneurApp\obj\Debug\net6.0-windows\AdditionneurApp.csproj.GenerateResource.cache
+C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\AdditionneurApp\AdditionneurApp\obj\Debug\net6.0-windows\AdditionneurApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\AdditionneurApp\AdditionneurApp\obj\Debug\net6.0-windows\AdditionneurApp.AssemblyInfoInputs.cache
+C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\AdditionneurApp\AdditionneurApp\obj\Debug\net6.0-windows\AdditionneurApp.AssemblyInfo.cs
+C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\AdditionneurApp\AdditionneurApp\obj\Debug\net6.0-windows\AdditionneurApp.csproj.CoreCompileInputs.cache

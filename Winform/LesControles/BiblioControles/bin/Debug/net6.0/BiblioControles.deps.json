@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "BiblioControles/1.0.0": {
+        "dependencies": {
+          "BibliOFormulaireBanque": "1.0.0"
+        },
+        "runtime": {
+          "BiblioControles.dll": {}
+        }
+      },
+      "BibliOFormulaireBanque/1.0.0": {
+        "runtime": {
+          "BibliOFormulaireBanque.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BiblioControles/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BibliOFormulaireBanque/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -8,16 +8,10 @@
     ".NETCoreApp,Version=v6.0": {
       "LesControles/1.0.0": {
         "dependencies": {
-          "BiblioFormulaireSaisie": "1.0.0",
           "ClassLibrary_Controles": "1.0.0"
         },
         "runtime": {
           "LesControles.dll": {}
-        }
-      },
-      "BiblioFormulaireSaisie/1.0.0": {
-        "runtime": {
-          "BiblioFormulaireSaisie.dll": {}
         }
       },
       "ClassLibrary_Controles/1.0.0": {
@@ -29,11 +23,6 @@
   },
   "libraries": {
     "LesControles/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "BiblioFormulaireSaisie/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
