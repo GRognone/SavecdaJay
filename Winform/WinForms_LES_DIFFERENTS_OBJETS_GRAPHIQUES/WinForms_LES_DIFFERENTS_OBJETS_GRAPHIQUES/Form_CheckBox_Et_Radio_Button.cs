@@ -41,10 +41,9 @@ namespace WinForms_LES_DIFFERENTS_OBJETS_GRAPHIQUES
             {
                 this.groupBox_fond.Visible = false;
                 this.radioButton_fond_rouge.Checked = false;
-                this.radioButton_caractere_vert.Checked = false;
-                this.radioButton_caractere_bleu.Checked = false;
+                this.radioButton_fond_vert.Checked = false;
+                this.radioButton_fond_bleu.Checked = false;
             }
-
         }
 
         private void radioButton_fond_rouge_CheckedChanged(object sender, EventArgs e)
@@ -99,30 +98,75 @@ namespace WinForms_LES_DIFFERENTS_OBJETS_GRAPHIQUES
             }
         }
 
-        private void checkBox_casse_CheckedChanged(object sender, EventArgs e)
-        {
-           
-        }
-
         private void radioButton_caractere_rouge_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton_caractere_rouge.Checked == true)
             {
-                this.label_rendu_test.BackColor = Color.Red;
+                this.label_rendu_test.ForeColor = Color.Red;
             }
             else
             {
-                this.label_rendu_test.BackColor = Color.Empty;
+                this.label_rendu_test.ForeColor = Color.Empty;
             }
         }
 
         private void radioButton_caractere_vert_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (radioButton_caractere_vert.Checked == true)
+            {
+                this.label_rendu_test.ForeColor = Color.Green;
+            }
+            else
+            {
+                this.label_rendu_test.ForeColor = Color.Empty;
+            }
         }
 
         private void radioButton_caractere_bleu_CheckedChanged(object sender, EventArgs e)
         {
+            if (radioButton_caractere_bleu.Checked == true)
+            {
+                this.label_rendu_test.ForeColor = Color.Blue;
+            }
+            else
+            {
+                this.label_rendu_test.ForeColor = Color.Empty;
+            }
+
+        }
+        private void checkBox_casse_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_casse.Checked)
+            {
+                this.groupBox_casse.Visible = true;
+            }
+            else
+            {
+                groupBox_casse.Visible = false;
+            }
+        }
+
+        private void radioButton_casse_minuscule_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton_casse_minuscule.Checked == true)
+            {
+                this.label_rendu_test.Text = textBox_texte_saisi.Text.ToLower();
+            }
+            else
+            {
+                this.label_rendu_test.Text = textBox_texte_saisi.Text;
+            }
+        }
+        private void radioButton_casse_majuscule_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton_casse_majuscule.Checked == true)
+            {
+               this. label_rendu_test.Text = textBox_texte_saisi.Text.ToUpper();
+            }
+            else
+            {
+                this.label_rendu_test.Text = textBox_texte_saisi.Text;
+            }
 
         }
     }
