@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BiblioControles\BiblioControles.csproj" />
-    <ProjectReference Include="..\BibliOFormulaireBanque\BibliOFormulaireBanque.csproj" />
+    <ProjectReference Include="..\BibliOFormulaireBanque\BiblioVirement.csproj" />
   </ItemGroup>
 
 </Project>

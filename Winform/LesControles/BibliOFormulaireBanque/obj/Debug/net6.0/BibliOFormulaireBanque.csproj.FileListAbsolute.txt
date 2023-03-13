@@ -10,3 +10,15 @@ C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\LesControles\BibliOFormulai
 C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\refint\BibliOFormulaireBanque.dll
 C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BibliOFormulaireBanque.pdb
 C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\ref\BibliOFormulaireBanque.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\bin\Debug\net6.0\BibliOFormulaireBanque.deps.json
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\bin\Debug\net6.0\BibliOFormulaireBanque.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\bin\Debug\net6.0\BibliOFormulaireBanque.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BibliOFormulaireBanque.csproj.AssemblyReference.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BibliOFormulaireBanque.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BibliOFormulaireBanque.AssemblyInfoInputs.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BibliOFormulaireBanque.AssemblyInfo.cs
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BibliOFormulaireBanque.csproj.CoreCompileInputs.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BibliOFormulaireBanque.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\refint\BibliOFormulaireBanque.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BibliOFormulaireBanque.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\ref\BibliOFormulaireBanque.dll

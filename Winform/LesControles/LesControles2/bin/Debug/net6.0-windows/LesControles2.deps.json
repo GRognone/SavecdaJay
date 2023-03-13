@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "LesControles2/1.0.0": {
         "dependencies": {
-          "BibliOFormulaireBanque": "1.0.0",
-          "BiblioControles": "1.0.0"
+          "BiblioControles": "1.0.0",
+          "BiblioVirement": "1.0.0"
         },
         "runtime": {
           "LesControles2.dll": {}
@@ -17,15 +17,15 @@
       },
       "BiblioControles/1.0.0": {
         "dependencies": {
-          "BibliOFormulaireBanque": "1.0.0"
+          "BiblioVirement": "1.0.0"
         },
         "runtime": {
           "BiblioControles.dll": {}
         }
       },
-      "BibliOFormulaireBanque/1.0.0": {
+      "BiblioVirement/1.0.0": {
         "runtime": {
-          "BibliOFormulaireBanque.dll": {}
+          "BiblioVirement.dll": {}
         }
       }
     }
@@ -41,7 +41,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "BibliOFormulaireBanque/1.0.0": {
+    "BiblioVirement/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

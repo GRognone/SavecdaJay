@@ -1,4 +1,4 @@
-﻿using BibliOFormulaireBanque;
+﻿using BiblioVirement;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,19 +13,32 @@ namespace LesControles2
 {
     public partial class ValidationsEffectuees : Form
     {
-        private FormulaireBanque monFormulaire;
-     
+        private Virement monFormulaire;
+
 
         public ValidationsEffectuees()
         {
             InitializeComponent();
         }
 
-        public ValidationsEffectuees(FormulaireBanque FormulaireARecuperer)
+        public ValidationsEffectuees(Virement formulaireARecuperer)
         {
             InitializeComponent();
-            monFormulaire = FormulaireARecuperer;
-            
+            monFormulaire = formulaireARecuperer;
+
+            this.label_nom_valide.Text = "Nom : " + formulaireARecuperer.Nom;
+            this.label_date_valide.Text = "Date : " + formulaireARecuperer.Date;
+            this.label_montant_valide.Text = "Montant : " + formulaireARecuperer.Montant;
+            this.label_Cp_valide.Text = "Code Postal : " + formulaireARecuperer.Code_postal;
+
         }
+
+       
+        private void button_ok_valide_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        
     }
 }

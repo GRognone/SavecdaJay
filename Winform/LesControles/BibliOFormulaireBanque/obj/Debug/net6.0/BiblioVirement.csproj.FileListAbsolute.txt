@@ -1,0 +1,12 @@
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\bin\Debug\net6.0\BiblioVirement.deps.json
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\bin\Debug\net6.0\BiblioVirement.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\bin\Debug\net6.0\BiblioVirement.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BiblioVirement.csproj.AssemblyReference.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BiblioVirement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BiblioVirement.AssemblyInfoInputs.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BiblioVirement.AssemblyInfo.cs
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BiblioVirement.csproj.CoreCompileInputs.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BiblioVirement.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\refint\BiblioVirement.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\BiblioVirement.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\LesControles\BibliOFormulaireBanque\obj\Debug\net6.0\ref\BiblioVirement.dll

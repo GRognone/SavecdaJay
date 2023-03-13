@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LesControles2", "LesControl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BiblioControles", "BiblioControles\BiblioControles.csproj", "{4E6C5278-654B-4BF8-B39B-78F0ED35776C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BibliOFormulaireBanque", "BibliOFormulaireBanque\BibliOFormulaireBanque.csproj", "{93EF526C-1361-4E80-80AE-6A493F2FC72B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BiblioVirement", "BibliOFormulaireBanque\BiblioVirement.csproj", "{93EF526C-1361-4E80-80AE-6A493F2FC72B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

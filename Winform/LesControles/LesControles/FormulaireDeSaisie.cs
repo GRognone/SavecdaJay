@@ -89,16 +89,20 @@ namespace LesControles
                 errorProvider_date.SetError(textBox4_code_postal, "");
             }
         }
-                
-        private void FormulaireDeSaisie_FormClosed(object sender, FormClosedEventArgs e)
+
+
+
+        private void FormulaireDeSaisie_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult dr = MessageBox.Show
-            ("Fin de l’application ?", "FIN",
+            DialogResult dr = MessageBox.Show("Fin de l’application ?", "FIN",
             MessageBoxButtons.YesNo,
             MessageBoxIcon.Question,
             MessageBoxDefaultButton.Button1);
-            if (dr == DialogResult.Yes)
-                Application.Exit();
+            if (dr == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            
         }
     }
 }

@@ -27,7 +27,7 @@ namespace BiblioControles
 
         public static bool MontantAVerifier(string montant_text)
         {
-            return Regex.Match(montant_text, @"^[0-9]{0,10}[\,]{0,1}[\.]{0,1}[0-9]{0,2}$").Success;
+            return Regex.Match(montant_text, @"^[0-9]{0,10}[\,\.]{0,1}[0-9]{0,2}$").Success;
         }
 
         public static bool CodePostalAVerifier (string code_postal_text)
