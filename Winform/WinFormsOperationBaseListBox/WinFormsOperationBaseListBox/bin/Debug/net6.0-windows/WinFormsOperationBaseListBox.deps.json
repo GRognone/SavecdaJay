@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "WinFormsOperationBaseListBox/1.0.0": {
+        "dependencies": {
+          "ClassLibraryControle": "1.0.0"
+        },
         "runtime": {
           "WinFormsOperationBaseListBox.dll": {}
+        }
+      },
+      "ClassLibraryControle/1.0.0": {
+        "runtime": {
+          "ClassLibraryControle.dll": {}
         }
       }
     }
   },
   "libraries": {
     "WinFormsOperationBaseListBox/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClassLibraryControle/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

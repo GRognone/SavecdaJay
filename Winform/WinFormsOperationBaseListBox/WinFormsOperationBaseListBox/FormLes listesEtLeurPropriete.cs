@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibraryControle;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -33,11 +35,19 @@ namespace WinFormsOperationBaseListBox
         }
         private void button_selectionner_Click(object sender, EventArgs e)
         {
-            if (listBox_liste_de_nom.Items.Count >= 1)
+            if (!Controles.IndexElementAVerifier(textBox_index_element.Text))
             {
-                listBox_liste_de_nom.SelectedIndex = int.Parse(textBox_index_element.Text);
-                textBox_selected_items.Text = textBox_index_element.Text;
-                textBox_text.Text = listBox_liste_de_nom.Text;
+                if (listBox_liste_de_nom.Items.Count >= 1)
+                {
+                    listBox_liste_de_nom.SelectedIndex = int.Parse(textBox_index_element.Text);
+                    textBox_selected_items.Text = textBox_index_element.Text;
+                    textBox_text.Text = listBox_liste_de_nom.Text;
+                    textBox_index_element.Clear();
+                }
+            }
+            else
+            {
+                errorProvider_index_element.SetError(textBox_index_element, "veuillez saisir un numero entre 0 et index count -1");
             }
         }
         private void button_vider_liste_Click(object sender, EventArgs e)
@@ -49,13 +59,32 @@ namespace WinFormsOperationBaseListBox
         {
             textBox_selected_items.Text = listBox_liste_de_nom.SelectedIndex.ToString();
             textBox_text.Text = listBox_liste_de_nom.Text;
-            textBox_index_element.Clear();
+
         }
         private void textBox_saisie_liste_TextChanged(object sender, EventArgs e)
         {
-
+            if (!Controles.NomAVerifier(textBox_saisie_liste.Text))
+            {
+                errorProvider_nouvel_element.SetError(textBox_index_element, "veuillez saisir un numero entre 0 et index count -1");
+            }
+            else
+            {
+                errorProvider_nouvel_element.SetError(textBox_saisie_liste, "");
+            }
         }
         private void textBox_index_element_TextChanged(object sender, EventArgs e)
+        {
+            if (!Controles.IndexElementAVerifier(textBox_index_element.Text))
+            {
+                errorProvider_index_element.SetError(textBox_index_element, "veuillez saisir un numero entre 0 et index count -1");
+            }
+            else
+            {
+                errorProvider_index_element.SetError(textBox_index_element, "");
+            }
+        }
+
+        private void FormLes_listesEtLeurPropriete_Load(object sender, EventArgs e)
         {
 
         }
