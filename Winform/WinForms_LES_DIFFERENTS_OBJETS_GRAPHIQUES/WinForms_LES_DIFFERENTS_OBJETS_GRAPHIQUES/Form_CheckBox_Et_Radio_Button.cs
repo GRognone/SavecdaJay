@@ -18,19 +18,34 @@ namespace WinForms_LES_DIFFERENTS_OBJETS_GRAPHIQUES
         }
 
         private void textBox_texte_saisi_TextChanged(object sender, EventArgs e)
-        {
+        { //this.groupBox_choix.Enabled = textBox_texte_saisi.Text != "" autre facon d'ecrire
             if (textBox_texte_saisi.Text == "")
             {
-                this.groupBox_choix.Enabled = false;
+                //si on efface le texte le groupe se ferme
+                this.groupBox_choix.Enabled = false; 
+                this.checkBox_couleur_fond.Checked = false; 
+                this.checkBox_couleur_caractere.Checked = false; 
+                this.checkBox_casse.Checked = false;
             }
             else
             {
                 this.groupBox_choix.Enabled = true;
             }
 
-            label_rendu_test.Text = textBox_texte_saisi.Text;
+            if (radioButton_casse_minuscule.Checked == true)
+            {
+                this.label_rendu_test.Text = textBox_texte_saisi.Text.ToLower();
+            }
+            else if (radioButton_casse_majuscule.Checked == true)
+            {
+                this.label_rendu_test.Text = textBox_texte_saisi.Text.ToUpper();
+            }
+            else
+            {
+                label_rendu_test.Text = textBox_texte_saisi.Text;
+            }
         }
-
+           
         private void checkBox_couleur_fond_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_couleur_fond.Checked == true)
@@ -43,9 +58,9 @@ namespace WinForms_LES_DIFFERENTS_OBJETS_GRAPHIQUES
                 this.radioButton_fond_rouge.Checked = false;
                 this.radioButton_fond_vert.Checked = false;
                 this.radioButton_fond_bleu.Checked = false;
+                
             }
         }
-
         private void radioButton_fond_rouge_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton_fond_rouge.Checked == true)
@@ -57,7 +72,6 @@ namespace WinForms_LES_DIFFERENTS_OBJETS_GRAPHIQUES
                 this.label_rendu_test.BackColor = Color.Empty;
             }
         }
-
         private void radioButton_fond_vert_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton_fond_vert.Checked == true)
@@ -69,7 +83,6 @@ namespace WinForms_LES_DIFFERENTS_OBJETS_GRAPHIQUES
                 this.label_rendu_test.BackColor = Color.Empty;
             }
         }
-
         private void radioButton_fond_bleu_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton_fond_bleu.Checked == true)
@@ -94,10 +107,8 @@ namespace WinForms_LES_DIFFERENTS_OBJETS_GRAPHIQUES
                 this.radioButton_caractere_rouge.Checked = false;
                 this.radioButton_caractere_vert.Checked = false;
                 this.radioButton_caractere_bleu.Checked = false;
-
             }
         }
-
         private void radioButton_caractere_rouge_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton_caractere_rouge.Checked == true)
@@ -109,7 +120,6 @@ namespace WinForms_LES_DIFFERENTS_OBJETS_GRAPHIQUES
                 this.label_rendu_test.ForeColor = Color.Empty;
             }
         }
-
         private void radioButton_caractere_vert_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton_caractere_vert.Checked == true)
@@ -121,7 +131,6 @@ namespace WinForms_LES_DIFFERENTS_OBJETS_GRAPHIQUES
                 this.label_rendu_test.ForeColor = Color.Empty;
             }
         }
-
         private void radioButton_caractere_bleu_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton_caractere_bleu.Checked == true)
@@ -134,22 +143,28 @@ namespace WinForms_LES_DIFFERENTS_OBJETS_GRAPHIQUES
             }
 
         }
+        // donne acces aux boutons de changement majuscule minuscule
         private void checkBox_casse_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox_casse.Checked)
+            if (checkBox_casse.Checked == true )
             {
                 this.groupBox_casse.Visible = true;
+
             }
-            else
+            else if (checkBox_casse.Checked == false)
             {
-                groupBox_casse.Visible = false;
+                this.groupBox_casse.Visible = false;
+                this.radioButton_casse_minuscule.Checked = false;
+                this.radioButton_casse_majuscule.Checked = false;
+              
             }
         }
-
+        // transforme les caracteres en minuscule
         private void radioButton_casse_minuscule_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton_casse_minuscule.Checked == true)
             {
+
                 this.label_rendu_test.Text = textBox_texte_saisi.Text.ToLower();
             }
             else
@@ -157,17 +172,17 @@ namespace WinForms_LES_DIFFERENTS_OBJETS_GRAPHIQUES
                 this.label_rendu_test.Text = textBox_texte_saisi.Text;
             }
         }
+        // transforme les caracteres en majuscule
         private void radioButton_casse_majuscule_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton_casse_majuscule.Checked == true)
             {
-               this. label_rendu_test.Text = textBox_texte_saisi.Text.ToUpper();
+                this.label_rendu_test.Text = textBox_texte_saisi.Text.ToUpper();
             }
             else
             {
                 this.label_rendu_test.Text = textBox_texte_saisi.Text;
             }
-
         }
     }
 }
