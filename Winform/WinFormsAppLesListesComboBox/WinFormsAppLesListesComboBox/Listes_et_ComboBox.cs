@@ -22,7 +22,7 @@ namespace WinFormsAppLesListesComboBox
 
         private void button_1_element_source_to_cible_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(comboBox_userInput.SelectedText);
+            listBox1.Items.Add(comboBox_userInput.Text);
             comboBox_userInput.Items.Remove(comboBox_userInput.Items[comboBox_userInput.SelectedIndex]);
             if (comboBox_userInput.Items.Count == 0)
                 comboBox_userInput.Text = "";
@@ -31,6 +31,16 @@ namespace WinFormsAppLesListesComboBox
 
         private void buttonbutton_All_element_source_to_cible_Click(object sender, EventArgs e)
         {
+           for (int i = 0; i < listBox1.Items.Count; i++)
+            {
+                comboBox_userInput.Items.Add(listBox1.Items[i]);
+                if (comboBox_userInput.Items.Count == 0)
+                    comboBox_userInput.Text = "";
+            }
+
+            
+            
+
 
         }
 
@@ -38,6 +48,8 @@ namespace WinFormsAppLesListesComboBox
         {
             comboBox_userInput.Items.Add(listBox1.Text);
             listBox1.Items.Remove(listBox1.Items[listBox1.SelectedIndex]);
+            if (listBox1.Items.Count == 0)
+                listBox1.Text = "";
         }
 
         private void button_all_element_cible_to_source_Click(object sender, EventArgs e)
