@@ -78,7 +78,6 @@
             this.textBox1_nom.Name = "textBox1_nom";
             this.textBox1_nom.Size = new System.Drawing.Size(152, 23);
             this.textBox1_nom.TabIndex = 2;
-            this.textBox1_nom.Text = "s";
             this.textBox1_nom.TextChanged += new System.EventHandler(this.textBox1_nom_TextChanged);
             // 
             // textBox2_date

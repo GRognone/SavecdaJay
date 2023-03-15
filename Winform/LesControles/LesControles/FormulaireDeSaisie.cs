@@ -26,7 +26,7 @@ namespace LesControles
             textBox3_montant.Text = textBox3_montant.Text + "";
             textBox4_code_postal.Text = textBox4_code_postal.Text + "";
 
-            MessageBox.Show(textBox1_nom.Text + "\r\n" + textBox2_date.Text + "\r\n" + textBox3_montant.Text + "\r\n" + textBox4_code_postal.Text, "Validation effectuée",
+            MessageBox.Show("Nom : "+textBox1_nom.Text + "\r\n" +"Date : "+textBox2_date.Text + "\r\n" + "Montant : "+textBox3_montant.Text + "\r\n" + "Code Postal : "+textBox4_code_postal.Text, "Validation effectuée",
                 MessageBoxButtons.OK);
         }
 
