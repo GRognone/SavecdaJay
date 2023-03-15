@@ -35,3 +35,6 @@ C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBo
 C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\WinFormsOperationBaseListBox\bin\Debug\net6.0-windows\ClassLibraryControle.dll
 C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\WinFormsOperationBaseListBox\bin\Debug\net6.0-windows\ClassLibraryControle.pdb
 C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\WinFormsOperationBaseListBox\obj\Debug\net6.0-windows\WinFormsOperationBaseListBox.csproj.CopyComplete
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\WinFormsOperationBaseListBox\bin\Debug\net6.0-windows\ClassLibraryControle.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\WinFormsOperationBaseListBox\bin\Debug\net6.0-windows\ClassLibraryControle.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\WinFormsOperationBaseListBox\obj\Debug\net6.0-windows\WinFormsOperationBaseListBox.csproj.CopyComplete

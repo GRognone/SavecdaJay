@@ -10,3 +10,15 @@ C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBo
 C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\obj\Debug\net6.0\refint\ClassLibraryControle.dll
 C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\obj\Debug\net6.0\ClassLibraryControle.pdb
 C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\obj\Debug\net6.0\ref\ClassLibraryControle.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\bin\Debug\net6.0\ClassLibraryControle.deps.json
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\bin\Debug\net6.0\ClassLibraryControle.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\bin\Debug\net6.0\ClassLibraryControle.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\obj\Debug\net6.0\ClassLibraryControle.csproj.AssemblyReference.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\obj\Debug\net6.0\ClassLibraryControle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\obj\Debug\net6.0\ClassLibraryControle.AssemblyInfoInputs.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\obj\Debug\net6.0\ClassLibraryControle.AssemblyInfo.cs
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\obj\Debug\net6.0\ClassLibraryControle.csproj.CoreCompileInputs.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\obj\Debug\net6.0\ClassLibraryControle.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\obj\Debug\net6.0\refint\ClassLibraryControle.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\obj\Debug\net6.0\ClassLibraryControle.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsOperationBaseListBox\ClassLibraryControle\obj\Debug\net6.0\ref\ClassLibraryControle.dll

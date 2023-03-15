@@ -11,12 +11,12 @@ namespace ClassLibraryControle
     {
         public static bool NomAVerifier(string nom_text)
         {
-            return Regex.Match(nom_text, @"^[a-z]{0-30}[-]{0,1}[A-Z]{0,30}$").Success;
+            return Regex.Match(nom_text, @"^[a-zA-Z]{1,30}[-]{0,1}[a-zA-Z]{0,30}$").Success;
         }
 
         public static bool IndexElementAVerifier(string index_text)
         {
-            return Regex.Match(index_text, @"[0-9]^$").Success;
+            return Regex.Match(index_text, @"^[0-9]+$").Success;
         }
     }
 }
