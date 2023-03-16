@@ -18,8 +18,8 @@ namespace WinFormsAppLesListesComboBox
         {
             InitializeComponent();
         }
+        
         #region mes boutons
-
         private void button_1_element_source_to_cible_Click(object sender, EventArgs e)
         {
             if (comboBox_userInput.SelectedItem != null)
@@ -34,13 +34,11 @@ namespace WinFormsAppLesListesComboBox
                 }
             }
         }
-
         private void button_All_element_source_to_cible_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < comboBox_userInput.Items.Count ; i++)
+            for (int i = 0; i < comboBox_userInput.Items.Count; i++)
             {
                 listBox1.Items.Add(comboBox_userInput.Items[i]);
-               
                 if (comboBox_userInput.Items.Count == 0)
                 {
                     button_All_element_source_to_cible.Enabled = false;
@@ -48,7 +46,6 @@ namespace WinFormsAppLesListesComboBox
             }
             comboBox_userInput.Items.Clear();
         }
-
         private void button_1_element_cible_to_source_Click(object sender, EventArgs e)
         {
 
@@ -60,9 +57,7 @@ namespace WinFormsAppLesListesComboBox
                 listBox1.Text = "";
                 button_1_element_cible_to_source.Enabled = false;
             }
-
         }
-
         private void button_all_element_cible_to_source_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < listBox1.Items.Count; i++)
@@ -76,7 +71,6 @@ namespace WinFormsAppLesListesComboBox
             }
             listBox1.Items.Clear();
         }
-
         private void button_cible_selectline_up_Click(object sender, EventArgs e)
         {
             if (listBox1.SelectedIndex > 0)
@@ -86,13 +80,14 @@ namespace WinFormsAppLesListesComboBox
                 listBox1.Items.RemoveAt(valeurIndex);
                 listBox1.Items.Insert(valeurIndex - 1, valeurItemTemp);
                 listBox1.SelectedIndex = valeurIndex - 1;
+                if (listBox1.Items.Count == 0)
+                {
+                    button_cible_selectline_up.Enabled = false;
+                }
             }
         }
-
         private void button_cible_selectline_down_Click(object sender, EventArgs e)
         {
-
-
             if (listBox1.SelectedIndex < listBox1.Items.Count - 1)
             {
                 int valeurIndex = listBox1.SelectedIndex;
@@ -100,13 +95,15 @@ namespace WinFormsAppLesListesComboBox
                 listBox1.Items.RemoveAt(valeurIndex);
                 listBox1.Items.Insert(valeurIndex + 1, valeurTemp);
                 listBox1.SelectedIndex = valeurIndex + 1;
+                if (listBox1.Items.Count == 0)
+                {
+                    button_cible_selectline_down.Enabled = false;
+                }
             }
         }
-
         #endregion
 
         #region comboBox
-
         private void comboBox_userInput_TextChanged(object sender, EventArgs e)
         {
 
@@ -122,7 +119,7 @@ namespace WinFormsAppLesListesComboBox
             {
                 comboBox_userInput.Text = "";
                 button_1_element_source_to_cible.Enabled = false;
-                button_All_element_source_to_cible.Enabled = false;
+                //button_All_element_source_to_cible.Enabled = false;
             }
         }
         private void comboBox_userInput_DropDown(object sender, EventArgs e)
@@ -133,6 +130,7 @@ namespace WinFormsAppLesListesComboBox
                     && listBox1.FindStringExact(comboBox_userInput.Text) == -1)
                 {
                     comboBox_userInput.Items.Add(comboBox_userInput.Text);
+                   
                     this.button_All_element_source_to_cible.Enabled = true;
 
                     comboBox_userInput.ResetText();
@@ -141,28 +139,34 @@ namespace WinFormsAppLesListesComboBox
             }
         }
         #endregion
-        #region Activation Boutons
 
+        #region Activation Boutons
         private void comboBox_userInput_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.button_1_element_source_to_cible.Enabled = true;
-        }
+            if (comboBox_userInput.Items.Count == 0)
+            {
+                this.button_1_element_source_to_cible.Enabled = true;
+                this.button_All_element_source_to_cible.Enabled = true;
+            }
 
+        }
         private void listBox1_Selected_IndexChanged(object sender, EventArgs e)
         {
-            this.button_1_element_cible_to_source.Enabled = true;
-            this.button_all_element_cible_to_source.Enabled = true;
-            this.button_cible_selectline_up.Enabled = true;
-            this.button_cible_selectline_down.Enabled = true;
-
-
             if (listBox1.Items.Count == 0)
             {
-                comboBox_userInput.Text = "";
+                listBox1.Text = "";
                 this.button_1_element_cible_to_source.Enabled = false;
                 this.button_all_element_cible_to_source.Enabled = false;
                 this.button_cible_selectline_up.Enabled = false;
                 this.button_cible_selectline_down.Enabled = false;
+            }
+
+            else
+            {
+                this.button_1_element_cible_to_source.Enabled = true;
+                this.button_all_element_cible_to_source.Enabled = true;
+                this.button_cible_selectline_up.Enabled = true;
+                this.button_cible_selectline_down.Enabled = true;
             }
 
             // desactive le bouton up sur la 1ere ligne de la liste
@@ -178,8 +182,6 @@ namespace WinFormsAppLesListesComboBox
             }
 
         }
-
         #endregion
-
     }
 }
