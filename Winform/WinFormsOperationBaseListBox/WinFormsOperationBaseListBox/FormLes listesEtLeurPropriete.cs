@@ -70,8 +70,7 @@ namespace WinFormsOperationBaseListBox
             listBox_liste_de_nom.Items.Clear();
             textBox_items_count.Text = listBox_liste_de_nom.Items.Count.ToString();
             textBox_text.Clear();
-            textBox_selected_items.Clear();
-            textBox_items_count.Clear();
+            textBox_selected_items.Clear(); 
         }
 
         #endregion
@@ -86,25 +85,26 @@ namespace WinFormsOperationBaseListBox
 
         private void textBox_saisie_liste_TextChanged(object sender, EventArgs e)
         {
-            if (!Controles.NomAVerifier(TextBoxSaisieNom.Text))
+            if (TextBoxSaisieNom.Text != "" && !Controles.NomAVerifier(TextBoxSaisieNom.Text))
             {
                 errorProvider_nouvel_element.SetError(TextBoxSaisieNom, "Veuillez-saisir uniquement des lettres et 1 '-' pour les prenoms composés");
             }
             else
             {
-                errorProvider_nouvel_element.SetError(TextBoxSaisieNom, "");
+                errorProvider_nouvel_element.Clear();
             }
         }
 
         private void textBox_index_element_TextChanged(object sender, EventArgs e)
         {
-            if (!Controles.IndexElementAVerifier(textBox_index_element.Text))
+            
+            if (textBox_index_element.Text != "" && !Controles.IndexElementAVerifier(textBox_index_element.Text))
             {
                 errorProvider_index_element.SetError(textBox_index_element, "veuillez saisir un numero entre 0 et " + (listBox_liste_de_nom.Items.Count - 1));
             }
             else
             {
-                errorProvider_index_element.SetError(textBox_index_element, "");
+                errorProvider_index_element.Clear();
             }
         }
 

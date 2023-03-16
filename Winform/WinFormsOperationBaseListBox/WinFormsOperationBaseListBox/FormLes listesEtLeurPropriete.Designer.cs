@@ -171,6 +171,7 @@
             this.textBox_items_count.Name = "textBox_items_count";
             this.textBox_items_count.Size = new System.Drawing.Size(48, 23);
             this.textBox_items_count.TabIndex = 12;
+            this.textBox_items_count.Text = "0";
             // 
             // textBox_selected_items
             // 

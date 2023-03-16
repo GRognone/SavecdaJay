@@ -28,164 +28,163 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            button_1_element_source_to_cible = new Button();
-            buttonbutton_All_element_source_to_cible = new Button();
-            button_1_element_cible_to_source = new Button();
-            button_all_element_cible_to_source = new Button();
-            button_cible_selectline_up = new Button();
-            button_cible_selectline_down = new Button();
-            comboBox_userInput = new ComboBox();
-            listBox1 = new ListBox();
-            label_source = new Label();
-            label_cible = new Label();
-            errorProvider_control_user_input = new ErrorProvider(components);
-            ((System.ComponentModel.ISupportInitialize)errorProvider_control_user_input).BeginInit();
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.button_1_element_source_to_cible = new System.Windows.Forms.Button();
+            this.button_All_element_source_to_cible = new System.Windows.Forms.Button();
+            this.button_1_element_cible_to_source = new System.Windows.Forms.Button();
+            this.button_all_element_cible_to_source = new System.Windows.Forms.Button();
+            this.button_cible_selectline_up = new System.Windows.Forms.Button();
+            this.button_cible_selectline_down = new System.Windows.Forms.Button();
+            this.comboBox_userInput = new System.Windows.Forms.ComboBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label_source = new System.Windows.Forms.Label();
+            this.label_cible = new System.Windows.Forms.Label();
+            this.errorProvider_control_user_input = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_control_user_input)).BeginInit();
+            this.SuspendLayout();
             // 
             // button_1_element_source_to_cible
             // 
-            button_1_element_source_to_cible.Location = new Point(199, 63);
-            button_1_element_source_to_cible.Margin = new Padding(4, 5, 4, 5);
-            button_1_element_source_to_cible.Name = "button_1_element_source_to_cible";
-            button_1_element_source_to_cible.Size = new Size(107, 38);
-            button_1_element_source_to_cible.TabIndex = 0;
-            button_1_element_source_to_cible.Text = ">";
-            button_1_element_source_to_cible.UseVisualStyleBackColor = true;
-            button_1_element_source_to_cible.Click += button_1_element_source_to_cible_Click;
+            this.button_1_element_source_to_cible.Enabled = false;
+            this.button_1_element_source_to_cible.Location = new System.Drawing.Point(139, 38);
+            this.button_1_element_source_to_cible.Name = "button_1_element_source_to_cible";
+            this.button_1_element_source_to_cible.Size = new System.Drawing.Size(75, 23);
+            this.button_1_element_source_to_cible.TabIndex = 0;
+            this.button_1_element_source_to_cible.Text = ">";
+            this.button_1_element_source_to_cible.UseVisualStyleBackColor = true;
+            this.button_1_element_source_to_cible.EnabledChanged += new System.EventHandler(this.comboBox_userInput_TextChanged);
+            this.button_1_element_source_to_cible.Click += new System.EventHandler(this.button_1_element_source_to_cible_Click);
             // 
-            // buttonbutton_All_element_source_to_cible
+            // button_All_element_source_to_cible
             // 
-            buttonbutton_All_element_source_to_cible.Location = new Point(199, 112);
-            buttonbutton_All_element_source_to_cible.Margin = new Padding(4, 5, 4, 5);
-            buttonbutton_All_element_source_to_cible.Name = "buttonbutton_All_element_source_to_cible";
-            buttonbutton_All_element_source_to_cible.Size = new Size(107, 38);
-            buttonbutton_All_element_source_to_cible.TabIndex = 1;
-            buttonbutton_All_element_source_to_cible.Text = ">>";
-            buttonbutton_All_element_source_to_cible.UseVisualStyleBackColor = true;
-            buttonbutton_All_element_source_to_cible.Click += buttonbutton_All_element_source_to_cible_Click;
+            this.button_All_element_source_to_cible.Enabled = false;
+            this.button_All_element_source_to_cible.Location = new System.Drawing.Point(139, 67);
+            this.button_All_element_source_to_cible.Name = "button_All_element_source_to_cible";
+            this.button_All_element_source_to_cible.Size = new System.Drawing.Size(75, 23);
+            this.button_All_element_source_to_cible.TabIndex = 1;
+            this.button_All_element_source_to_cible.Text = ">>";
+            this.button_All_element_source_to_cible.UseVisualStyleBackColor = true;
+            this.button_All_element_source_to_cible.EnabledChanged += new System.EventHandler(this.comboBox_userInput_TextChanged);
+            this.button_All_element_source_to_cible.Click += new System.EventHandler(this.button_All_element_source_to_cible_Click);
             // 
             // button_1_element_cible_to_source
             // 
-            button_1_element_cible_to_source.Location = new Point(199, 223);
-            button_1_element_cible_to_source.Margin = new Padding(4, 5, 4, 5);
-            button_1_element_cible_to_source.Name = "button_1_element_cible_to_source";
-            button_1_element_cible_to_source.Size = new Size(107, 38);
-            button_1_element_cible_to_source.TabIndex = 2;
-            button_1_element_cible_to_source.Text = "<";
-            button_1_element_cible_to_source.UseVisualStyleBackColor = true;
-            button_1_element_cible_to_source.Click += button_1_element_cible_to_source_Click;
+            this.button_1_element_cible_to_source.Enabled = false;
+            this.button_1_element_cible_to_source.Location = new System.Drawing.Point(139, 134);
+            this.button_1_element_cible_to_source.Name = "button_1_element_cible_to_source";
+            this.button_1_element_cible_to_source.Size = new System.Drawing.Size(75, 23);
+            this.button_1_element_cible_to_source.TabIndex = 2;
+            this.button_1_element_cible_to_source.Text = "<";
+            this.button_1_element_cible_to_source.UseVisualStyleBackColor = true;
+            this.button_1_element_cible_to_source.Click += new System.EventHandler(this.button_1_element_cible_to_source_Click);
             // 
             // button_all_element_cible_to_source
             // 
-            button_all_element_cible_to_source.Location = new Point(199, 272);
-            button_all_element_cible_to_source.Margin = new Padding(4, 5, 4, 5);
-            button_all_element_cible_to_source.Name = "button_all_element_cible_to_source";
-            button_all_element_cible_to_source.Size = new Size(107, 38);
-            button_all_element_cible_to_source.TabIndex = 3;
-            button_all_element_cible_to_source.Text = "<<";
-            button_all_element_cible_to_source.UseVisualStyleBackColor = true;
-            button_all_element_cible_to_source.Click += button_all_element_cible_to_source_Click;
+            this.button_all_element_cible_to_source.Enabled = false;
+            this.button_all_element_cible_to_source.Location = new System.Drawing.Point(139, 163);
+            this.button_all_element_cible_to_source.Name = "button_all_element_cible_to_source";
+            this.button_all_element_cible_to_source.Size = new System.Drawing.Size(75, 23);
+            this.button_all_element_cible_to_source.TabIndex = 3;
+            this.button_all_element_cible_to_source.Text = "<<";
+            this.button_all_element_cible_to_source.UseVisualStyleBackColor = true;
+            this.button_all_element_cible_to_source.Click += new System.EventHandler(this.button_all_element_cible_to_source_Click);
             // 
             // button_cible_selectline_up
             // 
-            button_cible_selectline_up.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button_cible_selectline_up.Location = new Point(361, 230);
-            button_cible_selectline_up.Margin = new Padding(4, 5, 4, 5);
-            button_cible_selectline_up.Name = "button_cible_selectline_up";
-            button_cible_selectline_up.Size = new Size(33, 38);
-            button_cible_selectline_up.TabIndex = 4;
-            button_cible_selectline_up.Text = "↑";
-            button_cible_selectline_up.UseVisualStyleBackColor = true;
-            button_cible_selectline_up.Click += button_cible_selectline_up_Click;
+            this.button_cible_selectline_up.Enabled = false;
+            this.button_cible_selectline_up.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_cible_selectline_up.Location = new System.Drawing.Point(253, 138);
+            this.button_cible_selectline_up.Name = "button_cible_selectline_up";
+            this.button_cible_selectline_up.Size = new System.Drawing.Size(23, 23);
+            this.button_cible_selectline_up.TabIndex = 4;
+            this.button_cible_selectline_up.Text = "↑";
+            this.button_cible_selectline_up.UseVisualStyleBackColor = true;
+            this.button_cible_selectline_up.Click += new System.EventHandler(this.button_cible_selectline_up_Click);
             // 
             // button_cible_selectline_down
             // 
-            button_cible_selectline_down.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button_cible_selectline_down.Location = new Point(403, 230);
-            button_cible_selectline_down.Margin = new Padding(4, 5, 4, 5);
-            button_cible_selectline_down.Name = "button_cible_selectline_down";
-            button_cible_selectline_down.Size = new Size(33, 38);
-            button_cible_selectline_down.TabIndex = 5;
-            button_cible_selectline_down.Text = "↓";
-            button_cible_selectline_down.UseVisualStyleBackColor = true;
-            button_cible_selectline_down.Click += button_cible_selectline_down_Click;
+            this.button_cible_selectline_down.Enabled = false;
+            this.button_cible_selectline_down.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_cible_selectline_down.Location = new System.Drawing.Point(282, 138);
+            this.button_cible_selectline_down.Name = "button_cible_selectline_down";
+            this.button_cible_selectline_down.Size = new System.Drawing.Size(23, 23);
+            this.button_cible_selectline_down.TabIndex = 5;
+            this.button_cible_selectline_down.Text = "↓";
+            this.button_cible_selectline_down.UseVisualStyleBackColor = true;
+            this.button_cible_selectline_down.Click += new System.EventHandler(this.button_cible_selectline_down_Click);
             // 
             // comboBox_userInput
             // 
-            comboBox_userInput.FormattingEnabled = true;
-            comboBox_userInput.Location = new Point(17, 63);
-            comboBox_userInput.Margin = new Padding(4, 5, 4, 5);
-            comboBox_userInput.Name = "comboBox_userInput";
-            comboBox_userInput.Size = new Size(171, 33);
-            comboBox_userInput.TabIndex = 6;
-            comboBox_userInput.DropDown += comboBox_userInput_DropDown;
-            comboBox_userInput.TextChanged += comboBox_userInput_TextChanged;
+            this.comboBox_userInput.FormattingEnabled = true;
+            this.comboBox_userInput.Location = new System.Drawing.Point(12, 38);
+            this.comboBox_userInput.Name = "comboBox_userInput";
+            this.comboBox_userInput.Size = new System.Drawing.Size(121, 23);
+            this.comboBox_userInput.TabIndex = 6;
+            this.comboBox_userInput.DropDown += new System.EventHandler(this.comboBox_userInput_DropDown);
+            this.comboBox_userInput.SelectedIndexChanged += new System.EventHandler(this.comboBox_userInput_SelectedIndexChanged);
             // 
             // listBox1
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 25;
-            listBox1.Location = new Point(314, 63);
-            listBox1.Margin = new Padding(4, 5, 4, 5);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(170, 154);
-            listBox1.TabIndex = 7;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(220, 38);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 94);
+            this.listBox1.TabIndex = 7;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_Selected_IndexChanged);
             // 
             // label_source
             // 
-            label_source.AutoSize = true;
-            label_source.Location = new Point(81, 15);
-            label_source.Margin = new Padding(4, 0, 4, 0);
-            label_source.Name = "label_source";
-            label_source.Size = new Size(60, 25);
-            label_source.TabIndex = 8;
-            label_source.Text = "Souce";
+            this.label_source.AutoSize = true;
+            this.label_source.Location = new System.Drawing.Point(57, 9);
+            this.label_source.Name = "label_source";
+            this.label_source.Size = new System.Drawing.Size(39, 15);
+            this.label_source.TabIndex = 8;
+            this.label_source.Text = "Souce";
             // 
             // label_cible
             // 
-            label_cible.AutoSize = true;
-            label_cible.Location = new Point(361, 15);
-            label_cible.Margin = new Padding(4, 0, 4, 0);
-            label_cible.Name = "label_cible";
-            label_cible.Size = new Size(51, 25);
-            label_cible.TabIndex = 9;
-            label_cible.Text = "Cible";
+            this.label_cible.AutoSize = true;
+            this.label_cible.Location = new System.Drawing.Point(253, 9);
+            this.label_cible.Name = "label_cible";
+            this.label_cible.Size = new System.Drawing.Size(34, 15);
+            this.label_cible.TabIndex = 9;
+            this.label_cible.Text = "Cible";
             // 
             // errorProvider_control_user_input
             // 
-            errorProvider_control_user_input.ContainerControl = this;
+            this.errorProvider_control_user_input.ContainerControl = this;
+            this.errorProvider_control_user_input.RightToLeftChanged += new System.EventHandler(this.comboBox_userInput_TextChanged);
             // 
             // Listes_et_ComboBox
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(509, 357);
-            Controls.Add(label_cible);
-            Controls.Add(label_source);
-            Controls.Add(listBox1);
-            Controls.Add(comboBox_userInput);
-            Controls.Add(button_cible_selectline_down);
-            Controls.Add(button_cible_selectline_up);
-            Controls.Add(button_all_element_cible_to_source);
-            Controls.Add(button_1_element_cible_to_source);
-            Controls.Add(buttonbutton_All_element_source_to_cible);
-            Controls.Add(button_1_element_source_to_cible);
-            Margin = new Padding(4, 5, 4, 5);
-            MaximumSize = new Size(531, 413);
-            MinimumSize = new Size(531, 413);
-            Name = "Listes_et_ComboBox";
-            Text = "Listes_et_ComboBox";
-            ((System.ComponentModel.ISupportInitialize)errorProvider_control_user_input).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(360, 224);
+            this.Controls.Add(this.label_cible);
+            this.Controls.Add(this.label_source);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.comboBox_userInput);
+            this.Controls.Add(this.button_cible_selectline_down);
+            this.Controls.Add(this.button_cible_selectline_up);
+            this.Controls.Add(this.button_all_element_cible_to_source);
+            this.Controls.Add(this.button_1_element_cible_to_source);
+            this.Controls.Add(this.button_All_element_source_to_cible);
+            this.Controls.Add(this.button_1_element_source_to_cible);
+            this.MaximumSize = new System.Drawing.Size(376, 263);
+            this.MinimumSize = new System.Drawing.Size(376, 263);
+            this.Name = "Listes_et_ComboBox";
+            this.Text = "Listes_et_ComboBox";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_control_user_input)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
         private Button button_1_element_source_to_cible;
-        private Button buttonbutton_All_element_source_to_cible;
+        private Button button_All_element_source_to_cible;
         private Button button_1_element_cible_to_source;
         private Button button_all_element_cible_to_source;
         private Button button_cible_selectline_up;
