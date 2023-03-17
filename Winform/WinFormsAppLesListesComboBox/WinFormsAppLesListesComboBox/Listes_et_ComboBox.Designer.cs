@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.button_1_element_source_to_cible = new System.Windows.Forms.Button();
-            this.button_All_element_source_to_cible = new System.Windows.Forms.Button();
+            this.button_all_element_source_to_cible = new System.Windows.Forms.Button();
             this.button_1_element_cible_to_source = new System.Windows.Forms.Button();
             this.button_all_element_cible_to_source = new System.Windows.Forms.Button();
             this.button_cible_selectline_up = new System.Windows.Forms.Button();
@@ -55,17 +55,17 @@
             this.button_1_element_source_to_cible.EnabledChanged += new System.EventHandler(this.comboBox_userInput_TextChanged);
             this.button_1_element_source_to_cible.Click += new System.EventHandler(this.button_1_element_source_to_cible_Click);
             // 
-            // button_All_element_source_to_cible
+            // button_all_element_source_to_cible
             // 
-            this.button_All_element_source_to_cible.Enabled = false;
-            this.button_All_element_source_to_cible.Location = new System.Drawing.Point(139, 67);
-            this.button_All_element_source_to_cible.Name = "button_All_element_source_to_cible";
-            this.button_All_element_source_to_cible.Size = new System.Drawing.Size(75, 23);
-            this.button_All_element_source_to_cible.TabIndex = 1;
-            this.button_All_element_source_to_cible.Text = ">>";
-            this.button_All_element_source_to_cible.UseVisualStyleBackColor = true;
-            this.button_All_element_source_to_cible.EnabledChanged += new System.EventHandler(this.comboBox_userInput_TextChanged);
-            this.button_All_element_source_to_cible.Click += new System.EventHandler(this.button_All_element_source_to_cible_Click);
+            this.button_all_element_source_to_cible.Enabled = false;
+            this.button_all_element_source_to_cible.Location = new System.Drawing.Point(139, 67);
+            this.button_all_element_source_to_cible.Name = "button_all_element_source_to_cible";
+            this.button_all_element_source_to_cible.Size = new System.Drawing.Size(75, 23);
+            this.button_all_element_source_to_cible.TabIndex = 1;
+            this.button_all_element_source_to_cible.Text = ">>";
+            this.button_all_element_source_to_cible.UseVisualStyleBackColor = true;
+            this.button_all_element_source_to_cible.EnabledChanged += new System.EventHandler(this.comboBox_userInput_TextChanged);
+            this.button_all_element_source_to_cible.Click += new System.EventHandler(this.button_all_element_source_to_cible_Click);
             // 
             // button_1_element_cible_to_source
             // 
@@ -169,7 +169,7 @@
             this.Controls.Add(this.button_cible_selectline_up);
             this.Controls.Add(this.button_all_element_cible_to_source);
             this.Controls.Add(this.button_1_element_cible_to_source);
-            this.Controls.Add(this.button_All_element_source_to_cible);
+            this.Controls.Add(this.button_all_element_source_to_cible);
             this.Controls.Add(this.button_1_element_source_to_cible);
             this.MaximumSize = new System.Drawing.Size(376, 263);
             this.MinimumSize = new System.Drawing.Size(376, 263);
@@ -194,5 +194,6 @@
         private Label label_source;
         private Label label_cible;
         private ErrorProvider errorProvider_control_user_input;
+        private Button button_all_element_source_to_cible;
     }
 }
