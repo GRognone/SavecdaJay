@@ -1,0 +1,17 @@
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\bin\Debug\net6.0-windows\WinFormsDefilements.exe
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\bin\Debug\net6.0-windows\WinFormsDefilements.deps.json
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\bin\Debug\net6.0-windows\WinFormsDefilements.runtimeconfig.json
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\bin\Debug\net6.0-windows\WinFormsDefilements.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\bin\Debug\net6.0-windows\WinFormsDefilements.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\obj\Debug\net6.0-windows\WinFormsDefilements.csproj.AssemblyReference.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\obj\Debug\net6.0-windows\WinFormsDefilements.FormLesComposantDeDefilement.resources
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\obj\Debug\net6.0-windows\WinFormsDefilements.csproj.GenerateResource.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\obj\Debug\net6.0-windows\WinFormsDefilements.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\obj\Debug\net6.0-windows\WinFormsDefilements.AssemblyInfoInputs.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\obj\Debug\net6.0-windows\WinFormsDefilements.AssemblyInfo.cs
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\obj\Debug\net6.0-windows\WinFormsDefilements.csproj.CoreCompileInputs.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\obj\Debug\net6.0-windows\WinFormsDefilements.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\obj\Debug\net6.0-windows\refint\WinFormsDefilements.dll
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\obj\Debug\net6.0-windows\WinFormsDefilements.pdb
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\obj\Debug\net6.0-windows\WinFormsDefilements.genruntimeconfig.cache
+C:\Users\grognone\Desktop\SaveCdaJay\SavecdaJay\Winform\WinFormsDefilements\WinFormsDefilements\obj\Debug\net6.0-windows\ref\WinFormsDefilements.dll
