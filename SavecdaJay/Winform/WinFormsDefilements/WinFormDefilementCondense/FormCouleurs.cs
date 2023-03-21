@@ -67,6 +67,5 @@ namespace WinFormDefilementCondense
             maCouleur = Color.FromArgb(maCouleur.R, maCouleur.G, (int)numericUpDown_Blue.Value);
             MettreAjourIHM();
         }
-        
     }
 }

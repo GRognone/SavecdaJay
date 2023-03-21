@@ -87,7 +87,7 @@
             this.trackBar_Red.Name = "trackBar_Red";
             this.trackBar_Red.Size = new System.Drawing.Size(187, 45);
             this.trackBar_Red.TabIndex = 3;
-            this.trackBar_Red.Scroll += new System.EventHandler(this.trackBar_Red_Scroll);
+            this.trackBar_Red.ValueChanged += new System.EventHandler(this.trackBar_Red_ValueChanged);
             // 
             // trackBar_Green
             // 
@@ -97,7 +97,7 @@
             this.trackBar_Green.Name = "trackBar_Green";
             this.trackBar_Green.Size = new System.Drawing.Size(187, 45);
             this.trackBar_Green.TabIndex = 4;
-            this.trackBar_Green.Scroll += new System.EventHandler(this.trackBar_Green_Scroll);
+            this.trackBar_Green.ValueChanged += new System.EventHandler(this.trackBar_Green_ValueChanged);
             // 
             // trackBar_Blue
             // 
@@ -107,7 +107,7 @@
             this.trackBar_Blue.Name = "trackBar_Blue";
             this.trackBar_Blue.Size = new System.Drawing.Size(187, 45);
             this.trackBar_Blue.TabIndex = 5;
-            this.trackBar_Blue.Scroll += new System.EventHandler(this.trackBar_Blue_Scroll);
+            this.trackBar_Blue.ValueChanged += new System.EventHandler(this.trackBar_Blue_ValueChanged);
             // 
             // panel_Red
             // 
@@ -183,7 +183,7 @@
             this.hScrollBar_Red.Name = "hScrollBar_Red";
             this.hScrollBar_Red.Size = new System.Drawing.Size(153, 17);
             this.hScrollBar_Red.TabIndex = 13;
-            this.hScrollBar_Red.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar_Red_Scroll);
+            this.hScrollBar_Red.ValueChanged += new System.EventHandler(this.hScrollBar_Red_ValueChanged);
             // 
             // hScrollBar_Green
             // 
@@ -192,7 +192,7 @@
             this.hScrollBar_Green.Name = "hScrollBar_Green";
             this.hScrollBar_Green.Size = new System.Drawing.Size(153, 17);
             this.hScrollBar_Green.TabIndex = 14;
-            this.hScrollBar_Green.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar_Green_Scroll);
+            this.hScrollBar_Green.ValueChanged += new System.EventHandler(this.hScrollBar_Green_ValueChanged);
             // 
             // hScrollBar_Blue
             // 
@@ -201,7 +201,7 @@
             this.hScrollBar_Blue.Name = "hScrollBar_Blue";
             this.hScrollBar_Blue.Size = new System.Drawing.Size(153, 17);
             this.hScrollBar_Blue.TabIndex = 15;
-            this.hScrollBar_Blue.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar_Blue_Scroll);
+            this.hScrollBar_Blue.ValueChanged += new System.EventHandler(this.hScrollBar_Blue_ValueChanged);
             // 
             // FormDefilementTrackBar
             // 

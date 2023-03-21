@@ -80,8 +80,7 @@
             this.hScrollBar_Red.Name = "hScrollBar_Red";
             this.hScrollBar_Red.Size = new System.Drawing.Size(251, 17);
             this.hScrollBar_Red.TabIndex = 3;
-            this.hScrollBar_Red.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar_Red_Scroll);
-            this.hScrollBar_Red.ValueChanged += new System.EventHandler(this.numericUpDown_Red_ValueChanged);
+            this.hScrollBar_Red.ValueChanged += new System.EventHandler(this.hScrollBar_Red_ValueChanged);
             // 
             // hScrollBar_Green
             // 
@@ -90,8 +89,7 @@
             this.hScrollBar_Green.Name = "hScrollBar_Green";
             this.hScrollBar_Green.Size = new System.Drawing.Size(251, 17);
             this.hScrollBar_Green.TabIndex = 4;
-            this.hScrollBar_Green.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar_Green_Scroll);
-            this.hScrollBar_Green.ValueChanged += new System.EventHandler(this.numericUpDown_Green_ValueChanged);
+            this.hScrollBar_Green.ValueChanged += new System.EventHandler(this.hScrollBar_Green_ValueChanged);
             // 
             // hScrollBar_Blue
             // 
@@ -100,8 +98,7 @@
             this.hScrollBar_Blue.Name = "hScrollBar_Blue";
             this.hScrollBar_Blue.Size = new System.Drawing.Size(251, 17);
             this.hScrollBar_Blue.TabIndex = 5;
-            this.hScrollBar_Blue.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar_Blue_Scroll);
-            this.hScrollBar_Blue.ValueChanged += new System.EventHandler(this.numericUpDown_Blue_ValueChanged);
+            this.hScrollBar_Blue.ValueChanged += new System.EventHandler(this.hScrollBar_Blue_ValueChanged);
             // 
             // numericUpDown_Red
             // 
