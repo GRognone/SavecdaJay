@@ -60,7 +60,6 @@
             this.label_red.Size = new System.Drawing.Size(27, 15);
             this.label_red.TabIndex = 0;
             this.label_red.Text = "Red";
-
             // 
             // label_green
             // 
@@ -70,7 +69,6 @@
             this.label_green.Size = new System.Drawing.Size(38, 15);
             this.label_green.TabIndex = 1;
             this.label_green.Text = "Green";
-
             // 
             // label_blue
             // 
@@ -83,25 +81,33 @@
             // 
             // trackBar_Red
             // 
+            this.trackBar_Red.LargeChange = 20;
             this.trackBar_Red.Location = new System.Drawing.Point(101, 23);
+            this.trackBar_Red.Maximum = 255;
             this.trackBar_Red.Name = "trackBar_Red";
             this.trackBar_Red.Size = new System.Drawing.Size(187, 45);
             this.trackBar_Red.TabIndex = 3;
-
+            this.trackBar_Red.Scroll += new System.EventHandler(this.trackBar_Red_Scroll);
             // 
             // trackBar_Green
             // 
+            this.trackBar_Green.LargeChange = 20;
             this.trackBar_Green.Location = new System.Drawing.Point(101, 84);
+            this.trackBar_Green.Maximum = 255;
             this.trackBar_Green.Name = "trackBar_Green";
             this.trackBar_Green.Size = new System.Drawing.Size(187, 45);
             this.trackBar_Green.TabIndex = 4;
+            this.trackBar_Green.Scroll += new System.EventHandler(this.trackBar_Green_Scroll);
             // 
             // trackBar_Blue
             // 
+            this.trackBar_Blue.LargeChange = 20;
             this.trackBar_Blue.Location = new System.Drawing.Point(101, 135);
+            this.trackBar_Blue.Maximum = 255;
             this.trackBar_Blue.Name = "trackBar_Blue";
             this.trackBar_Blue.Size = new System.Drawing.Size(187, 45);
             this.trackBar_Blue.TabIndex = 5;
+            this.trackBar_Blue.Scroll += new System.EventHandler(this.trackBar_Blue_Scroll);
             // 
             // panel_Red
             // 
@@ -109,7 +115,6 @@
             this.panel_Red.Name = "panel_Red";
             this.panel_Red.Size = new System.Drawing.Size(73, 20);
             this.panel_Red.TabIndex = 6;
-
             // 
             // panel_Green
             // 
@@ -135,44 +140,68 @@
             // numericUpDown_Red
             // 
             this.numericUpDown_Red.Location = new System.Drawing.Point(498, 26);
+            this.numericUpDown_Red.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
             this.numericUpDown_Red.Name = "numericUpDown_Red";
             this.numericUpDown_Red.Size = new System.Drawing.Size(59, 23);
             this.numericUpDown_Red.TabIndex = 10;
+            this.numericUpDown_Red.ValueChanged += new System.EventHandler(this.numericUpDown_Red_ValueChanged);
             // 
             // numericUpDown_Green
             // 
             this.numericUpDown_Green.Location = new System.Drawing.Point(498, 84);
+            this.numericUpDown_Green.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
             this.numericUpDown_Green.Name = "numericUpDown_Green";
             this.numericUpDown_Green.Size = new System.Drawing.Size(59, 23);
             this.numericUpDown_Green.TabIndex = 11;
+            this.numericUpDown_Green.ValueChanged += new System.EventHandler(this.numericUpDown_Green_ValueChanged);
             // 
             // numericUpDown_Blue
             // 
             this.numericUpDown_Blue.Location = new System.Drawing.Point(498, 149);
+            this.numericUpDown_Blue.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
             this.numericUpDown_Blue.Name = "numericUpDown_Blue";
             this.numericUpDown_Blue.Size = new System.Drawing.Size(59, 23);
             this.numericUpDown_Blue.TabIndex = 12;
+            this.numericUpDown_Blue.ValueChanged += new System.EventHandler(this.numericUpDown_Blue_ValueChanged);
             // 
             // hScrollBar_Red
             // 
             this.hScrollBar_Red.Location = new System.Drawing.Point(323, 26);
+            this.hScrollBar_Red.Maximum = 264;
             this.hScrollBar_Red.Name = "hScrollBar_Red";
             this.hScrollBar_Red.Size = new System.Drawing.Size(153, 17);
             this.hScrollBar_Red.TabIndex = 13;
+            this.hScrollBar_Red.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar_Red_Scroll);
             // 
             // hScrollBar_Green
             // 
             this.hScrollBar_Green.Location = new System.Drawing.Point(323, 84);
+            this.hScrollBar_Green.Maximum = 264;
             this.hScrollBar_Green.Name = "hScrollBar_Green";
             this.hScrollBar_Green.Size = new System.Drawing.Size(153, 17);
             this.hScrollBar_Green.TabIndex = 14;
+            this.hScrollBar_Green.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar_Green_Scroll);
             // 
             // hScrollBar_Blue
             // 
             this.hScrollBar_Blue.Location = new System.Drawing.Point(323, 149);
+            this.hScrollBar_Blue.Maximum = 264;
             this.hScrollBar_Blue.Name = "hScrollBar_Blue";
             this.hScrollBar_Blue.Size = new System.Drawing.Size(153, 17);
             this.hScrollBar_Blue.TabIndex = 15;
+            this.hScrollBar_Blue.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar_Blue_Scroll);
             // 
             // FormDefilementTrackBar
             // 

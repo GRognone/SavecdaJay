@@ -14,11 +14,11 @@ namespace WinFormsDefilements
     {
         public FormLesComposantDeDefilement()
         {
-            InitializeComponent();
             panel_red.BackColor = Color.FromArgb(0, 0, 0);
             panel_green.BackColor = Color.FromArgb(0, 0, 0);
             panel_blue.BackColor = Color.FromArgb(0, 0, 0);
         }
+
         // gere le scroll rouge
         private void hScrollBar_Red_Scroll(object sender, ScrollEventArgs e)
         {
@@ -58,5 +58,7 @@ namespace WinFormsDefilements
             panel_blue.BackColor = Color.FromArgb(0, 0, (int)numericUpDown_Blue.Value);
             panel_colorResult.BackColor = Color.FromArgb((int)numericUpDown_Red.Value, (int)numericUpDown_Green.Value, (int)numericUpDown_Blue.Value);
         }
+
+      
     }
 }

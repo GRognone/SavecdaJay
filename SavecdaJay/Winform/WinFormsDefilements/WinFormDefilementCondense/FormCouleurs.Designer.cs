@@ -1,6 +1,6 @@
-﻿namespace WinFormsDefilements
+﻿namespace WinFormDefilementCondense
 {
-    partial class FormLesComposantDeDefilement
+    partial class FormCouleurs
     {
         /// <summary>
         /// Required designer variable.
@@ -28,170 +28,168 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label_Rouge = new System.Windows.Forms.Label();
-            this.label_Vert = new System.Windows.Forms.Label();
-            this.label_Bleu = new System.Windows.Forms.Label();
+            this.label_Red = new System.Windows.Forms.Label();
+            this.label_Green = new System.Windows.Forms.Label();
+            this.label_Blue = new System.Windows.Forms.Label();
+            this.panel_ColorResult = new System.Windows.Forms.Panel();
+            this.panel_Red = new System.Windows.Forms.Panel();
+            this.panel_Green = new System.Windows.Forms.Panel();
+            this.panel_Blue = new System.Windows.Forms.Panel();
             this.hScrollBar_Red = new System.Windows.Forms.HScrollBar();
             this.hScrollBar_Green = new System.Windows.Forms.HScrollBar();
             this.hScrollBar_Blue = new System.Windows.Forms.HScrollBar();
             this.numericUpDown_Red = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_Green = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_Blue = new System.Windows.Forms.NumericUpDown();
-            this.panel_colorResult = new System.Windows.Forms.Panel();
-            this.panel_blue = new System.Windows.Forms.Panel();
-            this.panel_green = new System.Windows.Forms.Panel();
-            this.panel_red = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Red)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Green)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Blue)).BeginInit();
             this.SuspendLayout();
             // 
-            // label_Rouge
+            // label_Red
             // 
-            this.label_Rouge.AutoSize = true;
-            this.label_Rouge.Location = new System.Drawing.Point(19, 50);
-            this.label_Rouge.Name = "label_Rouge";
-            this.label_Rouge.Size = new System.Drawing.Size(41, 15);
-            this.label_Rouge.TabIndex = 0;
-            this.label_Rouge.Text = "Rouge";
+            this.label_Red.AutoSize = true;
+            this.label_Red.Location = new System.Drawing.Point(23, 63);
+            this.label_Red.Name = "label_Red";
+            this.label_Red.Size = new System.Drawing.Size(27, 15);
+            this.label_Red.TabIndex = 0;
+            this.label_Red.Text = "Red";
             // 
-            // label_Vert
+            // label_Green
             // 
-            this.label_Vert.AutoSize = true;
-            this.label_Vert.Location = new System.Drawing.Point(19, 90);
-            this.label_Vert.Name = "label_Vert";
-            this.label_Vert.Size = new System.Drawing.Size(27, 15);
-            this.label_Vert.TabIndex = 1;
-            this.label_Vert.Text = "Vert";
+            this.label_Green.AutoSize = true;
+            this.label_Green.Location = new System.Drawing.Point(23, 103);
+            this.label_Green.Name = "label_Green";
+            this.label_Green.Size = new System.Drawing.Size(38, 15);
+            this.label_Green.TabIndex = 1;
+            this.label_Green.Text = "Green";
             // 
-            // label_Bleu
+            // label_Blue
             // 
-            this.label_Bleu.AutoSize = true;
-            this.label_Bleu.Location = new System.Drawing.Point(19, 130);
-            this.label_Bleu.Name = "label_Bleu";
-            this.label_Bleu.Size = new System.Drawing.Size(30, 15);
-            this.label_Bleu.TabIndex = 2;
-            this.label_Bleu.Text = "Bleu";
+            this.label_Blue.AutoSize = true;
+            this.label_Blue.Location = new System.Drawing.Point(23, 148);
+            this.label_Blue.Name = "label_Blue";
+            this.label_Blue.Size = new System.Drawing.Size(30, 15);
+            this.label_Blue.TabIndex = 2;
+            this.label_Blue.Text = "Blue";
+            // 
+            // panel_ColorResult
+            // 
+            this.panel_ColorResult.Location = new System.Drawing.Point(23, 189);
+            this.panel_ColorResult.Name = "panel_ColorResult";
+            this.panel_ColorResult.Size = new System.Drawing.Size(410, 100);
+            this.panel_ColorResult.TabIndex = 3;
+            // 
+            // panel_Red
+            // 
+            this.panel_Red.Location = new System.Drawing.Point(361, 55);
+            this.panel_Red.Name = "panel_Red";
+            this.panel_Red.Size = new System.Drawing.Size(72, 23);
+            this.panel_Red.TabIndex = 4;
+            // 
+            // panel_Green
+            // 
+            this.panel_Green.Location = new System.Drawing.Point(361, 95);
+            this.panel_Green.Name = "panel_Green";
+            this.panel_Green.Size = new System.Drawing.Size(72, 23);
+            this.panel_Green.TabIndex = 5;
+            // 
+            // panel_Blue
+            // 
+            this.panel_Blue.Location = new System.Drawing.Point(361, 140);
+            this.panel_Blue.Name = "panel_Blue";
+            this.panel_Blue.Size = new System.Drawing.Size(72, 23);
+            this.panel_Blue.TabIndex = 6;
             // 
             // hScrollBar_Red
             // 
-            this.hScrollBar_Red.Location = new System.Drawing.Point(96, 48);
+            this.hScrollBar_Red.Location = new System.Drawing.Point(92, 61);
             this.hScrollBar_Red.Maximum = 264;
             this.hScrollBar_Red.Name = "hScrollBar_Red";
-            this.hScrollBar_Red.Size = new System.Drawing.Size(251, 17);
-            this.hScrollBar_Red.TabIndex = 3;
+            this.hScrollBar_Red.Size = new System.Drawing.Size(163, 17);
+            this.hScrollBar_Red.TabIndex = 7;
             this.hScrollBar_Red.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar_Red_Scroll);
             this.hScrollBar_Red.ValueChanged += new System.EventHandler(this.numericUpDown_Red_ValueChanged);
             // 
             // hScrollBar_Green
             // 
-            this.hScrollBar_Green.Location = new System.Drawing.Point(96, 88);
+            this.hScrollBar_Green.Location = new System.Drawing.Point(92, 101);
             this.hScrollBar_Green.Maximum = 264;
             this.hScrollBar_Green.Name = "hScrollBar_Green";
-            this.hScrollBar_Green.Size = new System.Drawing.Size(251, 17);
-            this.hScrollBar_Green.TabIndex = 4;
+            this.hScrollBar_Green.Size = new System.Drawing.Size(163, 17);
+            this.hScrollBar_Green.TabIndex = 8;
             this.hScrollBar_Green.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar_Green_Scroll);
             this.hScrollBar_Green.ValueChanged += new System.EventHandler(this.numericUpDown_Green_ValueChanged);
             // 
             // hScrollBar_Blue
             // 
-            this.hScrollBar_Blue.Location = new System.Drawing.Point(96, 128);
+            this.hScrollBar_Blue.Location = new System.Drawing.Point(92, 146);
             this.hScrollBar_Blue.Maximum = 264;
             this.hScrollBar_Blue.Name = "hScrollBar_Blue";
-            this.hScrollBar_Blue.Size = new System.Drawing.Size(251, 17);
-            this.hScrollBar_Blue.TabIndex = 5;
+            this.hScrollBar_Blue.Size = new System.Drawing.Size(163, 17);
+            this.hScrollBar_Blue.TabIndex = 9;
             this.hScrollBar_Blue.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar_Blue_Scroll);
             this.hScrollBar_Blue.ValueChanged += new System.EventHandler(this.numericUpDown_Blue_ValueChanged);
             // 
             // numericUpDown_Red
             // 
-            this.numericUpDown_Red.Location = new System.Drawing.Point(369, 42);
+            this.numericUpDown_Red.Location = new System.Drawing.Point(284, 55);
             this.numericUpDown_Red.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
             this.numericUpDown_Red.Name = "numericUpDown_Red";
-            this.numericUpDown_Red.Size = new System.Drawing.Size(56, 23);
-            this.numericUpDown_Red.TabIndex = 6;
+            this.numericUpDown_Red.Size = new System.Drawing.Size(53, 23);
+            this.numericUpDown_Red.TabIndex = 10;
             this.numericUpDown_Red.ValueChanged += new System.EventHandler(this.numericUpDown_Red_ValueChanged);
             // 
             // numericUpDown_Green
             // 
-            this.numericUpDown_Green.Location = new System.Drawing.Point(369, 82);
+            this.numericUpDown_Green.Location = new System.Drawing.Point(284, 95);
             this.numericUpDown_Green.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
             this.numericUpDown_Green.Name = "numericUpDown_Green";
-            this.numericUpDown_Green.Size = new System.Drawing.Size(56, 23);
-            this.numericUpDown_Green.TabIndex = 7;
+            this.numericUpDown_Green.Size = new System.Drawing.Size(53, 23);
+            this.numericUpDown_Green.TabIndex = 11;
             this.numericUpDown_Green.ValueChanged += new System.EventHandler(this.numericUpDown_Green_ValueChanged);
             // 
             // numericUpDown_Blue
             // 
-            this.numericUpDown_Blue.Location = new System.Drawing.Point(369, 122);
+            this.numericUpDown_Blue.Location = new System.Drawing.Point(284, 140);
             this.numericUpDown_Blue.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
             this.numericUpDown_Blue.Name = "numericUpDown_Blue";
-            this.numericUpDown_Blue.Size = new System.Drawing.Size(56, 23);
-            this.numericUpDown_Blue.TabIndex = 8;
+            this.numericUpDown_Blue.Size = new System.Drawing.Size(53, 23);
+            this.numericUpDown_Blue.TabIndex = 12;
             this.numericUpDown_Blue.ValueChanged += new System.EventHandler(this.numericUpDown_Blue_ValueChanged);
             // 
-            // panel_colorResult
-            // 
-            this.panel_colorResult.Location = new System.Drawing.Point(19, 162);
-            this.panel_colorResult.Name = "panel_colorResult";
-            this.panel_colorResult.Size = new System.Drawing.Size(479, 78);
-            this.panel_colorResult.TabIndex = 12;
-            // 
-            // panel_blue
-            // 
-            this.panel_blue.Location = new System.Drawing.Point(441, 122);
-            this.panel_blue.Name = "panel_blue";
-            this.panel_blue.Size = new System.Drawing.Size(57, 23);
-            this.panel_blue.TabIndex = 11;
-            // 
-            // panel_green
-            // 
-            this.panel_green.Location = new System.Drawing.Point(441, 82);
-            this.panel_green.Name = "panel_green";
-            this.panel_green.Size = new System.Drawing.Size(57, 23);
-            this.panel_green.TabIndex = 10;
-            // 
-            // panel_red
-            // 
-            this.panel_red.Location = new System.Drawing.Point(441, 42);
-            this.panel_red.Name = "panel_red";
-            this.panel_red.Size = new System.Drawing.Size(57, 23);
-            this.panel_red.TabIndex = 9;
-            // 
-            // FormLesComposantDeDefilement
+            // FormCouleurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 255);
-            this.Controls.Add(this.panel_colorResult);
-            this.Controls.Add(this.panel_blue);
-            this.Controls.Add(this.panel_green);
-            this.Controls.Add(this.panel_red);
+            this.ClientSize = new System.Drawing.Size(472, 339);
             this.Controls.Add(this.numericUpDown_Blue);
             this.Controls.Add(this.numericUpDown_Green);
             this.Controls.Add(this.numericUpDown_Red);
             this.Controls.Add(this.hScrollBar_Blue);
             this.Controls.Add(this.hScrollBar_Green);
             this.Controls.Add(this.hScrollBar_Red);
-            this.Controls.Add(this.label_Bleu);
-            this.Controls.Add(this.label_Vert);
-            this.Controls.Add(this.label_Rouge);
-            this.MaximumSize = new System.Drawing.Size(538, 294);
-            this.MinimumSize = new System.Drawing.Size(538, 294);
-            this.Name = "FormLesComposantDeDefilement";
-            this.Text = "FormLesComposantDeDefilement";
+            this.Controls.Add(this.panel_Blue);
+            this.Controls.Add(this.panel_Green);
+            this.Controls.Add(this.panel_Red);
+            this.Controls.Add(this.panel_ColorResult);
+            this.Controls.Add(this.label_Blue);
+            this.Controls.Add(this.label_Green);
+            this.Controls.Add(this.label_Red);
+            this.Name = "FormCouleurs";
+            this.Text = "FormCouleurs";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Red)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Green)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Blue)).EndInit();
@@ -202,18 +200,18 @@
 
         #endregion
 
-        private Label label_Rouge;
-        private Label label_Vert;
-        private Label label_Bleu;
+        private Label label_Red;
+        private Label label_Green;
+        private Label label_Blue;
+        private Panel panel_ColorResult;
+        private Panel panel_Red;
+        private Panel panel_Green;
+        private Panel panel_Blue;
         private HScrollBar hScrollBar_Red;
         private HScrollBar hScrollBar_Green;
         private HScrollBar hScrollBar_Blue;
         private NumericUpDown numericUpDown_Red;
         private NumericUpDown numericUpDown_Green;
         private NumericUpDown numericUpDown_Blue;
-        private Panel panel_colorResult;
-        private Panel panel_blue;
-        private Panel panel_green;
-        private Panel panel_red;
     }
 }
