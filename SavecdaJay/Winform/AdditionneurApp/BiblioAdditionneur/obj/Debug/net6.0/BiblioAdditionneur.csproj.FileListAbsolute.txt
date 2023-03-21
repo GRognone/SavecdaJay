@@ -1,5 +1,0 @@
-C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\AdditionneurApp\BiblioAdditionneur\obj\Debug\net6.0\BiblioAdditionneur.csproj.AssemblyReference.cache
-C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\AdditionneurApp\BiblioAdditionneur\obj\Debug\net6.0\BiblioAdditionneur.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\AdditionneurApp\BiblioAdditionneur\obj\Debug\net6.0\BiblioAdditionneur.AssemblyInfoInputs.cache
-C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\AdditionneurApp\BiblioAdditionneur\obj\Debug\net6.0\BiblioAdditionneur.AssemblyInfo.cs
-C:\Users\gerar\Desktop\SavecdaJay\SavecdaJay\Winform\AdditionneurApp\BiblioAdditionneur\obj\Debug\net6.0\BiblioAdditionneur.csproj.CoreCompileInputs.cache
