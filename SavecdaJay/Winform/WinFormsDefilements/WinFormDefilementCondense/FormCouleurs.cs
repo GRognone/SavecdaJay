@@ -39,7 +39,6 @@ namespace WinFormDefilementCondense
         {
             maCouleur = Color.FromArgb((int)e.NewValue, maCouleur.G , maCouleur.B);
             MettreAjourIHM();
-
         }
 
         private void numericUpDown_Red_ValueChanged(object sender, EventArgs e)
@@ -51,8 +50,8 @@ namespace WinFormDefilementCondense
 
         private void hScrollBar_Green_Scroll(object sender, ScrollEventArgs e)
         {
-            numericUpDown_Green.Value = (int)e.NewValue;
-            panel_Green.BackColor = Color.FromArgb(0, e.NewValue, 0);
+            maCouleur = Color.FromArgb(maCouleur.R,(int)e.NewValue, maCouleur.B);
+            MettreAjourIHM();
         }
 
         private void numericUpDown_Green_ValueChanged(object sender, EventArgs e)
@@ -64,8 +63,8 @@ namespace WinFormDefilementCondense
 
         private void hScrollBar_Blue_Scroll(object sender, ScrollEventArgs e)
         {
-            numericUpDown_Blue.Value = (int)e.NewValue;
-            panel_Blue.BackColor = Color.FromArgb(0, 0, e.NewValue);
+            maCouleur = Color.FromArgb(maCouleur.R, maCouleur.G, (int)e.NewValue);
+            MettreAjourIHM();
         }
 
         private void numericUpDown_Blue_ValueChanged(object sender, EventArgs e)
