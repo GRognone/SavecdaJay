@@ -39,7 +39,7 @@ namespace WinFormsAppLesListesComboBox
                 button_all_element_source_to_cible.Enabled = false;
             }
             button_all_element_cible_to_source.Enabled = true;
-            // selection element liste combobox en commencant par les élement suivants l'index selectionné
+            // selection element liste combobox en commencant par les élements suivants l'index selectionné
             // si celui-ci est le dernier il selectionnera le precedent.
             if (comboBox_userInput.Items.Count >= 1)
             {
@@ -79,7 +79,7 @@ namespace WinFormsAppLesListesComboBox
             }
             button_all_element_source_to_cible.Enabled = true;
 
-            // selection element liste combobox en commencant par les élement suivants l'index selectionné
+            // selection element liste combobox en commencant par les élements suivants l'index selectionné
             // si celui-ci est le dernier il selectionnera le precedent.
             if (listBox1.Items.Count >= 1)
             {
