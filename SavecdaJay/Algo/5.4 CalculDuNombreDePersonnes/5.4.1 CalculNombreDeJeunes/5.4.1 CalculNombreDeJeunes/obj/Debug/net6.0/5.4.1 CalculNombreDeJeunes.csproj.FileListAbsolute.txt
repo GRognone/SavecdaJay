@@ -1,0 +1,15 @@
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\bin\Debug\net6.0\5.4.1 CalculNombreDeJeunes.exe
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\bin\Debug\net6.0\5.4.1 CalculNombreDeJeunes.deps.json
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\bin\Debug\net6.0\5.4.1 CalculNombreDeJeunes.runtimeconfig.json
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\bin\Debug\net6.0\5.4.1 CalculNombreDeJeunes.dll
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\bin\Debug\net6.0\5.4.1 CalculNombreDeJeunes.pdb
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\obj\Debug\net6.0\5.4.1 CalculNombreDeJeunes.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\obj\Debug\net6.0\5.4.1 CalculNombreDeJeunes.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\obj\Debug\net6.0\5.4.1 CalculNombreDeJeunes.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\obj\Debug\net6.0\5.4.1 CalculNombreDeJeunes.AssemblyInfo.cs
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\obj\Debug\net6.0\5.4.1 CalculNombreDeJeunes.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\obj\Debug\net6.0\5.4.1 CalculNombreDeJeunes.dll
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\obj\Debug\net6.0\refint\5.4.1 CalculNombreDeJeunes.dll
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\obj\Debug\net6.0\5.4.1 CalculNombreDeJeunes.pdb
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\obj\Debug\net6.0\5.4.1 CalculNombreDeJeunes.genruntimeconfig.cache
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.1 CalculNombreDeJeunes\5.4.1 CalculNombreDeJeunes\obj\Debug\net6.0\ref\5.4.1 CalculNombreDeJeunes.dll

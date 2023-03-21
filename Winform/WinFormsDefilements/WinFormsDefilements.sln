@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsDefilements", "WinFormsDefilements\WinFormsDefilements.csproj", "{66D4509A-6259-4ED1-9CEC-E715F5151B03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Version 1 sans trackBar", "Version 1 sans trackBar", "{A773914F-0234-4B65-8E07-544A1C53EE3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Version 2 Avec TrackBar", "Version 2 Avec TrackBar", "{FA8116FF-54B7-4D3D-86D1-D4B25A2AFE75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsDefilementAvecTrackBar", "WinFormsDefilementAvecTrackBar\WinFormsDefilementAvecTrackBar.csproj", "{75730827-9B27-4A5C-94CE-2681B5FCB6CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66D4509A-6259-4ED1-9CEC-E715F5151B03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D4509A-6259-4ED1-9CEC-E715F5151B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D4509A-6259-4ED1-9CEC-E715F5151B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D4509A-6259-4ED1-9CEC-E715F5151B03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75730827-9B27-4A5C-94CE-2681B5FCB6CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75730827-9B27-4A5C-94CE-2681B5FCB6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75730827-9B27-4A5C-94CE-2681B5FCB6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75730827-9B27-4A5C-94CE-2681B5FCB6CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66D4509A-6259-4ED1-9CEC-E715F5151B03} = {A773914F-0234-4B65-8E07-544A1C53EE3B}
+		{75730827-9B27-4A5C-94CE-2681B5FCB6CF} = {FA8116FF-54B7-4D3D-86D1-D4B25A2AFE75}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF80C686-2849-45BC-ACC0-7742E693A67D}
+	EndGlobalSection
+EndGlobal

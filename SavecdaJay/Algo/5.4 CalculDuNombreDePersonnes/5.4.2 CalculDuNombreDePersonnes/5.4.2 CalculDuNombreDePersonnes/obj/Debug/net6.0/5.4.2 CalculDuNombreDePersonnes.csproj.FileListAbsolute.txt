@@ -1,0 +1,15 @@
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\bin\Debug\net6.0\5.4.2 CalculDuNombreDePersonnes.exe
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\bin\Debug\net6.0\5.4.2 CalculDuNombreDePersonnes.deps.json
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\bin\Debug\net6.0\5.4.2 CalculDuNombreDePersonnes.runtimeconfig.json
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\bin\Debug\net6.0\5.4.2 CalculDuNombreDePersonnes.dll
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\bin\Debug\net6.0\5.4.2 CalculDuNombreDePersonnes.pdb
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\obj\Debug\net6.0\5.4.2 CalculDuNombreDePersonnes.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\obj\Debug\net6.0\5.4.2 CalculDuNombreDePersonnes.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\obj\Debug\net6.0\5.4.2 CalculDuNombreDePersonnes.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\obj\Debug\net6.0\5.4.2 CalculDuNombreDePersonnes.AssemblyInfo.cs
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\obj\Debug\net6.0\5.4.2 CalculDuNombreDePersonnes.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\obj\Debug\net6.0\5.4.2 CalculDuNombreDePersonnes.dll
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\obj\Debug\net6.0\refint\5.4.2 CalculDuNombreDePersonnes.dll
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\obj\Debug\net6.0\5.4.2 CalculDuNombreDePersonnes.pdb
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\obj\Debug\net6.0\5.4.2 CalculDuNombreDePersonnes.genruntimeconfig.cache
+\\Mac\Home\Desktop\Depots\SavecdaJay\Algo\5.4 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\5.4.2 CalculDuNombreDePersonnes\obj\Debug\net6.0\ref\5.4.2 CalculDuNombreDePersonnes.dll
