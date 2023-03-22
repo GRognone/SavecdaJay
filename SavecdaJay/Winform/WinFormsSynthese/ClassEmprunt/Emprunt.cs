@@ -28,10 +28,10 @@ namespace ClassEmprunt
             Annuelle = 12,
         }
         EnumPeriodicite periodiciteRemboursement;
-        public EnumPeriodicite PeriodiciteRemboursement { get => periodiciteRemboursement;/*set => periodiciteRemboursement = value;*/}
+        public EnumPeriodicite PeriodiciteRemboursement { get => periodiciteRemboursement; set => periodiciteRemboursement = value;}
 
         float tauxInteretAnnuel;
-        public float TauxInteretAnnuel { get => tauxInteretAnnuel;/*set => tauxInteret = Value;*/}
+        public float TauxInteretAnnuel { get => tauxInteretAnnuel; set => tauxInteretAnnuel = value;}
 
         /// <summary>
         /// Contructeur classic

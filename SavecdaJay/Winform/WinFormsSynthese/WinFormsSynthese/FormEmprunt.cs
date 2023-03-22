@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WinFormsSynthese
 {
     public partial class FormEmprunt : Form
@@ -20,8 +21,9 @@ namespace WinFormsSynthese
         {
             InitializeComponent();
 
-            
+
         }
+        
         private void textBox_nom_TextChanged(object sender, EventArgs e)
         {
             if (!Controles.Controle_Saisie_Nom(textBox_nom.Text))
@@ -30,20 +32,22 @@ namespace WinFormsSynthese
             }
             else
             {
+                emprunt1 = new Emprunt(textBox_nom, int.Parse(textBox_capital_emprunte.Text), int.Parse(label_Duree_en_mois, EnumPeriodicite.(listBox_periodicite_rembs), float.Parse(groupBox_taux_interet);
+                emprunt1.Nom = textBox_nom.Text;
                 errorProvider_nom.SetError(textBox_nom, "");
             }
         }
         private void textBox_capita_emprunte_TextChanged(object sender, EventArgs e)
         {
-            if (!Controles.Controle_Saisie_Capital_Emptrunt(textBox_capita_emprunte.Text))
+            if (!Controles.Controle_Saisie_Capital_Emptrunt(textBox_capital_emprunte.Text))
             {
-                errorProvider_capital.SetError(textBox_capita_emprunte, "Saisir uniquement des chiffres maximum 10");
+                errorProvider_capital.SetError(textBox_capital_emprunte, "Saisir uniquement des chiffres maximum 10");
             }
 
             else
             {
                 //emprunt1
-                errorProvider_capital.SetError(textBox_capita_emprunte, "");
+                errorProvider_capital.SetError(textBox_capital_emprunte, "");
             }
         }
         private void label_Duree_en_mois_Click(object sender, EventArgs e)
@@ -56,7 +60,7 @@ namespace WinFormsSynthese
         }
         private void listBox_periodicite_rembs_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+   
         }
         private void label_nb_remboursements_Click(object sender, EventArgs e)
         {
