@@ -10,17 +10,16 @@ namespace ClassEmprunt
 {
     public class Emprunt
     {
-       
         string nom;
-        public string Nom { get => nom;/*set => nom = Value;*/ }
+        public string Nom { get => nom; set => nom = value; }
 
         int capitalEmprunte;
-        public int CapitalEmprunte { get => capitalEmprunte;/*set => capital_emprunte = Value;*/ }
+        public int CapitalEmprunte { get => capitalEmprunte; set => capitalEmprunte = value; }
 
         int dureeEmpruntMois;
-        public int DureeEmpruntMois { get => dureeEmpruntMois;/*set => dureeEpruntMois = Value;*/ }
+        public int DureeEmpruntMois { get => dureeEmpruntMois; set => dureeEmpruntMois = value; }
 
-        public enum EnumPeriodicite : ushort 
+        public enum EnumPeriodicite : ushort
         {
             Mensuel = 1,
             Bimestriel = 2,
@@ -50,39 +49,27 @@ namespace ClassEmprunt
             periodiciteRemboursement = _periodiciteRemboursement;
             tauxInteretAnnuel = _tauxInteretAnnuel;
         }
-
         public override string ToString()
         {
             return "Emprunt" + nom + " " + capitalEmprunte + " " + dureeEmpruntMois + " " + periodiciteRemboursement + " " + tauxInteretAnnuel + " ";
         }
 
-        // calcul mensualité emprunt mensuel
-        public double Calcul_Remboursement_Mensuel(double _rbsMens)
+        // calcul mensualité emprunt
+        public double Calcul_Remboursement()
         {
-            if (periodiciteRemboursement == EnumPeriodicite.Mensuel)
-            { 
-                double nrbs = (double) Calcul_Nombre_Mensualite();
-                double rbsMens = capitalEmprunte * (tauxInteretAnnuel / (1 - (1 + tauxInteretAnnuel)*Math.Pow(-nrbs ,1)));
-            }
-            return _rbsMens;
+            double remboursement = (double)capitalEmprunte * (Calcul_taux_Annuel_Periodicite() / (1- Math.Pow((1+ Calcul_taux_Annuel_Periodicite()),-Calcul_Nombre_Mensualite())));
+            return remboursement; 
         }
-        // calcul mensualité emprunt Bimestriel
-        public double Calcul_Remboursement_Bimestiel(double _rbsMens)
+        // Calcul du taux Annuel
+        public double Calcul_taux_Annuel_Periodicite()
         {
-            if (periodiciteRemboursement == EnumPeriodicite.Bimestriel)
-            {
-                double nrbs = (double)Calcul_Nombre_Mensualite();
-                double rbsMens = capitalEmprunte * (tauxInteretAnnuel / (1 - (1 + tauxInteretAnnuel) * Math.Pow(-nrbs, 1)));
-            }
-            return _rbsMens;
+            double tauxAnnuelPeriodicite = tauxInteretAnnuel * (int)periodiciteRemboursement / 12;
+            return tauxAnnuelPeriodicite;
         }
-
-
-
         // Calcul du nombre de remboursement en fonction de la duree du credit et de la periodicité des remboursements
         public int Calcul_Nombre_Mensualite()
         {
-            int nbMensualite = dureeEmpruntMois / (int) periodiciteRemboursement;
+            int nbMensualite = dureeEmpruntMois / (int)periodiciteRemboursement;
             return nbMensualite;
         }
     }

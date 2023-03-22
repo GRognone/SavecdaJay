@@ -39,8 +39,10 @@ namespace WinFormsSynthese
             {
                 errorProvider_capital.SetError(textBox_capita_emprunte, "Saisir uniquement des chiffres maximum 10");
             }
+
             else
             {
+                //emprunt1
                 errorProvider_capital.SetError(textBox_capita_emprunte, "");
             }
         }
