@@ -49,11 +49,7 @@ namespace ClassEmprunt
             periodiciteRemboursement = _periodiciteRemboursement;
             tauxInteretAnnuel = _tauxInteretAnnuel;
         }
-        public override string ToString()
-        {
-            return "Emprunt" + nom + " " + capitalEmprunte + " " + dureeEmpruntMois + " " + periodiciteRemboursement + " " + tauxInteretAnnuel + " ";
-        }
-
+ 
         // calcul mensualité emprunt
         public double Calcul_Remboursement()
         {
