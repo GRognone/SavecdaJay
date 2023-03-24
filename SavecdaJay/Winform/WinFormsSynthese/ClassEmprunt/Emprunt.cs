@@ -57,7 +57,7 @@ namespace ClassEmprunt
             return remboursement; 
         }
         // Calcul du taux Annuel
-        public double Calcul_taux_Annuel_Periodicite()
+        private double Calcul_taux_Annuel_Periodicite()
         {
             double tauxAnnuelPeriodicite = tauxInteretAnnuel * (int)periodiciteRemboursement / 12;
             return tauxAnnuelPeriodicite;

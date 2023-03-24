@@ -50,9 +50,11 @@
             button_annuler = new Button();
             label_montant_remb_periodicite = new Label();
             label1_nbMensualités = new Label();
+            errorProvider_capitalVide = new ErrorProvider(components);
             ((System.ComponentModel.ISupportInitialize)errorProvider_nom).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider_capital).BeginInit();
             groupBox_taux_interet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)errorProvider_capitalVide).BeginInit();
             SuspendLayout();
             // 
             // label_nom
@@ -92,7 +94,7 @@
             textBox_capital_emprunte.Size = new Size(106, 23);
             textBox_capital_emprunte.TabIndex = 3;
             textBox_capital_emprunte.TextAlign = HorizontalAlignment.Right;
-            textBox_capital_emprunte.TextChanged += textBox_capita_emprunte_TextChanged;
+            textBox_capital_emprunte.TextChanged += textBox_capital_emprunte_TextChanged;
             // 
             // label_Periodicite_emprunt
             // 
@@ -112,13 +114,12 @@
             label_Duree_en_mois.Name = "label_Duree_en_mois";
             label_Duree_en_mois.Size = new Size(0, 15);
             label_Duree_en_mois.TabIndex = 5;
-            label_Duree_en_mois.TextChanged += hScrollBar_duree_ValueChanged;
             // 
             // hScrollBar_duree
             // 
             hScrollBar_duree.LargeChange = 12;
             hScrollBar_duree.Location = new Point(208, 131);
-            hScrollBar_duree.Maximum = 311;
+            hScrollBar_duree.Maximum = 300;
             hScrollBar_duree.Minimum = 1;
             hScrollBar_duree.Name = "hScrollBar_duree";
             hScrollBar_duree.Size = new Size(161, 15);
@@ -249,7 +250,6 @@
             button_annuler.TabIndex = 13;
             button_annuler.Text = "Annuler";
             button_annuler.UseVisualStyleBackColor = true;
-            button_annuler.Click += button_annuler_Click;
             // 
             // label_montant_remb_periodicite
             // 
@@ -269,6 +269,10 @@
             label1_nbMensualités.Size = new Size(140, 15);
             label1_nbMensualités.TabIndex = 15;
             label1_nbMensualités.Text = "Nombre De Mensualitées";
+            // 
+            // errorProvider_capitalVide
+            // 
+            errorProvider_capitalVide.ContainerControl = this;
             // 
             // FormEmprunt
             // 
@@ -298,6 +302,7 @@
             ((System.ComponentModel.ISupportInitialize)errorProvider_capital).EndInit();
             groupBox_taux_interet.ResumeLayout(false);
             groupBox_taux_interet.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)errorProvider_capitalVide).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -325,5 +330,6 @@
         private RadioButton radioButton_interet_7;
         private ErrorProvider errorProvider_capital;
         private Label label1_nbMensualités;
+        private ErrorProvider errorProvider_capitalVide;
     }
 }
