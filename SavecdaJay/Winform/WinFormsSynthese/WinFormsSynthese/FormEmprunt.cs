@@ -24,6 +24,7 @@ namespace WinFormsSynthese
             listBox_periodicite_rembs.Items.AddRange(new string[] { "Mensuel", "Bimestriel", "Trimestriel", "Semestriel", "Annuelle" });
             MiseAJourIHM();
         }
+
         #region IHM
         private void MiseAJourIHM()
         {
@@ -31,46 +32,39 @@ namespace WinFormsSynthese
             textBox_capital_emprunte.Text = emprunt1.CapitalEmprunte.ToString();
 
             //choix duree scrollbar
-            hScrollBar_duree.Value = emprunt1.DureeEmpruntMois;
+            emprunt1.DureeEmpruntMois = Math.Max(emprunt1.DureeEmpruntMois, (int)emprunt1.PeriodiciteRemboursement);
+
             label_montant_remb_periodicite.Text = emprunt1.DureeEmpruntMois.ToString();
 
             //choix periodicite
             if (emprunt1.PeriodiciteRemboursement == Emprunt.EnumPeriodicite.Mensuel)
             {
                 listBox_periodicite_rembs.SelectedIndex = 0;
-                hScrollBar_duree.SmallChange = 1;
-                hScrollBar_duree.LargeChange = 1;
-                hScrollBar_duree.Minimum = 1;
             }
             else if (emprunt1.PeriodiciteRemboursement == Emprunt.EnumPeriodicite.Bimestriel)
             {
                 listBox_periodicite_rembs.SelectedIndex = 1;
-                hScrollBar_duree.SmallChange = 2;
-                hScrollBar_duree.LargeChange = 2;
-                hScrollBar_duree.Minimum = 2;
+
             }
             else if (emprunt1.PeriodiciteRemboursement == Emprunt.EnumPeriodicite.Trimestriel)
             {
                 listBox_periodicite_rembs.SelectedIndex = 2;
-                hScrollBar_duree.SmallChange = 3;
-                hScrollBar_duree.LargeChange = 3;
-                hScrollBar_duree.Minimum = 3;
 
             }
             else if (emprunt1.PeriodiciteRemboursement == Emprunt.EnumPeriodicite.Semestriel)
             {
                 listBox_periodicite_rembs.SelectedIndex = 3;
-                hScrollBar_duree.SmallChange = 6;
-                hScrollBar_duree.LargeChange = 6;
-                hScrollBar_duree.Minimum = 6;
             }
             else if (emprunt1.PeriodiciteRemboursement == Emprunt.EnumPeriodicite.Annuelle)
             {
                 listBox_periodicite_rembs.SelectedIndex = 4;
-                hScrollBar_duree.SmallChange = 12;
-                hScrollBar_duree.LargeChange = 12;
-                hScrollBar_duree.Minimum = 12;
             }
+            int val = (int)emprunt1.PeriodiciteRemboursement;
+            hScrollBar_duree.Minimum = val;
+            hScrollBar_duree.Maximum = 300 + (val - 1);
+            hScrollBar_duree.LargeChange = val;
+            hScrollBar_duree.SmallChange = val;
+            hScrollBar_duree.Value = emprunt1.DureeEmpruntMois;
             if (label_Duree_en_mois.Text != hScrollBar_duree.Value.ToString())
             {
                 label_Duree_en_mois.Text = hScrollBar_duree.Value.ToString();
@@ -90,7 +84,7 @@ namespace WinFormsSynthese
                 radioButton_interet_9.Checked = true;
             }
 
-            this.label_montant_remb_periodicite.Text = Math.Round(emprunt1.Calcul_Remboursement(), 2).ToString();
+            this.label_montant_remb_periodicite.Text = Math.Round(emprunt1.Calcul_Remboursement(), 2) + "€".ToString();
             this.label_nb_remboursements.Text = emprunt1.Calcul_Nombre_Mensualite().ToString();
         }
         #endregion
@@ -120,19 +114,19 @@ namespace WinFormsSynthese
             {
                 errorProvider_capital.SetError(textBox_capital_emprunte, "");
                 emprunt1.CapitalEmprunte = int.Parse(textBox_capital_emprunte.Text);
+                Reinitialiser();
                 MiseAJourIHM();
             }
         }
         // ScrollBar pour determiner le nombre de mois de l'emprunt en fonction de la périodicité
         private void hScrollBar_duree_ValueChanged(object sender, EventArgs e)
         {
-            //label_Duree_en_mois.Text = hScrollBar_duree.Value.ToString();
+            // la scrollbar
             HScrollBar bar = (HScrollBar)sender;
-            if (bar.Value % bar.SmallChange != 0)
-            {
-                bar.Value = bar.SmallChange * ((bar.Value + bar.SmallChange / 2) / bar.SmallChange);
-            }
+     
+            bar.Value = Math.Max(1, bar.Value / bar.SmallChange) * bar.SmallChange;
             emprunt1.DureeEmpruntMois = hScrollBar_duree.Value;
+
             MiseAJourIHM();
         }
         //choix dans la listbox de la périodicité
@@ -158,6 +152,7 @@ namespace WinFormsSynthese
             {
                 emprunt1.PeriodiciteRemboursement = Emprunt.EnumPeriodicite.Annuelle;
             }
+
             MiseAJourIHM();
         }
         #region Bouton_Taux
@@ -200,6 +195,12 @@ namespace WinFormsSynthese
             {
                 errorProvider_capitalVide.SetError(textBox_capital_emprunte, "");
             }
+        }
+        private void Reinitialiser()
+        {
+            listBox_periodicite_rembs.SelectedIndex = 0;
+            radioButton_interet_7.Checked = true;
+            emprunt1.DureeEmpruntMois = 1;
         }
         #endregion
     }
