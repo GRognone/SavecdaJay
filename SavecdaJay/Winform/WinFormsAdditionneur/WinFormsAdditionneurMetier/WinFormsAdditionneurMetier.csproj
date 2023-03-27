@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\biblioAppAddition2\biblioAppAddition2.csproj" />
+    <ProjectReference Include="..\ClassLibraryAddition\ClassLibraryAddition.csproj" />
   </ItemGroup>
 
 </Project>
