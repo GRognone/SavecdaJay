@@ -45,17 +45,19 @@
             // 
             // textBox_Affichage
             // 
-            textBox_Affichage.Location = new Point(12, 25);
+            textBox_Affichage.Location = new Point(7, 12);
+            textBox_Affichage.Margin = new Padding(2, 2, 2, 2);
             textBox_Affichage.Multiline = true;
             textBox_Affichage.Name = "textBox_Affichage";
-            textBox_Affichage.Size = new Size(399, 155);
+            textBox_Affichage.Size = new Size(234, 80);
             textBox_Affichage.TabIndex = 0;
             // 
             // button_0
             // 
-            button_0.Location = new Point(11, 208);
+            button_0.Location = new Point(6, 104);
+            button_0.Margin = new Padding(2, 2, 2, 2);
             button_0.Name = "button_0";
-            button_0.Size = new Size(75, 75);
+            button_0.Size = new Size(44, 38);
             button_0.TabIndex = 1;
             button_0.Tag = "0";
             button_0.Text = "0";
@@ -64,9 +66,10 @@
             // 
             // button_1
             // 
-            button_1.Location = new Point(92, 208);
+            button_1.Location = new Point(54, 104);
+            button_1.Margin = new Padding(2, 2, 2, 2);
             button_1.Name = "button_1";
-            button_1.Size = new Size(75, 75);
+            button_1.Size = new Size(44, 38);
             button_1.TabIndex = 2;
             button_1.Tag = "1";
             button_1.Text = "1";
@@ -75,9 +78,10 @@
             // 
             // button_2
             // 
-            button_2.Location = new Point(173, 208);
+            button_2.Location = new Point(101, 104);
+            button_2.Margin = new Padding(2, 2, 2, 2);
             button_2.Name = "button_2";
-            button_2.Size = new Size(75, 75);
+            button_2.Size = new Size(44, 38);
             button_2.TabIndex = 3;
             button_2.Tag = "2";
             button_2.Text = "2";
@@ -86,9 +90,10 @@
             // 
             // button_3
             // 
-            button_3.Location = new Point(254, 208);
+            button_3.Location = new Point(148, 104);
+            button_3.Margin = new Padding(2, 2, 2, 2);
             button_3.Name = "button_3";
-            button_3.Size = new Size(75, 75);
+            button_3.Size = new Size(44, 38);
             button_3.TabIndex = 4;
             button_3.Tag = "3";
             button_3.Text = "3";
@@ -97,9 +102,10 @@
             // 
             // button_4
             // 
-            button_4.Location = new Point(335, 208);
+            button_4.Location = new Point(195, 104);
+            button_4.Margin = new Padding(2, 2, 2, 2);
             button_4.Name = "button_4";
-            button_4.Size = new Size(75, 75);
+            button_4.Size = new Size(44, 38);
             button_4.TabIndex = 5;
             button_4.Tag = "4";
             button_4.Text = "4";
@@ -108,9 +114,10 @@
             // 
             // button_5
             // 
-            button_5.Location = new Point(11, 289);
+            button_5.Location = new Point(6, 144);
+            button_5.Margin = new Padding(2, 2, 2, 2);
             button_5.Name = "button_5";
-            button_5.Size = new Size(75, 75);
+            button_5.Size = new Size(44, 38);
             button_5.TabIndex = 6;
             button_5.Tag = "5";
             button_5.Text = "5";
@@ -119,9 +126,10 @@
             // 
             // button_6
             // 
-            button_6.Location = new Point(92, 289);
+            button_6.Location = new Point(54, 144);
+            button_6.Margin = new Padding(2, 2, 2, 2);
             button_6.Name = "button_6";
-            button_6.Size = new Size(75, 75);
+            button_6.Size = new Size(44, 38);
             button_6.TabIndex = 7;
             button_6.Tag = "6";
             button_6.Text = "6";
@@ -130,9 +138,10 @@
             // 
             // button_7
             // 
-            button_7.Location = new Point(173, 289);
+            button_7.Location = new Point(101, 144);
+            button_7.Margin = new Padding(2, 2, 2, 2);
             button_7.Name = "button_7";
-            button_7.Size = new Size(75, 75);
+            button_7.Size = new Size(44, 38);
             button_7.TabIndex = 8;
             button_7.Tag = "7";
             button_7.Text = "7";
@@ -141,9 +150,10 @@
             // 
             // button_8
             // 
-            button_8.Location = new Point(254, 289);
+            button_8.Location = new Point(148, 144);
+            button_8.Margin = new Padding(2, 2, 2, 2);
             button_8.Name = "button_8";
-            button_8.Size = new Size(75, 75);
+            button_8.Size = new Size(44, 38);
             button_8.TabIndex = 9;
             button_8.Tag = "8";
             button_8.Text = "8";
@@ -152,9 +162,10 @@
             // 
             // button_9
             // 
-            button_9.Location = new Point(335, 289);
+            button_9.Location = new Point(195, 144);
+            button_9.Margin = new Padding(2, 2, 2, 2);
             button_9.Name = "button_9";
-            button_9.Size = new Size(75, 75);
+            button_9.Size = new Size(44, 38);
             button_9.TabIndex = 10;
             button_9.Tag = "9";
             button_9.Text = "9";
@@ -163,9 +174,10 @@
             // 
             // button_Vider
             // 
-            button_Vider.Location = new Point(11, 370);
+            button_Vider.Location = new Point(6, 185);
+            button_Vider.Margin = new Padding(2, 2, 2, 2);
             button_Vider.Name = "button_Vider";
-            button_Vider.Size = new Size(156, 37);
+            button_Vider.Size = new Size(91, 30);
             button_Vider.TabIndex = 11;
             button_Vider.Text = "Vider";
             button_Vider.UseVisualStyleBackColor = true;
@@ -173,9 +185,10 @@
             // 
             // button_Calculer
             // 
-            button_Calculer.Location = new Point(254, 370);
+            button_Calculer.Location = new Point(148, 185);
+            button_Calculer.Margin = new Padding(2, 2, 2, 2);
             button_Calculer.Name = "button_Calculer";
-            button_Calculer.Size = new Size(156, 37);
+            button_Calculer.Size = new Size(91, 30);
             button_Calculer.TabIndex = 12;
             button_Calculer.Text = "Calculer";
             button_Calculer.UseVisualStyleBackColor = true;
@@ -183,9 +196,9 @@
             // 
             // FormAdditionneur
             // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(426, 426);
+            ClientSize = new Size(248, 226);
             Controls.Add(button_Calculer);
             Controls.Add(button_Vider);
             Controls.Add(button_9);
@@ -199,6 +212,7 @@
             Controls.Add(button_1);
             Controls.Add(button_0);
             Controls.Add(textBox_Affichage);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "FormAdditionneur";
             Text = "Additionneur";
             ResumeLayout(false);

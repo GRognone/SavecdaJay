@@ -14,11 +14,9 @@ namespace WinFormsAdditionneurMetier
 {
     public partial class FormAdditionneur : Form
     {
-        int total;
         Addition addition;
         public FormAdditionneur()
         {
-            total = 0;
             InitializeComponent();
             addition = new Addition();
         }
@@ -31,7 +29,6 @@ namespace WinFormsAdditionneurMetier
         private void button_Vider_Click(object sender, EventArgs e)
         {
             this.textBox_Affichage.Text = "";
-            total = 0;
             addition = new Addition();
         }
         private void button_Calculer_Click(object sender, EventArgs e)
