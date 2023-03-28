@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsMenusBarresDOutilsEDEtat", "WinFormsMenusBarresDOutilsEDEtat\WinFormsMenusBarresDOutilsEDEtat.csproj", "{202FFF99-D676-48C3-AAEE-F6E2786AFD28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsMenusBarresDOutilsEDEtat", "WinFormsMenusBarresDOutilsEDEtat\WinFormsMenusBarresDOutilsEDEtat.csproj", "{202FFF99-D676-48C3-AAEE-F6E2786AFD28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsLesDifferentsObjetsGraphiques", "WinFormsLesDifferentsObjetsGraphiques\WinFormsLesDifferentsObjetsGraphiques.csproj", "{23DF9F78-6C41-405D-966B-B2E843CFB76D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{202FFF99-D676-48C3-AAEE-F6E2786AFD28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{202FFF99-D676-48C3-AAEE-F6E2786AFD28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{202FFF99-D676-48C3-AAEE-F6E2786AFD28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23DF9F78-6C41-405D-966B-B2E843CFB76D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23DF9F78-6C41-405D-966B-B2E843CFB76D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23DF9F78-6C41-405D-966B-B2E843CFB76D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23DF9F78-6C41-405D-966B-B2E843CFB76D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
