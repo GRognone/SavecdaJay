@@ -29,6 +29,7 @@ namespace WinFormsMenusBarresDOutilsEDEtat
             toolStripSplitButtonPhase3.DropDown = phase3ToolStripMenuItem.DropDown;// recupère les commande de phase 3 StripMenu.
             toolStripLabelDate.Text = DateTime.Now.ToString("dd/MM/yyyy");// affiche data en temps reel en bas de la fenêtre.
         }
+
         // passer par connection s'identifier
         private void sidentifierToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -56,12 +57,12 @@ namespace WinFormsMenusBarresDOutilsEDEtat
             formVirement.MdiParent = this;// positionne notre form dans la form Mdi
             formVirement.Show();
         }
-
         private void CheckBoxToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormLesDifferentsObjetsGraphiques formObjetGraph = new FormLesDifferentsObjetsGraphiques();
             formObjetGraph.MdiParent = this;// positionne notre form dans la form Mdi
             formObjetGraph.Show();
+
         }
         private void opBasesListBoxToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -98,12 +99,15 @@ namespace WinFormsMenusBarresDOutilsEDEtat
         }
         private void cascadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.LayoutMdi(MdiLayout.Cascade);
         }
-
-        private void FormCreationFormulaire_Load(object sender, EventArgs e)
+        private void horizontalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.LayoutMdi(MdiLayout.TileHorizontal);
         }
+        private void verticalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileVertical);
+        }       
     }
 }

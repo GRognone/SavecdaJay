@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsLesDifferentsObjetsGraphiques;
 
 namespace WinFormsMenusBarresDOutilsEDEtat
 {
@@ -16,7 +17,16 @@ namespace WinFormsMenusBarresDOutilsEDEtat
         {
             InitializeComponent();
         }
-        // creation saisie pour 
-        
+        private void buttonValider_Click(object sender, EventArgs e)
+        {
+            string texte = textBoxSaisie.Text;
+            FormLesDifferentsObjetsGraphiques formDifObjGraph = new FormLesDifferentsObjetsGraphiques(textBoxSaisie.Text);
+            formDifObjGraph.Show();
+        }
+        private void textBoxSaisie_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

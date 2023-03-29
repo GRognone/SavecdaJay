@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WinFormsLesDifferentsObjetsGraphiques
 {
@@ -16,7 +17,15 @@ namespace WinFormsLesDifferentsObjetsGraphiques
         {
             InitializeComponent();
         }
-
+        public FormLesDifferentsObjetsGraphiques(string texte)
+        {
+            InitializeComponent();
+            InitializeComponent2(texte);
+        }
+        private void InitializeComponent2(string texte) 
+        {
+            textBox_texte_saisi.Text = texte;
+        }
         private void textBox_texte_saisi_TextChanged(object sender, EventArgs e)
         {
             //this.groupBox_choix.Enabled = textBox_texte_saisi.Text != "" autre facon d'ecrire
