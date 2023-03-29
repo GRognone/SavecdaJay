@@ -50,7 +50,6 @@
             horizontalToolStripMenuItem = new ToolStripMenuItem();
             verticalToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator3 = new ToolStripSeparator();
-            saisieToolStripMenuItem = new ToolStripMenuItem();
             toolStrip1 = new ToolStrip();
             toolStripButtonSIdentifier = new ToolStripButton();
             toolStripSeparator4 = new ToolStripSeparator();
@@ -68,6 +67,7 @@
             // 
             menuStrip1.Items.AddRange(new ToolStripItem[] { connectionToolStripMenuItem, phase1ToolStripMenuItem, phase2ToolStripMenuItem, phase3ToolStripMenuItem, fenêtresToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
+            menuStrip1.MdiWindowListItem = fenêtresToolStripMenuItem;
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 0;
@@ -125,7 +125,7 @@
             // lesControlesToolStripMenuItem
             // 
             lesControlesToolStripMenuItem.Name = "lesControlesToolStripMenuItem";
-            lesControlesToolStripMenuItem.Size = new Size(180, 22);
+            lesControlesToolStripMenuItem.Size = new Size(143, 22);
             lesControlesToolStripMenuItem.Text = "Les controles";
             lesControlesToolStripMenuItem.Click += lesControlesToolStripMenuItem_Click;
             // 
@@ -179,7 +179,7 @@
             // 
             // fenêtresToolStripMenuItem
             // 
-            fenêtresToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cascadeToolStripMenuItem, horizontalToolStripMenuItem, verticalToolStripMenuItem, toolStripSeparator3, saisieToolStripMenuItem });
+            fenêtresToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cascadeToolStripMenuItem, horizontalToolStripMenuItem, verticalToolStripMenuItem, toolStripSeparator3 });
             fenêtresToolStripMenuItem.Enabled = false;
             fenêtresToolStripMenuItem.Name = "fenêtresToolStripMenuItem";
             fenêtresToolStripMenuItem.Size = new Size(63, 20);
@@ -188,31 +188,26 @@
             // cascadeToolStripMenuItem
             // 
             cascadeToolStripMenuItem.Name = "cascadeToolStripMenuItem";
-            cascadeToolStripMenuItem.Size = new Size(129, 22);
+            cascadeToolStripMenuItem.Size = new Size(180, 22);
             cascadeToolStripMenuItem.Text = "Cascade";
+            cascadeToolStripMenuItem.Click += cascadeToolStripMenuItem_Click;
             // 
             // horizontalToolStripMenuItem
             // 
             horizontalToolStripMenuItem.Name = "horizontalToolStripMenuItem";
-            horizontalToolStripMenuItem.Size = new Size(129, 22);
+            horizontalToolStripMenuItem.Size = new Size(180, 22);
             horizontalToolStripMenuItem.Text = "Horizontal";
             // 
             // verticalToolStripMenuItem
             // 
             verticalToolStripMenuItem.Name = "verticalToolStripMenuItem";
-            verticalToolStripMenuItem.Size = new Size(129, 22);
+            verticalToolStripMenuItem.Size = new Size(180, 22);
             verticalToolStripMenuItem.Text = "Vertical";
             // 
             // toolStripSeparator3
             // 
             toolStripSeparator3.Name = "toolStripSeparator3";
-            toolStripSeparator3.Size = new Size(126, 6);
-            // 
-            // saisieToolStripMenuItem
-            // 
-            saisieToolStripMenuItem.Name = "saisieToolStripMenuItem";
-            saisieToolStripMenuItem.Size = new Size(129, 22);
-            saisieToolStripMenuItem.Text = "1 Saisie";
+            toolStripSeparator3.Size = new Size(177, 6);
             // 
             // toolStrip1
             // 
@@ -226,12 +221,12 @@
             // toolStripButtonSIdentifier
             // 
             toolStripButtonSIdentifier.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            toolStripButtonSIdentifier.Enabled = false;
             toolStripButtonSIdentifier.Image = (Image)resources.GetObject("toolStripButtonSIdentifier.Image");
             toolStripButtonSIdentifier.ImageTransparentColor = Color.Magenta;
             toolStripButtonSIdentifier.Name = "toolStripButtonSIdentifier";
             toolStripButtonSIdentifier.Size = new Size(67, 22);
             toolStripButtonSIdentifier.Text = "S'identifier";
+            toolStripButtonSIdentifier.Click += toolStripButtonSIdentifier_Click;
             // 
             // toolStripSeparator4
             // 
@@ -287,6 +282,8 @@
             MainMenuStrip = menuStrip1;
             Name = "FormCreationFormulaire";
             Text = "Creer des formulaires";
+            WindowState = FormWindowState.Maximized;
+            Load += FormCreationFormulaire_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             toolStrip1.ResumeLayout(false);
@@ -313,7 +310,6 @@
         private ToolStripMenuItem horizontalToolStripMenuItem;
         private ToolStripMenuItem verticalToolStripMenuItem;
         private ToolStripSeparator toolStripSeparator3;
-        private ToolStripMenuItem saisieToolStripMenuItem;
         private ToolStrip toolStrip1;
         private ToolStripButton toolStripButtonSIdentifier;
         private ToolStripSeparator toolStripSeparator4;
