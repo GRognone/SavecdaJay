@@ -22,10 +22,17 @@ namespace WinFormsAppLesListesComboBox
             InitializeComponent();
             // entree données fixe combobox
             comboBox_userInput.Items.AddRange(new string[] { "a", "b", "c", "d" });
+            UpdateIHM();
         }
-
+        private void UpdateIHM()
+        {
+            ActivationSendSourceToCible();
+            ActivationAllSendSourceToCible();
+            ActivationSendCibleToSource();
+            ActivationAllSendAllCibleToSource();
+            ActivationUpDown();
+        }
         #region mes boutons
-
         private void button_1_element_source_to_cible_Click(object sender, EventArgs e)
         {
             string item = (string)comboBox_userInput.SelectedItem;
@@ -52,6 +59,7 @@ namespace WinFormsAppLesListesComboBox
                     this.comboBox_userInput.SelectedIndex = indexComboBox;
                 }
             }
+            UpdateIHM();
         }
         private void button_all_element_source_to_cible_Click(object sender, EventArgs e)
         {
@@ -61,8 +69,7 @@ namespace WinFormsAppLesListesComboBox
             }
             comboBox_userInput.Items.Clear();
             comboBox_userInput.Text = "";
-            ActivationAllSendSourceToCible();
-            ActivationAllSendAllCibleToSource();
+            UpdateIHM();
         }
         private void button_1_element_cible_to_source_Click(object sender, EventArgs e)
         {
@@ -71,8 +78,7 @@ namespace WinFormsAppLesListesComboBox
             comboBox_userInput.Items.Add(itemlistBox1);
             listBox1.Items.Remove(itemlistBox1);
             button_1_element_cible_to_source.Enabled = true;
-            ActivationSendCibleToSource();
-            ActivationUpDown();
+            UpdateIHM();
             if (listBox1.Items.Count == 0)
             {
                 button_all_element_cible_to_source.Enabled = false;
@@ -110,8 +116,7 @@ namespace WinFormsAppLesListesComboBox
                 }
                 listBox1.Items.Clear();
                 listBox1.Text = "";
-                ActivationAllSendAllCibleToSource();
-                ActivationAllSendSourceToCible();
+                UpdateIHM();
             }
         }
         private void button_cible_selectline_up_Click(object sender, EventArgs e)
@@ -139,7 +144,6 @@ namespace WinFormsAppLesListesComboBox
             ActivationUpDown();
         }
         #endregion
-
         #region comboBox
         private void comboBox_userInput_TextChanged(object sender, EventArgs e)
         {
@@ -174,7 +178,6 @@ namespace WinFormsAppLesListesComboBox
             }
         }
         #endregion
-
         #region Activation Boutons
         private void comboBox_userInput_SelectedIndexChanged(object sender, EventArgs e)
         {

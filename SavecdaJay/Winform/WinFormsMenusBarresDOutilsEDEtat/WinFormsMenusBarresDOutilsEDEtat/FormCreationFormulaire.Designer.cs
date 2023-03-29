@@ -79,7 +79,6 @@
             connectionToolStripMenuItem.Name = "connectionToolStripMenuItem";
             connectionToolStripMenuItem.Size = new Size(81, 20);
             connectionToolStripMenuItem.Text = "Connection";
-            connectionToolStripMenuItem.Click += connectionToolStripMenuItem_Click;
             // 
             // sidentifierToolStripMenuItem
             // 
@@ -98,6 +97,7 @@
             quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
             quitterToolStripMenuItem.Size = new Size(130, 22);
             quitterToolStripMenuItem.Text = "Quitter";
+            quitterToolStripMenuItem.Click += quitterToolStripMenuItem_Click;
             // 
             // phase1ToolStripMenuItem
             // 
@@ -106,13 +106,13 @@
             phase1ToolStripMenuItem.Name = "phase1ToolStripMenuItem";
             phase1ToolStripMenuItem.Size = new Size(59, 20);
             phase1ToolStripMenuItem.Text = "Phase 1";
-            phase1ToolStripMenuItem.Click += phase1ToolStripMenuItem_Click;
             // 
             // additionneurToolStripMenuItem
             // 
             additionneurToolStripMenuItem.Name = "additionneurToolStripMenuItem";
             additionneurToolStripMenuItem.Size = new Size(144, 22);
             additionneurToolStripMenuItem.Text = "Additionneur";
+            additionneurToolStripMenuItem.Click += additionneurToolStripMenuItem_Click;
             // 
             // phase2ToolStripMenuItem
             // 
@@ -121,13 +121,13 @@
             phase2ToolStripMenuItem.Name = "phase2ToolStripMenuItem";
             phase2ToolStripMenuItem.Size = new Size(59, 20);
             phase2ToolStripMenuItem.Text = "Phase 2";
-            phase2ToolStripMenuItem.Click += phase2ToolStripMenuItem_Click;
             // 
             // lesControlesToolStripMenuItem
             // 
             lesControlesToolStripMenuItem.Name = "lesControlesToolStripMenuItem";
-            lesControlesToolStripMenuItem.Size = new Size(143, 22);
+            lesControlesToolStripMenuItem.Size = new Size(180, 22);
             lesControlesToolStripMenuItem.Text = "Les controles";
+            lesControlesToolStripMenuItem.Click += lesControlesToolStripMenuItem_Click;
             // 
             // phase3ToolStripMenuItem
             // 
@@ -136,31 +136,34 @@
             phase3ToolStripMenuItem.Name = "phase3ToolStripMenuItem";
             phase3ToolStripMenuItem.Size = new Size(59, 20);
             phase3ToolStripMenuItem.Text = "Phase 3";
-            phase3ToolStripMenuItem.Click += phase3ToolStripMenuItem_Click;
             // 
             // CheckBoxToolStripMenuItem
             // 
             CheckBoxToolStripMenuItem.Name = "CheckBoxToolStripMenuItem";
             CheckBoxToolStripMenuItem.Size = new Size(249, 22);
             CheckBoxToolStripMenuItem.Text = "CheckBox et boutons radios";
+            CheckBoxToolStripMenuItem.Click += CheckBoxToolStripMenuItem_Click;
             // 
             // opBasesListBoxToolStripMenuItem
             // 
             opBasesListBoxToolStripMenuItem.Name = "opBasesListBoxToolStripMenuItem";
             opBasesListBoxToolStripMenuItem.Size = new Size(249, 22);
             opBasesListBoxToolStripMenuItem.Text = "Operations de base sur les listBox";
+            opBasesListBoxToolStripMenuItem.Click += opBasesListBoxToolStripMenuItem_Click;
             // 
             // listBoxEtComboBoxToolStripMenuItem
             // 
             listBoxEtComboBoxToolStripMenuItem.Name = "listBoxEtComboBoxToolStripMenuItem";
             listBoxEtComboBoxToolStripMenuItem.Size = new Size(249, 22);
             listBoxEtComboBoxToolStripMenuItem.Text = "ListBox et comboBox";
+            listBoxEtComboBoxToolStripMenuItem.Click += listBoxEtComboBoxToolStripMenuItem_Click;
             // 
             // DefilementToolStripMenuItem
             // 
             DefilementToolStripMenuItem.Name = "DefilementToolStripMenuItem";
             DefilementToolStripMenuItem.Size = new Size(249, 22);
             DefilementToolStripMenuItem.Text = "Les composants de defilement";
+            DefilementToolStripMenuItem.Click += DefilementToolStripMenuItem_Click;
             // 
             // toolStripSeparator2
             // 
@@ -172,6 +175,7 @@
             syntheseToolStripMenuItem.Name = "syntheseToolStripMenuItem";
             syntheseToolStripMenuItem.Size = new Size(249, 22);
             syntheseToolStripMenuItem.Text = "Synthèse";
+            syntheseToolStripMenuItem.Click += syntheseToolStripMenuItem_Click;
             // 
             // fenêtresToolStripMenuItem
             // 
@@ -180,35 +184,34 @@
             fenêtresToolStripMenuItem.Name = "fenêtresToolStripMenuItem";
             fenêtresToolStripMenuItem.Size = new Size(63, 20);
             fenêtresToolStripMenuItem.Text = "Fenêtres";
-            fenêtresToolStripMenuItem.Click += fenêtresToolStripMenuItem_Click;
             // 
             // cascadeToolStripMenuItem
             // 
             cascadeToolStripMenuItem.Name = "cascadeToolStripMenuItem";
-            cascadeToolStripMenuItem.Size = new Size(180, 22);
+            cascadeToolStripMenuItem.Size = new Size(129, 22);
             cascadeToolStripMenuItem.Text = "Cascade";
             // 
             // horizontalToolStripMenuItem
             // 
             horizontalToolStripMenuItem.Name = "horizontalToolStripMenuItem";
-            horizontalToolStripMenuItem.Size = new Size(180, 22);
+            horizontalToolStripMenuItem.Size = new Size(129, 22);
             horizontalToolStripMenuItem.Text = "Horizontal";
             // 
             // verticalToolStripMenuItem
             // 
             verticalToolStripMenuItem.Name = "verticalToolStripMenuItem";
-            verticalToolStripMenuItem.Size = new Size(180, 22);
+            verticalToolStripMenuItem.Size = new Size(129, 22);
             verticalToolStripMenuItem.Text = "Vertical";
             // 
             // toolStripSeparator3
             // 
             toolStripSeparator3.Name = "toolStripSeparator3";
-            toolStripSeparator3.Size = new Size(177, 6);
+            toolStripSeparator3.Size = new Size(126, 6);
             // 
             // saisieToolStripMenuItem
             // 
             saisieToolStripMenuItem.Name = "saisieToolStripMenuItem";
-            saisieToolStripMenuItem.Size = new Size(180, 22);
+            saisieToolStripMenuItem.Size = new Size(129, 22);
             saisieToolStripMenuItem.Text = "1 Saisie";
             // 
             // toolStrip1

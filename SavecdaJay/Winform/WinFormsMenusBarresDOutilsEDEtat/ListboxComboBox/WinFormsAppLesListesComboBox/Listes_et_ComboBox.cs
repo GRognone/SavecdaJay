@@ -63,6 +63,9 @@ namespace WinFormsAppLesListesComboBox
             comboBox_userInput.Text = "";
             ActivationAllSendSourceToCible();
             ActivationAllSendAllCibleToSource();
+            //ActivationSendSourceToCible();
+            //ActivationSendCibleToSource();
+
         }
         private void button_1_element_cible_to_source_Click(object sender, EventArgs e)
         {
@@ -112,6 +115,9 @@ namespace WinFormsAppLesListesComboBox
                 listBox1.Text = "";
                 ActivationAllSendAllCibleToSource();
                 ActivationAllSendSourceToCible();
+                //ActivationSendCibleToSource();
+                //ActivationSendSourceToCible();
+
             }
         }
         private void button_cible_selectline_up_Click(object sender, EventArgs e)

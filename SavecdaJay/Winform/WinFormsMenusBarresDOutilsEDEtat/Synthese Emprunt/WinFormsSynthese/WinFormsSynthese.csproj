@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassEmprunt\ClassEmprunt.csproj" />
-    <ProjectReference Include="..\ClassLibrary_Controles\ClassLibrary_Controles.csproj" />
+    <ProjectReference Include="..\ClassLibrary_ControlesEmprunt\ClassLibrary_Controles.csproj" />
   </ItemGroup>
 
 </Project>

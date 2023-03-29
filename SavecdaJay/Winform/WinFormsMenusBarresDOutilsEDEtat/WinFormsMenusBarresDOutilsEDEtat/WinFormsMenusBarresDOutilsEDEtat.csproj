@@ -9,6 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\1-Additionneur\ClassLibraryAddition\ClassLibraryAddition.csproj" />
+    <ProjectReference Include="..\1-Additionneur\WinFormsAdditionneurMetier\WinFormsAdditionneurMetier.csproj" />
+    <ProjectReference Include="..\2-les controles\BiblioControles\BiblioControles.csproj" />
+    <ProjectReference Include="..\2-les controles\BibliOFormulaireBanque\BiblioVirement.csproj" />
+    <ProjectReference Include="..\2-les controles\LesControles2\LesControles2.csproj" />
+    <ProjectReference Include="..\3-2 base listbox\ClassLibraryControle\ClassLibraryControle.csproj" />
+    <ProjectReference Include="..\3-2 base listbox\WinFormsOperationBaseListBox\WinFormsOperationBaseListBox.csproj" />
+    <ProjectReference Include="..\ListboxComboBox\ClassLibraryControles\ClassLibraryControles.csproj" />
+    <ProjectReference Include="..\ListboxComboBox\WinFormsAppLesListesComboBox\WinFormsAppLesListesComboBox.csproj" />
+    <ProjectReference Include="..\Synthese Emprunt\ClassEmprunt\ClassEmprunt.csproj" />
+    <ProjectReference Include="..\Synthese Emprunt\ClassLibrary_ControlesEmprunt\ClassLibrary_Controles.csproj" />
+    <ProjectReference Include="..\Synthese Emprunt\WinFormsSynthese\WinFormsSynthese.csproj" />
+    <ProjectReference Include="..\WinFormDefilementCondense\WinFormDefilementCondense.csproj" />
+    <ProjectReference Include="..\WinFormsLesDifferentsObjetsGraphiques\WinFormsLesDifferentsObjetsGraphiques.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
