@@ -22,10 +22,8 @@ namespace LesControles2
             InitializeComponent();
 
         }
-
         private void button_valider_Click(object sender, EventArgs e)
         {
-
             //reverifier tous les champs
             if (ControlesAEffectuer.NomAVerifier(textBox_nom.Text) &&
                 ControlesAEffectuer.DateAVerifier(textBox_date.Text) &&
@@ -36,7 +34,7 @@ namespace LesControles2
                 // ne pas oublier de convertir les formats des attributs de la classe qui sont autres que string en string via les Parse
 
                 virement = new Virement(textBox_nom.Text, DateTime.Parse(textBox_date.Text),
-                float.Parse(textBox_montant.Text, CultureInfo.InvariantCulture),textBox_CP.Text); // culture info invariantCulturepermer de taper une virgule ou un point pour la decimale
+                float.Parse(textBox_montant.Text, CultureInfo.InvariantCulture), textBox_CP.Text); // culture info invariantCulturepermer de taper une virgule ou un point pour la decimale
 
                 //instancier le form que l'on appelle Validation effectuées
                 //..  = new ....
@@ -106,11 +104,13 @@ namespace LesControles2
             errorProvider_cp.SetError(textBox_CP, "");
         }
 
-        // Fermenture de la FormVirement par clic sur la croix suivi d'un message de demande de confirmation.
 
         private void FormVirement_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult dr = MessageBox.Show("Fin de l'application ?", "FIN", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dr = MessageBox.Show("Fin de l'application ?", "FIN",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question,
+            MessageBoxDefaultButton.Button1);
             if (dr == DialogResult.No)
             {
                 e.Cancel = true;

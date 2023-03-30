@@ -34,18 +34,16 @@
             // 
             // textBoxSaisie
             // 
-            textBoxSaisie.Location = new Point(33, 70);
-            textBoxSaisie.Margin = new Padding(5, 6, 5, 6);
+            textBoxSaisie.Location = new Point(19, 35);
             textBoxSaisie.Name = "textBoxSaisie";
-            textBoxSaisie.Size = new Size(518, 35);
+            textBoxSaisie.Size = new Size(304, 23);
             textBoxSaisie.TabIndex = 0;
             // 
             // buttonValider
             // 
-            buttonValider.Location = new Point(609, 70);
-            buttonValider.Margin = new Padding(5, 6, 5, 6);
+            buttonValider.Location = new Point(355, 35);
             buttonValider.Name = "buttonValider";
-            buttonValider.Size = new Size(129, 46);
+            buttonValider.Size = new Size(75, 23);
             buttonValider.TabIndex = 1;
             buttonValider.Text = "Valider";
             buttonValider.UseVisualStyleBackColor = true;
@@ -53,16 +51,14 @@
             // 
             // FormSaisieTextePhase3ChekBoxBtRadio
             // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(780, 112);
+            ClientSize = new Size(460, 68);
             Controls.Add(buttonValider);
             Controls.Add(textBoxSaisie);
-            Margin = new Padding(5, 6, 5, 6);
-            MaximumSize = new Size(804, 176);
-            MinimumSize = new Size(804, 176);
+            MaximumSize = new Size(476, 107);
+            MinimumSize = new Size(476, 107);
             Name = "FormSaisieTextePhase3ChekBoxBtRadio";
-            Text = "Saisie";
             ResumeLayout(false);
             PerformLayout();
         }

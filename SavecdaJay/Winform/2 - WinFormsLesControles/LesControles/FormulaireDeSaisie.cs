@@ -26,10 +26,9 @@ namespace LesControles
             textBox3_montant.Text = textBox3_montant.Text + "";
             textBox4_code_postal.Text = textBox4_code_postal.Text + "";
 
-            MessageBox.Show("Nom : "+textBox1_nom.Text + "\r\n" +"Date : "+textBox2_date.Text + "\r\n" + "Montant : "+textBox3_montant.Text + "\r\n" + "Code Postal : "+textBox4_code_postal.Text, "Validation effectuée",
+            MessageBox.Show("Nom : " + textBox1_nom.Text + "\r\n" + "Date : " + textBox2_date.Text + "\r\n" + "Montant : " + textBox3_montant.Text + "\r\n" + "Code Postal : " + textBox4_code_postal.Text, "Validation effectuée",
                 MessageBoxButtons.OK);
         }
-
         private void button2_effacer_Click(object sender, EventArgs e)
         {
             textBox1_nom.Clear();
@@ -41,7 +40,6 @@ namespace LesControles
             textBox4_code_postal.Clear();
             errorProvider_date.SetError(textBox4_code_postal, "");
         }
-
         private void textBox1_nom_TextChanged(object sender, EventArgs e)
         {
             if (!Controles.Controle_saisie_nom(textBox1_nom.Text)) // si la saisie est incorrecte 
@@ -53,7 +51,6 @@ namespace LesControles
                 errorProvider1_nom.SetError(textBox1_nom, "");
             }
         }
-
         private void textBox2_date_TextChanged(object sender, EventArgs e)
         {
             if (!Controles.Controle_saisie_date(textBox2_date.Text))
@@ -65,7 +62,6 @@ namespace LesControles
                 errorProvider_date.SetError(textBox2_date, "");
             }
         }
-
         private void textBox3_montant_TextChanged(object sender, EventArgs e)
         {
             if (!Controles.Controle_Saisie_Montant(textBox3_montant.Text))
@@ -77,7 +73,6 @@ namespace LesControles
                 errorProvider_montant.SetError(textBox3_montant, "");
             }
         }
-
         private void textBox4_code_postal_TextChanged(object sender, EventArgs e)
         {
             if (!Controles.Controle_Saisie_Code_Postal(textBox4_code_postal.Text))
@@ -89,9 +84,6 @@ namespace LesControles
                 errorProvider_date.SetError(textBox4_code_postal, "");
             }
         }
-
-
-
         private void FormulaireDeSaisie_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult dr = MessageBox.Show("Fin de l’application ?", "FIN",
@@ -102,7 +94,6 @@ namespace LesControles
             {
                 e.Cancel = true;
             }
-            
         }
     }
 }

@@ -20,13 +20,10 @@ namespace WinFormsMenusBarresDOutilsEDEtat
         private void buttonValider_Click(object sender, EventArgs e)
         {
             string texte = textBoxSaisie.Text;
-            FormLesDifferentsObjetsGraphiques formDifObjGraph = new FormLesDifferentsObjetsGraphiques(textBoxSaisie.Text);
+            FormLesDifferentsObjetsGraphiques formDifObjGraph = new FormLesDifferentsObjetsGraphiques(texte);
+            formDifObjGraph.MdiParent = this.MdiParent;// positionne la FormLesDifferentsObjetsGraphiques dans le Mdi
             formDifObjGraph.Show();
+            this.Close();//fermera la FormSaisie après validation.
         }
-        private void textBoxSaisie_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

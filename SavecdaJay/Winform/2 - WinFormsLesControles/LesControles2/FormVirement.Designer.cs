@@ -28,180 +28,180 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.label_nom = new System.Windows.Forms.Label();
-            this.label_date = new System.Windows.Forms.Label();
-            this.label_montant = new System.Windows.Forms.Label();
-            this.label_CodePostal = new System.Windows.Forms.Label();
-            this.label_jj_mm_aaaa = new System.Windows.Forms.Label();
-            this.button_valider = new System.Windows.Forms.Button();
-            this.button_effacer = new System.Windows.Forms.Button();
-            this.textBox_nom = new System.Windows.Forms.TextBox();
-            this.textBox_date = new System.Windows.Forms.TextBox();
-            this.textBox_montant = new System.Windows.Forms.TextBox();
-            this.textBox_CP = new System.Windows.Forms.TextBox();
-            this.errorProvider_date = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider_montant = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider_cp = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider_nom = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_date)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_montant)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_cp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_nom)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            label_nom = new Label();
+            label_date = new Label();
+            label_montant = new Label();
+            label_CodePostal = new Label();
+            label_jj_mm_aaaa = new Label();
+            button_valider = new Button();
+            button_effacer = new Button();
+            textBox_nom = new TextBox();
+            textBox_date = new TextBox();
+            textBox_montant = new TextBox();
+            textBox_CP = new TextBox();
+            errorProvider_date = new ErrorProvider(components);
+            errorProvider_montant = new ErrorProvider(components);
+            errorProvider_cp = new ErrorProvider(components);
+            errorProvider_nom = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProvider_date).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider_montant).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider_cp).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider_nom).BeginInit();
+            SuspendLayout();
             // 
             // label_nom
             // 
-            this.label_nom.AutoSize = true;
-            this.label_nom.Location = new System.Drawing.Point(45, 49);
-            this.label_nom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_nom.Name = "label_nom";
-            this.label_nom.Size = new System.Drawing.Size(34, 15);
-            this.label_nom.TabIndex = 0;
-            this.label_nom.Text = "Nom";
+            label_nom.AutoSize = true;
+            label_nom.Location = new Point(45, 49);
+            label_nom.Margin = new Padding(2, 0, 2, 0);
+            label_nom.Name = "label_nom";
+            label_nom.Size = new Size(34, 15);
+            label_nom.TabIndex = 0;
+            label_nom.Text = "Nom";
             // 
             // label_date
             // 
-            this.label_date.AutoSize = true;
-            this.label_date.Location = new System.Drawing.Point(45, 80);
-            this.label_date.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_date.Name = "label_date";
-            this.label_date.Size = new System.Drawing.Size(31, 15);
-            this.label_date.TabIndex = 1;
-            this.label_date.Text = "Date";
+            label_date.AutoSize = true;
+            label_date.Location = new Point(45, 80);
+            label_date.Margin = new Padding(2, 0, 2, 0);
+            label_date.Name = "label_date";
+            label_date.Size = new Size(31, 15);
+            label_date.TabIndex = 1;
+            label_date.Text = "Date";
             // 
             // label_montant
             // 
-            this.label_montant.AutoSize = true;
-            this.label_montant.Location = new System.Drawing.Point(45, 108);
-            this.label_montant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_montant.Name = "label_montant";
-            this.label_montant.Size = new System.Drawing.Size(53, 15);
-            this.label_montant.TabIndex = 2;
-            this.label_montant.Text = "Montant";
+            label_montant.AutoSize = true;
+            label_montant.Location = new Point(45, 108);
+            label_montant.Margin = new Padding(2, 0, 2, 0);
+            label_montant.Name = "label_montant";
+            label_montant.Size = new Size(53, 15);
+            label_montant.TabIndex = 2;
+            label_montant.Text = "Montant";
             // 
             // label_CodePostal
             // 
-            this.label_CodePostal.AutoSize = true;
-            this.label_CodePostal.Location = new System.Drawing.Point(45, 139);
-            this.label_CodePostal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_CodePostal.Name = "label_CodePostal";
-            this.label_CodePostal.Size = new System.Drawing.Size(70, 15);
-            this.label_CodePostal.TabIndex = 3;
-            this.label_CodePostal.Text = "Code Postal";
+            label_CodePostal.AutoSize = true;
+            label_CodePostal.Location = new Point(45, 139);
+            label_CodePostal.Margin = new Padding(2, 0, 2, 0);
+            label_CodePostal.Name = "label_CodePostal";
+            label_CodePostal.Size = new Size(70, 15);
+            label_CodePostal.TabIndex = 3;
+            label_CodePostal.Text = "Code Postal";
             // 
             // label_jj_mm_aaaa
             // 
-            this.label_jj_mm_aaaa.AutoSize = true;
-            this.label_jj_mm_aaaa.Location = new System.Drawing.Point(248, 80);
-            this.label_jj_mm_aaaa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_jj_mm_aaaa.Name = "label_jj_mm_aaaa";
-            this.label_jj_mm_aaaa.Size = new System.Drawing.Size(87, 15);
-            this.label_jj_mm_aaaa.TabIndex = 4;
-            this.label_jj_mm_aaaa.Text = "(JJ/MM/AAAA)";
+            label_jj_mm_aaaa.AutoSize = true;
+            label_jj_mm_aaaa.Location = new Point(248, 80);
+            label_jj_mm_aaaa.Margin = new Padding(2, 0, 2, 0);
+            label_jj_mm_aaaa.Name = "label_jj_mm_aaaa";
+            label_jj_mm_aaaa.Size = new Size(87, 15);
+            label_jj_mm_aaaa.TabIndex = 4;
+            label_jj_mm_aaaa.Text = "(JJ/MM/AAAA)";
             // 
             // button_valider
             // 
-            this.button_valider.Location = new System.Drawing.Point(281, 134);
-            this.button_valider.Margin = new System.Windows.Forms.Padding(2);
-            this.button_valider.Name = "button_valider";
-            this.button_valider.Size = new System.Drawing.Size(74, 20);
-            this.button_valider.TabIndex = 5;
-            this.button_valider.Text = "Valider";
-            this.button_valider.UseVisualStyleBackColor = true;
-            this.button_valider.Click += new System.EventHandler(this.button_valider_Click);
+            button_valider.Location = new Point(281, 134);
+            button_valider.Margin = new Padding(2);
+            button_valider.Name = "button_valider";
+            button_valider.Size = new Size(74, 20);
+            button_valider.TabIndex = 5;
+            button_valider.Text = "Valider";
+            button_valider.UseVisualStyleBackColor = true;
+            button_valider.Click += button_valider_Click;
             // 
             // button_effacer
             // 
-            this.button_effacer.Location = new System.Drawing.Point(281, 157);
-            this.button_effacer.Margin = new System.Windows.Forms.Padding(2);
-            this.button_effacer.Name = "button_effacer";
-            this.button_effacer.Size = new System.Drawing.Size(74, 22);
-            this.button_effacer.TabIndex = 6;
-            this.button_effacer.Text = "Effacer";
-            this.button_effacer.UseVisualStyleBackColor = true;
-            this.button_effacer.Click += new System.EventHandler(this.button_effacer_Click);
+            button_effacer.Location = new Point(281, 157);
+            button_effacer.Margin = new Padding(2);
+            button_effacer.Name = "button_effacer";
+            button_effacer.Size = new Size(74, 22);
+            button_effacer.TabIndex = 6;
+            button_effacer.Text = "Effacer";
+            button_effacer.UseVisualStyleBackColor = true;
+            button_effacer.Click += button_effacer_Click;
             // 
             // textBox_nom
             // 
-            this.textBox_nom.Location = new System.Drawing.Point(123, 45);
-            this.textBox_nom.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_nom.Name = "textBox_nom";
-            this.textBox_nom.Size = new System.Drawing.Size(181, 23);
-            this.textBox_nom.TabIndex = 7;
-            this.textBox_nom.TextChanged += new System.EventHandler(this.textBox_nom_TextChanged);
+            textBox_nom.Location = new Point(123, 45);
+            textBox_nom.Margin = new Padding(2);
+            textBox_nom.Name = "textBox_nom";
+            textBox_nom.Size = new Size(181, 23);
+            textBox_nom.TabIndex = 7;
+            textBox_nom.TextChanged += textBox_nom_TextChanged;
             // 
             // textBox_date
             // 
-            this.textBox_date.Location = new System.Drawing.Point(123, 76);
-            this.textBox_date.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_date.Name = "textBox_date";
-            this.textBox_date.Size = new System.Drawing.Size(106, 23);
-            this.textBox_date.TabIndex = 8;
-            this.textBox_date.TextChanged += new System.EventHandler(this.textBox_date_TextChanged);
+            textBox_date.Location = new Point(123, 76);
+            textBox_date.Margin = new Padding(2);
+            textBox_date.Name = "textBox_date";
+            textBox_date.Size = new Size(106, 23);
+            textBox_date.TabIndex = 8;
+            textBox_date.TextChanged += textBox_date_TextChanged;
             // 
             // textBox_montant
             // 
-            this.textBox_montant.Location = new System.Drawing.Point(123, 104);
-            this.textBox_montant.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_montant.Name = "textBox_montant";
-            this.textBox_montant.Size = new System.Drawing.Size(106, 23);
-            this.textBox_montant.TabIndex = 9;
-            this.textBox_montant.TextChanged += new System.EventHandler(this.textBox_montant_TextChanged);
+            textBox_montant.Location = new Point(123, 104);
+            textBox_montant.Margin = new Padding(2);
+            textBox_montant.Name = "textBox_montant";
+            textBox_montant.Size = new Size(106, 23);
+            textBox_montant.TabIndex = 9;
+            textBox_montant.TextChanged += textBox_montant_TextChanged;
             // 
             // textBox_CP
             // 
-            this.textBox_CP.Location = new System.Drawing.Point(123, 135);
-            this.textBox_CP.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_CP.Name = "textBox_CP";
-            this.textBox_CP.Size = new System.Drawing.Size(80, 23);
-            this.textBox_CP.TabIndex = 10;
-            this.textBox_CP.TextChanged += new System.EventHandler(this.textBox_CP_TextChanged);
+            textBox_CP.Location = new Point(123, 135);
+            textBox_CP.Margin = new Padding(2);
+            textBox_CP.Name = "textBox_CP";
+            textBox_CP.Size = new Size(80, 23);
+            textBox_CP.TabIndex = 10;
+            textBox_CP.TextChanged += textBox_CP_TextChanged;
             // 
             // errorProvider_date
             // 
-            this.errorProvider_date.ContainerControl = this;
+            errorProvider_date.ContainerControl = this;
             // 
             // errorProvider_montant
             // 
-            this.errorProvider_montant.ContainerControl = this;
+            errorProvider_montant.ContainerControl = this;
             // 
             // errorProvider_cp
             // 
-            this.errorProvider_cp.ContainerControl = this;
+            errorProvider_cp.ContainerControl = this;
             // 
             // errorProvider_nom
             // 
-            this.errorProvider_nom.ContainerControl = this;
+            errorProvider_nom.ContainerControl = this;
             // 
             // FormVirement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 229);
-            this.Controls.Add(this.textBox_CP);
-            this.Controls.Add(this.textBox_montant);
-            this.Controls.Add(this.textBox_date);
-            this.Controls.Add(this.textBox_nom);
-            this.Controls.Add(this.button_effacer);
-            this.Controls.Add(this.button_valider);
-            this.Controls.Add(this.label_jj_mm_aaaa);
-            this.Controls.Add(this.label_CodePostal);
-            this.Controls.Add(this.label_montant);
-            this.Controls.Add(this.label_date);
-            this.Controls.Add(this.label_nom);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(427, 268);
-            this.MinimumSize = new System.Drawing.Size(427, 268);
-            this.Name = "FormVirement";
-            this.Text = "FormulaireVirement";
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_date)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_montant)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_cp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_nom)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(411, 229);
+            Controls.Add(textBox_CP);
+            Controls.Add(textBox_montant);
+            Controls.Add(textBox_date);
+            Controls.Add(textBox_nom);
+            Controls.Add(button_effacer);
+            Controls.Add(button_valider);
+            Controls.Add(label_jj_mm_aaaa);
+            Controls.Add(label_CodePostal);
+            Controls.Add(label_montant);
+            Controls.Add(label_date);
+            Controls.Add(label_nom);
+            Margin = new Padding(2);
+            MaximumSize = new Size(427, 268);
+            MinimumSize = new Size(427, 268);
+            Name = "FormVirement";
+            Text = "FormulaireVirement";
+            FormClosing += FormVirement_FormClosing;
+            ((System.ComponentModel.ISupportInitialize)errorProvider_date).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider_montant).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider_cp).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider_nom).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
