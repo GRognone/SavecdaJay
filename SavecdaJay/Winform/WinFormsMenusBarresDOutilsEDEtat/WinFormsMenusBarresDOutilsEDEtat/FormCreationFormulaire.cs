@@ -30,8 +30,7 @@ namespace WinFormsMenusBarresDOutilsEDEtat
             InitializeComponent();
             toolStripSplitButtonPhase3.DropDown = phase3ToolStripMenuItem.DropDown;// recupère les commande de phase 3 StripMenu.
             toolStripLabelDate.Text = DateTime.Now.ToString("dd/MM/yyyy");// affiche date en temps reel en bas de la fenêtre.
-            //toolStripLabelDerniereOperation = 
-            CompteurAddition = 0;
+            CompteurAddition = 1;
         }
         private void DeverouillerIHM()
         {
@@ -64,16 +63,7 @@ namespace WinFormsMenusBarresDOutilsEDEtat
             formAddition.Text += "N° " + CompteurAddition;
             formAddition.MdiParent = this; // positionne notre form dans la form Mdi
             formAddition.Show();
-            if (formAddition != new FormAdditionneur())
-            {
-                CompteurAddition++;  
-            }
-            else
-            {
-                CompteurAddition--;
-            }
-
-
+            CompteurAddition++;
         }
         private void lesControlesToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -118,17 +108,14 @@ namespace WinFormsMenusBarresDOutilsEDEtat
         private void OuvrirFormulaire(Form f)
         {
             f.Load += new EventHandler(ChoseAuChargement);
-            f.MdiParent = this;
+            f.MdiParent = this; //ouverture des forms dans le mdi
             f.Show();
             f.FormClosed += new FormClosedEventHandler(ChangerLabelALaFermetureDuneFenetre);
-
         }
-
         private void ChangerLabelALaFermetureDuneFenetre(object? sender, FormClosedEventArgs e)
         {
             toolStripLabelDerniereOperation.Text = "Fermeture de " + ((Form)sender).Text;
         }
-
         private void ChoseAuChargement(object? sender, EventArgs e)
         {
             toolStripLabelDerniereOperation.Text = "Ouverture de " + ((Form)sender).Text;
