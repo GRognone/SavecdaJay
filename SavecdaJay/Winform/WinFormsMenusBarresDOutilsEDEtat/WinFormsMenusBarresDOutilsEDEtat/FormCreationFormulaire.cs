@@ -33,13 +33,28 @@ namespace WinFormsMenusBarresDOutilsEDEtat
             toolStripSplitButtonPhase3.DropDown = phase3ToolStripMenuItem.DropDown;// recupère les commande de phase 3 StripMenu.
             toolStripLabelDate.Text = DateTime.Now.ToString("dd/MM/yyyy");// affiche date en temps reel en bas de la fenêtre.
             Compteur = 1;//initialisation du compteur de fenêtres
-            //FormLogin formulaireLogin2 = new FormLogin();
-            //formulaireLogin2.FormClosing += F_logininitial_FormClosing;
-            //formulaireLogin2.ShowDialog();
+                         //lancement du login au demarrage
+            FormLogin formulaireLogin2 = new FormLogin();
+            formulaireLogin2.FormClosing += F_FormClosingInit;
+            formulaireLogin2.ShowDialog();
+
             //this.Hide();
         }
-
-        private void DeverouillerIHM()
+        //ferme le Login Initial
+        private void F_FormClosingInit(object? sender, FormClosingEventArgs e)
+        {
+            FormLogin formLoginInit = sender as FormLogin;
+            if (formLoginInit.ConnectionValide())
+            {
+                this.Show();
+                //DeverouillerIHM(); //pour deverouiller directement apres login
+            }
+            else
+            {
+                this.Close();
+            }
+        }
+            private void DeverouillerIHM()
         {
             phase1ToolStripMenuItem.Enabled = true;
             phase2ToolStripMenuItem.Enabled = true;
