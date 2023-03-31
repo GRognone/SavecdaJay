@@ -102,14 +102,17 @@ namespace LesControles2
             errorProvider_cp.SetError(textBox_CP, "");
         }
         private void FormVirement_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult dr = MessageBox.Show("Fin de l'application ?", "FIN",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Question,
-            MessageBoxDefaultButton.Button1);
-            if (dr == DialogResult.No)
+        { 
+            if(this.MdiParent == null)
             {
-                e.Cancel = true;
+                DialogResult dr = MessageBox.Show("Fin de l'application ?", "FIN",
+                           MessageBoxButtons.YesNo,
+                           MessageBoxIcon.Question,
+                           MessageBoxDefaultButton.Button1);
+                if (dr == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
             }
         }
     }

@@ -14,6 +14,7 @@ namespace WinFormsMenusBarresDOutilsEDEtat
     {
         private const string login = "Roberto";
         private const string password = "123456";
+
         public FormLogin()
         {
             InitializeComponent();
@@ -22,24 +23,24 @@ namespace WinFormsMenusBarresDOutilsEDEtat
             // determine le nombre de caractères pour le mot de passe characters.
             textBoxPassword.MaxLength = 10;
         }
-
         private void buttonOk_Click(object sender, EventArgs e)
         {
             if (textBoxLogin.Text == login && textBoxPassword.Text == password)
             {
-
+                Close();
             }
             else
             {
                 errorProviderSaisieIncorrecte.SetError(textBoxPassword,"verifier identifiant et mot de passe");
             }
-
-
         }
-
         private void buttonAnnuler_Click(object sender, EventArgs e)
         {
             Close();
+        }
+        public bool ConnectionValide()
+        {
+            return (textBoxLogin.Text == login && textBoxPassword.Text == password);
         }
     }
 }
