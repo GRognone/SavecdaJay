@@ -59,6 +59,7 @@
             MaximumSize = new Size(476, 107);
             MinimumSize = new Size(476, 107);
             Name = "FormSaisieTextePhase3ChekBoxBtRadio";
+            Text = "Saisie";
             ResumeLayout(false);
             PerformLayout();
         }

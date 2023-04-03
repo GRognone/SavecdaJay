@@ -32,7 +32,7 @@ namespace WinFormsMenusBarresDOutilsEDEtat
             InitializeComponent();
             toolStripSplitButtonPhase3.DropDown = phase3ToolStripMenuItem.DropDown;// recupère les commande de phase 3 StripMenu.
             toolStripLabelDate.Text = DateTime.Now.ToString("dd/MM/yyyy");// affiche date en temps reel en bas de la fenêtre.
-            Compteur = 1;//initialisation du compteur de fenêtres
+            Compteur = 0;//initialisation du compteur de fenêtres
                          //lancement du login au demarrage
             FormLogin formulaireLogin2 = new FormLogin();
             formulaireLogin2.FormClosing += F_FormClosingInit;
