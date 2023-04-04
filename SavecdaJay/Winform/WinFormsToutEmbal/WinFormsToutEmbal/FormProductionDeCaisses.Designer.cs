@@ -102,10 +102,12 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.ImageScalingSize = new Size(24, 24);
             menuStrip1.Items.AddRange(new ToolStripItem[] { fichierToolStripMenuItem, productionToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(605, 24);
+            menuStrip1.Padding = new Padding(9, 3, 0, 3);
+            menuStrip1.Size = new Size(878, 35);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -113,13 +115,13 @@
             // 
             fichierToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { quitterToolStripMenuItem });
             fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
-            fichierToolStripMenuItem.Size = new Size(54, 20);
+            fichierToolStripMenuItem.Size = new Size(78, 29);
             fichierToolStripMenuItem.Text = "Fichier";
             // 
             // quitterToolStripMenuItem
             // 
             quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            quitterToolStripMenuItem.Size = new Size(111, 22);
+            quitterToolStripMenuItem.Size = new Size(169, 34);
             quitterToolStripMenuItem.Text = "Quitter";
             quitterToolStripMenuItem.Click += quitterToolStripMenuItem_Click;
             // 
@@ -127,99 +129,101 @@
             // 
             productionToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { démarrerToolStripMenuItem, arrêterToolStripMenuItem, continuerToolStripMenuItem });
             productionToolStripMenuItem.Name = "productionToolStripMenuItem";
-            productionToolStripMenuItem.Size = new Size(78, 20);
+            productionToolStripMenuItem.Size = new Size(115, 29);
             productionToolStripMenuItem.Text = "Production";
             // 
             // démarrerToolStripMenuItem
             // 
             démarrerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aToolStripMenuItem, bToolStripMenuItem, cToolStripMenuItem });
             démarrerToolStripMenuItem.Name = "démarrerToolStripMenuItem";
-            démarrerToolStripMenuItem.Size = new Size(127, 22);
+            démarrerToolStripMenuItem.Size = new Size(191, 34);
             démarrerToolStripMenuItem.Text = "Démarrer";
             // 
             // aToolStripMenuItem
             // 
             aToolStripMenuItem.Name = "aToolStripMenuItem";
-            aToolStripMenuItem.Size = new Size(82, 22);
+            aToolStripMenuItem.Size = new Size(126, 34);
             aToolStripMenuItem.Text = "A";
             // 
             // bToolStripMenuItem
             // 
             bToolStripMenuItem.Name = "bToolStripMenuItem";
-            bToolStripMenuItem.Size = new Size(82, 22);
+            bToolStripMenuItem.Size = new Size(126, 34);
             bToolStripMenuItem.Text = "B";
             // 
             // cToolStripMenuItem
             // 
             cToolStripMenuItem.Name = "cToolStripMenuItem";
-            cToolStripMenuItem.Size = new Size(82, 22);
+            cToolStripMenuItem.Size = new Size(126, 34);
             cToolStripMenuItem.Text = "C";
             // 
             // arrêterToolStripMenuItem
             // 
             arrêterToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aToolStripMenuItem1, bToolStripMenuItem1, cToolStripMenuItem1 });
             arrêterToolStripMenuItem.Name = "arrêterToolStripMenuItem";
-            arrêterToolStripMenuItem.Size = new Size(127, 22);
+            arrêterToolStripMenuItem.Size = new Size(191, 34);
             arrêterToolStripMenuItem.Text = "Arrêter";
             // 
             // aToolStripMenuItem1
             // 
             aToolStripMenuItem1.Name = "aToolStripMenuItem1";
-            aToolStripMenuItem1.Size = new Size(82, 22);
+            aToolStripMenuItem1.Size = new Size(126, 34);
             aToolStripMenuItem1.Text = "A";
             // 
             // bToolStripMenuItem1
             // 
             bToolStripMenuItem1.Name = "bToolStripMenuItem1";
-            bToolStripMenuItem1.Size = new Size(82, 22);
+            bToolStripMenuItem1.Size = new Size(126, 34);
             bToolStripMenuItem1.Text = "B";
             // 
             // cToolStripMenuItem1
             // 
             cToolStripMenuItem1.Name = "cToolStripMenuItem1";
-            cToolStripMenuItem1.Size = new Size(82, 22);
+            cToolStripMenuItem1.Size = new Size(126, 34);
             cToolStripMenuItem1.Text = "C";
             // 
             // continuerToolStripMenuItem
             // 
             continuerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aToolStripMenuItem2, bToolStripMenuItem2, cToolStripMenuItem2 });
             continuerToolStripMenuItem.Name = "continuerToolStripMenuItem";
-            continuerToolStripMenuItem.Size = new Size(127, 22);
+            continuerToolStripMenuItem.Size = new Size(191, 34);
             continuerToolStripMenuItem.Text = "Continuer";
             // 
             // aToolStripMenuItem2
             // 
             aToolStripMenuItem2.Name = "aToolStripMenuItem2";
-            aToolStripMenuItem2.Size = new Size(82, 22);
+            aToolStripMenuItem2.Size = new Size(126, 34);
             aToolStripMenuItem2.Text = "A";
             // 
             // bToolStripMenuItem2
             // 
             bToolStripMenuItem2.Name = "bToolStripMenuItem2";
-            bToolStripMenuItem2.Size = new Size(82, 22);
+            bToolStripMenuItem2.Size = new Size(126, 34);
             bToolStripMenuItem2.Text = "B";
             // 
             // cToolStripMenuItem2
             // 
             cToolStripMenuItem2.Name = "cToolStripMenuItem2";
-            cToolStripMenuItem2.Size = new Size(82, 22);
+            cToolStripMenuItem2.Size = new Size(126, 34);
             cToolStripMenuItem2.Text = "C";
             // 
             // progressBarProductionA
             // 
-            progressBarProductionA.Location = new Point(130, 325);
+            progressBarProductionA.Location = new Point(186, 542);
+            progressBarProductionA.Margin = new Padding(4, 5, 4, 5);
             progressBarProductionA.Maximum = 1000;
             progressBarProductionA.Name = "progressBarProductionA";
-            progressBarProductionA.Size = new Size(429, 23);
+            progressBarProductionA.Size = new Size(613, 38);
             progressBarProductionA.TabIndex = 1;
             // 
             // labelProductionA
             // 
             labelProductionA.AutoSize = true;
             labelProductionA.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            labelProductionA.Location = new Point(37, 333);
+            labelProductionA.Location = new Point(53, 555);
+            labelProductionA.Margin = new Padding(4, 0, 4, 0);
             labelProductionA.Name = "labelProductionA";
-            labelProductionA.Size = new Size(79, 15);
+            labelProductionA.Size = new Size(124, 25);
             labelProductionA.TabIndex = 2;
             labelProductionA.Text = "Production A";
             // 
@@ -227,45 +231,51 @@
             // 
             labelProductionB.AutoSize = true;
             labelProductionB.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            labelProductionB.Location = new Point(38, 382);
+            labelProductionB.Location = new Point(54, 637);
+            labelProductionB.Margin = new Padding(4, 0, 4, 0);
             labelProductionB.Name = "labelProductionB";
-            labelProductionB.Size = new Size(79, 15);
+            labelProductionB.Size = new Size(123, 25);
             labelProductionB.TabIndex = 3;
             labelProductionB.Text = "Production B";
             // 
             // progressBarProductionB
             // 
-            progressBarProductionB.Location = new Point(130, 374);
+            progressBarProductionB.Location = new Point(186, 623);
+            progressBarProductionB.Margin = new Padding(4, 5, 4, 5);
             progressBarProductionB.Maximum = 25000;
             progressBarProductionB.Name = "progressBarProductionB";
-            progressBarProductionB.Size = new Size(429, 23);
+            progressBarProductionB.Size = new Size(613, 38);
             progressBarProductionB.TabIndex = 4;
             // 
             // labelProductionC
             // 
             labelProductionC.AutoSize = true;
             labelProductionC.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            labelProductionC.Location = new Point(37, 429);
+            labelProductionC.Location = new Point(53, 715);
+            labelProductionC.Margin = new Padding(4, 0, 4, 0);
             labelProductionC.Name = "labelProductionC";
-            labelProductionC.Size = new Size(78, 15);
+            labelProductionC.Size = new Size(122, 25);
             labelProductionC.TabIndex = 5;
             labelProductionC.Text = "Production C";
             // 
             // progressBar1
             // 
-            progressBar1.Location = new Point(130, 421);
+            progressBar1.Location = new Point(186, 702);
+            progressBar1.Margin = new Padding(4, 5, 4, 5);
             progressBar1.Maximum = 120000;
             progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(429, 23);
+            progressBar1.Size = new Size(613, 38);
             progressBar1.TabIndex = 6;
             // 
             // toolStrip1
             // 
             toolStrip1.Dock = DockStyle.Bottom;
+            toolStrip1.ImageScalingSize = new Size(24, 24);
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripLabelCaisseA, toolStripSeparator2, toolStripLabelCaisseB, toolStripSeparator1, toolStripLabelCaisseC, toolStripSeparator3, toolStripLabelDateTime });
-            toolStrip1.Location = new Point(0, 475);
+            toolStrip1.Location = new Point(0, 816);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(605, 25);
+            toolStrip1.Padding = new Padding(0, 0, 3, 0);
+            toolStrip1.Size = new Size(878, 28);
             toolStrip1.TabIndex = 7;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -279,7 +289,7 @@
             // toolStripSeparator2
             // 
             toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new Size(6, 25);
+            toolStripSeparator2.Size = new Size(6, 28);
             // 
             // toolStripLabelCaisseB
             // 
@@ -291,7 +301,7 @@
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(6, 25);
+            toolStripSeparator1.Size = new Size(6, 28);
             // 
             // toolStripLabelCaisseC
             // 
@@ -303,7 +313,7 @@
             // toolStripSeparator3
             // 
             toolStripSeparator3.Name = "toolStripSeparator3";
-            toolStripSeparator3.Size = new Size(6, 25);
+            toolStripSeparator3.Size = new Size(6, 28);
             // 
             // toolStripLabelDateTime
             // 
@@ -317,11 +327,11 @@
             tabControl.Controls.Add(tabPageTypeA);
             tabControl.Controls.Add(tabPage2);
             tabControl.Controls.Add(TabPage3);
-            tabControl.Location = new Point(130, 159);
-            tabControl.Margin = new Padding(3, 0, 3, 0);
+            tabControl.Location = new Point(186, 265);
+            tabControl.Margin = new Padding(4, 0, 4, 0);
             tabControl.Name = "tabControl";
             tabControl.SelectedIndex = 0;
-            tabControl.Size = new Size(429, 127);
+            tabControl.Size = new Size(613, 212);
             tabControl.TabIndex = 8;
             // 
             // tabPageTypeA
@@ -332,62 +342,69 @@
             tabPageTypeA.Controls.Add(labelTauxDefautDepuisDemarrageA);
             tabPageTypeA.Controls.Add(labelTauxDefautA);
             tabPageTypeA.Controls.Add(labelNbCaisseProduiteA);
-            tabPageTypeA.Location = new Point(4, 24);
+            tabPageTypeA.Location = new Point(4, 34);
+            tabPageTypeA.Margin = new Padding(4, 5, 4, 5);
             tabPageTypeA.Name = "tabPageTypeA";
-            tabPageTypeA.Padding = new Padding(3);
-            tabPageTypeA.Size = new Size(421, 99);
+            tabPageTypeA.Padding = new Padding(4, 5, 4, 5);
+            tabPageTypeA.Size = new Size(605, 174);
             tabPageTypeA.TabIndex = 0;
             tabPageTypeA.Text = "Type A";
             tabPageTypeA.UseVisualStyleBackColor = true;
             // 
             // textBoxDefautDepuisDemA
             // 
-            textBoxDefautDepuisDemA.Location = new Point(340, 67);
+            textBoxDefautDepuisDemA.Location = new Point(486, 112);
+            textBoxDefautDepuisDemA.Margin = new Padding(4, 5, 4, 5);
             textBoxDefautDepuisDemA.Name = "textBoxDefautDepuisDemA";
             textBoxDefautDepuisDemA.ReadOnly = true;
-            textBoxDefautDepuisDemA.Size = new Size(75, 23);
+            textBoxDefautDepuisDemA.Size = new Size(105, 31);
             textBoxDefautDepuisDemA.TabIndex = 5;
             // 
             // textBoxTauxDéfautA
             // 
-            textBoxTauxDéfautA.Location = new Point(340, 38);
+            textBoxTauxDéfautA.Location = new Point(486, 63);
+            textBoxTauxDéfautA.Margin = new Padding(4, 5, 4, 5);
             textBoxTauxDéfautA.Name = "textBoxTauxDéfautA";
             textBoxTauxDéfautA.ReadOnly = true;
-            textBoxTauxDéfautA.Size = new Size(75, 23);
+            textBoxTauxDéfautA.Size = new Size(105, 31);
             textBoxTauxDéfautA.TabIndex = 4;
             // 
             // textBoxNbCaisseProdDemA
             // 
-            textBoxNbCaisseProdDemA.Location = new Point(340, 9);
+            textBoxNbCaisseProdDemA.Location = new Point(486, 15);
+            textBoxNbCaisseProdDemA.Margin = new Padding(4, 5, 4, 5);
             textBoxNbCaisseProdDemA.Name = "textBoxNbCaisseProdDemA";
             textBoxNbCaisseProdDemA.ReadOnly = true;
-            textBoxNbCaisseProdDemA.Size = new Size(75, 23);
+            textBoxNbCaisseProdDemA.Size = new Size(105, 31);
             textBoxNbCaisseProdDemA.TabIndex = 3;
             // 
             // labelTauxDefautDepuisDemarrageA
             // 
             labelTauxDefautDepuisDemarrageA.AutoSize = true;
-            labelTauxDefautDepuisDemarrageA.Location = new Point(13, 75);
+            labelTauxDefautDepuisDemarrageA.Location = new Point(19, 125);
+            labelTauxDefautDepuisDemarrageA.Margin = new Padding(4, 0, 4, 0);
             labelTauxDefautDepuisDemarrageA.Name = "labelTauxDefautDepuisDemarrageA";
-            labelTauxDefautDepuisDemarrageA.Size = new Size(166, 15);
+            labelTauxDefautDepuisDemarrageA.Size = new Size(251, 25);
             labelTauxDefautDepuisDemarrageA.TabIndex = 2;
             labelTauxDefautDepuisDemarrageA.Text = "Taux défaut depuis démarrage";
             // 
             // labelTauxDefautA
             // 
             labelTauxDefautA.AutoSize = true;
-            labelTauxDefautA.Location = new Point(13, 46);
+            labelTauxDefautA.Location = new Point(19, 77);
+            labelTauxDefautA.Margin = new Padding(4, 0, 4, 0);
             labelTauxDefautA.Name = "labelTauxDefautA";
-            labelTauxDefautA.Size = new Size(101, 15);
+            labelTauxDefautA.Size = new Size(151, 25);
             labelTauxDefautA.TabIndex = 1;
             labelTauxDefautA.Text = "Taux défaut heure";
             // 
             // labelNbCaisseProduiteA
             // 
             labelNbCaisseProduiteA.AutoSize = true;
-            labelNbCaisseProduiteA.Location = new Point(13, 17);
+            labelNbCaisseProduiteA.Location = new Point(19, 28);
+            labelNbCaisseProduiteA.Margin = new Padding(4, 0, 4, 0);
             labelNbCaisseProduiteA.Name = "labelNbCaisseProduiteA";
-            labelNbCaisseProduiteA.Size = new Size(216, 15);
+            labelNbCaisseProduiteA.Size = new Size(329, 25);
             labelNbCaisseProduiteA.TabIndex = 0;
             labelNbCaisseProduiteA.Text = "Nombre de caisses depuis le démarrage";
             // 
@@ -399,62 +416,69 @@
             tabPage2.Controls.Add(labelTauxDefautDepuisDemarrageB);
             tabPage2.Controls.Add(labelTauxDefautB);
             tabPage2.Controls.Add(labelNbCaisseProduiteB);
-            tabPage2.Location = new Point(4, 24);
+            tabPage2.Location = new Point(4, 34);
+            tabPage2.Margin = new Padding(4, 5, 4, 5);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(421, 99);
+            tabPage2.Padding = new Padding(4, 5, 4, 5);
+            tabPage2.Size = new Size(605, 174);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Type B";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // textBoxDefautDepuisDemB
             // 
-            textBoxDefautDepuisDemB.Location = new Point(340, 67);
+            textBoxDefautDepuisDemB.Location = new Point(486, 112);
+            textBoxDefautDepuisDemB.Margin = new Padding(4, 5, 4, 5);
             textBoxDefautDepuisDemB.Name = "textBoxDefautDepuisDemB";
             textBoxDefautDepuisDemB.ReadOnly = true;
-            textBoxDefautDepuisDemB.Size = new Size(75, 23);
+            textBoxDefautDepuisDemB.Size = new Size(105, 31);
             textBoxDefautDepuisDemB.TabIndex = 5;
             // 
             // textBoxTauxDéfautB
             // 
-            textBoxTauxDéfautB.Location = new Point(340, 38);
+            textBoxTauxDéfautB.Location = new Point(486, 63);
+            textBoxTauxDéfautB.Margin = new Padding(4, 5, 4, 5);
             textBoxTauxDéfautB.Name = "textBoxTauxDéfautB";
             textBoxTauxDéfautB.ReadOnly = true;
-            textBoxTauxDéfautB.Size = new Size(75, 23);
+            textBoxTauxDéfautB.Size = new Size(105, 31);
             textBoxTauxDéfautB.TabIndex = 4;
             // 
             // textBoxNbCaisseProdDemB
             // 
-            textBoxNbCaisseProdDemB.Location = new Point(340, 9);
+            textBoxNbCaisseProdDemB.Location = new Point(486, 15);
+            textBoxNbCaisseProdDemB.Margin = new Padding(4, 5, 4, 5);
             textBoxNbCaisseProdDemB.Name = "textBoxNbCaisseProdDemB";
             textBoxNbCaisseProdDemB.ReadOnly = true;
-            textBoxNbCaisseProdDemB.Size = new Size(75, 23);
+            textBoxNbCaisseProdDemB.Size = new Size(105, 31);
             textBoxNbCaisseProdDemB.TabIndex = 3;
             // 
             // labelTauxDefautDepuisDemarrageB
             // 
             labelTauxDefautDepuisDemarrageB.AutoSize = true;
-            labelTauxDefautDepuisDemarrageB.Location = new Point(13, 75);
+            labelTauxDefautDepuisDemarrageB.Location = new Point(19, 125);
+            labelTauxDefautDepuisDemarrageB.Margin = new Padding(4, 0, 4, 0);
             labelTauxDefautDepuisDemarrageB.Name = "labelTauxDefautDepuisDemarrageB";
-            labelTauxDefautDepuisDemarrageB.Size = new Size(166, 15);
+            labelTauxDefautDepuisDemarrageB.Size = new Size(251, 25);
             labelTauxDefautDepuisDemarrageB.TabIndex = 2;
             labelTauxDefautDepuisDemarrageB.Text = "Taux défaut depuis démarrage";
             // 
             // labelTauxDefautB
             // 
             labelTauxDefautB.AutoSize = true;
-            labelTauxDefautB.Location = new Point(13, 46);
+            labelTauxDefautB.Location = new Point(19, 77);
+            labelTauxDefautB.Margin = new Padding(4, 0, 4, 0);
             labelTauxDefautB.Name = "labelTauxDefautB";
-            labelTauxDefautB.Size = new Size(101, 15);
+            labelTauxDefautB.Size = new Size(151, 25);
             labelTauxDefautB.TabIndex = 1;
             labelTauxDefautB.Text = "Taux défaut heure";
             // 
             // labelNbCaisseProduiteB
             // 
             labelNbCaisseProduiteB.AutoSize = true;
-            labelNbCaisseProduiteB.Location = new Point(13, 17);
+            labelNbCaisseProduiteB.Location = new Point(19, 28);
+            labelNbCaisseProduiteB.Margin = new Padding(4, 0, 4, 0);
             labelNbCaisseProduiteB.Name = "labelNbCaisseProduiteB";
-            labelNbCaisseProduiteB.Size = new Size(216, 15);
+            labelNbCaisseProduiteB.Size = new Size(329, 25);
             labelNbCaisseProduiteB.TabIndex = 0;
             labelNbCaisseProduiteB.Text = "Nombre de caisses depuis le démarrage";
             // 
@@ -466,62 +490,69 @@
             TabPage3.Controls.Add(labelTauxDefautDepuisDemarrageC);
             TabPage3.Controls.Add(labelTauxDefautC);
             TabPage3.Controls.Add(labelNbCaisseProduiteC);
-            TabPage3.Location = new Point(4, 24);
+            TabPage3.Location = new Point(4, 34);
+            TabPage3.Margin = new Padding(4, 5, 4, 5);
             TabPage3.Name = "TabPage3";
-            TabPage3.Padding = new Padding(3);
-            TabPage3.Size = new Size(421, 99);
+            TabPage3.Padding = new Padding(4, 5, 4, 5);
+            TabPage3.Size = new Size(605, 174);
             TabPage3.TabIndex = 2;
             TabPage3.Text = "Type C";
             TabPage3.UseVisualStyleBackColor = true;
             // 
             // textBoxDefautDepuisDemC
             // 
-            textBoxDefautDepuisDemC.Location = new Point(340, 67);
+            textBoxDefautDepuisDemC.Location = new Point(486, 112);
+            textBoxDefautDepuisDemC.Margin = new Padding(4, 5, 4, 5);
             textBoxDefautDepuisDemC.Name = "textBoxDefautDepuisDemC";
             textBoxDefautDepuisDemC.ReadOnly = true;
-            textBoxDefautDepuisDemC.Size = new Size(75, 23);
+            textBoxDefautDepuisDemC.Size = new Size(105, 31);
             textBoxDefautDepuisDemC.TabIndex = 5;
             // 
             // textBoxTauxDéfautC
             // 
-            textBoxTauxDéfautC.Location = new Point(340, 38);
+            textBoxTauxDéfautC.Location = new Point(486, 63);
+            textBoxTauxDéfautC.Margin = new Padding(4, 5, 4, 5);
             textBoxTauxDéfautC.Name = "textBoxTauxDéfautC";
             textBoxTauxDéfautC.ReadOnly = true;
-            textBoxTauxDéfautC.Size = new Size(75, 23);
+            textBoxTauxDéfautC.Size = new Size(105, 31);
             textBoxTauxDéfautC.TabIndex = 4;
             // 
             // textBoxNbCaisseProdDemC
             // 
-            textBoxNbCaisseProdDemC.Location = new Point(340, 9);
+            textBoxNbCaisseProdDemC.Location = new Point(486, 15);
+            textBoxNbCaisseProdDemC.Margin = new Padding(4, 5, 4, 5);
             textBoxNbCaisseProdDemC.Name = "textBoxNbCaisseProdDemC";
             textBoxNbCaisseProdDemC.ReadOnly = true;
-            textBoxNbCaisseProdDemC.Size = new Size(75, 23);
+            textBoxNbCaisseProdDemC.Size = new Size(105, 31);
             textBoxNbCaisseProdDemC.TabIndex = 3;
             // 
             // labelTauxDefautDepuisDemarrageC
             // 
             labelTauxDefautDepuisDemarrageC.AutoSize = true;
-            labelTauxDefautDepuisDemarrageC.Location = new Point(13, 75);
+            labelTauxDefautDepuisDemarrageC.Location = new Point(19, 125);
+            labelTauxDefautDepuisDemarrageC.Margin = new Padding(4, 0, 4, 0);
             labelTauxDefautDepuisDemarrageC.Name = "labelTauxDefautDepuisDemarrageC";
-            labelTauxDefautDepuisDemarrageC.Size = new Size(166, 15);
+            labelTauxDefautDepuisDemarrageC.Size = new Size(251, 25);
             labelTauxDefautDepuisDemarrageC.TabIndex = 2;
             labelTauxDefautDepuisDemarrageC.Text = "Taux défaut depuis démarrage";
             // 
             // labelTauxDefautC
             // 
             labelTauxDefautC.AutoSize = true;
-            labelTauxDefautC.Location = new Point(13, 46);
+            labelTauxDefautC.Location = new Point(19, 77);
+            labelTauxDefautC.Margin = new Padding(4, 0, 4, 0);
             labelTauxDefautC.Name = "labelTauxDefautC";
-            labelTauxDefautC.Size = new Size(101, 15);
+            labelTauxDefautC.Size = new Size(151, 25);
             labelTauxDefautC.TabIndex = 1;
             labelTauxDefautC.Text = "Taux défaut heure";
             // 
             // labelNbCaisseProduiteC
             // 
             labelNbCaisseProduiteC.AutoSize = true;
-            labelNbCaisseProduiteC.Location = new Point(13, 17);
+            labelNbCaisseProduiteC.Location = new Point(19, 28);
+            labelNbCaisseProduiteC.Margin = new Padding(4, 0, 4, 0);
             labelNbCaisseProduiteC.Name = "labelNbCaisseProduiteC";
-            labelNbCaisseProduiteC.Size = new Size(216, 15);
+            labelNbCaisseProduiteC.Size = new Size(329, 25);
             labelNbCaisseProduiteC.TabIndex = 0;
             labelNbCaisseProduiteC.Text = "Nombre de caisses depuis le démarrage";
             // 
@@ -530,9 +561,10 @@
             buttonSuspenduA.BackgroundImage = (Image)resources.GetObject("buttonSuspenduA.BackgroundImage");
             buttonSuspenduA.BackgroundImageLayout = ImageLayout.Center;
             buttonSuspenduA.Enabled = false;
-            buttonSuspenduA.Location = new Point(64, 27);
+            buttonSuspenduA.Location = new Point(91, 45);
+            buttonSuspenduA.Margin = new Padding(4, 5, 4, 5);
             buttonSuspenduA.Name = "buttonSuspenduA";
-            buttonSuspenduA.Size = new Size(46, 83);
+            buttonSuspenduA.Size = new Size(66, 138);
             buttonSuspenduA.TabIndex = 10;
             buttonSuspenduA.Text = "A";
             buttonSuspenduA.TextAlign = ContentAlignment.BottomCenter;
@@ -543,9 +575,10 @@
             buttonRelancerA.BackgroundImage = (Image)resources.GetObject("buttonRelancerA.BackgroundImage");
             buttonRelancerA.BackgroundImageLayout = ImageLayout.Center;
             buttonRelancerA.Enabled = false;
-            buttonRelancerA.Location = new Point(116, 27);
+            buttonRelancerA.Location = new Point(166, 45);
+            buttonRelancerA.Margin = new Padding(4, 5, 4, 5);
             buttonRelancerA.Name = "buttonRelancerA";
-            buttonRelancerA.Size = new Size(46, 83);
+            buttonRelancerA.Size = new Size(66, 138);
             buttonRelancerA.TabIndex = 11;
             buttonRelancerA.Text = "A";
             buttonRelancerA.TextAlign = ContentAlignment.BottomCenter;
@@ -556,9 +589,10 @@
             buttonRelancerC.BackgroundImage = (Image)resources.GetObject("buttonRelancerC.BackgroundImage");
             buttonRelancerC.BackgroundImageLayout = ImageLayout.Center;
             buttonRelancerC.Enabled = false;
-            buttonRelancerC.Location = new Point(428, 27);
+            buttonRelancerC.Location = new Point(611, 45);
+            buttonRelancerC.Margin = new Padding(4, 5, 4, 5);
             buttonRelancerC.Name = "buttonRelancerC";
-            buttonRelancerC.Size = new Size(46, 83);
+            buttonRelancerC.Size = new Size(66, 138);
             buttonRelancerC.TabIndex = 12;
             buttonRelancerC.Text = "C";
             buttonRelancerC.TextAlign = ContentAlignment.BottomCenter;
@@ -569,9 +603,10 @@
             buttonSuspenduC.BackgroundImage = (Image)resources.GetObject("buttonSuspenduC.BackgroundImage");
             buttonSuspenduC.BackgroundImageLayout = ImageLayout.Center;
             buttonSuspenduC.Enabled = false;
-            buttonSuspenduC.Location = new Point(376, 27);
+            buttonSuspenduC.Location = new Point(537, 45);
+            buttonSuspenduC.Margin = new Padding(4, 5, 4, 5);
             buttonSuspenduC.Name = "buttonSuspenduC";
-            buttonSuspenduC.Size = new Size(46, 83);
+            buttonSuspenduC.Size = new Size(66, 138);
             buttonSuspenduC.TabIndex = 13;
             buttonSuspenduC.Text = "C";
             buttonSuspenduC.TextAlign = ContentAlignment.BottomCenter;
@@ -582,9 +617,10 @@
             buttonDemarrerC.BackgroundImage = (Image)resources.GetObject("buttonDemarrerC.BackgroundImage");
             buttonDemarrerC.BackgroundImageLayout = ImageLayout.Center;
             buttonDemarrerC.Enabled = false;
-            buttonDemarrerC.Location = new Point(324, 27);
+            buttonDemarrerC.Location = new Point(463, 45);
+            buttonDemarrerC.Margin = new Padding(4, 5, 4, 5);
             buttonDemarrerC.Name = "buttonDemarrerC";
-            buttonDemarrerC.Size = new Size(46, 83);
+            buttonDemarrerC.Size = new Size(66, 138);
             buttonDemarrerC.TabIndex = 14;
             buttonDemarrerC.Text = "C";
             buttonDemarrerC.TextAlign = ContentAlignment.BottomCenter;
@@ -595,9 +631,10 @@
             buttonSuspenduB.BackgroundImage = (Image)resources.GetObject("buttonSuspenduB.BackgroundImage");
             buttonSuspenduB.BackgroundImageLayout = ImageLayout.Center;
             buttonSuspenduB.Enabled = false;
-            buttonSuspenduB.Location = new Point(220, 27);
+            buttonSuspenduB.Location = new Point(314, 45);
+            buttonSuspenduB.Margin = new Padding(4, 5, 4, 5);
             buttonSuspenduB.Name = "buttonSuspenduB";
-            buttonSuspenduB.Size = new Size(46, 83);
+            buttonSuspenduB.Size = new Size(66, 138);
             buttonSuspenduB.TabIndex = 15;
             buttonSuspenduB.Text = "B";
             buttonSuspenduB.TextAlign = ContentAlignment.BottomCenter;
@@ -608,9 +645,10 @@
             buttonRelancerB.BackgroundImage = (Image)resources.GetObject("buttonRelancerB.BackgroundImage");
             buttonRelancerB.BackgroundImageLayout = ImageLayout.Center;
             buttonRelancerB.Enabled = false;
-            buttonRelancerB.Location = new Point(272, 27);
+            buttonRelancerB.Location = new Point(389, 45);
+            buttonRelancerB.Margin = new Padding(4, 5, 4, 5);
             buttonRelancerB.Name = "buttonRelancerB";
-            buttonRelancerB.Size = new Size(46, 83);
+            buttonRelancerB.Size = new Size(66, 138);
             buttonRelancerB.TabIndex = 16;
             buttonRelancerB.Text = "B";
             buttonRelancerB.TextAlign = ContentAlignment.BottomCenter;
@@ -621,9 +659,10 @@
             buttonDemarrerB.BackgroundImage = (Image)resources.GetObject("buttonDemarrerB.BackgroundImage");
             buttonDemarrerB.BackgroundImageLayout = ImageLayout.Center;
             buttonDemarrerB.Enabled = false;
-            buttonDemarrerB.Location = new Point(168, 27);
+            buttonDemarrerB.Location = new Point(240, 45);
+            buttonDemarrerB.Margin = new Padding(4, 5, 4, 5);
             buttonDemarrerB.Name = "buttonDemarrerB";
-            buttonDemarrerB.Size = new Size(46, 83);
+            buttonDemarrerB.Size = new Size(66, 138);
             buttonDemarrerB.TabIndex = 17;
             buttonDemarrerB.Text = "B";
             buttonDemarrerB.TextAlign = ContentAlignment.BottomCenter;
@@ -634,9 +673,10 @@
             buttonDemarrerA.BackgroundImage = (Image)resources.GetObject("buttonDemarrerA.BackgroundImage");
             buttonDemarrerA.BackgroundImageLayout = ImageLayout.Center;
             buttonDemarrerA.Enabled = false;
-            buttonDemarrerA.Location = new Point(12, 27);
+            buttonDemarrerA.Location = new Point(17, 45);
+            buttonDemarrerA.Margin = new Padding(4, 5, 4, 5);
             buttonDemarrerA.Name = "buttonDemarrerA";
-            buttonDemarrerA.Size = new Size(46, 83);
+            buttonDemarrerA.Size = new Size(66, 138);
             buttonDemarrerA.TabIndex = 18;
             buttonDemarrerA.Text = "A";
             buttonDemarrerA.TextAlign = ContentAlignment.BottomCenter;
@@ -650,9 +690,9 @@
             // 
             // FormProductionDeCaisses
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(605, 500);
+            ClientSize = new Size(878, 844);
             Controls.Add(buttonDemarrerA);
             Controls.Add(buttonDemarrerB);
             Controls.Add(buttonRelancerB);
@@ -672,6 +712,7 @@
             Controls.Add(progressBarProductionA);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FormProductionDeCaisses";
             Text = "Production De Caisses";
             Load += FormProductionDeCaisses_Load;
