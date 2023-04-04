@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProductionDeCaisses));
             menuStrip1 = new MenuStrip();
             fichierToolStripMenuItem = new ToolStripMenuItem();
@@ -90,6 +91,7 @@
             buttonRelancerB = new Button();
             buttonDemarrerB = new Button();
             buttonDemarrerA = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
             menuStrip1.SuspendLayout();
             toolStrip1.SuspendLayout();
             tabControl.SuspendLayout();
@@ -117,7 +119,7 @@
             // quitterToolStripMenuItem
             // 
             quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            quitterToolStripMenuItem.Size = new Size(180, 22);
+            quitterToolStripMenuItem.Size = new Size(111, 22);
             quitterToolStripMenuItem.Text = "Quitter";
             quitterToolStripMenuItem.Click += quitterToolStripMenuItem_Click;
             // 
@@ -206,6 +208,7 @@
             // progressBarProductionA
             // 
             progressBarProductionA.Location = new Point(130, 325);
+            progressBarProductionA.Maximum = 1000;
             progressBarProductionA.Name = "progressBarProductionA";
             progressBarProductionA.Size = new Size(429, 23);
             progressBarProductionA.TabIndex = 1;
@@ -233,6 +236,7 @@
             // progressBarProductionB
             // 
             progressBarProductionB.Location = new Point(130, 374);
+            progressBarProductionB.Maximum = 25000;
             progressBarProductionB.Name = "progressBarProductionB";
             progressBarProductionB.Size = new Size(429, 23);
             progressBarProductionB.TabIndex = 4;
@@ -250,6 +254,7 @@
             // progressBar1
             // 
             progressBar1.Location = new Point(130, 421);
+            progressBar1.Maximum = 120000;
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(429, 23);
             progressBar1.TabIndex = 6;
@@ -339,6 +344,7 @@
             // 
             textBoxDefautDepuisDemA.Location = new Point(340, 67);
             textBoxDefautDepuisDemA.Name = "textBoxDefautDepuisDemA";
+            textBoxDefautDepuisDemA.ReadOnly = true;
             textBoxDefautDepuisDemA.Size = new Size(75, 23);
             textBoxDefautDepuisDemA.TabIndex = 5;
             // 
@@ -346,6 +352,7 @@
             // 
             textBoxTauxDéfautA.Location = new Point(340, 38);
             textBoxTauxDéfautA.Name = "textBoxTauxDéfautA";
+            textBoxTauxDéfautA.ReadOnly = true;
             textBoxTauxDéfautA.Size = new Size(75, 23);
             textBoxTauxDéfautA.TabIndex = 4;
             // 
@@ -353,6 +360,7 @@
             // 
             textBoxNbCaisseProdDemA.Location = new Point(340, 9);
             textBoxNbCaisseProdDemA.Name = "textBoxNbCaisseProdDemA";
+            textBoxNbCaisseProdDemA.ReadOnly = true;
             textBoxNbCaisseProdDemA.Size = new Size(75, 23);
             textBoxNbCaisseProdDemA.TabIndex = 3;
             // 
@@ -403,6 +411,7 @@
             // 
             textBoxDefautDepuisDemB.Location = new Point(340, 67);
             textBoxDefautDepuisDemB.Name = "textBoxDefautDepuisDemB";
+            textBoxDefautDepuisDemB.ReadOnly = true;
             textBoxDefautDepuisDemB.Size = new Size(75, 23);
             textBoxDefautDepuisDemB.TabIndex = 5;
             // 
@@ -410,6 +419,7 @@
             // 
             textBoxTauxDéfautB.Location = new Point(340, 38);
             textBoxTauxDéfautB.Name = "textBoxTauxDéfautB";
+            textBoxTauxDéfautB.ReadOnly = true;
             textBoxTauxDéfautB.Size = new Size(75, 23);
             textBoxTauxDéfautB.TabIndex = 4;
             // 
@@ -417,6 +427,7 @@
             // 
             textBoxNbCaisseProdDemB.Location = new Point(340, 9);
             textBoxNbCaisseProdDemB.Name = "textBoxNbCaisseProdDemB";
+            textBoxNbCaisseProdDemB.ReadOnly = true;
             textBoxNbCaisseProdDemB.Size = new Size(75, 23);
             textBoxNbCaisseProdDemB.TabIndex = 3;
             // 
@@ -467,6 +478,7 @@
             // 
             textBoxDefautDepuisDemC.Location = new Point(340, 67);
             textBoxDefautDepuisDemC.Name = "textBoxDefautDepuisDemC";
+            textBoxDefautDepuisDemC.ReadOnly = true;
             textBoxDefautDepuisDemC.Size = new Size(75, 23);
             textBoxDefautDepuisDemC.TabIndex = 5;
             // 
@@ -474,6 +486,7 @@
             // 
             textBoxTauxDéfautC.Location = new Point(340, 38);
             textBoxTauxDéfautC.Name = "textBoxTauxDéfautC";
+            textBoxTauxDéfautC.ReadOnly = true;
             textBoxTauxDéfautC.Size = new Size(75, 23);
             textBoxTauxDéfautC.TabIndex = 4;
             // 
@@ -481,6 +494,7 @@
             // 
             textBoxNbCaisseProdDemC.Location = new Point(340, 9);
             textBoxNbCaisseProdDemC.Name = "textBoxNbCaisseProdDemC";
+            textBoxNbCaisseProdDemC.ReadOnly = true;
             textBoxNbCaisseProdDemC.Size = new Size(75, 23);
             textBoxNbCaisseProdDemC.TabIndex = 3;
             // 
@@ -515,6 +529,7 @@
             // 
             buttonSuspenduA.BackgroundImage = (Image)resources.GetObject("buttonSuspenduA.BackgroundImage");
             buttonSuspenduA.BackgroundImageLayout = ImageLayout.Center;
+            buttonSuspenduA.Enabled = false;
             buttonSuspenduA.Location = new Point(64, 27);
             buttonSuspenduA.Name = "buttonSuspenduA";
             buttonSuspenduA.Size = new Size(46, 83);
@@ -527,6 +542,7 @@
             // 
             buttonRelancerA.BackgroundImage = (Image)resources.GetObject("buttonRelancerA.BackgroundImage");
             buttonRelancerA.BackgroundImageLayout = ImageLayout.Center;
+            buttonRelancerA.Enabled = false;
             buttonRelancerA.Location = new Point(116, 27);
             buttonRelancerA.Name = "buttonRelancerA";
             buttonRelancerA.Size = new Size(46, 83);
@@ -539,6 +555,7 @@
             // 
             buttonRelancerC.BackgroundImage = (Image)resources.GetObject("buttonRelancerC.BackgroundImage");
             buttonRelancerC.BackgroundImageLayout = ImageLayout.Center;
+            buttonRelancerC.Enabled = false;
             buttonRelancerC.Location = new Point(428, 27);
             buttonRelancerC.Name = "buttonRelancerC";
             buttonRelancerC.Size = new Size(46, 83);
@@ -551,6 +568,7 @@
             // 
             buttonSuspenduC.BackgroundImage = (Image)resources.GetObject("buttonSuspenduC.BackgroundImage");
             buttonSuspenduC.BackgroundImageLayout = ImageLayout.Center;
+            buttonSuspenduC.Enabled = false;
             buttonSuspenduC.Location = new Point(376, 27);
             buttonSuspenduC.Name = "buttonSuspenduC";
             buttonSuspenduC.Size = new Size(46, 83);
@@ -563,6 +581,7 @@
             // 
             buttonDemarrerC.BackgroundImage = (Image)resources.GetObject("buttonDemarrerC.BackgroundImage");
             buttonDemarrerC.BackgroundImageLayout = ImageLayout.Center;
+            buttonDemarrerC.Enabled = false;
             buttonDemarrerC.Location = new Point(324, 27);
             buttonDemarrerC.Name = "buttonDemarrerC";
             buttonDemarrerC.Size = new Size(46, 83);
@@ -575,6 +594,7 @@
             // 
             buttonSuspenduB.BackgroundImage = (Image)resources.GetObject("buttonSuspenduB.BackgroundImage");
             buttonSuspenduB.BackgroundImageLayout = ImageLayout.Center;
+            buttonSuspenduB.Enabled = false;
             buttonSuspenduB.Location = new Point(220, 27);
             buttonSuspenduB.Name = "buttonSuspenduB";
             buttonSuspenduB.Size = new Size(46, 83);
@@ -587,6 +607,7 @@
             // 
             buttonRelancerB.BackgroundImage = (Image)resources.GetObject("buttonRelancerB.BackgroundImage");
             buttonRelancerB.BackgroundImageLayout = ImageLayout.Center;
+            buttonRelancerB.Enabled = false;
             buttonRelancerB.Location = new Point(272, 27);
             buttonRelancerB.Name = "buttonRelancerB";
             buttonRelancerB.Size = new Size(46, 83);
@@ -599,6 +620,7 @@
             // 
             buttonDemarrerB.BackgroundImage = (Image)resources.GetObject("buttonDemarrerB.BackgroundImage");
             buttonDemarrerB.BackgroundImageLayout = ImageLayout.Center;
+            buttonDemarrerB.Enabled = false;
             buttonDemarrerB.Location = new Point(168, 27);
             buttonDemarrerB.Name = "buttonDemarrerB";
             buttonDemarrerB.Size = new Size(46, 83);
@@ -611,6 +633,7 @@
             // 
             buttonDemarrerA.BackgroundImage = (Image)resources.GetObject("buttonDemarrerA.BackgroundImage");
             buttonDemarrerA.BackgroundImageLayout = ImageLayout.Center;
+            buttonDemarrerA.Enabled = false;
             buttonDemarrerA.Location = new Point(12, 27);
             buttonDemarrerA.Name = "buttonDemarrerA";
             buttonDemarrerA.Size = new Size(46, 83);
@@ -618,6 +641,12 @@
             buttonDemarrerA.Text = "A";
             buttonDemarrerA.TextAlign = ContentAlignment.BottomCenter;
             buttonDemarrerA.UseVisualStyleBackColor = true;
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
             // 
             // FormProductionDeCaisses
             // 
@@ -645,6 +674,7 @@
             MainMenuStrip = menuStrip1;
             Name = "FormProductionDeCaisses";
             Text = "Production De Caisses";
+            Load += FormProductionDeCaisses_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             toolStrip1.ResumeLayout(false);
@@ -723,5 +753,6 @@
         private Button buttonDemarrerB;
         private Button buttonDemarrerA;
         private ToolStripMenuItem quitterToolStripMenuItem;
+        private System.Windows.Forms.Timer timer1;
     }
 }

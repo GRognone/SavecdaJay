@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsToutEmbal", "WinFormsToutEmbal\WinFormsToutEmbal.csproj", "{4F179A50-9D06-4FE8-B28E-CE4E7E5E063B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsToutEmbal", "WinFormsToutEmbal\WinFormsToutEmbal.csproj", "{4F179A50-9D06-4FE8-B28E-CE4E7E5E063B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassProduction", "ClassProduction\ClassProduction.csproj", "{66BAB07D-235D-4D3A-A6A2-694C7F40E62E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassCaisse", "ClassCaisse\ClassCaisse.csproj", "{A3A27400-6AD9-4E95-985B-E3F66CBDA82D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{4F179A50-9D06-4FE8-B28E-CE4E7E5E063B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F179A50-9D06-4FE8-B28E-CE4E7E5E063B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F179A50-9D06-4FE8-B28E-CE4E7E5E063B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66BAB07D-235D-4D3A-A6A2-694C7F40E62E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BAB07D-235D-4D3A-A6A2-694C7F40E62E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BAB07D-235D-4D3A-A6A2-694C7F40E62E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BAB07D-235D-4D3A-A6A2-694C7F40E62E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3A27400-6AD9-4E95-985B-E3F66CBDA82D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3A27400-6AD9-4E95-985B-E3F66CBDA82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3A27400-6AD9-4E95-985B-E3F66CBDA82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3A27400-6AD9-4E95-985B-E3F66CBDA82D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
