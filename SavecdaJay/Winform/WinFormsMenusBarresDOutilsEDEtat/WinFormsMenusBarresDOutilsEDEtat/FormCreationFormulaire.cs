@@ -54,7 +54,7 @@ namespace WinFormsMenusBarresDOutilsEDEtat
                 this.Close();
             }
         }
-            private void DeverouillerIHM()
+        private void DeverouillerIHM()
         {
             phase1ToolStripMenuItem.Enabled = true;
             phase2ToolStripMenuItem.Enabled = true;
@@ -156,5 +156,6 @@ namespace WinFormsMenusBarresDOutilsEDEtat
             this.LayoutMdi(MdiLayout.TileVertical);
         }
         #endregion
+
     }
 }
