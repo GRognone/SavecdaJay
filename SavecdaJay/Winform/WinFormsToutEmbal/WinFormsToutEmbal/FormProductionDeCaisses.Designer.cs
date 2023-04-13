@@ -35,23 +35,23 @@
             quitterToolStripMenuItem = new ToolStripMenuItem();
             productionToolStripMenuItem = new ToolStripMenuItem();
             démarrerToolStripMenuItem = new ToolStripMenuItem();
-            demarrerA = new ToolStripMenuItem();
-            demarrerB = new ToolStripMenuItem();
-            demarrerC = new ToolStripMenuItem();
+            toolStripDemarrerA = new ToolStripMenuItem();
+            toolStripDemarrerB = new ToolStripMenuItem();
+            toolStripDemarrerC = new ToolStripMenuItem();
             arrêterToolStripMenuItem = new ToolStripMenuItem();
-            arreterA = new ToolStripMenuItem();
-            arreterB = new ToolStripMenuItem();
-            arreterC = new ToolStripMenuItem();
+            toolStripArreterA = new ToolStripMenuItem();
+            toolStripArreterB = new ToolStripMenuItem();
+            toolStripArreterC = new ToolStripMenuItem();
             continuerToolStripMenuItem = new ToolStripMenuItem();
-            repriseA = new ToolStripMenuItem();
-            repriseB = new ToolStripMenuItem();
-            repriseC = new ToolStripMenuItem();
+            toolStripRepriseA = new ToolStripMenuItem();
+            toolStripRepriseB = new ToolStripMenuItem();
+            toolStripRepriseC = new ToolStripMenuItem();
             progressBarProductionA = new ProgressBar();
             labelProductionA = new Label();
             labelProductionB = new Label();
             progressBarProductionB = new ProgressBar();
             labelProductionC = new Label();
-            progressBar1 = new ProgressBar();
+            progressBarProductionC = new ProgressBar();
             toolStrip1 = new ToolStrip();
             toolStripLabelCaisseA = new ToolStripLabel();
             toolStripSeparator2 = new ToolStripSeparator();
@@ -134,93 +134,93 @@
             // 
             // démarrerToolStripMenuItem
             // 
-            démarrerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { demarrerA, demarrerB, demarrerC });
+            démarrerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripDemarrerA, toolStripDemarrerB, toolStripDemarrerC });
             démarrerToolStripMenuItem.Name = "démarrerToolStripMenuItem";
-            démarrerToolStripMenuItem.Size = new Size(180, 22);
+            démarrerToolStripMenuItem.Size = new Size(123, 22);
             démarrerToolStripMenuItem.Text = "Démarrer";
             // 
-            // demarrerA
+            // toolStripDemarrerA
             // 
-            demarrerA.Name = "demarrerA";
-            demarrerA.Size = new Size(180, 22);
-            demarrerA.Text = "A";
-            demarrerA.Click += demarrerA_Click;
+            toolStripDemarrerA.Name = "toolStripDemarrerA";
+            toolStripDemarrerA.Size = new Size(82, 22);
+            toolStripDemarrerA.Text = "A";
+            toolStripDemarrerA.Click += demarrerA_Click;
             // 
-            // demarrerB
+            // toolStripDemarrerB
             // 
-            demarrerB.Name = "demarrerB";
-            demarrerB.Size = new Size(180, 22);
-            demarrerB.Text = "B";
-            demarrerB.Click += demarrerB_Click;
+            toolStripDemarrerB.Name = "toolStripDemarrerB";
+            toolStripDemarrerB.Size = new Size(82, 22);
+            toolStripDemarrerB.Text = "B";
+            toolStripDemarrerB.Click += demarrerB_Click;
             // 
-            // demarrerC
+            // toolStripDemarrerC
             // 
-            demarrerC.Name = "demarrerC";
-            demarrerC.Size = new Size(180, 22);
-            demarrerC.Text = "C";
-            demarrerC.Click += demarrerC_Click;
+            toolStripDemarrerC.Name = "toolStripDemarrerC";
+            toolStripDemarrerC.Size = new Size(82, 22);
+            toolStripDemarrerC.Text = "C";
+            toolStripDemarrerC.Click += demarrerC_Click;
             // 
             // arrêterToolStripMenuItem
             // 
-            arrêterToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { arreterA, arreterB, arreterC });
+            arrêterToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripArreterA, toolStripArreterB, toolStripArreterC });
             arrêterToolStripMenuItem.Name = "arrêterToolStripMenuItem";
-            arrêterToolStripMenuItem.Size = new Size(180, 22);
+            arrêterToolStripMenuItem.Size = new Size(123, 22);
             arrêterToolStripMenuItem.Text = "Arrêter";
             // 
-            // arreterA
+            // toolStripArreterA
             // 
-            arreterA.Enabled = false;
-            arreterA.Name = "arreterA";
-            arreterA.Size = new Size(82, 22);
-            arreterA.Text = "A";
-            arreterA.Click += arreterA_Click;
+            toolStripArreterA.Enabled = false;
+            toolStripArreterA.Name = "toolStripArreterA";
+            toolStripArreterA.Size = new Size(82, 22);
+            toolStripArreterA.Text = "A";
+            toolStripArreterA.Click += arreterA_Click;
             // 
-            // arreterB
+            // toolStripArreterB
             // 
-            arreterB.Enabled = false;
-            arreterB.Name = "arreterB";
-            arreterB.Size = new Size(82, 22);
-            arreterB.Text = "B";
-            arreterB.Click += arreterB_Click;
+            toolStripArreterB.Enabled = false;
+            toolStripArreterB.Name = "toolStripArreterB";
+            toolStripArreterB.Size = new Size(82, 22);
+            toolStripArreterB.Text = "B";
+            toolStripArreterB.Click += arreterB_Click;
             // 
-            // arreterC
+            // toolStripArreterC
             // 
-            arreterC.Enabled = false;
-            arreterC.Name = "arreterC";
-            arreterC.Size = new Size(82, 22);
-            arreterC.Text = "C";
-            arreterC.Click += arreterC_Click;
+            toolStripArreterC.Enabled = false;
+            toolStripArreterC.Name = "toolStripArreterC";
+            toolStripArreterC.Size = new Size(82, 22);
+            toolStripArreterC.Text = "C";
+            toolStripArreterC.Click += arreterC_Click;
             // 
             // continuerToolStripMenuItem
             // 
-            continuerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { repriseA, repriseB, repriseC });
+            continuerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripRepriseA, toolStripRepriseB, toolStripRepriseC });
             continuerToolStripMenuItem.Name = "continuerToolStripMenuItem";
-            continuerToolStripMenuItem.Size = new Size(180, 22);
+            continuerToolStripMenuItem.Size = new Size(123, 22);
             continuerToolStripMenuItem.Text = "Reprise";
             // 
-            // repriseA
+            // toolStripRepriseA
             // 
-            repriseA.Enabled = false;
-            repriseA.Name = "repriseA";
-            repriseA.Size = new Size(82, 22);
-            repriseA.Text = "A";
-            repriseA.Click += repriseA_Click;
+            toolStripRepriseA.Enabled = false;
+            toolStripRepriseA.Name = "toolStripRepriseA";
+            toolStripRepriseA.Size = new Size(82, 22);
+            toolStripRepriseA.Text = "A";
+            toolStripRepriseA.Click += repriseA_Click;
             // 
-            // repriseB
+            // toolStripRepriseB
             // 
-            repriseB.Enabled = false;
-            repriseB.Name = "repriseB";
-            repriseB.Size = new Size(82, 22);
-            repriseB.Text = "B";
-            repriseB.Click += reprendreB_Click;
+            toolStripRepriseB.Enabled = false;
+            toolStripRepriseB.Name = "toolStripRepriseB";
+            toolStripRepriseB.Size = new Size(82, 22);
+            toolStripRepriseB.Text = "B";
+            toolStripRepriseB.Click += reprendreB_Click;
             // 
-            // repriseC
+            // toolStripRepriseC
             // 
-            repriseC.Enabled = false;
-            repriseC.Name = "repriseC";
-            repriseC.Size = new Size(82, 22);
-            repriseC.Text = "C";
-            repriseC.Click += reprendreC_Click;
+            toolStripRepriseC.Enabled = false;
+            toolStripRepriseC.Name = "toolStripRepriseC";
+            toolStripRepriseC.Size = new Size(82, 22);
+            toolStripRepriseC.Text = "C";
+            toolStripRepriseC.Click += reprendreC_Click;
             // 
             // progressBarProductionA
             // 
@@ -268,13 +268,13 @@
             labelProductionC.TabIndex = 5;
             labelProductionC.Text = "Production C";
             // 
-            // progressBar1
+            // progressBarProductionC
             // 
-            progressBar1.Location = new Point(130, 421);
-            progressBar1.Maximum = 120000;
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(429, 23);
-            progressBar1.TabIndex = 6;
+            progressBarProductionC.Location = new Point(130, 421);
+            progressBarProductionC.Maximum = 120000;
+            progressBarProductionC.Name = "progressBarProductionC";
+            progressBarProductionC.Size = new Size(429, 23);
+            progressBarProductionC.TabIndex = 6;
             // 
             // toolStrip1
             // 
@@ -293,6 +293,7 @@
             toolStripLabelCaisseA.AutoSize = false;
             toolStripLabelCaisseA.Name = "toolStripLabelCaisseA";
             toolStripLabelCaisseA.Size = new Size(160, 22);
+            toolStripLabelCaisseA.Text = "Production A";
             // 
             // toolStripSeparator2
             // 
@@ -304,6 +305,7 @@
             toolStripLabelCaisseB.AutoSize = false;
             toolStripLabelCaisseB.Name = "toolStripLabelCaisseB";
             toolStripLabelCaisseB.Size = new Size(160, 22);
+            toolStripLabelCaisseB.Text = "Production B";
             // 
             // toolStripSeparator1
             // 
@@ -315,6 +317,7 @@
             toolStripLabelCaisseC.AutoSize = false;
             toolStripLabelCaisseC.Name = "toolStripLabelCaisseC";
             toolStripLabelCaisseC.Size = new Size(160, 22);
+            toolStripLabelCaisseC.Text = "Production C";
             // 
             // toolStripSeparator3
             // 
@@ -553,6 +556,7 @@
             buttonSuspenduA.Text = "A";
             buttonSuspenduA.TextAlign = ContentAlignment.BottomCenter;
             buttonSuspenduA.UseVisualStyleBackColor = true;
+            buttonSuspenduA.Click += arreterA_Click;
             // 
             // buttonRelancerA
             // 
@@ -566,6 +570,7 @@
             buttonRelancerA.Text = "A";
             buttonRelancerA.TextAlign = ContentAlignment.BottomCenter;
             buttonRelancerA.UseVisualStyleBackColor = true;
+            buttonRelancerA.Click += repriseA_Click;
             // 
             // buttonRelancerC
             // 
@@ -579,6 +584,7 @@
             buttonRelancerC.Text = "C";
             buttonRelancerC.TextAlign = ContentAlignment.BottomCenter;
             buttonRelancerC.UseVisualStyleBackColor = true;
+            buttonRelancerC.Click += reprendreC_Click;
             // 
             // buttonSuspenduC
             // 
@@ -592,6 +598,7 @@
             buttonSuspenduC.Text = "C";
             buttonSuspenduC.TextAlign = ContentAlignment.BottomCenter;
             buttonSuspenduC.UseVisualStyleBackColor = true;
+            buttonSuspenduC.Click += arreterC_Click;
             // 
             // buttonDemarrerC
             // 
@@ -604,6 +611,7 @@
             buttonDemarrerC.Text = "C";
             buttonDemarrerC.TextAlign = ContentAlignment.BottomCenter;
             buttonDemarrerC.UseVisualStyleBackColor = true;
+            buttonDemarrerC.Click += demarrerC_Click;
             // 
             // buttonSuspenduB
             // 
@@ -617,6 +625,7 @@
             buttonSuspenduB.Text = "B";
             buttonSuspenduB.TextAlign = ContentAlignment.BottomCenter;
             buttonSuspenduB.UseVisualStyleBackColor = true;
+            buttonSuspenduB.Click += arreterB_Click;
             // 
             // buttonRelancerB
             // 
@@ -630,6 +639,7 @@
             buttonRelancerB.Text = "B";
             buttonRelancerB.TextAlign = ContentAlignment.BottomCenter;
             buttonRelancerB.UseVisualStyleBackColor = true;
+            buttonRelancerB.Click += reprendreB_Click;
             // 
             // buttonDemarrerB
             // 
@@ -642,6 +652,7 @@
             buttonDemarrerB.Text = "B";
             buttonDemarrerB.TextAlign = ContentAlignment.BottomCenter;
             buttonDemarrerB.UseVisualStyleBackColor = true;
+            buttonDemarrerB.Click += demarrerB_Click;
             // 
             // buttonDemarrerA
             // 
@@ -654,6 +665,7 @@
             buttonDemarrerA.Text = "A";
             buttonDemarrerA.TextAlign = ContentAlignment.BottomCenter;
             buttonDemarrerA.UseVisualStyleBackColor = true;
+            buttonDemarrerA.Click += demarrerA_Click;
             // 
             // timerHeureCourante
             // 
@@ -664,7 +676,7 @@
             // timerProd
             // 
             timerProd.Enabled = true;
-            timerProd.Interval = 500;
+            timerProd.Interval = 360;
             timerProd.Tick += timerProd_Tick;
             // 
             // FormProductionDeCaisses
@@ -683,7 +695,7 @@
             Controls.Add(buttonSuspenduA);
             Controls.Add(tabControl);
             Controls.Add(toolStrip1);
-            Controls.Add(progressBar1);
+            Controls.Add(progressBarProductionC);
             Controls.Add(labelProductionC);
             Controls.Add(progressBarProductionB);
             Controls.Add(labelProductionB);
@@ -718,19 +730,19 @@
         private Label labelProductionB;
         private ProgressBar progressBarProductionB;
         private ToolStripMenuItem démarrerToolStripMenuItem;
-        private ToolStripMenuItem demarrerA;
-        private ToolStripMenuItem demarrerB;
-        private ToolStripMenuItem demarrerC;
+        private ToolStripMenuItem toolStripDemarrerA;
+        private ToolStripMenuItem toolStripDemarrerB;
+        private ToolStripMenuItem toolStripDemarrerC;
         private ToolStripMenuItem arrêterToolStripMenuItem;
-        private ToolStripMenuItem arreterA;
-        private ToolStripMenuItem arreterB;
-        private ToolStripMenuItem arreterC;
+        private ToolStripMenuItem toolStripArreterA;
+        private ToolStripMenuItem toolStripArreterB;
+        private ToolStripMenuItem toolStripArreterC;
         private ToolStripMenuItem continuerToolStripMenuItem;
-        private ToolStripMenuItem repriseA;
-        private ToolStripMenuItem repriseB;
-        private ToolStripMenuItem repriseC;
+        private ToolStripMenuItem toolStripRepriseA;
+        private ToolStripMenuItem toolStripRepriseB;
+        private ToolStripMenuItem toolStripRepriseC;
         private Label labelProductionC;
-        private ProgressBar progressBar1;
+        private ProgressBar progressBarProductionC;
         private ToolStrip toolStrip1;
         private TabControl tabControl;
         private TabPage tabPageTypeA;

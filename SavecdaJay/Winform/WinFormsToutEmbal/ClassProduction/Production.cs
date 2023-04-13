@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Runtime.InteropServices.ObjectiveC;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,14 +12,15 @@ namespace ClassProduction
 {
     public class Production
     {
+        Random caisseInvalide;
+
         string nom;
         int nbCaisseAProduire;
         int tpsNecessairePourProduireUneCaisseEnMs;
         string typeDeCaisse;
-        List<Caisse> sesCaissesProduites; // instantiation d'une liste de caisse issue de la classe Caisse.
-
         float hauteurCaisse;
         float largeurCaisse;
+        List<Caisse> sesCaissesProduites; // instantiation d'une liste de caisse issue de la classe Caisse.
 
         public string Nom { get => nom; set => nom = value; }
         public int NbCaisseAProduire { get => nbCaisseAProduire; set => nbCaisseAProduire = value; }
@@ -26,7 +28,6 @@ namespace ClassProduction
         public string TypeDeCaisse { get => typeDeCaisse; set => typeDeCaisse = value; }
         public float HauteurCaisse { get => hauteurCaisse; private set => hauteurCaisse = value; }
         public float LargeurCaisse { get => largeurCaisse; private set => largeurCaisse = value; }
-
         public event DelegateProduction ProductionEnCours;
         public event DelegateProduction ProductionMiseEnPause;
         public event DelegateProduction ProductionTermine;
@@ -59,42 +60,62 @@ namespace ClassProduction
             sesCaissesProduites = new List<Caisse>();
             hauteurCaisse = _hauteurCaisse;
             largeurCaisse = _largeurCaisse;
+            caisseInvalide = new Random();
         }
-
         private void ChangeEtat(EnumerationEtatProduction nouvelEtat)
         {
             this.etatProduction = nouvelEtat;
         }
         public int DonneLeNombreDeCaisseValide()
         {
+            int nbCaissesValide = 0;
             for (int i = 0; i < sesCaissesProduites.Count; i++)
             {
-
-            }  
-            return sesCaissesProduites.Count;
+                if (sesCaissesProduites[i].Valide)
+                {
+                    nbCaissesValide++;
+                }
+            }
+            return nbCaissesValide;
+        }
+        public bool CreationCaisseDeffectueuse()
+        {
+            int v = caisseInvalide.Next(0, 100);
+            bool valide = false;
+            if (v != 10 && v != 100)
+            {
+                valide = true;
+            }
+            return valide;
         }
         public void AjouterUneCaisse()
         {
-            Caisse caisse = new Caisse(DateTime.Today, typeDeCaisse, hauteurCaisse, largeurCaisse, true);
+            bool valide = CreationCaisseDeffectueuse();
+            Caisse caisse = new Caisse(DateTime.Today, typeDeCaisse, hauteurCaisse, largeurCaisse, valide);
             sesCaissesProduites.Add(caisse);
-            if (sesCaissesProduites.Count == nbCaisseAProduire)
+            if (DonneLeNombreDeCaisseValide() == nbCaisseAProduire)
             {
                 etatProduction = EnumerationEtatProduction.Termine;
             }
         }
-        public float DonneLeTauxDefautGlobal()
+        public double DonneLeTauxDefautHeure()
         {
-    
-            return 0;
-        }
-        public float DonneLeTauxDefautHoraireActuel()
-        {
-            Random tauxDefautHoraire = new Random();
-            for (int i = 0; i < 10; i++)
+            TimeSpan interval = DateTime.Now - DateTime.Today; // determine ele temps entre le depart et l'instant present.
+            for (int i = 0; i < sesCaissesProduites.Count; i++)
             {
-                tauxDefautHoraire.Next(10);
+               
             }
-            return 0;
+            double caisseValide = DonneLeNombreDeCaisseValide();
+            double tauxHoraire = (sesCaissesProduites.Count - caisseValide) / sesCaissesProduites.Count;
+            tauxHoraire = Math.Round(tauxHoraire, 4);// pour arrondir à 4 chiffre après la décimale
+            return tauxHoraire;
+        }
+        public double DonneLeTauxDefautDepuisDemarrage()
+        {
+            double caisseValide = DonneLeNombreDeCaisseValide();
+            double tauxDefGlobal = (sesCaissesProduites.Count - caisseValide) / sesCaissesProduites.Count;
+            tauxDefGlobal = Math.Round(tauxDefGlobal, 4); // pour arrondir à 4 chiffre après la décimale
+            return tauxDefGlobal;
         }
         public bool Demarrer()
         {
@@ -126,7 +147,5 @@ namespace ClassProduction
         public delegate void DelegateProduction(Production sender);
         public delegate void DelegateNouvelleCaisseProduite(Production sender, bool nbDeCaisseActuelles);
         public delegate void DelegateEtatProductionChange(Production sender, EnumerationEtatProduction nouvelEtat);
-
     }
-
 }
