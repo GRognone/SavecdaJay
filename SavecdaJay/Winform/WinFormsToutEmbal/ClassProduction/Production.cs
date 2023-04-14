@@ -100,15 +100,33 @@ namespace ClassProduction
         }
         public double DonneLeTauxDefautHeure()
         {
-            TimeSpan interval = DateTime.Now - DateTime.Today; // determine ele temps entre le depart et l'instant present.
+            int nbCaisseNonValideDerniereHeure = 0;
+            int nbCaisseFabriqueesDerniereHeure= 0;
+
             for (int i = 0; i < sesCaissesProduites.Count; i++)
             {
-               
+                TimeSpan interval = DateTime.Now - sesCaissesProduites[i].Date; // determine l'ecart de temps entre le depart et l'instant present.
+                if (interval.Milliseconds < 3600000)
+                {
+                    nbCaisseFabriqueesDerniereHeure++;
+
+                    if (!sesCaissesProduites[i].Valide)
+                    {
+                        nbCaisseNonValideDerniereHeure++;
+                    }
+                }
             }
-            double caisseValide = DonneLeNombreDeCaisseValide();
-            double tauxHoraire = (sesCaissesProduites.Count - caisseValide) / sesCaissesProduites.Count;
-            tauxHoraire = Math.Round(tauxHoraire, 4);// pour arrondir à 4 chiffre après la décimale
-            return tauxHoraire;
+            if (nbCaisseFabriqueesDerniereHeure == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                double tauxHoraire = (double) nbCaisseNonValideDerniereHeure / (double) nbCaisseFabriqueesDerniereHeure;
+                tauxHoraire = Math.Round(tauxHoraire, 4);// pour arrondir à 4 chiffre après la décimale
+                return tauxHoraire;
+            }
+            
         }
         public double DonneLeTauxDefautDepuisDemarrage()
         {
