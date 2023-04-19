@@ -24,6 +24,7 @@ namespace TestLienBasedeDonnées
             dbContext = new CitiesContext();
             // Chargement de la table Cities
             dbContext.Cities.Load();
+            //dbContext.Cities.Load<City>();// dans le ca ou le load ne fonctionne pas il faut specifier
 
             //Realisation d'un binding entre lasource de donnée Cities et le DataGridView
             this.dataGridViewCities.DataSource = dbContext.Cities.Local.ToBindingList();
@@ -34,17 +35,31 @@ namespace TestLienBasedeDonnées
             // pour ajouter une ville
             City c = new City();
             c.CityName = "Cagnes sur mer";
-            c.CountryCode = "FR";
+            c.CountryCode = "Pw";
+
             // ajouter dans le context
             dbContext.Cities.Add(c);
             dbContext.SaveChanges();
+            dataGridViewCities.Refresh();
         }
+        private void buttonAddCountries_Click(object sender, EventArgs e)
+        {
+            // pour ajouter un pays
+            Country country = new Country();
+            country.CountryCode = "b";
+            country.CountryName = "bb";
 
+            // ajouter dans le context
+            dbContext.Countries.Add(country);
+            dbContext.SaveChanges();
+            dataGridViewCities.Refresh();
+        }
         private void buttonDeleteCitiesMethod1_Click(object sender, EventArgs e)
         {
             {
                 int id;
                 bool idOk = int.TryParse(this.textBoxReasonToDelete.Text, out id);
+
                 if (idOk)
                 {
                     City? cASupprimer = dbContext.Cities.Find(id);//City? veut dire nullable
@@ -52,6 +67,7 @@ namespace TestLienBasedeDonnées
                     {
                         dbContext.Cities.Remove(cASupprimer);
                         dbContext.SaveChanges();
+                        dataGridViewCities.Refresh();
                     }
                 }
             }
@@ -69,9 +85,12 @@ namespace TestLienBasedeDonnées
                     cAModifier.CityName = this.textBoxNameNewEdit.Text;
                     dbContext.Cities.Update(cAModifier);
                     dbContext.SaveChanges();
+                    dataGridViewCities.Refresh();
                 }
             }
         }
+
+       
     }
 }
 

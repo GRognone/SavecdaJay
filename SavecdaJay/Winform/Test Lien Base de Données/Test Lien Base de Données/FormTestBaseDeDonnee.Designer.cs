@@ -28,15 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             buttonAddCities = new Button();
             buttonDeleteCitiesMethod1 = new Button();
             dataGridViewCities = new DataGridView();
+            cityIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            cityNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            countryCodeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            countryCodeNavigationDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            cityBindingSource = new BindingSource(components);
             textBoxReasonToDelete = new TextBox();
             buttonEditCity = new Button();
             labelName = new Label();
             textBoxNameNewEdit = new TextBox();
             label1 = new Label();
+            buttonAddCountry = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCities).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)cityBindingSource).BeginInit();
             SuspendLayout();
             // 
             // buttonAddCities
@@ -61,12 +69,43 @@
             // 
             // dataGridViewCities
             // 
+            dataGridViewCities.AutoGenerateColumns = false;
             dataGridViewCities.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCities.Columns.AddRange(new DataGridViewColumn[] { cityIdDataGridViewTextBoxColumn, cityNameDataGridViewTextBoxColumn, countryCodeDataGridViewTextBoxColumn, countryCodeNavigationDataGridViewTextBoxColumn });
+            dataGridViewCities.DataSource = cityBindingSource;
             dataGridViewCities.Location = new Point(12, 12);
             dataGridViewCities.Name = "dataGridViewCities";
             dataGridViewCities.RowTemplate.Height = 25;
             dataGridViewCities.Size = new Size(448, 233);
             dataGridViewCities.TabIndex = 3;
+            // 
+            // cityIdDataGridViewTextBoxColumn
+            // 
+            cityIdDataGridViewTextBoxColumn.DataPropertyName = "CityId";
+            cityIdDataGridViewTextBoxColumn.HeaderText = "CityId";
+            cityIdDataGridViewTextBoxColumn.Name = "cityIdDataGridViewTextBoxColumn";
+            // 
+            // cityNameDataGridViewTextBoxColumn
+            // 
+            cityNameDataGridViewTextBoxColumn.DataPropertyName = "CityName";
+            cityNameDataGridViewTextBoxColumn.HeaderText = "CityName";
+            cityNameDataGridViewTextBoxColumn.Name = "cityNameDataGridViewTextBoxColumn";
+            // 
+            // countryCodeDataGridViewTextBoxColumn
+            // 
+            countryCodeDataGridViewTextBoxColumn.DataPropertyName = "CountryCode";
+            countryCodeDataGridViewTextBoxColumn.HeaderText = "CountryCode";
+            countryCodeDataGridViewTextBoxColumn.Name = "countryCodeDataGridViewTextBoxColumn";
+            // 
+            // countryCodeNavigationDataGridViewTextBoxColumn
+            // 
+            countryCodeNavigationDataGridViewTextBoxColumn.DataPropertyName = "CountryCodeNavigation";
+            countryCodeNavigationDataGridViewTextBoxColumn.HeaderText = "CountryCodeNavigation";
+            countryCodeNavigationDataGridViewTextBoxColumn.Name = "countryCodeNavigationDataGridViewTextBoxColumn";
+            // 
+            // cityBindingSource
+            // 
+            cityBindingSource.DataSource = typeof(Models.City);
             // 
             // textBoxReasonToDelete
             // 
@@ -110,11 +149,22 @@
             label1.TabIndex = 8;
             label1.Text = "Select ID";
             // 
+            // buttonAddCountry
+            // 
+            buttonAddCountry.Location = new Point(466, 52);
+            buttonAddCountry.Name = "buttonAddCountry";
+            buttonAddCountry.Size = new Size(75, 23);
+            buttonAddCountry.TabIndex = 9;
+            buttonAddCountry.Text = "Ajouter Un Pays";
+            buttonAddCountry.UseVisualStyleBackColor = true;
+            buttonAddCountry.Click += buttonAddCountries_Click;
+            // 
             // FormTestBaseDeDonnee
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 291);
+            Controls.Add(buttonAddCountry);
             Controls.Add(label1);
             Controls.Add(textBoxNameNewEdit);
             Controls.Add(labelName);
@@ -128,6 +178,7 @@
             Name = "FormTestBaseDeDonnee";
             Text = "FormTestBaseDeDonnee";
             ((System.ComponentModel.ISupportInitialize)dataGridViewCities).EndInit();
+            ((System.ComponentModel.ISupportInitialize)cityBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -142,5 +193,11 @@
         private Label labelName;
         private TextBox textBoxNameNewEdit;
         private Label label1;
+        private BindingSource cityBindingSource;
+        private DataGridViewTextBoxColumn cityIdDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn cityNameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn countryCodeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn countryCodeNavigationDataGridViewTextBoxColumn;
+        private Button buttonAddCountry;
     }
 }
