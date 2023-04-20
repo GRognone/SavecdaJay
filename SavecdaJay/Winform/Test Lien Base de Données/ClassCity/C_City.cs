@@ -6,22 +6,32 @@ using System.Threading.Tasks;
 
 namespace ClassCity
 {
-   public class ClassCity
+   public class C_City
     {
-        int cityID;
-        public int City { get => cityID; set => value; }
+        int cityId;
+        public int CityId { get => cityId; set => cityId = value; }
         string cityName;
-        public string CityName { get => cityName; set => value; }
-
+        public string CityName { get => cityName; set => cityName = value; }
+        string countryCode;
+        public string CountryCode { get => countryCode; set => countryCode = value; }
+       
         /// <summary>
         /// Constructeur Classic
         /// </summary>
         /// <param name="_cityId"></param>
         /// <param name="_cityName"></param>
-        public ClassCity(int _cityId, string _cityName)
+        public C_City(string _cityName, string _countryCode)
         {
-            cityID = _cityId;
             cityName = _cityName;
+            CountryCode = _countryCode;
+        }
+        /// <summary>
+        /// Constructeur Classic
+        /// </summary>
+        /// <param name="_cityId"></param>
+        public C_City(int _cityId)
+        {
+            cityId = _cityId;
         }
     }
 }

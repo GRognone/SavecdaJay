@@ -1,0 +1,3 @@
+Lien connection base de donnée
+
+Scaffold-DbContext"Server=CRM-UC-3928\SQLEXPRESS;User ID=sa;Password=Cdi1234;Database=Cities;Trusted_Connection=False;TrustServerCertificate=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models

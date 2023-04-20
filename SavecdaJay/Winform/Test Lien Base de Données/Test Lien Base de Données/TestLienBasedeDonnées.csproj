@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassCity\ClassCity.csproj" />
+    <ProjectReference Include="..\ClassLibraryCountries\ClassLibraryCountries.csproj" />
   </ItemGroup>
 
 </Project>

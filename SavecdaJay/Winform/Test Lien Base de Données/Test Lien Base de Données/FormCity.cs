@@ -10,14 +10,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TestLienBasedeDonnées.Models;
+using ClassCity;
 
 namespace TestLienBasedeDonnées
 {
-    public partial class FormTestBaseDeDonnee : Form
+    public partial class FormCity : Form
     {
+        private C_City classCity1;
         private CitiesContext dbContext;
 
-        public FormTestBaseDeDonnee()
+        public FormCity()
         {
             InitializeComponent();
             // Creer le context vers la source
@@ -34,22 +36,26 @@ namespace TestLienBasedeDonnées
         {
             // pour ajouter une ville
             City c = new City();
-            c.CityName = "Cagnes sur mer";
-            c.CountryCode = "Pw";
+            c.CityName = classCity1.CityName;
+            classCity1.CityName = textBoxCityNameAdd.Text;
+            //c.CountryCode = "Pw";
 
-            // ajouter dans le context
+            //ajouter dans le context
             dbContext.Cities.Add(c);
             dbContext.SaveChanges();
+
+
+
             dataGridViewCities.Refresh();
         }
         private void buttonAddCountries_Click(object sender, EventArgs e)
         {
-            // pour ajouter un pays
+            //pour ajouter un pays
             Country country = new Country();
             country.CountryCode = "b";
             country.CountryName = "bb";
 
-            // ajouter dans le context
+            //ajouter dans le context
             dbContext.Countries.Add(country);
             dbContext.SaveChanges();
             dataGridViewCities.Refresh();
@@ -58,7 +64,7 @@ namespace TestLienBasedeDonnées
         {
             {
                 int id;
-                bool idOk = int.TryParse(this.textBoxReasonToDelete.Text, out id);
+                bool idOk = int.TryParse(this.textBoxDelectIdCity.Text, out id);
 
                 if (idOk)
                 {
@@ -75,22 +81,20 @@ namespace TestLienBasedeDonnées
         private void buttonEditCity_Click(object sender, EventArgs e)
         {
             int id;
-            bool idOk = int.TryParse(this.textBoxReasonToDelete.Text, out id);
-            string nouveauNom = this.textBoxNameNewEdit.Text;
+            bool idOk = int.TryParse(this.textBoxDelectIdCity.Text, out id);
+            string nouveauNom = this.textBoxNameCityModify.Text;
             if (idOk)
             {
                 City? cAModifier = dbContext.Cities.Find(id);
                 if (cAModifier != null)
                 {
-                    cAModifier.CityName = this.textBoxNameNewEdit.Text;
+                    cAModifier.CityName = this.textBoxNameCityModify.Text;
                     dbContext.Cities.Update(cAModifier);
                     dbContext.SaveChanges();
                     dataGridViewCities.Refresh();
                 }
             }
         }
-
-       
     }
 }
 
