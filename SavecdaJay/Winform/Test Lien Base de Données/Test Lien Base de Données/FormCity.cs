@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TestLienBasedeDonnées.Models;
 using ClassCity;
+using Test_Lien_Base_de_Données;
 
 namespace TestLienBasedeDonnées
 {
@@ -34,39 +35,15 @@ namespace TestLienBasedeDonnées
 
         private void buttonAddCities_Click(object sender, EventArgs e)
         {
-            // pour ajouter une ville
-            City c = new City();
-            c.CityName = classCity1.CityName;
-            classCity1.CityName = textBoxCityNameAdd.Text;
-            //c.CountryCode = "Pw";
-
-            //ajouter dans le context
-            dbContext.Cities.Add(c);
-            dbContext.SaveChanges();
-
-
-
-            dataGridViewCities.Refresh();
-        }
-        private void buttonAddCountries_Click(object sender, EventArgs e)
-        {
-            //pour ajouter un pays
-            Country country = new Country();
-            country.CountryCode = "b";
-            country.CountryName = "bb";
-
-            //ajouter dans le context
-            dbContext.Countries.Add(country);
-            dbContext.SaveChanges();
-            dataGridViewCities.Refresh();
+            FormAjouterModifierCity monAjout = new FormAjouterModifierCity(dbContext, EnumModeOuverture.CREATE);
+            monAjout.ShowDialog();
         }
         private void buttonDeleteCitiesMethod1_Click(object sender, EventArgs e)
         {
             {
                 int id;
-                bool idOk = int.TryParse(this.textBoxDelectIdCity.Text, out id);
-
-                if (idOk)
+                id = (int)this.dataGridViewCities.CurrentRow.Cells[0].Value;
+                if (id != 0)
                 {
                     City? cASupprimer = dbContext.Cities.Find(id);//City? veut dire nullable
                     if (cASupprimer != null)
@@ -80,20 +57,22 @@ namespace TestLienBasedeDonnées
         }
         private void buttonEditCity_Click(object sender, EventArgs e)
         {
-            int id;
-            bool idOk = int.TryParse(this.textBoxDelectIdCity.Text, out id);
-            string nouveauNom = this.textBoxNameCityModify.Text;
-            if (idOk)
-            {
-                City? cAModifier = dbContext.Cities.Find(id);
-                if (cAModifier != null)
-                {
-                    cAModifier.CityName = this.textBoxNameCityModify.Text;
-                    dbContext.Cities.Update(cAModifier);
-                    dbContext.SaveChanges();
-                    dataGridViewCities.Refresh();
-                }
-            }
+            int id = (int)this.dataGridViewCities.CurrentRow.Cells[0].Value;
+            City? c = findFromId(id);
+            if (c == null)
+                return;
+            C_City cc = new C_City(c.CityId, c.CityName, c.CountryCode);
+            FormAjouterModifierCity monAjout = new FormAjouterModifierCity(dbContext, EnumModeOuverture.UPDATE, cc);
+            monAjout.ShowDialog();
+            dataGridViewCities.Refresh();
+
+        }
+        // sert a trouver si une city existe à un id.
+        private City? findFromId(int _id) => dbContext.Cities.Find(_id);
+
+        private void dataGridViewCities_SelectionChanged(object sender, EventArgs e)
+        {
+            int id = (int)this.dataGridViewCities.CurrentRow.Cells[0].Value;
         }
     }
 }

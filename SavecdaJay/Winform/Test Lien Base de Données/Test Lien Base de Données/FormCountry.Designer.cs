@@ -30,19 +30,15 @@
         {
             components = new System.ComponentModel.Container();
             dataGridViewCountry = new DataGridView();
+            countryCodeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            countryNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            citiesDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             countryBindingSource = new BindingSource(components);
             buttonAddCountry = new Button();
             buttonDeleteCountry = new Button();
             buttonModifyCountry = new Button();
-            buttonSaveAllCountry = new Button();
-            labelNomCountry = new Label();
             labelSelectIdCountry = new Label();
-            textBoxDeleteCountry = new TextBox();
             textBox1 = new TextBox();
-            textBoxNameCountryModify = new TextBox();
-            countryCodeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            countryNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            citiesDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCountry).BeginInit();
             ((System.ComponentModel.ISupportInitialize)countryBindingSource).BeginInit();
             SuspendLayout();
@@ -58,6 +54,25 @@
             dataGridViewCountry.RowTemplate.Height = 25;
             dataGridViewCountry.Size = new Size(448, 233);
             dataGridViewCountry.TabIndex = 0;
+            // 
+            // countryCodeDataGridViewTextBoxColumn
+            // 
+            countryCodeDataGridViewTextBoxColumn.DataPropertyName = "CountryCode";
+            countryCodeDataGridViewTextBoxColumn.HeaderText = "CountryCode";
+            countryCodeDataGridViewTextBoxColumn.Name = "countryCodeDataGridViewTextBoxColumn";
+            // 
+            // countryNameDataGridViewTextBoxColumn
+            // 
+            countryNameDataGridViewTextBoxColumn.DataPropertyName = "CountryName";
+            countryNameDataGridViewTextBoxColumn.HeaderText = "CountryName";
+            countryNameDataGridViewTextBoxColumn.Name = "countryNameDataGridViewTextBoxColumn";
+            // 
+            // citiesDataGridViewTextBoxColumn
+            // 
+            citiesDataGridViewTextBoxColumn.DataPropertyName = "Cities";
+            citiesDataGridViewTextBoxColumn.HeaderText = "Cities";
+            citiesDataGridViewTextBoxColumn.Name = "citiesDataGridViewTextBoxColumn";
+            citiesDataGridViewTextBoxColumn.Visible = false;
             // 
             // countryBindingSource
             // 
@@ -90,84 +105,29 @@
             buttonModifyCountry.Text = "Modifier";
             buttonModifyCountry.UseVisualStyleBackColor = true;
             // 
-            // buttonSaveAllCountry
-            // 
-            buttonSaveAllCountry.Location = new Point(466, 222);
-            buttonSaveAllCountry.Name = "buttonSaveAllCountry";
-            buttonSaveAllCountry.Size = new Size(90, 23);
-            buttonSaveAllCountry.TabIndex = 4;
-            buttonSaveAllCountry.Text = "Sauvegarder";
-            buttonSaveAllCountry.UseVisualStyleBackColor = true;
-            // 
-            // labelNomCountry
-            // 
-            labelNomCountry.AutoSize = true;
-            labelNomCountry.Location = new Point(622, 148);
-            labelNomCountry.Name = "labelNomCountry";
-            labelNomCountry.Size = new Size(34, 15);
-            labelNomCountry.TabIndex = 5;
-            labelNomCountry.Text = "Nom";
-            // 
             // labelSelectIdCountry
             // 
             labelSelectIdCountry.AutoSize = true;
-            labelSelectIdCountry.Location = new Point(670, 83);
+            labelSelectIdCountry.Location = new Point(576, 147);
             labelSelectIdCountry.Name = "labelSelectIdCountry";
             labelSelectIdCountry.Size = new Size(52, 15);
             labelSelectIdCountry.TabIndex = 6;
             labelSelectIdCountry.Text = "Select ID";
             // 
-            // textBoxDeleteCountry
-            // 
-            textBoxDeleteCountry.Location = new Point(662, 12);
-            textBoxDeleteCountry.Name = "textBoxDeleteCountry";
-            textBoxDeleteCountry.Size = new Size(117, 23);
-            textBoxDeleteCountry.TabIndex = 7;
-            // 
             // textBox1
             // 
-            textBox1.Location = new Point(728, 79);
+            textBox1.Location = new Point(634, 143);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(51, 23);
             textBox1.TabIndex = 8;
-            // 
-            // textBoxNameCountryModify
-            // 
-            textBoxNameCountryModify.Location = new Point(662, 144);
-            textBoxNameCountryModify.Name = "textBoxNameCountryModify";
-            textBoxNameCountryModify.Size = new Size(117, 23);
-            textBoxNameCountryModify.TabIndex = 9;
-            // 
-            // countryCodeDataGridViewTextBoxColumn
-            // 
-            countryCodeDataGridViewTextBoxColumn.DataPropertyName = "CountryCode";
-            countryCodeDataGridViewTextBoxColumn.HeaderText = "CountryCode";
-            countryCodeDataGridViewTextBoxColumn.Name = "countryCodeDataGridViewTextBoxColumn";
-            // 
-            // countryNameDataGridViewTextBoxColumn
-            // 
-            countryNameDataGridViewTextBoxColumn.DataPropertyName = "CountryName";
-            countryNameDataGridViewTextBoxColumn.HeaderText = "CountryName";
-            countryNameDataGridViewTextBoxColumn.Name = "countryNameDataGridViewTextBoxColumn";
-            // 
-            // citiesDataGridViewTextBoxColumn
-            // 
-            citiesDataGridViewTextBoxColumn.DataPropertyName = "Cities";
-            citiesDataGridViewTextBoxColumn.HeaderText = "Cities";
-            citiesDataGridViewTextBoxColumn.Name = "citiesDataGridViewTextBoxColumn";
-            citiesDataGridViewTextBoxColumn.Visible = false;
             // 
             // FormCountry
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 291);
-            Controls.Add(textBoxNameCountryModify);
             Controls.Add(textBox1);
-            Controls.Add(textBoxDeleteCountry);
             Controls.Add(labelSelectIdCountry);
-            Controls.Add(labelNomCountry);
-            Controls.Add(buttonSaveAllCountry);
             Controls.Add(buttonModifyCountry);
             Controls.Add(buttonDeleteCountry);
             Controls.Add(buttonAddCountry);
@@ -187,12 +147,8 @@
         private Button buttonAddCountry;
         private Button buttonDeleteCountry;
         private Button buttonModifyCountry;
-        private Button buttonSaveAllCountry;
-        private Label labelNomCountry;
         private Label labelSelectIdCountry;
-        private TextBox textBoxDeleteCountry;
         private TextBox textBox1;
-        private TextBox textBoxNameCountryModify;
         private DataGridViewTextBoxColumn countryCodeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn countryNameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn citiesDataGridViewTextBoxColumn;

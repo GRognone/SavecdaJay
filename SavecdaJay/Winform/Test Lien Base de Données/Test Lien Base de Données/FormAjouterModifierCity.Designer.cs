@@ -1,6 +1,6 @@
 ﻿namespace Test_Lien_Base_de_Données
 {
-    partial class FormAjouterModifier
+    partial class FormAjouterModifierCity
     {
         /// <summary>
         /// Required designer variable.
@@ -50,7 +50,6 @@
             // 
             textBoxIdCity.Location = new Point(129, 56);
             textBoxIdCity.Name = "textBoxIdCity";
-            textBoxIdCity.ReadOnly = true;
             textBoxIdCity.Size = new Size(100, 23);
             textBoxIdCity.TabIndex = 1;
             // 
@@ -111,6 +110,7 @@
             Controls.Add(labelIdCity);
             Name = "FormAjouterModifier";
             Text = "FormAjouterModifier";
+            Load += FormAjouterModifier_Load;
             ResumeLayout(false);
             PerformLayout();
         }

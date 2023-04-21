@@ -14,9 +14,17 @@ namespace ClassCity
         public string CityName { get => cityName; set => cityName = value; }
         string countryCode;
         public string CountryCode { get => countryCode; set => countryCode = value; }
-       
+
+
+
+        public C_City(int _id, string _cityName, string _countryCode)
+        {
+            cityId = _id;
+            cityName = _cityName;
+            CountryCode = _countryCode;
+        }
         /// <summary>
-        /// Constructeur Classic
+        /// Constructeur "classique"
         /// </summary>
         /// <param name="_cityId"></param>
         /// <param name="_cityName"></param>

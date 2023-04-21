@@ -8,8 +8,6 @@ namespace ClassLibraryCountries
 {
     public class C_Country
     {
-        int countryId;
-        public int CountryId { get => countryId; set => countryId = value; }
         string countrycode;
         public string CountryCode { get => countrycode; set => countrycode = value; }
         string countryName;
@@ -25,14 +23,6 @@ namespace ClassLibraryCountries
         {
             countrycode = _countryCode;
             countryName = _countryName;
-        }
-        /// <summary>
-        /// Constructeur Classic
-        /// </summary>
-        /// <param name="_countryId"></param>
-        public C_Country(int _countryId)
-        {
-            countryId = _countryId;
         }
     }
 }

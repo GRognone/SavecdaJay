@@ -37,9 +37,7 @@
             dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
             cityBindingSource = new BindingSource(components);
-            textBoxDelectIdCity = new TextBox();
             buttonEditCity = new Button();
-            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCities).BeginInit();
             ((System.ComponentModel.ISupportInitialize)cityBindingSource).BeginInit();
             SuspendLayout();
@@ -75,6 +73,7 @@
             dataGridViewCities.RowTemplate.Height = 25;
             dataGridViewCities.Size = new Size(448, 233);
             dataGridViewCities.TabIndex = 3;
+            dataGridViewCities.SelectionChanged += dataGridViewCities_SelectionChanged;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -106,13 +105,6 @@
             // 
             cityBindingSource.DataSource = typeof(Models.City);
             // 
-            // textBoxDelectIdCity
-            // 
-            textBoxDelectIdCity.Location = new Point(634, 143);
-            textBoxDelectIdCity.Name = "textBoxDelectIdCity";
-            textBoxDelectIdCity.Size = new Size(51, 23);
-            textBoxDelectIdCity.TabIndex = 4;
-            // 
             // buttonEditCity
             // 
             buttonEditCity.Location = new Point(466, 143);
@@ -123,23 +115,12 @@
             buttonEditCity.UseVisualStyleBackColor = true;
             buttonEditCity.Click += buttonEditCity_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(576, 147);
-            label1.Name = "label1";
-            label1.Size = new Size(52, 15);
-            label1.TabIndex = 8;
-            label1.Text = "Select ID";
-            // 
             // FormCity
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 291);
-            Controls.Add(label1);
             Controls.Add(buttonEditCity);
-            Controls.Add(textBoxDelectIdCity);
             Controls.Add(dataGridViewCities);
             Controls.Add(buttonDeleteCities);
             Controls.Add(buttonAddCities);
@@ -150,7 +131,6 @@
             ((System.ComponentModel.ISupportInitialize)dataGridViewCities).EndInit();
             ((System.ComponentModel.ISupportInitialize)cityBindingSource).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -158,11 +138,9 @@
         private Button buttonAddCities;
         private Button buttonDeleteCities;
         private DataGridView dataGridViewCities;
-        private TextBox textBoxDelectIdCity;
         private Button buttonEditCity;
         private Label labelName;
         private TextBox textBoxNameCityModify;
-        private Label label1;
         private DataGridViewTextBoxColumn cityIdDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn cityNameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn countryCodeDataGridViewTextBoxColumn;
