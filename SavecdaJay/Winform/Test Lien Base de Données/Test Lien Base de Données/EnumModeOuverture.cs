@@ -9,7 +9,6 @@ namespace Test_Lien_Base_de_Données
     public enum EnumModeOuverture
     {
         UPDATE,
-        CREATE,
-
+        CREATE
     }
 }

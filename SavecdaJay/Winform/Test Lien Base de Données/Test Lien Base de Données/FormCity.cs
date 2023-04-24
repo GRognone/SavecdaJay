@@ -27,6 +27,9 @@ namespace TestLienBasedeDonnées
             dbContext = new CitiesContext();
             // Chargement de la table Cities
             dbContext.Cities.Load();
+            // sert à selectionner dans une liste pour supprimer un element de la table.
+            comboBox1.DataSource = dbContext.Cities.Local.ToBindingList();
+            comboBox1.ValueMember = "cityName";
             //dbContext.Cities.Load<City>();// dans le ca ou le load ne fonctionne pas il faut specifier
 
             //Realisation d'un binding entre lasource de donnée Cities et le DataGridView
@@ -38,7 +41,7 @@ namespace TestLienBasedeDonnées
             FormAjouterModifierCity monAjout = new FormAjouterModifierCity(dbContext, EnumModeOuverture.CREATE);
             monAjout.ShowDialog();
         }
-        private void buttonDeleteCitiesMethod1_Click(object sender, EventArgs e)
+        private void buttonDeleteCitiesClick(object sender, EventArgs e)
         {
             {
                 int id;
@@ -57,15 +60,14 @@ namespace TestLienBasedeDonnées
         }
         private void buttonEditCity_Click(object sender, EventArgs e)
         {
-            int id = (int)this.dataGridViewCities.CurrentRow.Cells[0].Value;
-            City? c = findFromId(id);
-            if (c == null)
-                return;
-            C_City cc = new C_City(c.CityId, c.CityName, c.CountryCode);
-            FormAjouterModifierCity monAjout = new FormAjouterModifierCity(dbContext, EnumModeOuverture.UPDATE, cc);
-            monAjout.ShowDialog();
-            dataGridViewCities.Refresh();
-
+                int id = (int)this.dataGridViewCities.CurrentRow.Cells[0].Value;
+                City? c = findFromId(id);
+                if (c == null)
+                    return;
+                C_City cc = new C_City(c.CityId, c.CityName, c.CountryCode);
+                FormAjouterModifierCity monAjout = new FormAjouterModifierCity(dbContext, EnumModeOuverture.UPDATE, cc);
+                monAjout.ShowDialog();
+                dataGridViewCities.Refresh();
         }
         // sert a trouver si une city existe à un id.
         private City? findFromId(int _id) => dbContext.Cities.Find(_id);
@@ -73,6 +75,11 @@ namespace TestLienBasedeDonnées
         private void dataGridViewCities_SelectionChanged(object sender, EventArgs e)
         {
             int id = (int)this.dataGridViewCities.CurrentRow.Cells[0].Value;
+        }
+
+        private void buttonsupp_Click(object sender, EventArgs e)
+        {
+            dbContext.Cities.Remove((City)comboBox1.SelectedItem);
         }
     }
 }

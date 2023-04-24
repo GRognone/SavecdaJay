@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             labelIdCity = new Label();
             textBoxIdCity = new TextBox();
             labelCityName = new Label();
@@ -35,6 +36,8 @@
             labelCityCodeCountry = new Label();
             comboBoxCountryCode = new ComboBox();
             buttonSaveAllCity = new Button();
+            errorProviderSetCityName = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProviderSetCityName).BeginInit();
             SuspendLayout();
             // 
             // labelIdCity
@@ -68,15 +71,16 @@
             textBoxCityName.Name = "textBoxCityName";
             textBoxCityName.Size = new Size(100, 23);
             textBoxCityName.TabIndex = 3;
+            textBoxCityName.TextChanged += textBoxCityName_TextChanged;
             // 
             // labelCityCodeCountry
             // 
             labelCityCodeCountry.AutoSize = true;
             labelCityCodeCountry.Location = new Point(39, 182);
             labelCityCodeCountry.Name = "labelCityCodeCountry";
-            labelCityCodeCountry.Size = new Size(81, 15);
+            labelCityCodeCountry.Size = new Size(62, 15);
             labelCityCodeCountry.TabIndex = 4;
-            labelCityCodeCountry.Text = "Code Country";
+            labelCityCodeCountry.Text = "Code Pays";
             // 
             // comboBoxCountryCode
             // 
@@ -96,7 +100,11 @@
             buttonSaveAllCity.UseVisualStyleBackColor = true;
             buttonSaveAllCity.Click += buttonSaveAllCity_Click;
             // 
-            // FormAjouterModifier
+            // errorProviderSetCityName
+            // 
+            errorProviderSetCityName.ContainerControl = this;
+            // 
+            // FormAjouterModifierCity
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -108,9 +116,9 @@
             Controls.Add(labelCityName);
             Controls.Add(textBoxIdCity);
             Controls.Add(labelIdCity);
-            Name = "FormAjouterModifier";
+            Name = "FormAjouterModifierCity";
             Text = "FormAjouterModifier";
-            Load += FormAjouterModifier_Load;
+            ((System.ComponentModel.ISupportInitialize)errorProviderSetCityName).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -124,5 +132,6 @@
         private Label labelCityCodeCountry;
         private ComboBox comboBoxCountryCode;
         private Button buttonSaveAllCity;
+        private ErrorProvider errorProviderSetCityName;
     }
 }

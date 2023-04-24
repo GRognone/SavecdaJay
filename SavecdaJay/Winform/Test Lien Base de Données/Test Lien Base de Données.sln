@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestLienBasedeDonnées", "T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassCity", "ClassCity\ClassCity.csproj", "{642DA2BA-97E7-40D4-BFE0-5EE72F67144A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryCountries", "ClassLibraryCountries\ClassLibraryCountries.csproj", "{A9D25CC0-2FE4-4037-8F23-A91713770890}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibraryCountries", "ClassLibraryCountries\ClassLibraryCountries.csproj", "{A9D25CC0-2FE4-4037-8F23-A91713770890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassControl", "ClassControl\ClassControl.csproj", "{6D9977E2-3437-4EAF-9A1E-14EC6BEB220C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{A9D25CC0-2FE4-4037-8F23-A91713770890}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9D25CC0-2FE4-4037-8F23-A91713770890}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9D25CC0-2FE4-4037-8F23-A91713770890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D9977E2-3437-4EAF-9A1E-14EC6BEB220C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D9977E2-3437-4EAF-9A1E-14EC6BEB220C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D9977E2-3437-4EAF-9A1E-14EC6BEB220C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D9977E2-3437-4EAF-9A1E-14EC6BEB220C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

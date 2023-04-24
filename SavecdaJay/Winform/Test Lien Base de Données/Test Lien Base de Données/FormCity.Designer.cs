@@ -38,6 +38,8 @@
             dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
             cityBindingSource = new BindingSource(components);
             buttonEditCity = new Button();
+            buttonsupp = new Button();
+            comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCities).BeginInit();
             ((System.ComponentModel.ISupportInitialize)cityBindingSource).BeginInit();
             SuspendLayout();
@@ -60,7 +62,7 @@
             buttonDeleteCities.TabIndex = 1;
             buttonDeleteCities.Text = "Supprimer une Ville";
             buttonDeleteCities.UseVisualStyleBackColor = true;
-            buttonDeleteCities.Click += buttonDeleteCitiesMethod1_Click;
+            buttonDeleteCities.Click += buttonDeleteCitiesClick;
             // 
             // dataGridViewCities
             // 
@@ -107,7 +109,7 @@
             // 
             // buttonEditCity
             // 
-            buttonEditCity.Location = new Point(466, 143);
+            buttonEditCity.Location = new Point(466, 168);
             buttonEditCity.Name = "buttonEditCity";
             buttonEditCity.Size = new Size(75, 23);
             buttonEditCity.TabIndex = 5;
@@ -115,11 +117,31 @@
             buttonEditCity.UseVisualStyleBackColor = true;
             buttonEditCity.Click += buttonEditCity_Click;
             // 
+            // buttonsupp
+            // 
+            buttonsupp.Location = new Point(466, 117);
+            buttonsupp.Name = "buttonsupp";
+            buttonsupp.Size = new Size(137, 23);
+            buttonsupp.TabIndex = 6;
+            buttonsupp.Text = "Supprimer (alternative)";
+            buttonsupp.UseVisualStyleBackColor = true;
+            buttonsupp.Click += buttonsupp_Click;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(609, 117);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 7;
+            // 
             // FormCity
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 291);
+            Controls.Add(comboBox1);
+            Controls.Add(buttonsupp);
             Controls.Add(buttonEditCity);
             Controls.Add(dataGridViewCities);
             Controls.Add(buttonDeleteCities);
@@ -151,5 +173,7 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private Button buttonsupp;
+        private ComboBox comboBox1;
     }
 }

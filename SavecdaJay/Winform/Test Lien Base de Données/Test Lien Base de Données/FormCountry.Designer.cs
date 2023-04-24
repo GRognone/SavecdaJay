@@ -37,8 +37,6 @@
             buttonAddCountry = new Button();
             buttonDeleteCountry = new Button();
             buttonModifyCountry = new Button();
-            labelSelectIdCountry = new Label();
-            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCountry).BeginInit();
             ((System.ComponentModel.ISupportInitialize)countryBindingSource).BeginInit();
             SuspendLayout();
@@ -86,6 +84,7 @@
             buttonAddCountry.TabIndex = 1;
             buttonAddCountry.Text = "Ajouter Un Pays";
             buttonAddCountry.UseVisualStyleBackColor = true;
+            buttonAddCountry.Click += buttonAddCountry_Click;
             // 
             // buttonDeleteCountry
             // 
@@ -95,6 +94,7 @@
             buttonDeleteCountry.TabIndex = 2;
             buttonDeleteCountry.Text = "Supprimer Un Pays";
             buttonDeleteCountry.UseVisualStyleBackColor = true;
+            buttonDeleteCountry.Click += buttonDeleteCountry_Click;
             // 
             // buttonModifyCountry
             // 
@@ -104,30 +104,13 @@
             buttonModifyCountry.TabIndex = 3;
             buttonModifyCountry.Text = "Modifier";
             buttonModifyCountry.UseVisualStyleBackColor = true;
-            // 
-            // labelSelectIdCountry
-            // 
-            labelSelectIdCountry.AutoSize = true;
-            labelSelectIdCountry.Location = new Point(576, 147);
-            labelSelectIdCountry.Name = "labelSelectIdCountry";
-            labelSelectIdCountry.Size = new Size(52, 15);
-            labelSelectIdCountry.TabIndex = 6;
-            labelSelectIdCountry.Text = "Select ID";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(634, 143);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(51, 23);
-            textBox1.TabIndex = 8;
+            buttonModifyCountry.Click += buttonModifyCountry_Click;
             // 
             // FormCountry
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 291);
-            Controls.Add(textBox1);
-            Controls.Add(labelSelectIdCountry);
+            ClientSize = new Size(623, 259);
             Controls.Add(buttonModifyCountry);
             Controls.Add(buttonDeleteCountry);
             Controls.Add(buttonAddCountry);
@@ -137,7 +120,6 @@
             ((System.ComponentModel.ISupportInitialize)dataGridViewCountry).EndInit();
             ((System.ComponentModel.ISupportInitialize)countryBindingSource).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -147,8 +129,6 @@
         private Button buttonAddCountry;
         private Button buttonDeleteCountry;
         private Button buttonModifyCountry;
-        private Label labelSelectIdCountry;
-        private TextBox textBox1;
         private DataGridViewTextBoxColumn countryCodeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn countryNameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn citiesDataGridViewTextBoxColumn;

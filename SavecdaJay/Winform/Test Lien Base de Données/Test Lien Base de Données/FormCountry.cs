@@ -1,9 +1,9 @@
-﻿using ClassCity;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TestLienBasedeDonnées.Models;
 using ClassLibraryCountries;
+using TestLienBasedeDonnées;
+
 
 namespace Test_Lien_Base_de_Données
 {
@@ -18,20 +20,61 @@ namespace Test_Lien_Base_de_Données
     public partial class FormCountry : Form
     {
         private C_Country classCountry1;
-        private CitiesContext dbContext;
+        private CitiesContext dbcontext;
 
         public FormCountry()
         {
             InitializeComponent();
             // Creer le context vers la source
-            dbContext = new CitiesContext();
+            dbcontext = new CitiesContext();
             // Chargement de la table Cities
-            dbContext.Countries.Load();
+            dbcontext.Countries.Load();
 
-            //Realisation d'un binding entre lasource de donnée Cities et le DataGridView
-            this.dataGridViewCountry.DataSource = dbContext.Countries.Local.ToBindingList();
+            //Realisation d'un binding entre la source de donnée Countries et le DataGridView
+            this.dataGridViewCountry.DataSource = dbcontext.Countries.Local.ToBindingList();
         }
 
+        private void buttonAddCountry_Click(object sender, EventArgs e)
+        {
+            FormAjouterModifierCountry monAjoutCountry = new FormAjouterModifierCountry(dbcontext, EnumModeOuverture.CREATE);
+            monAjoutCountry.ShowDialog();
+        }
 
+        private void buttonDeleteCountry_Click(object sender, EventArgs e)
+        {
+            {
+                string countryCode;
+                countryCode = (string)this.dataGridViewCountry.CurrentRow.Cells[0].Value;
+                if (countryCode != "")
+                {
+                    Country? coASupprimer = dbcontext.Countries.Find(countryCode);
+                    if (coASupprimer != null)
+                    {
+                        dbcontext.Countries.Remove(coASupprimer);
+                        dbcontext.SaveChanges();
+                        dataGridViewCountry.Refresh();
+                    }
+                }
+            }
+        }
+
+        private void buttonModifyCountry_Click(object sender, EventArgs e)
+        {
+            string countryCode = (string)this.dataGridViewCountry.CurrentRow.Cells[0].Value;
+            Country? co = findFromCountryCode(countryCode);
+            if (co == null)
+                return;
+            C_Country cc = new C_Country(co.CountryCode, co.CountryName);
+            FormAjouterModifierCity monAjout = new FormAjouterModifierCity(dbcontext, EnumModeOuverture.UPDATE);
+            monAjout.ShowDialog();
+            dataGridViewCountry.Refresh();
+
+        }
+        private Country? findFromCountryCode(string _CCode) => dbcontext.Countries.Find(_CCode);
+
+        private void dataGridViewCities_SelectionChanged(object sender, EventArgs e)
+        {
+            int id = (int)this.dataGridViewCountry.CurrentRow.Cells[0].Value;
+        }
     }
 }

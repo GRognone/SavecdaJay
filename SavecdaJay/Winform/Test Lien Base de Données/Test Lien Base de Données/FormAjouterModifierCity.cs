@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClassCity;
 using TestLienBasedeDonnées.Models;
+using ClassControl;
 
 namespace Test_Lien_Base_de_Données
 {
@@ -43,7 +44,17 @@ namespace Test_Lien_Base_de_Données
                 comboBoxCountryCode.Text = donnees.CountryCode;
             }
         }
-
+        private void textBoxCityName_TextChanged(object sender, EventArgs e)
+        {
+            if (textBoxCityName.Text != "" && ClassControl.Controls.saisieAControler(textBoxCityName.Text))
+            {
+                errorProviderSetCityName.SetError(textBoxCityName, "Veuillez saisir uniquement des lettres, pour un nom composé pour pouvez separer par un '-' suivi de lettres");
+            }
+            else
+            {
+                errorProviderSetCityName.Clear();
+            }
+        }
         private void buttonSaveAllCity_Click(object sender, EventArgs e)
         {
             switch (modeOuverture)
@@ -60,18 +71,26 @@ namespace Test_Lien_Base_de_Données
                     Insert();
                     break;
             }
+
         }
         private void Insert()
         {
-            if (modeOuverture != EnumModeOuverture.CREATE)
-                return;
-            City city = new City();
-            city.CityName = maCity1.CityName;
-            city.CountryCode = maCity1.CountryCode;
+            if (ClassControl.Controls.saisieAControler(textBoxCityName.Text))
+            {
+                if (modeOuverture != EnumModeOuverture.CREATE)
+                    return;
+                City city = new City();
+                city.CityName = maCity1.CityName;
+                city.CountryCode = maCity1.CountryCode;
+                context.Cities.Add(city);
+                context.SaveChanges();
+                this.Close();
+            }
+            else
+            {
+                errorProviderSetCityName.SetError(textBoxCityName, "Veuillez saisir uniquement des lettres, pour un nom composé pour pouvez separer par un '-' suivi de lettres");
+            }
 
-            context.Cities.Add(city);
-            context.SaveChanges();
-            this.Close();
         }
         private void Update()
         {
@@ -92,9 +111,6 @@ namespace Test_Lien_Base_de_Données
             return context.Cities.Find(_id);
         }
 
-        private void FormAjouterModifier_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
