@@ -32,6 +32,7 @@ namespace Test_Lien_Base_de_Données
 
             //Realisation d'un binding entre la source de donnée Countries et le DataGridView
             this.dataGridViewCountry.DataSource = dbcontext.Countries.Local.ToBindingList();
+
         }
 
         private void buttonAddCountry_Click(object sender, EventArgs e)
@@ -50,6 +51,15 @@ namespace Test_Lien_Base_de_Données
                     Country? coASupprimer = dbcontext.Countries.Find(countryCode);
                     if (coASupprimer != null)
                     {
+                        // ce foreach permet de supprimer toutes les villes liées à 1 pays
+                        foreach (City c in dbcontext.Cities)
+                        {
+                            if (c.CountryCode == coASupprimer.CountryCode)
+                            {
+                                dbcontext.Remove(c);
+                            }
+                        }
+                        dbcontext.SaveChanges();
                         dbcontext.Countries.Remove(coASupprimer);
                         dbcontext.SaveChanges();
                         dataGridViewCountry.Refresh();
@@ -64,17 +74,13 @@ namespace Test_Lien_Base_de_Données
             Country? co = findFromCountryCode(countryCode);
             if (co == null)
                 return;
-            C_Country cc = new C_Country(co.CountryCode, co.CountryName);
-            FormAjouterModifierCity monAjout = new FormAjouterModifierCity(dbcontext, EnumModeOuverture.UPDATE);
+            C_Country cco = new C_Country(co.CountryCode, co.CountryName);
+            FormAjouterModifierCountry monAjout = new FormAjouterModifierCountry(dbcontext, EnumModeOuverture.UPDATE, cco);
             monAjout.ShowDialog();
             dataGridViewCountry.Refresh();
 
         }
         private Country? findFromCountryCode(string _CCode) => dbcontext.Countries.Find(_CCode);
 
-        private void dataGridViewCities_SelectionChanged(object sender, EventArgs e)
-        {
-            int id = (int)this.dataGridViewCountry.CurrentRow.Cells[0].Value;
-        }
     }
 }

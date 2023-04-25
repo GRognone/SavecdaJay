@@ -49,6 +49,7 @@
             dataGridViewCountry.DataSource = countryBindingSource;
             dataGridViewCountry.Location = new Point(12, 12);
             dataGridViewCountry.Name = "dataGridViewCountry";
+            dataGridViewCountry.ReadOnly = true;
             dataGridViewCountry.RowTemplate.Height = 25;
             dataGridViewCountry.Size = new Size(448, 233);
             dataGridViewCountry.TabIndex = 0;
@@ -58,18 +59,21 @@
             countryCodeDataGridViewTextBoxColumn.DataPropertyName = "CountryCode";
             countryCodeDataGridViewTextBoxColumn.HeaderText = "CountryCode";
             countryCodeDataGridViewTextBoxColumn.Name = "countryCodeDataGridViewTextBoxColumn";
+            countryCodeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // countryNameDataGridViewTextBoxColumn
             // 
             countryNameDataGridViewTextBoxColumn.DataPropertyName = "CountryName";
             countryNameDataGridViewTextBoxColumn.HeaderText = "CountryName";
             countryNameDataGridViewTextBoxColumn.Name = "countryNameDataGridViewTextBoxColumn";
+            countryNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // citiesDataGridViewTextBoxColumn
             // 
             citiesDataGridViewTextBoxColumn.DataPropertyName = "Cities";
             citiesDataGridViewTextBoxColumn.HeaderText = "Cities";
             citiesDataGridViewTextBoxColumn.Name = "citiesDataGridViewTextBoxColumn";
+            citiesDataGridViewTextBoxColumn.ReadOnly = true;
             citiesDataGridViewTextBoxColumn.Visible = false;
             // 
             // countryBindingSource

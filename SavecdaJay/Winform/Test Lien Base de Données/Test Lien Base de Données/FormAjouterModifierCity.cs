@@ -46,13 +46,13 @@ namespace Test_Lien_Base_de_Données
         }
         private void textBoxCityName_TextChanged(object sender, EventArgs e)
         {
-            if (textBoxCityName.Text != "" && ClassControl.Controls.saisieAControler(textBoxCityName.Text))
+            if (ClassControl.Controls.saisieAControler(textBoxCityName.Text))
             {
-                errorProviderSetCityName.SetError(textBoxCityName, "Veuillez saisir uniquement des lettres, pour un nom composé pour pouvez separer par un '-' suivi de lettres");
+                errorProviderSetCityName.Clear();
             }
             else
             {
-                errorProviderSetCityName.Clear();
+                errorProviderSetCityName.SetError(textBoxCityName, "Veuillez saisir uniquement des lettres, pour un nom composé pour pouvez separer par un '-' suivi de lettres");
             }
         }
         private void buttonSaveAllCity_Click(object sender, EventArgs e)
@@ -94,23 +94,27 @@ namespace Test_Lien_Base_de_Données
         }
         private void Update()
         {
-            if (modeOuverture != EnumModeOuverture.UPDATE)
-                return;
-            City? c = findFromId(maCity1.CityId);
-            if (c == null)
-                return;
-            c.CityName = maCity1.CityName;
-            c.CountryCode = maCity1.CountryCode;
-            context.Cities.Update(c);
-            context.SaveChanges();
-            this.Close();
+            if (ClassControl.Controls.saisieAControler(textBoxCityName.Text))
+            {
+                if (modeOuverture != EnumModeOuverture.UPDATE)
+                    return;
+                City? c = findFromId(maCity1.CityId);
+                if (c == null)
+                    return;
+                c.CityName = maCity1.CityName;
+                c.CountryCode = maCity1.CountryCode;
+                context.Cities.Update(c);
+                context.SaveChanges();
+                this.Close();
+            }
+            else
+            {
+                errorProviderSetCityName.SetError(textBoxCityName, "Veuillez saisir uniquement des lettres, pour un nom composé pour pouvez separer par un '-' suivi de lettres");
+            }
         }
-
         private City? findFromId(int _id)
         {
             return context.Cities.Find(_id);
         }
-
-        
     }
 }

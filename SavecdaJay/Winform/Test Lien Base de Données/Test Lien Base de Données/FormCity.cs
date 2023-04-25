@@ -32,7 +32,7 @@ namespace TestLienBasedeDonnées
             comboBox1.ValueMember = "cityName";
             //dbContext.Cities.Load<City>();// dans le ca ou le load ne fonctionne pas il faut specifier
 
-            //Realisation d'un binding entre lasource de donnée Cities et le DataGridView
+            //Realisation d'un binding entre la source de donnée Cities et le DataGridView
             this.dataGridViewCities.DataSource = dbContext.Cities.Local.ToBindingList();
         }
 
@@ -71,6 +71,7 @@ namespace TestLienBasedeDonnées
         }
         // sert a trouver si une city existe à un id.
         private City? findFromId(int _id) => dbContext.Cities.Find(_id);
+
 
         private void dataGridViewCities_SelectionChanged(object sender, EventArgs e)
         {

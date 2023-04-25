@@ -28,11 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             labelCountryCode = new Label();
             textBoxCountryCode = new TextBox();
             textBoxCountryName = new TextBox();
             label1CountryName = new Label();
             buttonValider = new Button();
+            errorProviderCountryCode = new ErrorProvider(components);
+            errorProviderCountryName = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProviderCountryCode).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProviderCountryName).BeginInit();
             SuspendLayout();
             // 
             // labelCountryCode
@@ -50,6 +55,7 @@
             textBoxCountryCode.Name = "textBoxCountryCode";
             textBoxCountryCode.Size = new Size(100, 23);
             textBoxCountryCode.TabIndex = 1;
+            textBoxCountryCode.TextChanged += textBoxCountryCode_TextChanged;
             // 
             // textBoxCountryName
             // 
@@ -57,6 +63,7 @@
             textBoxCountryName.Name = "textBoxCountryName";
             textBoxCountryName.Size = new Size(100, 23);
             textBoxCountryName.TabIndex = 2;
+            textBoxCountryName.TextChanged += textBoxCountryName_TextChanged;
             // 
             // label1CountryName
             // 
@@ -77,6 +84,14 @@
             buttonValider.UseVisualStyleBackColor = true;
             buttonValider.Click += buttonValider_Click;
             // 
+            // errorProviderCountryCode
+            // 
+            errorProviderCountryCode.ContainerControl = this;
+            // 
+            // errorProviderCountryName
+            // 
+            errorProviderCountryName.ContainerControl = this;
+            // 
             // FormAjouterModifierCountry
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -89,6 +104,8 @@
             Controls.Add(labelCountryCode);
             Name = "FormAjouterModifierCountry";
             Text = "FormAjouterModifierCountry";
+            ((System.ComponentModel.ISupportInitialize)errorProviderCountryCode).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProviderCountryName).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -100,5 +117,7 @@
         private TextBox textBoxCountryName;
         private Label label1CountryName;
         private Button buttonValider;
+        private ErrorProvider errorProviderCountryCode;
+        private ErrorProvider errorProviderCountryName;
     }
 }
