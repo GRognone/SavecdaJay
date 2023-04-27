@@ -40,13 +40,9 @@
             errorProviderPuceNumber = new ErrorProvider(components);
             numericUpDownAge = new NumericUpDown();
             errorProviderNom = new ErrorProvider(components);
-            errorProviderRace = new ErrorProvider(components);
-            errorProviderAge = new ErrorProvider(components);
             ((System.ComponentModel.ISupportInitialize)errorProviderPuceNumber).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownAge).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProviderNom).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)errorProviderRace).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)errorProviderAge).BeginInit();
             SuspendLayout();
             // 
             // buttonUpdate
@@ -61,12 +57,12 @@
             // 
             // comboBoxRace
             // 
+            comboBoxRace.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxRace.FormattingEnabled = true;
             comboBoxRace.Location = new Point(119, 108);
             comboBoxRace.Name = "comboBoxRace";
             comboBoxRace.Size = new Size(121, 23);
             comboBoxRace.TabIndex = 16;
-            comboBoxRace.SelectedIndexChanged += comboBoxRace_SelectedIndexChanged;
             // 
             // textBoxName
             // 
@@ -80,7 +76,6 @@
             // 
             textBoxPuceNumber.Location = new Point(119, 17);
             textBoxPuceNumber.Name = "textBoxPuceNumber";
-            textBoxPuceNumber.ReadOnly = true;
             textBoxPuceNumber.Size = new Size(253, 23);
             textBoxPuceNumber.TabIndex = 13;
             textBoxPuceNumber.TextChanged += textBoxPuceNumber_TextChanged;
@@ -138,14 +133,6 @@
             // 
             errorProviderNom.ContainerControl = this;
             // 
-            // errorProviderRace
-            // 
-            errorProviderRace.ContainerControl = this;
-            // 
-            // errorProviderAge
-            // 
-            errorProviderAge.ContainerControl = this;
-            // 
             // FormChat2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -165,8 +152,6 @@
             ((System.ComponentModel.ISupportInitialize)errorProviderPuceNumber).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownAge).EndInit();
             ((System.ComponentModel.ISupportInitialize)errorProviderNom).EndInit();
-            ((System.ComponentModel.ISupportInitialize)errorProviderRace).EndInit();
-            ((System.ComponentModel.ISupportInitialize)errorProviderAge).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -185,7 +170,5 @@
         private ErrorProvider errorProviderPuceNumber;
         private NumericUpDown numericUpDownAge;
         private ErrorProvider errorProviderNom;
-        private ErrorProvider errorProviderRace;
-        private ErrorProvider errorProviderAge;
     }
 }

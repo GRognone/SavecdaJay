@@ -19,7 +19,8 @@ namespace WinFormsECF_SPA
             ApplicationConfiguration.Initialize();
             SpaContext dbContext;
             dbContext = new SpaContext();
-
+            
+            //chat de la bdd
             Chat monChat = dbContext.Chats.Find(250260111111111);
 
             ClassChat petitNouveau = new ClassChat(monChat.NumeroPuce,monChat.Nom,monChat.Age,monChat.Race);

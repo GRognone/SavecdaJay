@@ -3,10 +3,12 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsECF_SPA.Models;
@@ -29,7 +31,10 @@ namespace WinFormsECF_SPA
             comboBoxRace.DataSource = dbContext.Races.Local.ToBindingList();
             comboBoxRace.ValueMember = "Race1";
 
+
+            // chat issue de l'entity 
             chat = petitNouveau;
+
             // chat chargé depuis la Bdd par son numero puce (id)
             chatBDD = findFromId(chat.PuceNumber);
 
@@ -38,7 +43,7 @@ namespace WinFormsECF_SPA
             numericUpDownAge.Value = (int)chat.Age;
 
         }
-
+        //verification de l'existance du chat du model
         private Chat? findFromId(Int64 _puceNumber)
         {
             return dbContext.Chats.Find(_puceNumber);
@@ -55,39 +60,44 @@ namespace WinFormsECF_SPA
                 errorProviderPuceNumber.Clear();
             }
         }
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
-
-            if (textBoxName != null)
-            {
-                /*chatBDD = c;*/
-            }
-            dbContext.SaveChanges();
-        }
-
-
         private void textBoxName_TextChanged(object sender, EventArgs e)
         {
-            TextBox tb = sender as TextBox;
-            chat.CheckName(tb.Text);
-            if (chat.Name.Length > 0)
+            if (!ClassLibraryControl.Controls.CheckName(textBoxName.Text))
             {
-                errorProviderNom.Clear();
+                errorProviderNom.SetError(textBoxName, "veuillez saisir des lettres");
             }
             else
             {
-                errorProviderNom.SetError(tb,"Nom incorrect saisissez uniquement des lettres.");
+                errorProviderNom.Clear();
             }
         }
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            NumericUpDown nud = sender as NumericUpDown;
-            chat.CheckAge((int)nud.Value);
+            NumericUpDown nUpDo = sender as NumericUpDown;
+            chat.CheckAge((int)nUpDo.Value);
         }
 
-        private void comboBoxRace_SelectedIndexChanged(object sender, EventArgs e)
+        private void buttonUpdate_Click(object sender, EventArgs e)
         {
+            //modifier l'object modifier
 
+            if (textBoxName != null)
+            {
+                chat.Name = textBoxName.Text;
+            }
+            if (numericUpDownAge.Value != null)
+            {
+                chat.Age = (int)numericUpDownAge.Value;
+            }
+            if (comboBoxRace.SelectedItem != null)
+            {
+                chat.Race = (int)comboBoxRace.SelectedIndex + 1;
+            }
+
+            chatBDD.Nom = chat.Name;
+            chatBDD.Age = chat.Age;
+            chatBDD.Race = (int)chat.Race;
+            dbContext.SaveChanges();
         }
     }
 }

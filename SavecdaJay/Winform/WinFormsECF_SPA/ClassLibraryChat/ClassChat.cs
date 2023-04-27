@@ -9,8 +9,7 @@ namespace ClassLibraryChat
         Int64 puceNumber;
         public Int64 PuceNumber { get => puceNumber; set => puceNumber = value; }
         string name;
-        public string Name { get => name;
-        }
+        public string Name { get => name; set => name = value; }   
         int? age;
         public int? Age { get => age; set => age = value; }
         int? race;
@@ -23,20 +22,9 @@ namespace ClassLibraryChat
             age = _age;
             race = _race;
         }
-        public void CheckName(string value)
-        {
-            if (Regex.Match(value, "^[a-zA-Z- ]{1,25}$").Success)
-            {
-                name = value;
-            }
-            else
-            {
-                name = "";
-            }
-        }
         public void CheckAge(int value)
         {
-            if (value>0 && value<500)
+            if (value > 0 && value < 500)
             {
                 age = value;
             }
@@ -53,7 +41,7 @@ namespace ClassLibraryChat
         public ClassChat(string _name, int? _age, int? _Race)
         {
             name = _name;
-            age =  _age;
+            age = _age;
             Race = _Race;
         }
         /// <summary>
