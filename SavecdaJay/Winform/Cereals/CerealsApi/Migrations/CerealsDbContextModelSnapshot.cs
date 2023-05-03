@@ -41,7 +41,7 @@ namespace CerealsApi.Migrations
 
                     b.HasKey("CerealId");
 
-                    b.ToTable("tbl_cereals");
+                    b.ToTable("tbl_cereals", (string)null);
                 });
 #pragma warning restore 612, 618
         }

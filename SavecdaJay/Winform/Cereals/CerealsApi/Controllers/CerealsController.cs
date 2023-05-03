@@ -11,6 +11,7 @@ namespace CerealsApi.Controllers
     public class CerealsController : ControllerBase
     {
         CerealsDbContext context;
+        Repository<Cereal> repository;
 
         public CerealsController() : base()
         {
@@ -25,11 +26,14 @@ namespace CerealsApi.Controllers
 
         // GET api/<CerealsController>/5
         [HttpGet("{id}")]
-        public string Get(int id) // lecture des données
+        public Cereal? Get(int id)
         {
-            // UTILISER UNE EXPRESSION LAMBDA
-            return "value";
+            return context.Cereals.FirstOrDefault(c => c.CerealId == id);
         }
+
+        ////    //est équivalent à ceci
+        //public Cereal? Get(int id) => context.Cereals.FirstOrDefault(c => c.CerealId == id);// lecture des données
+
 
         // POST api/<CerealsController>
         [HttpPost]
@@ -43,16 +47,26 @@ namespace CerealsApi.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] Cereal value) // mise à jour element existant
         {
-            context.Cereals.Update(value);
-            context.SaveChanges();
+            if (this.Get(id) is Cereal cereal && value.CerealId == cereal.CerealId)
+            {
+                cereal.Name = value.Name;
+                cereal.Calories = value.Calories;
+                cereal.Protein = value.Protein;
+                context.Cereals.Update(cereal);
+                context.SaveChanges();
+            }
+
         }
 
         // DELETE api/<CerealsController>/5
         [HttpDelete("{id}")]
         public void Delete(int id) // suppression de l'element
         {
-            context.Cereals = context.Cereals.Delete();
-            context.SaveChanges();
+            if (this.Get(id) is Cereal cereal)
+            {
+                context.Cereals.Remove(cereal);
+                context.SaveChanges();
+            }
         }
     }
 }
