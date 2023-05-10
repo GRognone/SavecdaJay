@@ -3,6 +3,7 @@ using ApiUser.Extensions;
 using ApiUser.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiUser.Controllers
 {
@@ -18,12 +19,19 @@ namespace ApiUser.Controllers
         }
 
         [HttpPost]
-        public User? Login(User userToLogin)
+        public async Task<ActionResult<UserReadViewModel?>> Login(User userToLogin)
         {
-            return _context.Users.FirstOrDefault(
-                u => u.UserName == userToLogin.UserName &&
-                u.Password.ToPassword() == userToLogin.passwordToCheck());
+            User? user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == userToLogin.UserName);
+
+            if (user != null && user.Password.CheckPassword(userToLogin.Password))
+            {
+                return new UserReadViewModel()
+                {
+                    Id = user.Id,
+                    UserName = user.UserName
+                };
+            }
+            return NotFound();
         }
-      
     }
 }

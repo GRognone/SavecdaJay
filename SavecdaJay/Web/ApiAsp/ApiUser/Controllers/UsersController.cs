@@ -24,18 +24,31 @@ namespace ApiUser.Controllers
 
         // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<UserReadViewModel>>> GetUsers()
         {
           if (_context.Users == null)
           {
               return NotFound();
           }
-            return await _context.Users.ToListAsync();
+
+            List<UserReadViewModel> list = new List<UserReadViewModel>();
+
+            await _context.Users.ForEachAsync(u =>
+            {
+                UserReadViewModel r = new()
+                {
+                    Id = u.Id,
+                    UserName = u.UserName
+                };
+                list.Add(r);
+            });
+            return list;
+          
         }
 
         // GET: api/Users/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(int id)
+        public async Task<ActionResult<UserReadViewModel>> GetUser(int id)
         {
           if (_context.Users == null)
           {
@@ -47,21 +60,36 @@ namespace ApiUser.Controllers
             {
                 return NotFound();
             }
-
-            return user;
+            return new UserReadViewModel()
+            {
+                Id = user.Id,
+                UserName = user.UserName
+            };
         }
 
         // PUT: api/Users/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUser(int id, User user)
+        public async Task<IActionResult> PutUser(int id, UserReadViewModel user)
         {
             if (id != user.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(user).State = EntityState.Modified;
+            User dbUser = _context.Users.FirstOrDefault(u=> u.Id == id);
+
+            if(dbUser is User)
+            {
+                dbUser.UserName = user.UserName;
+            }
+            else
+            {
+                return NotFound();
+            }
+
+
+            _context.Entry(dbUser).State = EntityState.Modified;
 
             try
             {
@@ -91,7 +119,7 @@ namespace ApiUser.Controllers
           {
               return Problem("Entity set 'UserDbContext.Users'  is null.");
           }
-            user.Password = user.Password.ToPassword();
+            user.Password = user.Password.ToPassword();//crypte le mot de passe à l'insertion de l'utilisateur.
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
