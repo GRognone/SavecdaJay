@@ -11,6 +11,8 @@ namespace ApiUser.Models
     {
         [Required(ErrorMessage = "Le mot de passe est obligatoire")]
         [RegularExpression(@"^[a-zA-Z0-9]{8,}$")] //{8,} veut dire 8 caractères minimum.
-        public string? Password { get; set; }
+        public string? NewPassword { get; set; }
     }
+
+
 }
