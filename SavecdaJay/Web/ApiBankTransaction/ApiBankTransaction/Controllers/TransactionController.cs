@@ -3,6 +3,7 @@ using ApiBankTransactionModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 namespace ApiBankTransaction.Controllers
 {
@@ -52,7 +53,7 @@ namespace ApiBankTransaction.Controllers
         }
         // POST: api/Transaction
         [HttpPost]
-        public async Task<ActionResult<BankTransaction>>PostTransaction(BankTransaction Btransact)
+        public async Task<ActionResult<BankTransaction>> PostTransaction(BankTransaction Btransact)
         {
             if (_context.BankTransactions == null)
             {
@@ -61,7 +62,7 @@ namespace ApiBankTransaction.Controllers
             _context.BankTransactions.Add(Btransact);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUser")
+            return CreatedAtAction("GetTransaction", new { id = Btransact.Id }, Btransact);
         }
 
         //PUT api/BankTransaction/5
@@ -91,7 +92,7 @@ namespace ApiBankTransaction.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!BankTransactionExists(id))
+                if (!BankTransactExist(id))
                 {
                     return NotFound();
                 }
@@ -103,9 +104,29 @@ namespace ApiBankTransaction.Controllers
             return NoContent();
         }
 
-        private bool BankTransactionExists(int id)
+        // DELETE : api/BankTransaction/5
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteBankTransaction(int id)
         {
-            throw new NotImplementedException();
+            if (_context.BankTransactions == null)
+            {
+                return NotFound();
+            }
+            var banktransact = await _context.BankTransactions.FindAsync(id);
+            if (banktransact == null)
+            {
+                return NotFound();
+            }
+            _context.BankTransactions.Remove(banktransact);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool BankTransactExist(int id)
+        {
+            return (_context.BankTransactions?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
+
