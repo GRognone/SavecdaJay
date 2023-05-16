@@ -1,8 +1,8 @@
-﻿using BankTransaction.WebApp.Models;
+﻿using BankTransactions.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace BankTransactions.WebApp.Controllers
+namespace BankTransactions.Controllers
 {
     public class HomeController : Controller
     {

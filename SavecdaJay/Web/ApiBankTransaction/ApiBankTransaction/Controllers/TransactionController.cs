@@ -20,14 +20,14 @@ namespace ApiBankTransaction.Controllers
 
         //GET : api/Transactions
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<BankTransaction>>> GetTransactions()
-        {
-            if (_context.BankTransactions == null)
-            {
-                return NotFound();
-            }
-            return _context.BankTransactions;
-        }
+        public async Task<ActionResult<IEnumerable<BankTransaction>>> GetTransactions() => (_context.BankTransactions is not null) ? _context.BankTransactions : NotFound();
+        //{
+        //    if (_context.BankTransactions == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return _context.BankTransactions;
+        //}
 
         //GET : api/Ransactions/5
         [HttpGet("{id}")]
