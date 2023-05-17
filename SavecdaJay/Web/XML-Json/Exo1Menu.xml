@@ -1,0 +1,43 @@
+<menu>
+    <entrees>
+        <entree>
+            <nom>Salade Verte</nom>
+            <prix devise ="euro">4.90</prix>
+            <description />
+        </entree>
+        <entree>
+            <nom>Salade Tomate</nom>
+            <prix devise ="euro">7.50</prix>
+            <description>salade de thomate et son filet d'huile d'olive</description>
+        </entree>
+        <entree>
+            <nom>Salade de Pates</nom>
+            <prix devise = "Pesos">2.50</prix>
+            <description>Pour les gourmands</description>
+        </entree>
+    </entrees>
+    <plats>
+        <plat>
+            <nom>Pizza Canibale</nom>
+            <prix devise ="euro">14.50</prix>
+            <description>tomate, fromage, viande hachee, olive</description>
+        </plat>
+        <plat>
+            <nom>Steak Frites</nom>
+            <prix devise ="euro">9.50</prix>
+            <description>Un steak de 120 grammes accompagné de frites fraiches et quelques feuilles de salades assaisonnées</description>
+        </plat>
+    </plats>
+    <desserts>
+        <dessert>
+            <nom>Tiramisu</nom>
+            <prix devise = "euro">7.50</prix>
+            <description>speculos, mascarpone, cafe</description>
+        </dessert>
+        <dessert>
+            <nom>Tarte aux pommes</nom>
+            <prix devise = "euro">5.50</prix>
+            <description>pate sable, pommes, boule de glace vanille</description>
+        </dessert>
+    </desserts>
+</menu>

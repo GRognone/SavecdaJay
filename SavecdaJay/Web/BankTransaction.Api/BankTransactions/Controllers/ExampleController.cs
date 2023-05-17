@@ -32,7 +32,7 @@ namespace BankTransactions.Controllers
                 Transaction_Date = DateTime.Now,
                 Transaction_From = 23145698745,
                 Transaction_To = 01234567890,
-                Transaction_Amount = 1000
+                Transaction_Amount = (decimal) 1000.45
             };
             return View(transaction);
         }

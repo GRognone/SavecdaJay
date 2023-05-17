@@ -1,0 +1,49 @@
+{
+    "entree" : [
+    {
+        "Nom" : "Salade verte",        
+        "prix" : {"devise" : "euro", "montant" : 4.90},
+        "description": ""
+    },
+
+    {
+        "Nom" : "Salade Tomate",        
+        "prix" : {"devise" : "euro", "montant" : 7.5},
+        "description": "salade de thomate et son filet d'huile d'olive"
+    },
+    {
+        "Nom" : "Salade de Pates",        
+        "prix" : {"devise" : "peso", "montant" : 2.50},
+        "description": "Pour les gourmands"
+    }
+    ],
+
+
+    "plats": [
+        {
+            "nom" : "Pizza Canibale",
+            "prix" :{"devise" :"euro", "montant" : 14.50},
+            "description" : "tomate, fromage, viande hachee, olive"
+        },
+
+        {
+            "nom" : "Steak Frites",
+            "prix" :{ "devise" :"euro", "montant" :9.50},
+            "description" :"Un steak de 120 grammes accompagné de frites fraiches et quelques feuilles de salades assaisonnées"
+        }
+
+    ],
+
+    "desserts": [
+        {
+            "nom" : "Tiramisu",
+            "prix" :{"devise" :"euro", "montant" : 7.50},
+            "description": "speculos, mascarpone, cafe"
+        },
+        {
+            "nom" : "Tarte aux pommes",
+            "prix" :{"devise" :"euro", "montant" : 5.50},
+            "description": "pate sable, pommes, boule glace vanille"
+        }
+    ]
+}
