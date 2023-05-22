@@ -1,0 +1,26 @@
+<formation>
+    <intitule>Devenir un vrai Jedi</intitule>
+    <duree>60 mois</duree>
+    <datedebut>1er Janvier 2005 </datedebut>
+    <datefin>31 Decembre 2010 </datefin>
+        <etudiants>
+            <etudiant>
+                <nom>Skywalker</nom>
+                <Prenom>Luc</Prenom>
+                <datedeNaissance>20 Octobre 1977</datedeNaissance>
+                <email>skaywalkerluc@laforce.estavectoi</email>
+            </etudiant>
+                <etudiant>
+                <nom>Skywlaker</nom>
+                <prenom>Leia</prenom>
+                <datedenaissance>20 Octobre 1977</datedenaissance>
+                <email>skywalkerleia@laforce.estavectoi</email>
+            </etudiant>
+            <etudiant>
+                <nom>Skywalker</nom>
+                <prenom>Rey</prenom>
+                <datedenaissance>20 Octobre 1997</datedenaissance>
+                <email>skaywalkerrey@laforce.estavectoi</email>
+            </etudiant>
+        </etudiants>
+</formation>

@@ -1,0 +1,44 @@
+{
+    "OffreDEmploi" :[
+        {
+            "intitule" : "Developpeur PHP",
+            "ville" : "Paris",
+            "descriptionDuPoste": "Concevoir, Developper, Intervenir, Deployer,Vous laissez l’autonomie dans la proposition de nouvelles idées, Etre formé ou intervenir sur de nouveaux sujets / technologies,
+            Des tickets restaurants,            
+            Des jolis locaux à la cité internationale, face au parc de la tête d’or,
+            Du matériel de qualité,            
+            Une équipe super bienveillante et agréable au quotidien,            
+            Une ambiance chaleureuse,            
+            De beaux projets à réaliserPassionné(e) par les technologies,
+            vous maîtrisez les langages PHP, Framework PHP (Laravel, Codelgniter, Symfony) et Mysql et vous avez au moins 1 ans d'expérience en tant que développeur PHP.",
+            "listeDesCompetencesRequises":
+            "
+            Si vous aimez le travail d'équipe,
+            Si vous êtes curieux(se),            
+            Si vous aimez la construction d'applicatifs web,            
+            Si vous voulez être stimulé(e) par des supers projets,            
+            Et si vous souhaitez une ambiance plutôt familiale",
+            "dateDeDemarrage": "01 Juin 2023",
+            "salaireAnnuel": "35 000 euros",
+            "emailDeContact" :"comandcompagny@com.com"
+        },
+        {
+            "intitule" : "Developpeur JAVA",
+            "ville" : "Mulhouse",
+            "descriptionDuPoste": "",/*tâches, avantages, profil recherché*/
+            "listeDesCompetencesRequises":"", /*au moins 5 compétences pour chaque offre d’emploi*/
+            "dateDeDemarrage": "01 Juin 2023",
+            "salaireAnnuel": "",
+            "emailDeContact" :""
+        },
+        {
+            "intitule" : "Developpeur NodeJs",
+            "ville" : "Toulouse",
+            "descriptionDuPoste": "",
+            "listeDesCompetencesRequises":"",
+            "dateDeDemarrage": "01 Juin 2023",
+            "salaireAnnuel": "",
+            "emailDeContact" :""
+        } 
+    ]
+}

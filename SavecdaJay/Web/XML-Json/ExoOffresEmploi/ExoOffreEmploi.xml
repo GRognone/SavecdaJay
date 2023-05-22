@@ -1,0 +1,79 @@
+<offresEmplois>
+    <offreEmploi>
+       <intitule>Developpeur PHP</intitule>
+       <ville>Paris</ville>
+       <description>
+            <taches>
+                <tache>Faire du PHP</tache>
+            </taches>
+            <avantages>
+                <avantage>Café Offert</avantage>
+                <avantage> 13 eme mois</avantage>
+                <avantage>Primes frequentes</avantage>
+            </avantages>
+            <profilrecherche>Personne dynamique, motivee et autonome</profilrecherche>
+        </description>
+        <competences>
+            <competence>maitrise du PHP</competence>
+            <competence>Travail en equipe</competence>
+            <competence>Autonomie</competence>
+            <competence>Anticipation</competence>
+            <competence>Communication</competence>     
+        </competences>
+        <dateDebut>01 Juin 2024</dateDebut>
+        <salaireAnnuel devise ="euro">35000</salaireAnnuel>
+        <mail>jaimelephp@gmail.com</mail>
+    </offreEmploi>
+
+    <offreEmploi>
+       <intitule>Developpeur JAVA</intitule>
+       <ville>Mulhouse</ville>
+       <description>
+            <taches>
+                <tache>Faire du Java</tache>
+            </taches>
+            <avantages>
+                <avantage>Café Offert</avantage>
+                <avantage> 13 eme mois</avantage>
+                <avantage>Primes frequentes</avantage>
+            </avantages>
+            <profilrecherche>Personne dynamique, motivee et autonome</profilrecherche>
+        </description>
+        <competences>
+            <competence>maitrise du JAVA</competence>
+            <competence>Travail en equipe</competence>
+            <competence>Autonomie</competence>
+            <competence>Anticipation</competence>
+            <competence>Communication</competence>     
+        </competences>
+        <dateDebut>01 Juin 2024</dateDebut>
+        <salaireAnnuel devise ="euro">35000</salaireAnnuel>
+        <mail>jaimelejava@gmail.com</mail>
+    </offreEmploi>
+
+    <offreEmploi>
+       <intitule>Developpeur NodeJs</intitule>
+       <ville>Paris</ville>
+       <description>
+            <taches>
+                <tache>Faire du NodeJs</tache>
+            </taches>
+            <avantages>
+                <avantage>Café Offert</avantage>
+                <avantage> 13 eme mois</avantage>
+                <avantage>Primes frequentes</avantage>
+            </avantages>
+            <profilrecherche>Personne dynamique, motivee et autonome</profilrecherche>
+        </description>
+        <competences>
+            <competence>maitrise du NodeJs</competence>
+            <competence>Travail en equipe</competence>
+            <competence>Autonomie</competence>
+            <competence>Anticipation</competence>
+            <competence>Communication</competence>     
+        </competences>
+        <dateDebut>01 Juin 2024</dateDebut>
+        <salaireAnnuel devise ="euro">35000</salaireAnnuel>
+        <mail>jaimelenodejs@gmail.com</mail>
+    </offreEmploi>    
+</offresEmplois>

@@ -1,0 +1,18 @@
+
+body {
+    /* preferer les solutions 2 ou 3*/
+    color : orange; /*solution 1*/
+    color : #FFCC09; /*solution 2*/
+    color : rgb(255,220,0); /*solution 3*/
+}
+
+aside.skills{
+    color : darkmagenta;
+}
+.skills{
+    color: red;
+}
+
+section{
+    color : lightgreen;
+}

@@ -1,0 +1,30 @@
+{
+    "formation" : [
+    {
+        "nom" : "Devenir un vrai Jedi",
+        "duree" : "60 mois",
+        "datededebut": "20 Octobre 2005",
+        "datedefin" : "20 Octobre 2010",
+        "etudiants":[
+            {
+                "nom" :"Skywalker",
+                "prenom" : "Luc",
+                "dateDeNaissance":"20 Octobre 1977",
+                "email":"skywalkerluc@laforce.estavectoi"        
+            },
+            {
+                "nom" :"Skywalker",
+                "prenom" : "Leia",
+                "dateDeNaissance":"20 Octobre 1977",
+                "email":"skywalkerleia@laforce.estavectoi"
+            },
+            {
+                "nom" :"Skywalker",
+                "prenom" : "Rey",
+                "dateDeNaissance":"20 Octobre 1987",
+                "email":"skywalkerrey@laforce.estavectoi"
+            }
+        ]
+    }
+]
+}
