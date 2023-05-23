@@ -1,0 +1,57 @@
+:root{
+        --light: white;
+        --dark: #111111;
+        --primary-color:RGB(230, 75, 60);
+}
+
+body{
+
+    color: var(--dark);
+    background-color: RGB(235, 240, 240);
+    margin:0;
+    padding:10px;
+}
+header{
+    color: var(--light);
+    background-color: var(--primary-color);
+    padding: 10px;
+    height : 100px;
+    width: 100%;
+    min-width: 100px;
+    max-width : 100%;
+    font-size:40px;
+    margin-top: 0px;
+    text-align:center;
+}
+h2{
+    color: var(--primary-color);
+}
+.grid{
+display : grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: auto auto auto auto auto;
+grid-template-areas: "A B C D E";
+column-gap:20px;
+padding: 10px;
+
+                     
+}
+#Whiskey{
+    background-color: var(--light); 
+    grid-area: B;
+    padding: 10px;
+    text-align: justify;
+}
+#Fluffy{
+    background-color: var(--light);
+    grid-area: C;
+    padding: 10px;
+    text-align: justify;
+}
+#Kitty{
+    background-color: var(--light);
+    grid-area: D;
+    padding: 10px;
+    text-align: justify;
+}
+
