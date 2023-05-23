@@ -1,48 +1,121 @@
+:root{
+        --light:white;
+        --dark:#111111;
+        --primary-color : #BAD7F2;
+        --secondary-colors :#f17604;
+        --tertiary-color : #f2e29f;
 
+}
 body {
     /*preferer les solutions 2 ou 3
     color : orange; solution 1
     color : #FFCC09; solution 2
     color : rgb(255,220,0); solution 3*/
 
-    color : blue;
-    background-color: gray;
+    color : var(--dark);
+    background-color: var(--tertiary-color);
     margin : 0;
     padding : 10px;
 }
 
 header{
-    background-color: darkkhaki;
+    background-color: var(--light);
     padding: 10px;
     height : 100px;
-    width: 500 px;
-    min-width: 100 px;
+    width: 100%;
+    min-width: 100px;
     max-width : 100%;
 }
 
 main{
-    background-color: lightcyan;
+    background-color: var(--light);
     padding: 10px;
 }
 
 footer{
-    background-color:  lightsalmon;
+    background-color:  var(--primary-color);
     padding: 10px;
 }
+h1{
+    background-color: var(--tertiary-color);
+    color: var(--secondary-colors);
+    padding: 5px;
+    text-decoration :underline;
+}
+/*section >h1 cible les h1 direct de la section*/
+/*section h1 cible tous les h1 de la section*/
 
 section{
-    background-color: lightgreen;
+    background-color: var(--light);
     padding: 10px;
     margin:10px;
-    border : 1px solid palevioletred;
+    border : 1px solid var(--tertiary-color);
 }
 
-aside{
+section >h1:first-child{
+    margin-top :0;
+}
+aside > h1:first-child{
+    margin-top: 0;
+}
+/*   * = selecteur universel (tous les elements)  exemple  * > h1 first-child etc ... */
+/* cible tous les éléments qui ont la classe="grid"*/
+
+.grid{
+display : grid;
+grid-template-columns: 280px 1fr ; /* 280 valeur ici du asside(A), 1fr (B,C,D)espace restant creation des colonnes autant de données que de colonnes*/
+grid-template-rows: auto auto auto;
+grid-template-areas:"A B" 
+                    "A C"
+                    "A D";
+column-gap: 10px; /* pour mettre ecart entre les colonnes*/
+/*row-gap ecart entre les lignes*/
+}
+/*cible l'element dont l'id="skills"*/
+#skills{
+grid-area: B;
+}
+#xp{
+    grid-area: C;
+    }
+#formation{
+grid-area: D;
+}
+
+/*cible l'id*/
+#aside{
+grid-area: A;
+background-color: var(--secondary-colors);
+}
+p {
+    padding: 5px;
+    text-align: justify;
+}
+
+/*cible lal classe*/
+.aside{
    
   
 }
+/*Cible les balise*/
+aside{
 
-
+}
+@media screen and (max-width: 1024px) {
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:"B"
+                            "C"
+                            "D"
+                            "A";
+    }
+}
+@media print {
+    header{
+        background-color: blueviolet;/* change la couleur du fond pouur l'inpression*/
+    }
+}
 /*aside.skills{
     color : darkmagenta;
 }
