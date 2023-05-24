@@ -1,0 +1,39 @@
+:root{
+        --primary-color : #CCDDFF; /*Bleu*/
+        --secondary-color : #FFDDCC; /*Orange*/
+        --tercary-color : #FFFFFF; /*Blanc*/
+        --green: rgb(135, 245, 193);
+        --dark: #111111; /*noir*/
+        --light: white;/*blanc*/
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin:0;
+    background-color: var(--green);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem; 
+}
+body>header>h1{
+    font-size: 2rem;
+    margin: 0;
+    padding: 20px 0px;
+    text-align: center;
+    color: var(--primary-color);
+}
+main{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    width: 100rem;
+    max-width: 100%;
+    margin: 10px auto;
+}
+footer{
+    margin: 0;
+    padding: 20px 0px;
+    background-color: var(--primary-color);
+    font-size: 2rem;
+}
