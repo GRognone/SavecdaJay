@@ -3,3 +3,43 @@
     --light: white;
     --dark: #111111;
 }
+
+html{
+    font-size: 62.5%;
+}
+body{
+    display:grid;
+    margin:0;
+    background-color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem; 
+}
+.grid{
+   
+    grid-template-rows: auto;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap: 10px;
+    width : 100rem;
+    max-width: 100%;      
+    margin: 10px auto;     
+    grid-template-areas:"A A B" 
+                        "C D D"
+                        "C E E";
+    column-gap: 10px;
+}
+
+header{
+    grid-area: A;
+}
+div{
+    grid-area: B;
+}
+nav{
+    grid-area: C;
+}
+article{
+    grid-area: D;
+}
+footer{
+    grid-area: E;
+}

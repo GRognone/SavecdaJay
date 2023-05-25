@@ -21,6 +21,7 @@ body>header>h1{
     text-align: center;
     background-color: var(--primary-color);
 }
+
 main{
     display: grid;
     grid-template-rows: auto;
