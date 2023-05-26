@@ -15,7 +15,6 @@ body{
     font-size: 1.6rem; 
 }
 .grid{
-   
     grid-template-rows: auto;
     grid-template-columns:1fr 1fr 1fr;
     column-gap: 10px;
