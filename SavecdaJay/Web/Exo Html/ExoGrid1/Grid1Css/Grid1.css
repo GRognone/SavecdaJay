@@ -13,6 +13,9 @@ body{
     background-color: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem; 
+    width: 100vw;
+    height: 100vh;
+    
 }
 .grid{
     grid-template-rows: auto;
@@ -29,16 +32,23 @@ body{
 
 header{
     grid-area: A;
+    border:1px solid var(--light)
+
 }
 div{
     grid-area: B;
+    border:1px solid var(--light)
+
 }
 nav{
     grid-area: C;
+
 }
 article{
     grid-area: D;
+    grid-template-columns: auto;
 }
 footer{
     grid-area: E;
+
 }
