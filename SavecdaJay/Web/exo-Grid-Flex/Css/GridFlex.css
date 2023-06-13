@@ -1,0 +1,101 @@
+:root{
+    --primary-color :#CCCC33;
+    --light : white;
+    --padding: 5px;
+}
+
+html{
+    font-size : 62,5% ;
+}
+body{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: var(--light);
+    font-weight: 600;
+    width:100vw;
+    height: 100vh;
+}
+
+main{
+    height: 100%;
+}
+.grid{
+    display:grid;
+    grid-template-rows: repeat(4,auto);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: var(--padding);
+    row-gap: 5px;
+    width : 100%;
+    height: 100%;
+    max-width: 100%;
+    margin: var(--margin);
+    grid-template-areas:"A A A A"
+                        "B C D D"
+                        "B E E F"
+                        "B G H I"
+                        "B J J J";
+}
+
+.section1{
+    grid-area: A;
+    border:1px solid var(--light);
+    background-color: var(--primary-color);
+    padding:var(--padding);
+}
+.section2{
+    grid-area: B;
+    border:1px solid var(--light);
+    background-color: var(--primary-color);
+    padding:var(--padding);
+
+}
+.section3{
+    grid-area: C;
+    border:1px solid var(--light);
+    background-color: var(--primary-color);
+    padding:var(--padding);
+}
+.section4{
+    grid-area: D;
+    border:1px solid var(--light);
+    background-color: var(--primary-color);
+    padding:var(--padding);
+}
+.section5{
+    grid-area: E;
+    border:1px solid var(--light);
+    background-color: var(--primary-color);
+    padding:var(--padding);
+}
+.section6{
+    grid-area: F;
+    border:1px solid var(--light);
+    background-color: var(--primary-color);
+    padding:var(--padding);
+}
+.section7{
+    grid-area: G;
+    border:1px solid var(--light);
+    background-color: var(--primary-color);
+    padding:var(--padding);
+}
+.section8{
+    grid-area: H;
+    border:1px solid var(--light);
+    background-color: var(--primary-color);
+    padding:var(--padding);
+}
+.section9{
+    grid-area: I;
+    border:1px solid var(--light);
+    background-color: var(--primary-color); 
+    padding:var(--padding);
+}
+.section10{
+    grid-area: J;
+    border:1px solid var(--light);
+    background-color: var(--primary-color);
+    padding:var(--padding);
+}
+
