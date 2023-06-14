@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="/css/form.css">
 </head>
 <body>
-    <main>
         <form>
-            <fieldset class="Section1">
                 <div>
                     <label for="Name">Name</label>
                     <input type="textbox" id="Name" placeholder="Name">
                 </div>
+
                 <div>
                     <label for="Phone">Phone</label>
                     <input type="tel" id="Phone" placeholder="Phone number">
                 </div>
+
+                <div>
                     <label for="Email">Email</label>
                     <input type="email" id="Email" placeholder="contact@domain.com">
                 </div>
-            </fieldset>
 
-            <fieldset class="Section2">
+            <fieldset class="Section1">
                 <legend>Witch service do you require ?</legend>
                 
                 <input type="radio" name="service" id="Plumbing" name="service" >
@@ -35,11 +35,9 @@
            
                 <input type="radio" id="Painting" name="service">
                 <label for="Painting">Painting</label>   
-            
- 
             </fieldset>
 
-            <fieldset class="Section3">
+            <fieldset class="Section2">
                 <legend>Witch other service do you need ?</legend>
                 
                 <input type="checkbox" id="Architect" name="OtherService">
@@ -52,11 +50,9 @@
                 <label for="RatExtermination">Rat extermination</label>
             </fieldset>
 
-            <fieldset class="Section4">
-
                 <div>
                     <label for="DateTime">Date/Time</label>
-                    <input type="datetime-local" id="DateTime" min="2023-06-01T00:00" max="31-12-2133T00:00">
+                    <input type="datetime-local" id="DateTime" min="01-06-2023T00:00" max="31-12-2133T00:00">
                 </div>
                  
                 <div>
@@ -66,22 +62,20 @@
                         <option value ="MainOffice">Main office (Paris)</option>
                         <option value ="TechnicalCenter">Technical center (Lille)</option>
                         <option value ="LogisticCenter">Logistic center(Amiens)</option>
+                    </select>
                 </div>
-            </select>
                 <div>
                     <label for="OtherNeeds">Other needs</label>
                     <input type="textbox" id="OtherNeeds">
                 </div>
 
                 <div>
-                    <label for="SpecialInstructions">Special Instructions</label>
+                    <label for="SpecialInstructions">Special instructions</label>
                     <textarea id="SpecialInstructions" ></textarea>
                 </div>  
-            </fieldset>
-            <footer class="Submit">
-                <button>Submit</button>
-            </footer>
+                <div>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </div>
         </form>
-    </main>
 </body>
 </html>
