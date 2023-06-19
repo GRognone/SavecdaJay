@@ -8,6 +8,7 @@
 /* Sert à uniformiser les boites de champ*/
 *{
     box-sizing: border-box;
+    border-radius: 10px;
 }
 html{
     font-size: 62.5%;
@@ -36,7 +37,12 @@ div input, select{
 /*Espacement entre les 2 fieldset*/
 fieldset{
     margin: 0.8rem;
-    border-color:var(--secondary-color)
+    border: 2px solid var(--secondary-color);
+    
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    
 }
 
 /*Dimentionnement du textarea*/
