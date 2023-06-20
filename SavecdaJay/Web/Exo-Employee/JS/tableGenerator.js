@@ -25,7 +25,6 @@ class TableGenerator
             this.generateCell(row, employee.monthlySalary);
             this.generateCell(row, employee.yearOfBirth);
             this.generateCellButton(row, employee);
-            
         }
     }
 
@@ -44,14 +43,16 @@ class TableGenerator
 
         // création du boutton duplicate
         let buttonDuplicate = document.createElement("button");
+        buttonDuplicate.classList.add("buttonActionDuplicate");// pour colorer le boutton
         buttonDuplicate.textContent="Duplicate";
-        buttonDuplicate.dataset.id=employee.id;
+        buttonDuplicate.dataset.id=employee.id; // pour recuperer l'élement ou l'inserer
         buttonDuplicate.addEventListener("click",(e)=>this.duplicateEmployee(e))
 
         // création du boutton delete
         let buttonDelete = document.createElement("button");
+        buttonDelete.classList.add("buttonActionDelete"); // pour colorer le bouton
         buttonDelete.textContent="Delete";
-        buttonDelete.dataset.id=employee.id;
+        buttonDelete.dataset.id=employee.id; // pour recuperer l'élement ou l'inserer
         buttonDelete.addEventListener("click",(e)=>this.deleteEmployee(e))
 
         // ajout des boutons dans la cellule
@@ -77,5 +78,9 @@ class TableGenerator
     }
     
     // generer footer
+   
+
+        
+    
 }
 export {TableGenerator};

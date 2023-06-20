@@ -6,8 +6,15 @@ await employee.getEmployees();
 console.log(employee.employeesCollection);
 
 
-let employeeTable = new TableGenerator(employee)
+let employeeTable = new TableGenerator(employee);
 employeeTable.generateBody();
 
-const sort
+//recuperation du bouton
+ const sortButton = document.getElementById('sortSalary');
+
+ // puis ajout d'un élémént
+ sortButton.addEventListener("click",() =>{
+    employee.sortBySalary();
+    employeeTable.generateBody();
+});
 

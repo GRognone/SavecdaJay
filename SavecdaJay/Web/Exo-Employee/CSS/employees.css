@@ -1,11 +1,16 @@
 table{
-    border-collapse: collapse;
+    border-collapse: collapse; /* pour fusionner les bordures des tableaux*/
 }
-.buttonAction{
-    background-color: lightcoral;
+.buttonActionDuplicate{
+    background-color: aqua;
     border: 1px solid black;
 }
+.buttonActionDelete{
+    background-color: red;
+    border: 1px solid black; 
+
+}
 th,td{
-    padding: 5px;
+    padding: 5px; /* pour ecarter les contenus des bordures */
     border: 1px solid black;
 }

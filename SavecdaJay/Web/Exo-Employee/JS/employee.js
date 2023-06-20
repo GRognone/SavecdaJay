@@ -34,5 +34,6 @@ class Employee
 
         return monthlySalary.toFixed(2); //pour prend le nombre, le transforme en string, et ne garde que 2 décimales après la virgule
     }
+
 }
 export{Employee};
