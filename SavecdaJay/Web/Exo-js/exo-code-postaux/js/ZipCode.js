@@ -1,5 +1,5 @@
 ZipCodes()
-
+//telecharger une ressource distante par l'API fech de javascript
 fetch('https://arfp.github.io/tp/web/frontend/zipcodes/zipcodes.json');
 .then(r=> r.json())
 .then(console.log())
