@@ -1,0 +1,65 @@
+:root
+{
+    --color-1:#111;
+    --color-2:#222;
+    --color-3:#3333;
+    --color-4:#444;
+    --color-5:#664;
+    --color-6:white;
+    --color-7:#FFFFFFCC;
+    --color-8:yellow;
+    --color-9:yellowgreen;
+    --color-10:darkgreen;
+    --color-11:#009900CC;
+    --color-12:#CCCC00CC;
+    --color-13:#CC6600CC;
+    --color-14:#CC0000CC;
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+background-color: var(--color-1);
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-size: 1.6rem;
+}
+header{
+display:flex;
+justify-content: flex-end;
+color: var(--color-9);
+
+}
+h1{
+    font-size: 5rem;
+    padding-right: 60rem;
+}
+fieldset{
+background-color: var(--color-4);
+color:var(--color-6);
+display:flex;
+}
+.rechercher{
+    height:9rem;
+    width :30rem
+}
+.filter{
+    height: 9rem;
+    width :50rem
+}
+.categorie, .nutriscore{
+    height:min-content;
+}
+.categorie{
+
+}
+.nutriscore{
+    width: 30rem;
+    display:flex;
+    justify-content: space-evenly;
+
+}
+    
+

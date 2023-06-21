@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Céréals</title>
+    <link rel="stylesheet" href="./css/cereals.css">
+    <script src=".js/main.js" type="module"></script>
+</head>
+<body>
+    <form>
+        <header>
+            <h1>Cereals</h1>
+            <fieldset class="rechercher">
+                <legend>Rechercher</legend>
+                <input type="text" class="search" id="cerealSearch" name="cerealSearch" placeholder="Nom du céréal">
+            </fieldset>
+
+            <fieldset class="filter">
+                <legend>Filter</legend>
+                
+                <fieldset class="nutriscore">
+                    <legend>Nutriscore</legend>
+                    
+                        <label for="nutriscoreA">A</label>
+                        <input type="checkbox" id="A" name="nutriscoreA">
+                                           
+                        <label for="nutriscoreB">B</label>
+                        <input type="checkbox" id="B" name="nutriscoreB">
+                                           
+                        <label for="nutriscoreC">C</label>
+                        <input type="checkbox" id="C" name="nutriscoreC">
+                                            
+                        <label for="nutriscoreD">D</label>
+                        <input type="checkbox" id="D" name="nutriscoreD">
+                                            
+                        <label for="nutriscoreE">E</label>
+                        <input type="checkbox" id="E" name="nutriscoreE">                        
+                   
+                </fieldset>
+
+                <fieldset class="categorie"> 
+                    <legend>Categories</legend>
+                    <select name="categories" id="categorie-select">
+                        <option value="tous">Tous</option>
+                        <option value="sansSucre">Sans Sucre</option>
+                        <option value="pauvreEnSel">Pauvre en sel</option>
+                        <option value="boost">Boost</option>
+                    </select>
+                </fieldset>
+            </fieldset>
+        </header>
+        <main id="main">
+
+
+        </main>
+    </form>
+</body>
+</html>
