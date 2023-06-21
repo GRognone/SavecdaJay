@@ -1,5 +1,5 @@
-import{Cereales} from "./cereales.js";
-import {Table} from "./table.js";
+import{ Cereales } from "./cereales.js";
+import { Table } from "./table.js";
 
 let cereale = new Cereales();
 await cereale.getCereales();

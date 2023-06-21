@@ -18,3 +18,4 @@ class Cereales{
         return this.cerealesCollection;
     }
 }
+export{Cereales};

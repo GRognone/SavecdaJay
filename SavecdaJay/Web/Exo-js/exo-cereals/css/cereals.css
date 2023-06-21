@@ -59,7 +59,12 @@ display:flex;
     width: 30rem;
     display:flex;
     justify-content: space-evenly;
-
 }
-    
+table{
+    background-color: ver(--color-7);
+}
+main{
+    background-color:#444;
+    color:var(--color-9);
+}
 

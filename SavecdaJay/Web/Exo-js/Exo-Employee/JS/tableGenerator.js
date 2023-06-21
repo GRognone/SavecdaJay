@@ -19,7 +19,7 @@ class TableGenerator
         {
             let row = document.createElement('tr');
             this.tBody.appendChild(row);
-            this.generateCell(row,employee.id);
+            this.generateCell(row, employee.id);
             this.generateCell(row, employee.employee_name);
             this.generateCell(row, employee.email);
             this.generateCell(row, employee.monthlySalary);
