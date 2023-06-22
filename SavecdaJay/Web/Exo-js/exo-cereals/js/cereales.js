@@ -19,7 +19,8 @@ class Cereales{
     }
     deleteCereale(id)
     {
-        this.cerealesCollection = this.cerealesCollection.filter(cer => cer.id!=id)
+        this.cerealesCollection = this.cerealesCollection.filter(cer => cer.id!=id);
     }
+    
 }
 export{Cereales};

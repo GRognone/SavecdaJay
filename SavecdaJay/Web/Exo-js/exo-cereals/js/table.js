@@ -14,6 +14,7 @@ class Table
         for(let cereale of this.cereales.cerealesCollection)
         {
             let row = document.createElement('tr');
+            row.className="tablebodyTr";
             this.tBody.appendChild(row);
             this.generateCell(row, cereale.id);
             this.generateCell(row, cereale.name);
@@ -50,10 +51,23 @@ class Table
         row.appendChild(cell);
     }
 
+    generateSelectNs(row,id)
+    {
+        cell.dataset.id = id;
+        cell.addEventListener("click",(e) => this.selectNutiscoreCereale(e.target.dataset.id));
+        row.appendChild(cell);
+    }
+
     deleteCereale(id)
     {
         this.cereales.deleteCereale(id);
         this.generateBody();
+    }
+    selectNutiscoreCereale(id)
+    {
+        this.selectNutiscoreCereale(id);
+        this.generateBody();
+
     }
 }
 
