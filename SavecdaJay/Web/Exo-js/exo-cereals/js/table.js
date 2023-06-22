@@ -10,6 +10,7 @@ class Table
 
     generateBody()
     {
+        this.tBody.innerHTML=""
         for(let cereale of this.cereales.cerealesCollection)
         {
             let row = document.createElement('tr');
@@ -26,7 +27,7 @@ class Table
             this.generateCell(row, cereale.vitamins);
             this.generateCell(row, cereale.rating);
             this.generateCell(row, cereale.ns);
-            this.generateCell(row, cereale.del);
+            this.generateCellDell(row, "❌",cereale.id);
 
         }
     }
@@ -35,9 +36,18 @@ class Table
     {
         let cell = document.createElement('td');
         cell.textContent = data;
+        cell.dataset.val = data;
         row.appendChild(cell);
+    }
 
+    
+
+    deleteCereale(e)
+    {
+        this.cereales.deleteCereale(e.target.dataset.id);
+        this.generateBody();
     }
 }
+
 
 export{Table};

@@ -2,7 +2,7 @@
 {
     --color-1:#111;
     --color-2:#222;
-    --color-3:#3333;
+    --color-3:#333;
     --color-4:#444;
     --color-5:#664;
     --color-6:white;
@@ -52,19 +52,52 @@ display:flex;
 .categorie, .nutriscore{
     height:min-content;
 }
-.categorie{
-
-}
 .nutriscore{
     width: 30rem;
     display:flex;
     justify-content: space-evenly;
 }
 table{
-    background-color: ver(--color-7);
+
+justify-content: space-evenly;
+    background-color: var(--color-1);
+    color : var(--color-6)
+   
 }
 main{
-    background-color:#444;
-    color:var(--color-9);
+    display:flex;
+    justify-content: space-around;
+    background-color:var(--color-1);
+    text-align: center;
+   
 }
+th{
+    background-color: var(--color-4);
+    text-align: center;
+}
+
+tr td:nth-child(1),tr td:last-child {
+    background-color:var(--color-3);
+}
+
+tr td:nth-child(12)[data-val="A"] {
+    background-color:var(--color-10);
+}
+tr td:nth-child(12)[data-val="B"] {
+    background-color: var(--color-11);
+}
+tr td:nth-child(12)[data-val="C"] {
+    background-color: var(--color-12);
+}
+tr td:nth-child(12)[data-val="D"] {
+    background-color: var(--color-13);
+}
+tr td:nth-child(12)[data-val="E"] {
+    background-color: var(--color-14);
+}
+
+tr td:last-child {
+    cursor: pointer;
+}
+
 
