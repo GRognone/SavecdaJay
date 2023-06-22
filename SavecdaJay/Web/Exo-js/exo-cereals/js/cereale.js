@@ -30,7 +30,5 @@ attributeNutriScore()
     }
 }
 
-
-
 }
 export{Cereale};

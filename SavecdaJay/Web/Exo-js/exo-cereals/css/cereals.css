@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "toto";
+    src: url('../fonts/OpenDyslexic-Regular.otf');
+}
+
 :root
 {
     --color-1:#111;
@@ -23,30 +28,33 @@ html{
 }
 body{
 background-color: var(--color-1);
-font-family:Georgia, 'Times New Roman', Times, serif;
+font-family:toto;
 font-size: 1.6rem;
 }
 header{
 display:flex;
 justify-content: flex-end;
 color: var(--color-9);
+margin-bottom: 1rem;
 
 }
 h1{
     font-size: 5rem;
     padding-right: 60rem;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 fieldset{
 background-color: var(--color-4);
 color:var(--color-6);
 display:flex;
+border-radius:  1rem;
+
 }
 .rechercher{
-    height:9rem;
     width :30rem
+    
 }
 .filter{
-    height: 9rem;
     width :50rem
 }
 .categorie, .nutriscore{
@@ -58,26 +66,27 @@ display:flex;
     justify-content: space-evenly;
 }
 table{
-
-justify-content: space-evenly;
+    width:100%;
     background-color: var(--color-1);
-    color : var(--color-6)
-   
+    color : var(--color-6);
+    border-collapse: collapse;
 }
 main{
     display:flex;
-    justify-content: space-around;
+    
+    justify-content: center;
     background-color:var(--color-1);
-    text-align: center;
-   
+    
 }
 th{
     background-color: var(--color-4);
-    text-align: center;
+    /* text-align: center; */
+    color:var(--color-9);
 }
 
 tr td:nth-child(1),tr td:last-child {
     background-color:var(--color-3);
+    color:var(--color-12);
 }
 
 tr td:nth-child(12)[data-val="A"] {
@@ -99,5 +108,15 @@ tr td:nth-child(12)[data-val="E"] {
 tr td:last-child {
     cursor: pointer;
 }
-
+thead{
+    border-collapse: collapse;
+    margin:0;
+    padding:0;
+}
+tr td{
+    text-align: center;
+}
+tr td:nth-child(2){
+    text-align: left;
+}
 

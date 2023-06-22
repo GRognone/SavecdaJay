@@ -40,14 +40,21 @@ class Table
         row.appendChild(cell);
     }
 
-    
-
-    deleteCereale(e)
+    generateCellDell(row,data,id)
     {
-        this.cereales.deleteCereale(e.target.dataset.id);
+        let cell = document.createElement('td');
+        cell.textContent = data;
+        cell.dataset.val = data;
+        cell.dataset.id = id;
+        cell.addEventListener("click", (e) => this.deleteCereale(e.target.dataset.id));
+        row.appendChild(cell);
+    }
+
+    deleteCereale(id)
+    {
+        this.cereales.deleteCereale(id);
         this.generateBody();
     }
 }
-
 
 export{Table};
