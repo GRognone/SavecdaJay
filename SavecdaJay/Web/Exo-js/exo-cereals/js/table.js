@@ -36,6 +36,7 @@ class Table
     generateCell(row,data)
     {
         let cell = document.createElement('td');
+        cell.className="cellData";
         cell.textContent = data;
         cell.dataset.val = data;
         row.appendChild(cell);
@@ -44,6 +45,7 @@ class Table
     generateCellDell(row,data,id)
     {
         let cell = document.createElement('td');
+        cell.className="cellData"
         cell.textContent = data;
         cell.dataset.val = data;
         cell.dataset.id = id;
@@ -63,12 +65,8 @@ class Table
         this.cereales.deleteCereale(id);
         this.generateBody();
     }
-    selectNutiscoreCereale(id)
-    {
-        this.selectNutiscoreCereale(id);
-        this.generateBody();
-
-    }
+    
+    
 }
 
 export{Table};

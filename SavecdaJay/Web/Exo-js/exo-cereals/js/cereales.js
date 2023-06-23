@@ -21,6 +21,18 @@ class Cereales{
     {
         this.cerealesCollection = this.cerealesCollection.filter(cer => cer.id!=id);
     }
-    
+    sortByvalue()
+    {
+        //tri du tableau par cereale
+        this.cerealesCollection.sort((a , b) => a.cereales_id - b.cereales_id);
+
+        //tri dans l'ordre
+        if (!this.sortOrder)
+        {
+            this.cerealesCollection.reverse();
+        }
+        //pour inverser l'ordre du tri si l'on re-click sur le bouton de tri
+        this.sortOrder = !this.sortOrder;
+    }
 }
 export{Cereales};

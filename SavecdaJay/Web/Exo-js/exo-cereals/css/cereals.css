@@ -54,6 +54,7 @@ border-radius:  1rem;
 }
 .rechercher{
     width :40rem;
+    height: 10rem;
 }
 
 #cerealSearch{
@@ -70,6 +71,7 @@ border-radius:  1rem;
 .filter{
     width:40rem;
     display:flex;
+    height: 10rem;
 }
  .nutriscore{
     height:min-content;
@@ -102,13 +104,13 @@ th{
     cursor: pointer;
 }
 
-.tablebodyTr:hover{
-    background-color: var(--greengrey);
-}
-
-tr td:nth-child(1), tr td:last-child {
+.cellData:nth-child(1), .cellData:last-child {
     background-color: var(--manahtangrey) ;
     color:var(--darkyellow);
+}
+
+.tablebodyTr:hover td{
+    background-color: var(--greengrey);
 }
 
 tr td:nth-child(12)[data-val="A"] {

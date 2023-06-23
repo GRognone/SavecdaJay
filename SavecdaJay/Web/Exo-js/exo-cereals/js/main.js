@@ -7,3 +7,4 @@ console.log(cereale.cerealesCollection);
 
 let cerealeTable = new Table(cereale);
 cerealeTable.generateBody();
+cereale.sortByvalue();
