@@ -1,5 +1,5 @@
 import {Db} from "./db.js";
-import { Cereal } from "./cereal.js";
+import {Cereal} from "./cereal.js";
 
 class Cereals{
 
@@ -128,7 +128,5 @@ class Cereals{
         }
         return array;
     }
-
-
 }
 export{Cereals};

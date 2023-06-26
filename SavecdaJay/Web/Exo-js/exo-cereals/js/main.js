@@ -19,4 +19,3 @@ document.getElementById("potassium").addEventListener("click",(e)=> {cerealTable
 document.getElementById("vitamines").addEventListener("click",(e)=> {cerealTable.generateBody(cereal.sortCerealByVitamins())});
 document.getElementById("evaluation").addEventListener("click",(e)=> {cerealTable.generateBody(cereal.sortCerealByRatings())});
 document.getElementById("ns").addEventListener("click",(e)=> {cerealTable.generateBody(cereal.sortCerealByRatings())});
-
