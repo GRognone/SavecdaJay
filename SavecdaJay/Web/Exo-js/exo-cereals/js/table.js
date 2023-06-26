@@ -1,34 +1,35 @@
-import { Cereales } from "./cereales.js"
+import { Cereals } from "./cereals.js"
 
 class Table
 {
-    constructor(cerealeTable)
+    constructor(cerealTable)
     {
-        this.cereales = cerealeTable;
+        this.cereals = cerealTable;
         this.tBody = document.getElementById("tableBody");
     }
 
-    generateBody()
+    generateBody(array=this.cereals.cerealsCollection)
     {
         this.tBody.innerHTML=""
-        for(let cereale of this.cereales.cerealesCollection)
+
+        for(let cereal of array)
         {
             let row = document.createElement('tr');
             row.className="tablebodyTr";
             this.tBody.appendChild(row);
-            this.generateCell(row, cereale.id);
-            this.generateCell(row, cereale.name);
-            this.generateCell(row, cereale.calories);
-            this.generateCell(row, cereale.protein);
-            this.generateCell(row, cereale.sodium);
-            this.generateCell(row, cereale.fiber);
-            this.generateCell(row, cereale.carbo);
-            this.generateCell(row, cereale.sugars);
-            this.generateCell(row, cereale.potass);
-            this.generateCell(row, cereale.vitamins);
-            this.generateCell(row, cereale.rating);
-            this.generateCell(row, cereale.ns);
-            this.generateCellDell(row, "❌",cereale.id);
+            this.generateCell(row, cereal.id);
+            this.generateCell(row, cereal.name);
+            this.generateCell(row, cereal.calories);
+            this.generateCell(row, cereal.protein);
+            this.generateCell(row, cereal.sodium);
+            this.generateCell(row, cereal.fiber);
+            this.generateCell(row, cereal.carbo);
+            this.generateCell(row, cereal.sugars);
+            this.generateCell(row, cereal.potass);
+            this.generateCell(row, cereal.vitamins);
+            this.generateCell(row, cereal.rating);
+            this.generateCell(row, cereal.ns);
+            this.generateCellDell(row, "❌",cereal.id);
 
         }
     }
@@ -49,24 +50,16 @@ class Table
         cell.textContent = data;
         cell.dataset.val = data;
         cell.dataset.id = id;
-        cell.addEventListener("click", (e) => this.deleteCereale(e.target.dataset.id));
+        cell.addEventListener("click", (e) => this.deleteCereal(e.target.dataset.id));
         row.appendChild(cell);
     }
-
-    generateSelectNs(row,id)
+    
+    deleteCereal(id)
     {
-        cell.dataset.id = id;
-        cell.addEventListener("click",(e) => this.selectNutiscoreCereale(e.target.dataset.id));
-        row.appendChild(cell);
-    }
-
-    deleteCereale(id)
-    {
-        this.cereales.deleteCereale(id);
+        this.cereals.deleteCereal(id);
         this.generateBody();
     }
-    
-    
+
 }
 
 export{Table};

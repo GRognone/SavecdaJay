@@ -1,8 +1,8 @@
-class Cereale
+class Cereal
 {
-constructor(cereale)
+constructor(cereal)
 {
-    Object.assign(this,cereale);
+    Object.assign(this,cereal);
     this.ns=this.attributeNutriScore();
 }
 
@@ -31,4 +31,4 @@ attributeNutriScore()
 }
 
 }
-export{Cereale};
+export{Cereal};
