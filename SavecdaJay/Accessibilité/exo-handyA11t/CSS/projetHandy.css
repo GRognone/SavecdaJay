@@ -1,0 +1,94 @@
+:root
+{
+    --bg-col:#F8F9FB;
+
+    --bg-col2:#0065D1;
+
+    --btn-col:#FEC107;
+
+    --btn-col2:#4DAF4E;
+
+    --tabhead-col:#6D6767;
+
+
+}
+
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+ /* HHEADER */
+header
+{
+    display:flex;
+    justify-content:space-between;
+    align-content: center;
+    background-color: #0065D1;
+    padding: 1rem;
+}
+#logo
+{
+    width: 5rem;
+    height: 5rem;
+}
+#ulNav
+{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.liNav
+{
+    margin: 1rem;
+    list-style: none;
+}
+.lienNav
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* MAIN */
+main
+{
+
+}
+
+/* SECTION 1 */
+
+
+
+
+/* FOOTER */
+
+footer
+{
+display:flex;
+justify-content: center;
+background-color: var(--darkBlue);
+color: var(--white);
+text-justify: auto;
+}
+
+
+
+/* ul{
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    
+   
+}
+section.principes ul li{
+    background-color: #93C9F4;
+    border-radius: 1rem;
+    width: 23.5%;
+    padding :1rem; 
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem gray;
+
+} */

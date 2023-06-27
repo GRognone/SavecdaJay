@@ -88,7 +88,8 @@ class Cereals{
     }
     sortCerealBySugars()
     {
-        let array = this.cerealsCollection.sort((a,b)=>a.sugar - b.sugar);
+        console.log("test")
+        let array = this.cerealsCollection.sort((a,b)=>a.sugars - b.sugars);
         this.bool=!this.bool;
         if(this.bool){
             return array.reverse();
