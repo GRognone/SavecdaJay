@@ -66,6 +66,9 @@ main
     display: block;
 }
 /* SECTION 1 */
+main{
+    text-align: center;
+}
 
 #introduction h1
 {
@@ -84,7 +87,6 @@ main
 #introduction h2
 {
     font-size: 1em;
-    text-align: center;
 }
 
 /* Les 4 principes */
