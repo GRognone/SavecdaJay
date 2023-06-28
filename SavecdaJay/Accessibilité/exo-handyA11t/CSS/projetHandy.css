@@ -69,7 +69,7 @@ main
 
 #introduction h1
 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -87,6 +87,7 @@ main
     text-align: center;
 }
 
+/* Les 4 principes */
 #principes ul li{
     background-color: var(--skyBlue);
     border-radius: 1rem;
@@ -123,6 +124,9 @@ caption {
     display: table-caption;
     text-align: center;
 }
+
+
+
 tHead {
     display: table-header-group;
     vertical-align: middle;
@@ -162,7 +166,7 @@ tr {
     border-color: var(--dark);
 }
 /* Tableau niveau de conformité */
-#tableauConformite
+.tableauConformite
 {
     max-width: 100%;
     overflow: auto;
@@ -175,9 +179,63 @@ tr {
     border-collapse: collapse;
     width: 80%;
 }
-div
+
+/* texte central*/
+.texte-central
 {
-justify-self: center;
+    display:flex;
+    justify-content:space-between;
+}
+
+div p
+{
+    text-align: center;
+}
+#lien p
+{
+    text-align: center;
+}
+
+#imgGraphic
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.mostCommon
+{
+    text-align: center;
+}
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+figcaption {
+    display: block;
+}
+#imgGraphic {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+/* tableau most common*/
+
+.tableauGraphic
+{
+    max-width: 100%;
+    overflow: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content:center;
+}
+#tableGraphic
+{
+    border-collapse: collapse;
+    width: 80%;
 }
 
 /* FOOTER */
