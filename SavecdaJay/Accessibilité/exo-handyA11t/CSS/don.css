@@ -10,7 +10,7 @@ main
 }
 img
 {
-    width: 10%;
+    width: 30%;
 }
 .container
 {
@@ -43,7 +43,7 @@ label
 input.civilite
 {
     width: 15rem;
-}
+} 
 input
 {
     width: 98%;
@@ -58,17 +58,17 @@ fieldset
 {
     margin-bottom: 2rem;
 }
-.chekbox
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    width: 20%;
-
-}
-.radio input
+input.checkbox
 {
     display:flex;
     align-content: left;
-    
+    width: 2%;
+    padding:3px;
+}
+input.radio
+{
+    display:flex;
+    align-content: left;
+    width: 2%;
+    padding:3px;
 }
