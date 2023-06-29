@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet HandiA11y</title>
     <link rel="stylesheet" href="./css/projetHandy.css">
+    <link rel="stylesheet" href="./css/handicap.css">
     <link rel="stylesheet" href="accessconfig/css/accessconfig.min.css" type="text/css" media="screen" />
     <script src="accessconfig/js/accessconfig.min.js" type="text/javascript"></script>
 
@@ -27,12 +28,83 @@
         </nav>
         <div id="divNav">
             <input type="search" placeholder="Rechercher">
-            <button>Rechercher</button>
+            <button id="boutonRechercher">Rechercher</button>
         </div>
 
     </header>
 
     <main id="main">
+        <h1>Symboles et types de handicaps</h1>
+            <section class="handicaps">
+                <div class="handicap-image">
+                    <img class="logos" id ="Logo-visuel" src="/img/handicap-visuel.jpg" alt="Symbole pour le handicap visuel" >
+                </div>
+                <div class="handicap-description">
+                    <h2>Handicap visuel</h2>
+                    <p>
+                        Le handicap visuel désigne les limitations fonctionnelles liées à la vision, que ce soit une cécité totale ou partielle. Les personnes atteintes de handicap visuel peuvent utiliser des aides techniques telles que les plages brailles, les synthèses vocales, ou les dispositifs d'agrandissement de texte pour accéder à l'information.
+                    </p>
+                </div>
+            </section>
+
+            <section class="handicaps">
+                <div class="handicap-image">
+                    <img class="logos" id ="Logo-auditif" src="/img/handicap-auditif.jpg" alt="Symbole pour le handicap auditif" >
+                </div>
+                <div class="handicap-description">
+                    <h2>Handicap auditif</h2>
+                    <p>
+                        Le handicap auditif concerne les limitations fonctionnelles liées à l'ouïe, que ce soit une surdité totale ou partielle. Les personnes atteintes de handicap auditif peuvent utiliser des appareils auditifs, des boucles magnétiques ou des sous-titres pour accéder à l'information sonore.
+                    </p>
+                </div>
+            </section>
+
+            <section class="handicaps">
+                <div class="handicap-image">
+                    <img class="logos" id ="Logo-moteur" src="/img/handicap-moteur.jpg" alt="Symbole pour le handicap moteur">
+                </div>
+                <div class="handicap-description">
+                    <h2>Handicap moteur</h2>
+                    <p>
+                        Le handicap moteur concerne les limitations physiques comme l'incapacité à utiliser une souris ou la nécessité d'avoir une temps de réponse plus lent.
+                    </p>
+                </div>
+            </section>
+
+            <section class="handicaps">
+                <div class="handicap-image">
+                    <img class="logos" id ="Logo-cognitif" src="/img/handicap-cognitif.jpg" alt="symbole pour le handicap cognitif" >
+                </div>
+                <div class="handicap-description">
+                    <h2>Handicap cognitif</h2>
+                    <p>
+                        Le handicap cognitif concerne les problèmes de troubles de l'apprentissage, l'incapacité à se souvenir ou à se concentrer sur de grandes quantités d'informations, difficultés de lecture et de compréhension, difficultés à prendre des décisions.
+                    </p>
+                </div>
+            </section>
+
+            <div id="titre-materiel">
+                <h2>Quelques matériels d'accessibilité</h2>
+            </div>
+
+            <section class="materiel">
+                <div class="image-materiel">
+                    <img id="canne" src="/img/image-cane-non-voyant.jpg" alt="image Canne pour personnes aveugles ">
+                    <p>Canne pour personnes aveugles</p>
+                </div>
+                <div class="image-materiel">
+                    <img id="plage-braille" src="/img/plage-braille.png" alt="image Plage Braille">
+                    <p>Plage Braille</p>
+                </div>
+                <div class="image-materiel">
+                    <img id="synthese-vocal" src="/img/synthese-vocale.png" alt="image Synthèse vocale">
+                    <p>Synthèse vocale</p>
+                </div>
+                <div class="image-materiel">
+                    <img id="trackball" src="/img/image-trackball.jpg" alt="image trackball">
+                    <p>Trackball (remplace la souris)</p>
+                </div>
+            </section>
 
     </main>
     <footer id="footer">

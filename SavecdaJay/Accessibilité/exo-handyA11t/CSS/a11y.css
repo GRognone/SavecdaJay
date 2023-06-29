@@ -1,0 +1,19 @@
+/* page a11y*/
+.bonnesPratiques
+{
+    max-width: 25rem;
+    max-height: 25rem;
+}
+
+#codearea{
+    background-color: var(--dark);
+    color: var(--light);
+    min-width: 865px;
+    height: 473px;
+    
+}
+
+.fold{
+    max-height: 0px;
+    overflow: hidden;
+}

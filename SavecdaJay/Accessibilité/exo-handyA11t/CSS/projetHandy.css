@@ -13,11 +13,14 @@ html
 {
     font-size: 62.5%;
 }
+
 body
 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
+    margin: 0;
 }
+
  /* HEADER */
 header
 {
@@ -27,6 +30,14 @@ header
     background-color:var(--dark-blue);
     padding: 1rem;
     align-items: center;
+}
+#boutonRechercher
+{
+    background-color: var(--dark-yellow);
+    border-radius: 3px;
+    border-color: var(--dark-yellow);
+    border:0;
+    
 }
 #logo
 {
@@ -54,20 +65,21 @@ header
     height: 3rem;
 }
 
-
 /* MAIN */
-main
-{
-    
+
+main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
 }
+
+/* SECTION 1 */
 
 #introduction
 {
     display: block;
-}
-/* SECTION 1 */
-main{
-    text-align: center;
 }
 
 #introduction h1
@@ -126,8 +138,6 @@ caption {
     display: table-caption;
     text-align: center;
 }
-
-
 
 tHead {
     display: table-header-group;
@@ -250,6 +260,8 @@ background-color: var(--dark-blue);
 color: var(--light);
 text-justify: auto;
 }
+
+
 
 
 
