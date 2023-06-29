@@ -9,12 +9,12 @@
     display: contents;
     gap:2rem;
 }
-.parsonne
+.personne
 {
-    border:1px solid #ccc;
+    border:1px solid var(--light);
     padding:1rem;
     text-align: center;
-    box-shadow: 0 2px 4px var(--darkgray);
+    box-shadow: 0 0 0.2rem 0.2rem var(--darkgray);
 }
 .personne h2
 {
@@ -25,4 +25,25 @@
     display:flex;
     gap:2rem;
     margin-top: 2rem;
+}
+
+main{
+    padding-bottom: 1rem;
+}
+
+.implantation ul
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+.implantation li
+{
+    margin-bottom: 10px;
+}
+.implantation li a
+{
+    text-decoration: none;
+    color: #0000ff;
 }
