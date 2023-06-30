@@ -10,9 +10,11 @@ function FaireDerouler(eventelement, foldelement, textWhenFold, textWhenUnfold){
         foldelement.classList.add('fold');
         eventelement.dataset.fold = '1';
         eventelement.innerText = textWhenUnfold;
+        foldelement.ariaHidden = "true";
     }  else if (eventelement.dataset.fold == '1'){
         foldelement.classList.remove('fold');
         eventelement.dataset.fold = '0';
         eventelement.innerText = textWhenFold;
+        foldelement.ariaHidden = "false";
     }
 }

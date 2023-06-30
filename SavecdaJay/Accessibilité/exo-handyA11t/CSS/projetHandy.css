@@ -13,7 +13,14 @@ html
 {
     font-size: 62.5%;
 }
-
+.lien-evitement
+{
+    position: absolute;
+    top:5px;
+    font-size: 0.9rem;
+    color:var(--light);
+    text-decoration: none;
+}
 body
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -73,6 +80,13 @@ main{
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+}
+.italic{
+    font-style: italic;
+}
+.bold
+{
+    font-weight: bold;
 }
 
 /* SECTION 1 */
