@@ -129,5 +129,32 @@ class Cereals{
         }
         return array;
     }
+
+    searchCereals(value)
+    {
+        return this.cerealsCollection.filter(c=>c.name.toLowerCase().includes(value.toLowerCase()));
+    }
+       
+    sortCerealsByNs()
+    {
+
+    }
+
+    sortCerealsByCategories()
+    {
+
+    }
+    
+    calculateNbCereals()
+    {
+
+    }
+
+    CalculateMeanCalories()
+    {
+
+    }
+
 }
+
 export{Cereals};
