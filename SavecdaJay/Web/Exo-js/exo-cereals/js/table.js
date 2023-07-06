@@ -6,6 +6,8 @@ class Table
     {
         this.cereals = cerealTable;
         this.tBody = document.getElementById("tableBody");
+        this.nbElement = document.getElementById("nbElement");
+        this.caloriesAverage = document.getElementById("caloriesAverage");
     }
 
     generateBody(array=this.cereals.cerealsCollection)
@@ -58,7 +60,20 @@ class Table
     {
         this.cereals.deleteCereal(id);
         this.generateBody();
+        generateCell(row,data)
     }
+
+    countElement()
+    {
+        this.nbElement.innerHTML = this.cerealsCollection.data.length + "Elements";
+    }
+    calcAvgCal(){
+        const length = this.cerealsCollection.data.length;
+        this.caloriesAverage.innerHTML= "Moyenne Calories <br>" + this.cerealsCollection.data.reduce((acc, val) => {
+            return acc + (val.calories/length);
+        }, 0).toFixed(0);
+        generateCell(row,data)
+     };
 
 }
 

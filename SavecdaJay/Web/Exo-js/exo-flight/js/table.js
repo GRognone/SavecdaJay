@@ -1,4 +1,3 @@
-
 class Table 
 {
     constructor(flightTable)
@@ -15,7 +14,7 @@ class Table
             let row = document.createElement('tr');
             row.className = "tablebodyTr";
             this.tBody.appendChild(row);
-            this.generateCell(row, flight.id);
+            this.generateCell(row, flight.flight_id);
             this.generateCell(row, flight.start_city);
             this.generateCell(row, flight.arrival_city);
             this.generateCell(row, flight.start_time);
@@ -27,6 +26,7 @@ class Table
             this.generateCell(row, flight.plane_type);
             this.generateCell(row, flight.plane_capacity);
             this.generateCell(row, flight.seats_free);
+            this.generateCell(row, flight.travelTime);
 
         }
     }
@@ -38,5 +38,8 @@ class Table
         cell.dataset.val = flights;
         row.appendChild(cell);
     }
+
+
+    
 }
 export {Table};

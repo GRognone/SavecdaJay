@@ -30,8 +30,10 @@ thead{
 
 table{
     width:100%;
-    background-color: black;
-    color : var();
+    background-color: var(--darkGrey);
+    border-collapse: collapse;
+    border: 2px solid white;
+    
 }
 
 main{
@@ -43,6 +45,7 @@ th{
     background-color: var(--mousegrey);
     color:var(--yellowgreen);
     cursor: pointer;
+    border: 2px solid white;
 }
 .cellData:nth-child(1), .cellData:last-child {
     
@@ -55,25 +58,57 @@ tr td:last-child {
 }
 
 thead{
-    border-collapse: collapse;
-
   border-style: 2px solid rgb(68, 68, 68);
   border-color: white;
     color:var(--green);
     margin:0;
     padding:0;
+    border : 2px solid white;
 }
+
 
 tr td{
     text-align: center;
+    border: 2px solid white;
 }
-
-tr td:nth-child(2){
+/*couleur des lignes paires*/
+tbody > tr:nth-child(2n) {
     text-align: left;
     padding: 10px;
+    background: black;
 }
-tbody{
-    background-color: grey;
-    border-color: aquamarine;
 
+
+/*2eme solution
+body{
+    background-color : black;
+    color:lightgreen;
 }
+
+th{
+    text-align: center;
+}
+
+td{
+    text-align: center;
+    border: 1px solid lightblue;
+    padding:5px;
+}
+
+table{
+    border: 1px solid currentColor;
+    border-collapse: collapse;
+}
+tr td {
+    background-color: gray;
+}
+
+tr:nth-child(even) td {
+    background-color: black;
+}
+
+tr:hover td{
+background-color: #FFFF0055;
+}
+*/
+
