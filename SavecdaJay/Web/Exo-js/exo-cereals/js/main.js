@@ -22,11 +22,31 @@ document.getElementById("vitamines").addEventListener("click",(e)=> {cerealTable
 document.getElementById("evaluation").addEventListener("click",(e)=> {cerealTable.generateTable(cereal.sortCerealByRatings())});
 document.getElementById("ns").addEventListener("click",(e)=> {cerealTable.generateTable(cereal.sortCerealByRatings())});
 
+
+//let inputSearch =document.getElementById("cerealSearch");
+//let categorieSelect = document.getElementById("categorieSelect")
+//let inputList = document.querySelectorAll('#nutriscore input[type="checkbox"]')
+
+// Cereals.updateFilter()
+// {
+//     inputList.foreach(c=>{
+//         if(c.checked){
+//             letters.push(c.id)
+//         }
+//     });
+// }
+
+// inputSearch.addEventListener("input", Cereals.updateFilter);
+// categorySelect.addEventListener("change",Cereals.updateFilter);
+// inputList.foreach(i=>i.addeventListener"click",Cereals.updateFilter)
+
 /*recherche*/
 document.getElementById("cerealSearch").addEventListener("input",(e)=>{cerealTable.generateTable(CerealEvent.searchCereals(e.target.value))});
     
-/*tri par nutriscore*/    
+/*tri par catégorie*/
+document.getElementById("categorieSelect").addEventListener("change",(e)=>{CerealEvent.sortCategory(e.target.value)});
 
-    
+/*tri par nutriscore*/    
+document.getElementById("nutriscore").addEventListener('#nutriscore');
 
 

@@ -7,5 +7,8 @@ class CerealEvent
     {
        return this.cereals.searchCereals(value);
     }
+
+    
 }
+
 export{CerealEvent}

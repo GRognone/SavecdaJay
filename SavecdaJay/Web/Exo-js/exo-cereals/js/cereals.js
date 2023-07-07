@@ -135,23 +135,20 @@ class Cereals{
         return this.cerealsCollection.filter(c=>c.name.toLowerCase().includes(value.toLowerCase()));
     }
        
-
-    CalculateMeanCalories()
+    sortCategory(value)
     {
-        const length = this.cerealsCollection.data.length;
-        this.caloriesAverage.innerHTML= "Moyenne Calories <br>" + this.cerealsCollection.data.reduce((acc, val) => {
-            return acc + (val.calories/length);
-        }, 0).toFixed(0);
-    }
-
-    sortCerealsByNs()
-    {
-
-    }
-
-    sortCerealsByCategories()
-    {
-
+        switch(value){
+        
+        case "1":
+            this.data.filter(c=>c.sodium)
+        break;
+        case"2":
+            this.data.Cereals
+        break;
+        case"3":
+            this.data.
+        break;
+        }
     }
 
 }
