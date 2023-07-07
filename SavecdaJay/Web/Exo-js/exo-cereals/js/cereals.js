@@ -135,22 +135,21 @@ class Cereals{
         return this.cerealsCollection.filter(c=>c.name.toLowerCase().includes(value.toLowerCase()));
     }
        
+
+    CalculateMeanCalories()
+    {
+        const length = this.cerealsCollection.data.length;
+        this.caloriesAverage.innerHTML= "Moyenne Calories <br>" + this.cerealsCollection.data.reduce((acc, val) => {
+            return acc + (val.calories/length);
+        }, 0).toFixed(0);
+    }
+
     sortCerealsByNs()
     {
 
     }
 
     sortCerealsByCategories()
-    {
-
-    }
-    
-    calculateNbCereals()
-    {
-
-    }
-
-    CalculateMeanCalories()
     {
 
     }
