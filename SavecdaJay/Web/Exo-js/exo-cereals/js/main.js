@@ -22,31 +22,45 @@ document.getElementById("vitamines").addEventListener("click",(e)=> {cerealTable
 document.getElementById("evaluation").addEventListener("click",(e)=> {cerealTable.generateTable(cereal.sortCerealByRatings())});
 document.getElementById("ns").addEventListener("click",(e)=> {cerealTable.generateTable(cereal.sortCerealByRatings())});
 
+/*recherche*/
+document.getElementById("cerealSearch").addEventListener("input",(e)=>{cerealTable.generateTable(CerealEvent.searchCereals(e.target.value))});
+    
+// /*tri par catégorie*/
+// document.getElementById("categorieSelect").addEventListener("change",(e)=>{CerealEvent.sortCategory(e.target.value)});
 
-//let inputSearch =document.getElementById("cerealSearch");
-//let categorieSelect = document.getElementById("categorieSelect")
-//let inputList = document.querySelectorAll('#nutriscore input[type="checkbox"]')
+// /*tri par nutriscore*/    
+// document.getElementById("nutriscore").addEventListener('#nutriscore');
 
-// Cereals.updateFilter()
+
+//programmation des filtres.
+// let head=document.querySelectorAll(".keys");
+
+// for(let h of head){
+//     h.addEventListener("click",(e)=>{
+//         cerealEvent.columnSortEvent(e);
+//         cerealTable.generateTable();
+//     })
+// }
+// let inputSearch =document.getElementById("cerealSearch");
+// let categoriesSelect = document.getElementById("categorieSelect")
+// let inputList = document.querySelectorAll('#nutriscore input[type="checkbox"]')
+
+// Cereals.updateFilter = ()=>
 // {
-//     inputList.foreach(c=>{
+//     let letters =[];
+//      inputList.foreach(c=>{
 //         if(c.checked){
 //             letters.push(c.id)
 //         }
 //     });
-// }
+//  }
+//  cereals.applyAllFilters(inputSearch.value, categoriesSelect.value, letters)
+//  cerealTable.generateTable();
 
-// inputSearch.addEventListener("input", Cereals.updateFilter);
-// categorySelect.addEventListener("change",Cereals.updateFilter);
-// inputList.foreach(i=>i.addeventListener"click",Cereals.updateFilter)
+//  inputSearch.addEventListener("input", Cereals.updateFilter);
+//  categoriesSelect.addEventListener("change",Cereals.updateFilter);
+//  inputList.foreach(i=>i.addeventListener("click",Cereals.updateFilter));
 
-/*recherche*/
-document.getElementById("cerealSearch").addEventListener("input",(e)=>{cerealTable.generateTable(CerealEvent.searchCereals(e.target.value))});
-    
-/*tri par catégorie*/
-document.getElementById("categorieSelect").addEventListener("change",(e)=>{CerealEvent.sortCategory(e.target.value)});
 
-/*tri par nutriscore*/    
-document.getElementById("nutriscore").addEventListener('#nutriscore');
 
 
