@@ -2,10 +2,11 @@ import { Db } from "./db.js";
 import { Cereal } from "./cereal.js";
 
 class Cereals {
-    //static updateFilter =()=>[];
+    static updateFilter =()=>[];
 
     constructor() {
         this.cerealsCollection = [];
+        this.filtersData= [];
         this.bool = true;
     }
 
@@ -14,6 +15,7 @@ class Cereals {
         for (let cereal of cerealToAdd.data) {
             this.cerealsCollection.push(new Cereal(cereal));
         }
+        this.filtersData = this.cerealsCollection;
         return this.cerealsCollection;
     }
     deleteCereal(id) {
@@ -116,36 +118,46 @@ class Cereals {
         return array;
     }
 
-    searchCereals(value) {
-        return this.cerealsCollection.filter(c => c.name.toLowerCase().includes(value.toLowerCase()));
-    }
+
 //fonctionnnement de tous les filtres 
+
+/*fonction de recherche*/
+    searchCereals(value) {
+        this.filtersData = this.cerealsCollection.filter(c => c.name.toLowerCase().includes(value.toLowerCase()));
+    }
+
+/*tri par catégorie*/
     sortCategory(value) {
         switch (value) {
 
             case "1":
-                this.cerealsCollection = this.cerealsCollection.filter(c => c.sodium<50)
+                this.filtersData = this.filtersData.filter(c => c.sodium<50);
                 break;
             case "2":
-                this.cerealsCollection = this.cerealsCollection.filter(c => c.sugars < 1);
+                this.filtersData = this.filtersData.filter(c => c.sugars<1);
                 break;
             case "3":
-                this.cerealsCollection = this.cerealsCollection.filter(c => c.vitamins >= 25 && c.fiber >= 10);
+                this.filtersData = this.filtersData.filter(c => c.vitamins>=25 && c.fiber>=10);
                 break;
             default:
-                this.cerealsCollection = Array.from(this.cerealsCollection);
+                this.filtersData = Array.from(this.filtersData);
                 break;
         }
 
     }
+    /* tri par checkBox nutriscore*/
+
     sortNutriscore(letters){
+        
         if(letters.length>0){
-            this.cerealsCollection = this.cerealsCollection.filter(c=>letters.includes(c.ns));
+            this.filtersData = this.filtersData.filter(c=>letters.includes(c.ns));
         }
         else{
-            this.cerealsCollection = Array.from(this.cerealsCollection);
+            this.filtersData = Array.from(this.filtersData);
         }
     }
+
+    /* coordination de tous les filtres */
     applyAllFilters(cerealName, cerealCategory, selectedNS)
     {
         this.searchCereals(cerealName);

@@ -10,28 +10,28 @@ class Table
         this.caloriesAverage = document.getElementById("caloriesAverage");
     }
 
-    generateTable(array=this.cereals.cerealsCollection){
-        this.generateBody(array);
+    generateTable(){
+        this.generateBody();
 
         // compte du nombre d'element cereal
-        this.nbElement.innerText = array.length +" Elements";
+        this.nbElement.innerText = this.cereals.filtersData.length +" Elements";
         
         // calcul de la moyenne des calories
         //etape 1 somme du nombre total de calories
         let calories = 0;
-        array.forEach(myCereal => {
+        this.cereals.filtersData.forEach(myCereal => {
             calories += myCereal.calories;
         });
         //etape 2 calcul de la moyenne
-        calories= Math.floor(calories/array.length);
+        calories= Math.floor(calories/this.cereals.filtersData.length);
         this.caloriesAverage.innerText = "Moyenne Calories " + calories 
     }
 
-    generateBody(array=this.cereals.cerealsCollection)
+    generateBody()
     {
         this.tBody.innerHTML=""
 
-        for(let cereal of array)
+        for(let cereal of this.cereals.filtersData)
         {
             let row = document.createElement('tr');
             row.className="tablebodyTr";
@@ -78,9 +78,6 @@ class Table
         this.cereals.deleteCereal(id);
         this.generateBody();
     }
-
-    
-
 }
 
 export{Table};

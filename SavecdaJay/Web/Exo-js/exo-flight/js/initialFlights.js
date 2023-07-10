@@ -27,6 +27,19 @@ class InitialFlights{
        this.flightsCollection = this.flightsCollection.map(f => new Flight(f));
     }
 
+    /* recherche d'un vol par compagnie */
+    async searchByCompany(val)
+    {
+        await this.getFlights()
+        val= val.trim();// supprime les espaces vides
+        if(val.length>0)
+        {
+            val = val.toLowerCase();
+            this.flightsCollection = this.flightsCollection.filter(flight => flight.airline_name.toLowerCase().includes(val));
+            console.log(val);
+        }
+    }
+
     /* tri des vols par id*/
     sortFlightById()
     {
@@ -114,7 +127,7 @@ class InitialFlights{
     /*tri par model d'avion*/
     sortByPlaneRef()
     {
-        let array = this.flightsCollection.sort((a,b)=>toString(a.plane_ref).localeCompare(toString(b.plane_ref)));
+        let array = this.flightsCollection.sort((a,b)=>a.plane_ref.toString().localeCompare(b.plane_ref.toString()));
         this.bool =! this.bool;
         if (this.bool){
             return array.reverse();
@@ -154,17 +167,6 @@ class InitialFlights{
         return array;
     }
     
-    /* recherche d'un vol par compagnie */
-    async searchByCompany(val)
-    {
-        await this.getFlights()
-        val= val.trim();// supprime les espaces vides
-        if(val.length>0)
-        {
-            val = val.toLowerCase();
-            this.flightsCollection = this.flightsCollection.filter(flight => flight.airline_name.toLowerCase().includes(val));
-            console.log(val);
-        }
-    }
+    
 }
 export{InitialFlights};

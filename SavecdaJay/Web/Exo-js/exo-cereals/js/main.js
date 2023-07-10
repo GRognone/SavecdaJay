@@ -1,13 +1,14 @@
 import{ Cereals } from "./cereals.js";
 import { Table } from "./table.js";
 import { CerealEvent } from "./cerealEvent.js";
+import { Cereal } from "./cereal.js";
 
 let cereal = new Cereals();
+CerealEvent.cereals=cereal;
 await cereal.getCereals();
-console.log(cereal.cerealsCollection)
 let cerealTable = new Table(cereal);
 cerealTable.generateTable();
-CerealEvent.cereals=cereal;
+
 
 document.getElementById("id").addEventListener("click",(e) => {cerealTable.generateTable(cereal.sortCerealById())});
 document.getElementById("nom").addEventListener("click",(e)=> {cerealTable.generateTable(cereal.sortCerealByName())});
@@ -22,45 +23,30 @@ document.getElementById("vitamines").addEventListener("click",(e)=> {cerealTable
 document.getElementById("evaluation").addEventListener("click",(e)=> {cerealTable.generateTable(cereal.sortCerealByRatings())});
 document.getElementById("ns").addEventListener("click",(e)=> {cerealTable.generateTable(cereal.sortCerealByRatings())});
 
-/*recherche*/
-document.getElementById("cerealSearch").addEventListener("input",(e)=>{cerealTable.generateTable(CerealEvent.searchCereals(e.target.value))});
-    
-// /*tri par catégorie*/
-// document.getElementById("categorieSelect").addEventListener("change",(e)=>{CerealEvent.sortCategory(e.target.value)});
 
-// /*tri par nutriscore*/    
-// document.getElementById("nutriscore").addEventListener('#nutriscore');
+/* utilisation des filtres*/
 
+let inputSearch = document.getElementById("cerealSearch");
+let categoriesSelect = document.getElementById("categorieSelect")
+let inputList = document.querySelectorAll('#nutriscore input[type="checkbox"]');
 
-//programmation des filtres.
-// let head=document.querySelectorAll(".keys");
+Cereals.updateFilter = () =>
+{
+    let letters =[]; 
+    inputList.forEach(c=>{
+        if(c.checked){
+            letters.push(c.id);
+        }
+    });
+    cereal.applyAllFilters(inputSearch.value, categoriesSelect.value, letters)
+    cerealTable.generateTable();
+}
 
-// for(let h of head){
-//     h.addEventListener("click",(e)=>{
-//         cerealEvent.columnSortEvent(e);
-//         cerealTable.generateTable();
-//     })
-// }
-// let inputSearch =document.getElementById("cerealSearch");
-// let categoriesSelect = document.getElementById("categorieSelect")
-// let inputList = document.querySelectorAll('#nutriscore input[type="checkbox"]')
+inputSearch.addEventListener("input",Cereals.updateFilter);
 
-// Cereals.updateFilter = ()=>
-// {
-//     let letters =[];
-//      inputList.foreach(c=>{
-//         if(c.checked){
-//             letters.push(c.id)
-//         }
-//     });
-//  }
-//  cereals.applyAllFilters(inputSearch.value, categoriesSelect.value, letters)
-//  cerealTable.generateTable();
+categoriesSelect.addEventListener("change",Cereals.updateFilter);
 
-//  inputSearch.addEventListener("input", Cereals.updateFilter);
-//  categoriesSelect.addEventListener("change",Cereals.updateFilter);
-//  inputList.foreach(i=>i.addeventListener("click",Cereals.updateFilter));
-
+inputList.forEach(i=>i.addEventListener("click",Cereals.updateFilter));
 
 
 
