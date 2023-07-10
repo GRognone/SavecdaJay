@@ -50,7 +50,6 @@ class Table
             this.generateCell(row, cereal.ns);
             this.generateCellDell(row, "❌",cereal.id);
         }
-
     }
 
     generateCell(row,data)

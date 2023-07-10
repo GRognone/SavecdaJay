@@ -6,7 +6,7 @@
 --darkGrey: #313040;
 }
 
-html
+ html
 {
 font-size: 62,5%;
 }
@@ -66,6 +66,9 @@ thead{
     border : 2px solid white;
 }
 
+tr:hover td{
+    background-color: #ffa600b7;
+    }
 
 tr td{
     text-align: center;
@@ -76,10 +79,10 @@ tbody > tr:nth-child(2n) {
     text-align: left;
     padding: 10px;
     background: black;
-}
+} */
 
 
-/*2eme solution
+/* 2eme solution
 body{
     background-color : black;
     color:lightgreen;
@@ -110,5 +113,5 @@ tr:nth-child(even) td {
 tr:hover td{
 background-color: #FFFF0055;
 }
-*/
 
+ */
