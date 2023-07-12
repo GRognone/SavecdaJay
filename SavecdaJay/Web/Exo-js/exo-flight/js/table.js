@@ -8,6 +8,7 @@ class Table
 
     generateBody() {
         let array = this.initialFlights.flightsCollection
+        console.log(this.initialFlights)
         this.tBody.innerHTML = ""
 
         for (let flight of array) {
