@@ -12,7 +12,7 @@ class Processor {
         let family;
         let model;
 
-        name = brand + "" + family + "" + model + "";
+        name = this.brand + "" + this.family + "" + this.model + "";
         return name;
     }
 }

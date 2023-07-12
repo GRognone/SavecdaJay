@@ -18,7 +18,7 @@ class TableCpu{
         let array = this.tableCpuCollection.cpusCollection;
         this.tbody.innerHTML=""
 
-        for(let cpu of array){
+        for(let processor of array){
             let row = document.createElement('tr');
             row.className ="tableBodyTr";
             this.tbody.appendChild(row);
@@ -34,7 +34,7 @@ class TableCpu{
 
     generateCell(row,processor){
         let cell = document.createElement('td');
-        cellClassName="cellData";
+        cell.ClassName="cellData";
         cell.textContent = processor;
         cell.dataset.value = processor;
         row.appendChild(cell);

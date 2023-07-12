@@ -18,12 +18,12 @@ class CpuCollection{
 
     async searchByName(value)
     {
-        await this.loadData()
-        value = value.trim()
-        if(value.lenght>0)
+        await this.loadData();
+        value = value.trim();
+        if(value.lenght>0);
         {
             value = value.toLowerCase();
-            this.cpusCollection = this.cpusCollection.filter(c=>c.name.toLowerCase().include(value));
+            this.cpusCollection = this.cpusCollection.filter(c=>c.name.toLowerCase().includes(value));
         }
     }
 

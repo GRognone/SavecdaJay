@@ -9,13 +9,14 @@ let tableCpu = new TableCpu(cpusCollection);
 tableCpu.generateTable();
 
 // tri par prix
-document.getElementById("price").addEventListener("clic",(e) =>{tableCpu.generateTable(cpusCollection.sortByPrice())});
+document.getElementById("price").addEventListener("click",(e)=> {tableCpu.generateTable(cpusCollection.sortByPrice())});
+
 
 // recherche par nom
 
-document.getElementById("name").addEventListener("input", async (e)=>{
-    let search = e.target.value
-    await cpusCollection.searchByName(search);
+document.getElementById("search").addEventListener("input", async (e)=>{
+    let searchFieldValue = e.target.value
+    await cpusCollection.searchByName(searchFieldValue);
     tableCpu.generateTable();
 })
 
