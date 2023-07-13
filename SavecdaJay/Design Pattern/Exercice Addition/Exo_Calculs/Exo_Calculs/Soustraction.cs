@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Exo_Calculs
 {
-    public class Addition : Binaire
+    public class Soustraction : Binaire
     {
-        public Addition (Expression ex1, Expression ex2) : base(ex1 , ex2){}
+        public Soustraction (Expression ex1, Expression ex2) : base(ex1 , ex2){}
 
         public override double Calculer()
         {
-            double somme =  ex1.Calculer() + ex2.Calculer();
+            double somme =  ex1.Calculer() - ex2.Calculer();
             return somme;
         }
 

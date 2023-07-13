@@ -19,14 +19,14 @@ namespace Exo_Calculs
             this.valeur = valeur;
         }
 
-        public override double Evalue()
+        public override double Calculer()
         {
             return valeur;
         }
 
         public override string ToString()
         {
-            return this.Evalue().ToString();
+            return this.Calculer().ToString();
         }
     }
 }

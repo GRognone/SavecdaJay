@@ -9,6 +9,6 @@ namespace Exo_Calculs
 {
     public abstract  class Expression
     {
-        public abstract double Evalue();
+        public abstract double Calculer();
     }
 }
