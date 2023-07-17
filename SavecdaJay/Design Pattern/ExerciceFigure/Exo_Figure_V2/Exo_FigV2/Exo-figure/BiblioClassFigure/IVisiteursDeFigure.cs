@@ -12,6 +12,6 @@ namespace BiblioClassFigure
 
         public abstract void Visit(Rectangle rectangle);
 
-        public abstract void Visit(Figures figure);
+        public abstract void Visit(Figures figures);
     }
 }

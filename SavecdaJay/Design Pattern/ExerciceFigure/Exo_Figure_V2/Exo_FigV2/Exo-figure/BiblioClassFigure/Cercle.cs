@@ -9,7 +9,7 @@ namespace BiblioClassFigure
     public class Cercle : Figure
     {
         private double rayon;
-        public double Rayon { get; set; }
+        public double Rayon { get => rayon; }
 
 
         public Cercle(double rayon, double x, double y) : base(x,y)
@@ -19,9 +19,7 @@ namespace BiblioClassFigure
 
         public override void Accept(IVisiteursDeFigure visiteur)
         {
-
-            Console.WriteLine("Le cercle a pour rayon " + this.rayon);
-            // visit à coder à la place du writeLine
+            visiteur.Visit(this);
         }
     }
 }

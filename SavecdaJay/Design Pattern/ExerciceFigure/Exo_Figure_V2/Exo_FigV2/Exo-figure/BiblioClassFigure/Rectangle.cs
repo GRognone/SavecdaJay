@@ -11,6 +11,8 @@ namespace BiblioClassFigure
         private double largeur;
         private double longueur;
 
+        public double Largeur { get => largeur;}
+        public double Longueur { get => longueur;}
         public Rectangle ( double largeur, double longueur, double x, double y) : base(x, y)
         {
             this.largeur = largeur;
@@ -19,8 +21,7 @@ namespace BiblioClassFigure
 
         public override void Accept(IVisiteursDeFigure visiteur)
         {
-            Console.WriteLine("Le rectangle à une largeur de " + largeur + " et une longueur de " + longueur);
-            // visit à coder à la place du writeLine
+            visiteur.Visit(this);
         }
     }
 }

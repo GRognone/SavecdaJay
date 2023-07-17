@@ -12,8 +12,8 @@ namespace BiblioClassFigure
         protected double x;
         protected double y;
 
-        public double X { get; }
-        public double Y { get; }
+        public double X { get=>x; }
+        public double Y { get=>y; }
 
         public Figure(double x,double y)
         {

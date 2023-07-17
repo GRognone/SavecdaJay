@@ -6,21 +6,31 @@ using System.Threading.Tasks;
 
 namespace BiblioClassFigure
 {
+
     public class Figures : Figure
     {
         List<Figure> sesFigures;
 
+        private double xFigures;
+        private double yFigures;
+
+        public double XFigures { get => xFigures; }
+        public double YFigures { get => yFigures; }
         public Figures(double x, double y) : base(x, y)
         {
             sesFigures = new List<Figure>();
+            this.xFigures = x;
+            this.yFigures = y;
         }
 
         public override void Accept(IVisiteursDeFigure visiteur)
         {
-            Console.WriteLine("Je suis une figure");
-            // visit à coder à la place du writeLine
+
+            visiteur.Visit(this);
             foreach (var f in sesFigures)
             {
+                f.X = f.X + xFigures;
+                f.Y = f.Y + yFigures;
                 f.Accept(visiteur);
             }
         }
@@ -30,10 +40,9 @@ namespace BiblioClassFigure
             sesFigures.Remove(figure);
         }
 
-        public void Add(Figure figure) 
+        public void Add(Figure figure)
         {
             sesFigures.Add(figure);
-
         }
 
     }
