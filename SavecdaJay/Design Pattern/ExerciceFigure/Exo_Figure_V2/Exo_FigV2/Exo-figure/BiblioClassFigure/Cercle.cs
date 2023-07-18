@@ -21,5 +21,7 @@ namespace BiblioClassFigure
         {
             visiteur.Visit(this);
         }
+
+        
     }
 }

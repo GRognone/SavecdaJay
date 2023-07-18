@@ -8,10 +8,10 @@ namespace BiblioClassFigure
 {
     public  interface IVisiteursDeFigure
     {
-        public abstract void Visit(Cercle cercle);
+        public  void Visit(Cercle cercle);
 
-        public abstract void Visit(Rectangle rectangle);
+        public  void Visit(Rectangle rectangle);
 
-        public abstract void Visit(Figures figures);
+        public  void Visit(Figures figures);
     }
 }

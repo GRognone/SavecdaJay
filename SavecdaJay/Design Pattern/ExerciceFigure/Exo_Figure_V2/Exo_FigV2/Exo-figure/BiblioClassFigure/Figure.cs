@@ -21,5 +21,7 @@ namespace BiblioClassFigure
             this.y = y;
         }
         public abstract void Accept(IVisiteursDeFigure visiteur);
+
+
     }
 }
