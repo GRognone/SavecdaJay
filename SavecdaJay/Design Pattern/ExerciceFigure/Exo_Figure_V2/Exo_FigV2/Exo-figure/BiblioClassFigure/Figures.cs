@@ -11,16 +11,9 @@ namespace BiblioClassFigure
     {
         List<Figure> sesFigures;
 
-        private double xFigures;
-        private double yFigures;
-
-        public double XFigures { get => xFigures; }
-        public double YFigures { get => yFigures; }
         public Figures(double x, double y) : base(x, y)
         {
             sesFigures = new List<Figure>();
-            this.xFigures = x;
-            this.yFigures = y;
         }
 
         public override void Accept(IVisiteursDeFigure visiteur)
@@ -29,8 +22,8 @@ namespace BiblioClassFigure
             visiteur.Visit(this);
             foreach (var f in sesFigures)
             {
-                f.X = f.X + xFigures;
-                f.Y = f.Y + yFigures;
+                f.X = f.X + this.x;
+                f.Y = f.Y + this.y;
                 f.Accept(visiteur);
             }
         }
