@@ -15,10 +15,8 @@ namespace BiblioClassFigure
         public IteratorDeFigure(Figures figures)
         {
             this.figures = figures;
-            iCurrent = 0;
+            iCurrent = -1;
         }
-
-
 
         public Figure Current => figures[iCurrent];
 
@@ -31,12 +29,22 @@ namespace BiblioClassFigure
 
         public bool MoveNext()
         {
-            iCurrent++; // afinir
+            if (iCurrent < figures.Count -1)
+            {
+                iCurrent++; // afinir
+                return true;
+            }
+            else 
+            {
+                Console.WriteLine("Il n'y a pas d'autre élément dans la liste");
+                return false;
+            }
+            
         }
 
         public void Reset()
         {
-            throw new NotImplementedException();
+            iCurrent = -1;
         }
     }
 }

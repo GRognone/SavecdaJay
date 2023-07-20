@@ -29,8 +29,14 @@ namespace BiblioClassFigure
         }
         public override string ToString()
         {
-            return base.ToString();
+            string r=  base.ToString();
+            foreach (Figure f in sesFigures)
+            {
+                r += f.ToString();
+            }
+            return r;
         }
+
         public void Remove(Figure figure)
         {
             sesFigures.Remove(figure);
@@ -45,21 +51,21 @@ namespace BiblioClassFigure
         #region IEnumerator
         public IEnumerator<Figure> GetEnumerator()
         {
-            throw new NotImplementedException();
+            return new IteratorDeFigure(this);
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+             return new IteratorDeFigure(this);
         }
         #endregion
 
         #region IList
         public int Count => sesFigures.Count;
 
-        public bool IsReadOnly => throw new NotImplementedException();
-
         public Figure this[int index] { get => sesFigures[index]; set => sesFigures[index] = value; }
+
+        public bool IsReadOnly => throw new NotImplementedException();
 
         public int IndexOf(Figure item)
         {

@@ -17,8 +17,8 @@ namespace BiblioClassFigure
 
         public override string ToString()
         {
-            return base.ToString();
-        }
+            return base.ToString() + " rayon="+rayon +"\n";
+        } 
 
         public override void SeDessiner()
         {

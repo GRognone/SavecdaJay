@@ -18,7 +18,8 @@ namespace BiblioClassFigure
         }
         public override string ToString()
         {
-            return base.ToString();
+            return base.ToString() + " largeur" + largeur + " longeur" + longueur + "\n";
+
         }
 
         public override void SeDessiner()

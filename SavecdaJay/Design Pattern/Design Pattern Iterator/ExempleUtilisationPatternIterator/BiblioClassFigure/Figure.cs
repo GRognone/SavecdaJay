@@ -16,7 +16,11 @@ namespace BiblioClassFigure
             this.x = x;
             this.y = y;
         }
-        
+
+        public override string ToString()=> " x"+x + " y"+y + "\n";
+
         public abstract void SeDessiner();
+
+        
     }
 }
