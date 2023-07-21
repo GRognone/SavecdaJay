@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace BiblioClassFigure
 {
-    public class IteratorDeFigure : IEnumerator<Figure>
+    public class FigureIterator : IEnumerator<Figure>
     {
         Figures figures;
         int iCurrent;
 
-        public IteratorDeFigure(Figures figures)
+        public FigureIterator(Figures figures)
         {
             this.figures = figures;
             iCurrent = -1;
@@ -31,7 +31,7 @@ namespace BiblioClassFigure
         {
             if (iCurrent < figures.Count -1)
             {
-                iCurrent++; // afinir
+                iCurrent++; 
                 return true;
             }
             else 

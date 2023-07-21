@@ -19,12 +19,12 @@ namespace BiblioClassFigure
         {
             sesFigures = new List<Figure>();
         }
-        public override void SeDessiner()
+        public override void Draw()
         {
             Console.WriteLine("Je suis une figure");
             foreach (var f in sesFigures)
             {
-                f.SeDessiner();
+                f.Draw();
             }
         }
         public override string ToString()
@@ -51,12 +51,12 @@ namespace BiblioClassFigure
         #region IEnumerator
         public IEnumerator<Figure> GetEnumerator()
         {
-            return new IteratorDeFigure(this);
+            return new FigureIterator(this);
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-             return new IteratorDeFigure(this);
+             return new FigureIterator(this);
         }
         #endregion
 
@@ -64,6 +64,12 @@ namespace BiblioClassFigure
         public int Count => sesFigures.Count;
 
         public Figure this[int index] { get => sesFigures[index]; set => sesFigures[index] = value; }
+
+
+
+
+
+
 
         public bool IsReadOnly => throw new NotImplementedException();
 

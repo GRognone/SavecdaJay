@@ -8,23 +8,23 @@ namespace BiblioClassFigure
 {
     public class Rectangle : Figure
     {
-        private double largeur;
-        private double longueur;
+        private double width;
+        private double length;
 
-        public Rectangle(double largeur, double longueur, double x, double y) : base(x, y)
+        public Rectangle(double width, double length, double x, double y) : base(x, y)
         {
-            this.largeur = largeur;
-            this.longueur = longueur;
+            this.width = width;
+            this.length = length;
         }
         public override string ToString()
         {
-            return base.ToString() + " largeur" + largeur + " longeur" + longueur + "\n";
+            return base.ToString() + " largeur" + width + " longeur" + length + "\n";
 
         }
 
-        public override void SeDessiner()
+        public override void Draw()
         {
-            Console.WriteLine("Le rectangle a une largeur de " + this.largeur + " et une longueur de " + this.longueur);
+            Console.WriteLine("Le rectangle a une largeur de " + this.width + " et une longueur de " + this.length);
         }
     }
 }

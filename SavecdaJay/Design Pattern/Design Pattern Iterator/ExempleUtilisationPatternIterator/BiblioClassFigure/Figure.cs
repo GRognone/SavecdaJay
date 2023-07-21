@@ -19,7 +19,7 @@ namespace BiblioClassFigure
 
         public override string ToString()=> " x"+x + " y"+y + "\n";
 
-        public abstract void SeDessiner();
+        public abstract void Draw();
 
         
     }
