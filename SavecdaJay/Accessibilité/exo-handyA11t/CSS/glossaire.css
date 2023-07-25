@@ -1,1 +1,16 @@
-
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #f1f1f1;
+  }
+select{
+    width: 50rem;
+    height: 10rem;
+}
+label{
+    width: 50rem;
+    font-size: 5rem;
+}

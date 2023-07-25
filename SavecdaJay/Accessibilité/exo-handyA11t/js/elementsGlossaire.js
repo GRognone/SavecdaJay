@@ -5,7 +5,6 @@ class MesElementsDuGlossaire
     constructor()
     {
         this.mesElementsGlossaire =[];
-        this.sortAsc = true;
     }
 
     async loadData()
