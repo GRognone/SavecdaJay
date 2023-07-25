@@ -66,11 +66,6 @@ namespace BiblioClassFigure
         public Figure this[int index] { get => sesFigures[index]; set => sesFigures[index] = value; }
 
 
-
-
-
-
-
         public bool IsReadOnly => throw new NotImplementedException();
 
         public int IndexOf(Figure item)

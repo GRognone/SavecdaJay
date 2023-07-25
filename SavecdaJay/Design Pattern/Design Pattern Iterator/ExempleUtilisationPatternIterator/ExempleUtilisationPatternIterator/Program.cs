@@ -61,11 +61,11 @@ namespace Exo_Fig1
 
             //f7.Draw();
 
-            for (int j = 0; j < f7.Count; j++)
-            {
+            //for (int j = 0; j < f7.Count; j++)
+            //{
 
-                Console.WriteLine(f8[j].ToString());
-            }
+            //    Console.WriteLine(f8[j].ToString());
+            //}
 
             FigureIterator i = new FigureIterator(f5);
             Figure fa = i.Current;
