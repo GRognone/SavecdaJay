@@ -67,17 +67,22 @@ namespace Exo_Fig1
             //    Console.WriteLine(f8[j].ToString());
             //}
 
+            Console.WriteLine("Resultat avec le MoveNext");
+
             FigureIterator i = new FigureIterator(f5);
-            Figure fa = i.Current;
+           
             while (i.MoveNext())
             {
                 Figure figure = i.Current;
+                Console.WriteLine(figure.ToString());
             }
+
+            Console.WriteLine("Resultat avec le foreach");
 
             foreach (Figure f in f5)
             {
                 string s = f.ToString();
-                Console.WriteLine("les figures qui compose la figure f sont: "+f);
+                Console.WriteLine(f.ToString());
             }
         }
     }
