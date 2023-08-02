@@ -9,8 +9,8 @@ class MesElementsDuGlossaire
 
     async loadData()
     {
-        this.mesElementsGlossaire = await Db.getData("./glossaire.json");
-        this.mesElementsGlossaire = this.mesElementsGlossaire.map(m=>new MesElementsDuGlossaire(m));
+        this.mesElementsGlossaire = await Db.getData("./json/glossaire.json");
+        this.mesElementsGlossaire = this.mesElementsGlossaire.glossaire.map(m=>new MonGlossaire(m));
     }
 }
 export{MesElementsDuGlossaire}

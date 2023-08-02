@@ -3,15 +3,17 @@ import { MesElementsDuGlossaire } from "./elementsGlossaire.js"
 let elementGlossaire = new MesElementsDuGlossaire();
 await elementGlossaire.loadData();
 let elementsDuGlossaire = document.getElementById("scrollBar"); 
+console.log(elementsDuGlossaire);
+generateDropList();
 
-generateDropList()
+function generateDropList()
 {
-    this.elementsDuGlossaire.innerHTML="";
-    let option = document.createElement('option')
-    elementsDuGlossaire.appendChild(option);
-    for(let ele of this.elementGlossaire.mesElementsGlossaire)
+    elementsDuGlossaire.innerHTML="";
+   
+    for(let ele of elementGlossaire.mesElementsGlossaire)
     {
-        option.textContent = ele
-        console.log('option');
+        let option = document.createElement('option')
+        option.textContent = ele.titre;
+        elementsDuGlossaire.appendChild(option);
     }
 }
