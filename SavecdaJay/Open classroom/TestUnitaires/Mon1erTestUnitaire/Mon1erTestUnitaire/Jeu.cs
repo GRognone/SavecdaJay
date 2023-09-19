@@ -9,6 +9,7 @@ namespace Mon1erTestUnitaire
     public class Jeu
     {
         public Heros Heros { get; }
+        public static object Heroes { get; set; }
 
         public Jeu()
         {
