@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Mon1erTestUnitaire;
 
-namespace MontestUnitaire1
+namespace TestUnitaire1
 {
     [TestClass]
     public class JeuTests
@@ -41,7 +41,7 @@ namespace MontestUnitaire1
             if (jeu.Heros.PointDeVies != 15) Assert.Fail();
         }
         [TestMethod]
-        public void TestMethod3() 
+        public void TestMethod3()
         {
             //Arrange
             Jeu jeu = new Jeu();
@@ -50,7 +50,7 @@ namespace MontestUnitaire1
             //Assert
             if (resultat != Resultat.Perdu) Assert.Fail();
             if (jeu.Heros.Points != 0) Assert.Fail();
-            if(jeu.Heros.PointDeVies !=13) Assert.Fail();
+            if (jeu.Heros.PointDeVies != 13) Assert.Fail();
         }
         [TestMethod]
         public void TestMethod4()
@@ -63,8 +63,8 @@ namespace MontestUnitaire1
 
             //Assert
             if (resultat != Resultat.Perdu) Assert.Fail();
-            if (jeu.Heros.Points !=1) Assert.Fail();
-            if (jeu.Heros.PointDeVies !=15) Assert.Fail();
+            if (jeu.Heros.Points != 1) Assert.Fail();
+            if (jeu.Heros.PointDeVies != 15) Assert.Fail();
         }
 
         [TestCleanup]
