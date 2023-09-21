@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using TestProgrammeClassBouteille.ExceptionsBouteilles;
 
 namespace TestProgrammeClassBouteille
 {
@@ -13,16 +15,57 @@ namespace TestProgrammeClassBouteille
         private float contenanceEnCl;
         private float niveauActuelEnCl;
         private bool bouteilleEstOuverte;
-        private float quantiteARemplir;
-        private float quantiteAVider;
+
+
+        #region Exception
+
+        //Exception si la valeur du contenant est <=0
+        public float ContenanceEnCl
+        {
+            get => contenanceEnCl;
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ValeurDeContenuImpossibleException();
+                }
+                else
+                {
+                    contenanceEnCl = value;
+                }
+            }
+
+        }
+
+        //Exception si le niveau actuel est <=0
+        public float NiveauActuelEnCl
+        {
+            get => niveauActuelEnCl;
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ValeurDeContenuImpossibleException();
+                }
+                else
+                {
+                    niveauActuelEnCl = value;
+                }
+            }
+        }
+
+        public bool BouteilleEstOuverte { get { return bouteilleEstOuverte; } private set { bouteilleEstOuverte = value; } }
+        
+        #endregion
+
 
         /// <summary>
         /// constructeur par defaut.
         /// </summary>
         public Bouteille()
         {
-            contenanceEnCl = 100;
-            niveauActuelEnCl = 100;
+            ContenanceEnCl = 100;
+            NiveauActuelEnCl = 100;
             bouteilleEstOuverte = false;
 
         }
@@ -35,8 +78,13 @@ namespace TestProgrammeClassBouteille
         /// <param name="bouteilleEstOuverte"></param>
         public Bouteille(float contenanceEnCl, float niveauActuelEnCl, bool bouteilleEstOuverte)
         {
-            this.contenanceEnCl = contenanceEnCl;
-            this.niveauActuelEnCl = niveauActuelEnCl;
+            this.ContenanceEnCl = contenanceEnCl;
+            if (contenanceEnCl <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(contenanceEnCl), "La contenance en cl doit être supérieur ou égale à 0");
+            }
+
+            this.NiveauActuelEnCl = niveauActuelEnCl;
             this.bouteilleEstOuverte = bouteilleEstOuverte;
         }
 
@@ -46,8 +94,8 @@ namespace TestProgrammeClassBouteille
         /// <param name="_bouteilleACopier"></param>
         public Bouteille(Bouteille _bouteilleACopier)
         {
-            contenanceEnCl = _bouteilleACopier.contenanceEnCl;
-            niveauActuelEnCl = _bouteilleACopier.niveauActuelEnCl;
+            ContenanceEnCl = _bouteilleACopier.ContenanceEnCl;
+            NiveauActuelEnCl = _bouteilleACopier.NiveauActuelEnCl;
             bouteilleEstOuverte = _bouteilleACopier.bouteilleEstOuverte;
         }
 
@@ -83,9 +131,15 @@ namespace TestProgrammeClassBouteille
         /// <returns></returns>
         public bool Vider(float quantiteAVider)
         {
-            if (bouteilleEstOuverte && contenanceEnCl >= quantiteAVider && quantiteAVider > 0)
+            if (quantiteAVider <= 0)
             {
-                niveauActuelEnCl = niveauActuelEnCl - quantiteAVider; // niveauActuelEnCl -= quantiteAVider ( 2 eme facon d'ecrire cette ligne)
+                throw new ArgumentOutOfRangeException();
+            }
+
+            if
+            (bouteilleEstOuverte && ContenanceEnCl >= quantiteAVider && quantiteAVider > 0)
+            {
+                NiveauActuelEnCl = NiveauActuelEnCl - quantiteAVider; // niveauActuelEnCl -= quantiteAVider ( 2 eme facon d'ecrire cette ligne)
                 return true;
             }
             else
@@ -101,7 +155,7 @@ namespace TestProgrammeClassBouteille
         public bool Vider()
         {
             {
-                return Vider(niveauActuelEnCl);
+                return Vider(NiveauActuelEnCl);
             }
 
         }
@@ -112,9 +166,14 @@ namespace TestProgrammeClassBouteille
         /// <returns></returns>
         public bool Remplir(float quantiteARemplir)
         {
-            if (bouteilleEstOuverte && quantiteARemplir > 0 && quantiteARemplir <= contenanceEnCl - niveauActuelEnCl)
+            if (quantiteARemplir > ContenanceEnCl) 
             {
-                niveauActuelEnCl = niveauActuelEnCl + quantiteARemplir;
+                throw new ArgumentOutOfRangeException();
+            }
+
+            if (bouteilleEstOuverte && quantiteARemplir > 0 && quantiteARemplir <= ContenanceEnCl - NiveauActuelEnCl)
+            {
+                NiveauActuelEnCl = NiveauActuelEnCl + quantiteARemplir;
                 return true;
             }
             return false;
@@ -127,7 +186,7 @@ namespace TestProgrammeClassBouteille
         public bool Remplir()
         {
             {
-                return Remplir(this.contenanceEnCl - niveauActuelEnCl);
+                return Remplir(this.ContenanceEnCl - NiveauActuelEnCl);
             }
         }
     }

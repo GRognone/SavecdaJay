@@ -24,6 +24,8 @@
             bool resultat4 = bouteilleDeChampagne.Vider();
             bool resultat5 = bouteilleDeChampagne.Remplir(50);
             bool resultat6 = bouteilleDeChampagne.Remplir();
+
+
         }
     }
 }
