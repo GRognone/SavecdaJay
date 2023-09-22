@@ -25,9 +25,9 @@ namespace TestProgrammeClassBouteille
             get => contenanceEnCl;
             set
             {
-                if (value < 0)
+                if (value <= 0)
                 {
-                    throw new ValeurDeContenuImpossibleException();
+                    throw new ValeurDeContenanceImpossibleException();
                 }
                 else
                 {
@@ -43,7 +43,7 @@ namespace TestProgrammeClassBouteille
             get => niveauActuelEnCl;
             set
             {
-                if (value <= 0)
+                if (value < 0)
                 {
                     throw new ValeurDeContenuImpossibleException();
                 }
@@ -78,11 +78,15 @@ namespace TestProgrammeClassBouteille
         /// <param name="bouteilleEstOuverte"></param>
         public Bouteille(float contenanceEnCl, float niveauActuelEnCl, bool bouteilleEstOuverte)
         {
-            this.ContenanceEnCl = contenanceEnCl;
             if (contenanceEnCl <= 0)
             {
                 throw new ArgumentOutOfRangeException(nameof(contenanceEnCl), "La contenance en cl doit être supérieur ou égale à 0");
             }
+            if (niveauActuelEnCl < 0) 
+            {
+                throw new ArgumentOutOfRangeException(nameof(niveauActuelEnCl), "Le niveau actuel en cl doit être supérieur ou égale à 0");
+            }
+            this.ContenanceEnCl = contenanceEnCl;
 
             this.NiveauActuelEnCl = niveauActuelEnCl;
             this.bouteilleEstOuverte = bouteilleEstOuverte;
@@ -166,7 +170,7 @@ namespace TestProgrammeClassBouteille
         /// <returns></returns>
         public bool Remplir(float quantiteARemplir)
         {
-            if (quantiteARemplir > ContenanceEnCl) 
+            if (quantiteARemplir <= 0) 
             {
                 throw new ArgumentOutOfRangeException();
             }

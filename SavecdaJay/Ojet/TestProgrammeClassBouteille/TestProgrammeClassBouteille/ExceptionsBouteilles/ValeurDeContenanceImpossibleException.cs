@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TestProgrammeClassBouteille.ExceptionsBouteilles
 {
-    public class ValeurDeContenuImpossibleException : Exception
+    public class ValeurDeContenanceImpossibleException : Exception
     {
-        public ValeurDeContenuImpossibleException():base()
+        public ValeurDeContenanceImpossibleException():base() 
         {
         }
     }
