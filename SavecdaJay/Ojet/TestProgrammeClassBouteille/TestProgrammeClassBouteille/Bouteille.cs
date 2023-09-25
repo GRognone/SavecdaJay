@@ -141,7 +141,7 @@ namespace TestProgrammeClassBouteille
             }
 
             if
-            (bouteilleEstOuverte && ContenanceEnCl >= quantiteAVider && quantiteAVider > 0)
+            (bouteilleEstOuverte && NiveauActuelEnCl >= quantiteAVider && quantiteAVider > 0)
             {
                 NiveauActuelEnCl = NiveauActuelEnCl - quantiteAVider; // niveauActuelEnCl -= quantiteAVider ( 2 eme facon d'ecrire cette ligne)
                 return true;
