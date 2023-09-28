@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApi", "TodoApi\TodoApi.csproj", "{2DFC70E7-A12C-4D00-9E5B-2B3A34990828}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApi2", "TodoApi2\TodoApi2.csproj", "{2BD60E74-212A-4F78-8931-E06CB1E66359}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DFC70E7-A12C-4D00-9E5B-2B3A34990828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DFC70E7-A12C-4D00-9E5B-2B3A34990828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DFC70E7-A12C-4D00-9E5B-2B3A34990828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DFC70E7-A12C-4D00-9E5B-2B3A34990828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BD60E74-212A-4F78-8931-E06CB1E66359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BD60E74-212A-4F78-8931-E06CB1E66359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BD60E74-212A-4F78-8931-E06CB1E66359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BD60E74-212A-4F78-8931-E06CB1E66359}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {246164B6-498E-464F-935D-3D1AA86FB377}
+	EndGlobalSection
+EndGlobal
