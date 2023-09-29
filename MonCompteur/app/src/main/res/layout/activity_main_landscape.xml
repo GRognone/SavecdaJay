@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:onClick="quit"
         android:text="@string/buttonQuit"
+        android:backgroundTint="#ff0000"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="-1dp" />
 
@@ -43,6 +44,7 @@
             android:id="@+id/buttonInc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+
             android:onClick="increment"
             android:layout_weight="30"
             android:text="@string/buttonInc" />
