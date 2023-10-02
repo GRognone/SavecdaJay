@@ -52,6 +52,4 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         outState.putInt(KEY_MonNombre,Integer.parseInt(t.getText().toString()));
     }
-
-
 }
