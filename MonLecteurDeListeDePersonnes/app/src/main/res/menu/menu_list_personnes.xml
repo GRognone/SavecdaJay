@@ -2,11 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <item
     android:title="@string/copie"
-    android:id="@id/copie">
+    android:id="@+id/copie">
 </item>
     <item
         android:title="@string/delete"
-        android:id="@id/delete">
+        android:id="@+id/delete">
     </item>
-    registerForContextMenu(listView);
 </menu>
