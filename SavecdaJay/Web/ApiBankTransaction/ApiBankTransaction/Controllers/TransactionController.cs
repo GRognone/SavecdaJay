@@ -46,9 +46,9 @@ namespace ApiBankTransaction.Controllers
             return new BankTransaction()
             {
                 Id = banktransact.Id,
-                TransactionFrom = banktransact.TransactionFrom,
-                TransactionTo = banktransact.TransactionTo,
-                TransactionAmount = banktransact.TransactionAmount
+                Transaction_From = banktransact.Transaction_From,
+                Transaction_To = banktransact.Transaction_To,
+                Transaction_Amount = banktransact.Transaction_Amount
             };
         }
         // POST: api/Transaction
@@ -77,7 +77,7 @@ namespace ApiBankTransaction.Controllers
 
             if (dbBankTransact is BankTransaction)
             {
-                dbBankTransact.TransactionFrom = bankTransaction.TransactionFrom;
+                dbBankTransact.Transaction_From = bankTransaction.Transaction_From;
             }
             else
             {
