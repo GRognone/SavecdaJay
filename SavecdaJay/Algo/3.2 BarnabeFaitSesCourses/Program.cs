@@ -19,6 +19,7 @@ Console.WriteLine("Veuillez-saisir un montant de base svp.");
 S = int.Parse(Console.ReadLine());
 Rest = S;
 
+
 do
 {
     Rest = (Rest / 2) - 1;
