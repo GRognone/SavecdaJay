@@ -1,6 +1,8 @@
 package com.crm.monlecteurdelistedepersonnes;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.util.DisplayMetrics;
@@ -18,6 +20,7 @@ import android.widget.Toast;
 import com.crm.classesdomaines.Personne;
 
 import java.util.ArrayList;
+
 
 public class MainActivity extends AppCompatActivity {
 ListView myListOfPerson;
@@ -51,6 +54,12 @@ ListView myListOfPerson;
 
         if (item.getItemId() == R.id.copie) {
             Toast.makeText(getApplicationContext(), "Copie: ID " + menuInfo.id + " ,position" + menuInfo.position, Toast.LENGTH_SHORT).show();
+            PersonneArrayAdaptater paa = (PersonneArrayAdaptater) myListOfPerson.getAdapter();
+            Personne pACopier = paa.getItem(menuInfo.position);
+            paa.add(pACopier);
+            // rafraichir la listeView pour voir les nouveaux elements.
+            paa.notifyDataSetChanged();
+
         } else if (item.getItemId() == R.id.delete) {
             Toast.makeText(getApplicationContext(), "Delete: ID " + menuInfo.id + " ,position" + menuInfo.position, Toast.LENGTH_SHORT).show();
             PersonneArrayAdaptater paa = (PersonneArrayAdaptater) myListOfPerson.getAdapter();
@@ -61,4 +70,9 @@ ListView myListOfPerson;
             paa.notifyDataSetChanged();
         }return true;
     }
+
+    public void onAjouterUnePersonne(View v) {
+    public Intent (this packageMainActivity, )
+    }
+
 }

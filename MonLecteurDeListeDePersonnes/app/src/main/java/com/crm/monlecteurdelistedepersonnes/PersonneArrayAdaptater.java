@@ -53,8 +53,6 @@ public class PersonneArrayAdaptater extends ArrayAdapter<Personne> {
                 }
             }
         }
-
-
         //
         return v;
 

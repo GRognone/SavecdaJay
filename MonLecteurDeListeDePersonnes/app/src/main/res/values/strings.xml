@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">MonLecteurDeListeDePersonnes</string>
-    <string name="copie" >Copie</string>
-    <string name="delete" >Delete</string>
+    <string name="copie">Copie</string>
+    <string name="delete">Delete</string>
 </resources>
